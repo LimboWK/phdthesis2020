@@ -1,0 +1,283 @@
+\chapter{Belle II Experiment}
+\section{Belle II and SuperKEKB overview}
+The fundamental goals of Belle II experiment are to search for evidence of New Physics in the luminosity frontier, and to improve the precision of the measurement of the SM parameters, such as $CP$ parameters.\cite{b2book} It takes SuperKEKB accelerator as its particle collider at the center-of-mass energy in the region of $\upsilon$ resonances. Majority of the production will at the $\upsilon(4S)$ resonance that is slightly above the mass of two $B$ meson.The electron and positron beams are designed at 7 GeV and 4 GeV respectively, with boost factor 0.28. This creates an environment for measuring time-dependent $CP$ violation by displacing the decay vertices of $B$ mesons pair in a measurable distance in boosted direction. SuperKEKB has a targeted luminosity at $8\times 10^{35} cm^{-2} s^{-1}$, 40 times higher than its predecessor, KEKB at peak luminosity. The expected operation period will be around 8 years and over $5 \times 10^{10} $ $ b, c, \tau$ pairs will be produced. The facilities are located in KEK, Tsukuba City, around 70 km in the north of Tokyo, Japan. Some key parameters of SuperKEKB are listed in Table 2.1. 
+
+\begin{figure}
+	\centering 
+	\includegraphics[height=7cm]{SuperKEKB-BelleII.jpg}
+	\caption{Overview of SuperKEKB and Belle II detector.}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\large
+	\caption{SuperKEKB parameters for low energy (LER) and high energy (HER) rings.\cite{b2book}}
+	
+	\begin{tabular}{c c c c}
+		\toprule
+		
+		Parameters & LER($e^+$) & HER($e^-$) & Unit\\
+		\hline
+		Energy & 4.0 & 7.0 & GeV\\
+		Half crossing angle & \multicolumn{2}{c}{41.5} & mrad\\
+		Horizontal emittance & 3.2 & 4.6 & nm \\
+		Emittance ratio & 0.27 & 0.25 & \%\\
+		Beta functions at IP (x / y) & 32/0.27 & 25/0.30 & mm\\
+		Beam currents & 3.6 & 2.6 &  A \\
+		Beam–beam parameter & 0.0881 & 0.0807 & {}\\
+		Luminosity & \multicolumn{2}{c}{$8\times 10^{35}$} &  $cm^{-2} s^{-1}$\\
+		Perimeter of ring & \multicolumn{2}{c}{3} & km\\
+		
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+Belle II detector has a similar size as Belle so it fits in the previous shell, but all sub-detectors and components are either newly built or considerably upgraded. The advantage of SuperKEKB requires that Belle II has to be able to stably operate at 40 times higher events rates as well as 10 to 20 times higher beam background compared to Belle at its peak luminosity. This means mitigation of the effects caused by such high beam background is essential to the success of Belle II. Higher background level leads to high occupancy and radiation damage to the detectors at close range, along with more fake hits, pile-up noises in electromagnetic calorimeter and neutron-induced hits in muon detector. Data-acquisition system (DAQ) and trigger are also upgraded not only to adapted to higher luminosity but also for low multiplicity events sensitivity to support a broader search especially in dark sector. Overall, Belle II detector top view is shown as Figure 2-2, and expected performances are summarized as follows: 
+
+\textbullet \space vertex resolution of $B$ mesons at $\sim 50 \mu m$ 
+
+\textbullet \space excellent reconstruction efficiency for charged tracks down to several 100 MeV and fairly good efficiency for charged tracks down to $\sim$ 50 MeV.
+
+\textbullet \space excellent momentum resolution up to 8 GeV/c
+
+\textbullet \space highly efficient particle identification to separate $\pi$, $\mu$, $e$, $K^{+/-}$ and $p^+$ at full energy range of experiment.  
+
+\textbullet \space full cover of experimental acceptance solid angle. 
+
+\textbullet \space ultra fast and highly efficiency DAQ and trigger system to cope with large data quantities and fast triggering frequency. 
+
+\begin{figure}[htbp]
+	\centering 
+	\includegraphics[height=10cm]{Belle2TopView.png}
+	\caption{Belle II detector top view}
+\end{figure}
+
+The success of Belle II detector depends on the complex of sub-detectors which each of them is design for specific purposes.The critical components and features are covered in the following sections. 
+
+\section{Vertex detector (VXD)}
+There are two components in VXD, the silicon based pixel detector (PXD) and silicon based vertex detector (SVD), which total 6 layers are placed in the inner-most region from interaction point (IP). As for PXD, two layers are placed at radii of $r=14$ mm and $r=22$ mm with DEPFET type pixel sensors respectively. And SVD sensors are made of ``double-sided silicon strip sensors" (DSSD) with 4 layers at 39mm, 80mm, 104mm, 135mm. The geometry of VXD from the is shown in Fig(2-3). 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm]{VXDGEO.png}
+	\caption{A schematic view of PXD (2 layers in gray) and SVD (4 layers in green and orange).}
+\end{figure}
+
+The PXD layers are the closest to Interaction point (IP) so the vertex resolution will be much improved. However, much higher events rate comes with much higher background level on PXD sensors. The overloaded occupancy leads to severe dead time and incredibly large data size from PXD if no data reduction scheme is implemented. In order to trim down data from PXD, a fast online tracking system is built up. When the DAQ system is triggered, the data from PXD will be first readout to a system called ``ONSEN" which can store large size data in parallel up to 5 seconds. In this timing window, a fast online tracking system will perform a multiple track fitting for VXD (PXD + SVD) and CDC tracks, and extrapolate the fitted tracks backward to PXD plane so the region of interest (ROI) on PXD sensors can be defined. The signal outside of ROI will not be read out from ONSEN system to external tapes where offline data is written. Such system setup creates a buffer for the large data and efficient PXD data reduction is made. The outmost layer of SVD is also larger than Belle SVD1/2. This could be helpful for ensure the reconstruction efficiency for the decay like $K_S^0 \to \pi^+ \pi^- $\cite{Abe:2010gxa}.
+
+\section{Central drift chamber (CDC)}
+The central tracking system is the core component of spectrometer in Belle II, which consists of a fairly big drift chamber made of many small drift cells filled with He-C$_2$H$_6$ gas. The out radius of CDC has been extended to 1130 mm from 880 mm of Belle thanks to the much thinner layers in barrel region. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction or the stereo direction. Such design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which forms helix tracks. Thus, CDC is one of the key components for measuring the helix parameters for tracking system. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=6cm]{CDCcosmic}
+	\caption{CDC tested with a cosmic ray event}
+\end{figure}
+
+
+\section{TOP and ARICH detector}
+The particle identification system of Belle II mainly consists of two parts, time-of-propagation counter (TOP) and aerogal based Cherenkov radiation imaging ring (ARICH). TOP is the specialized detector that can reconstruct Cherenkov radiation's time of arrival and generated position by a photon detector placed at the end of a 2.6 cm quartz bar. Due to the ultra-fast flying time of photon, the TOP detectors has to achieve timing resolution at around 100 ps. A 16 channels micro-channel plate photon-multiplier (MCP-PMT) with custom-made waveform electronics of readout are used. The resolution of starting time is achieved about at 50 ps. \cite{Abe:2010gxa}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=10cm]{TOP}
+	\caption{Schematic view of TOP counter (up) and its imaging process of $K^{+/-}$ and $\pi^{+/-}$ (down)}
+\end{figure}
+
+As for ARICH, it uses areogal as the sensitive material to approximately image the Cherenkov ring by a special focusing structure to identify charged particles. ARICH should be able to separate charged particles in a momentum range from 0.5 GeV/c to 4 GeV/c. ARICH requires single-photon-sensitive  high-granularity sensor to reconstruct the Cherenkov angle with small photon yield. Hamamatsu Corporation, Japan, has developed a hybrid avalanche photon detector (HAPD, Figure 2-6) to meet the requirements. Each sensor is $73 \times 73$ mm$^2$ embedded with 144 channels to accelerate emitted electrons in a 8kV field. Avalanche photo-diodes (APD) are used for the detection of electrons at the end of electron acceleration. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm]{HAPD}
+	\caption{photon-electrons acceleration and pixelated APD at the end. (left)
+		a picture of HAPD outlook \cite{Abe:2010gxa}}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=6cm]{ARICH}
+	\caption{ARICH detector (left) and ring of cosmic $\mu$ on HAPD sensor\cite{b2book}}
+\end{figure}
+
+\section{Electromagnetic calorimeter (ECL)}
+The electromagnetic calorimeter of Belle II is mainly responsible for detection of $\gamma$ radiation and electrons. The  thallium doped caesium iodide CsI(Tl) crystals are assembled tightly in all three different regions, backward/forward end-caps and barrel region, as shown in Figure 2-2. Compared to the previous ECL in Belle crystal scintillation , pre-amplifiers and the structures remain unchanged, while the readout  electronics have been upgraded. The estimated background level in Belle II ECL will cause the much longer decay time in scintillation of CsI(TI). This will lead to the pile-up effect of readout noise. To compensate this effect, wave-form sampling electronics are embedded with the photon detectors. Especially in the forward direction of the electron beamline, where the level of beam background is much higher, the effect of pile-up noise becomes even worse and the performance of ECL will be of trouble if no special measure taken. Given this situation, the pure CsI crystal is considered to be chosen as the material of detector to achieve a fast wave-shaping time and higher radiation tolerance compared to the dosed CsI(TI)
+
+\section{$K_L^0$ muon detector (KLM}
+KLM system of Belle II consists of a sandwich stacked iron plates and detectors at outside of the superconducting solenoid. The iron plates also serve as the interaction materials with 3.9 or more times interacting length of material compared to the ECL, allowing the $K_L^0$ can shower through hadronic processes. 
+The Belle KLM material used  glass-electrode resistivity plate chambers (RPC) which is not suitable for Belle II due to high background level. The structure of RPC layers is depicted in Fig(2-8). Neutrons dose is significantly larger because of much more electromagnetic radiation reaction on detector materials. The long dead time of RPC under such dose rate will reduce the efficiency of KLM. Besides, the mis-identification possibility would be raised so PID contribution from this part of detector will be meaningless.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=10cm]{RPC}
+	\caption{ RPC layers structure\cite{b2book}}
+\end{figure}
+
+
+To overcome this issue, the RPC is replaced with layers of scintillation strips covered by wave-length shifters. The readout sensors are PMT of Geiger mode
+operated APDs. By setting up proper working threshold, the damage of the SiPMs type APDs caused by the neutron fluxes can be reduced in the acceptable range. 
+
+
+\section{Trigger and DAQ system}
+The interested topics in Belle II physics analysis highly depends on the trigger system to collect the co-responding events. With the updated capabilities to  study a broader range of physics analysis under 10 to 20 times higher background level, the trigger system has to be able to work properly while the relatively low event recording rate of DAQ limits the pursuit of speed-only design concept of trigger system. 
+
+The beam-induced background is called beam background in general. The main sources of beam background are beam-gas scattering, synchrotron radiation, the radioactive Bhabha scattering, the two-photon process, beam-beam effects, and Touschek effect. The impacts from such varieties of sources depend on many factors such as beam current, luminosity and vacuum conditions,etc. One of the featured topology of those processes is a combination of two charged tracks in CDC and one or two clusters in ECL. They are assembled with some low multiplicity events from primary collision, which is main focus of dark sector studies. Thus it's quite important to distinguish such low multiplicity events from various beam backgrounds.
+
+
+
+\begin{table}[htbp]
+	\centering
+	\large
+	\caption{Simulated beam background rate (12th BG campaign)\cite{b2book}}
+	\begin{tabular}{c c c}
+		\toprule
+		Type & Source & Rate (MHz)\\
+		\hline
+		Radiative Bhabha & HER &  1320\\
+		Radiative Bhabha & LER &  1294\\
+		Radiative Bhabha(wide angle) & HER &  40\\
+		Radiative Bhabha (wide angle) & LER &  85\\
+		Touschek scattering & HER &  31\\
+		Touschek scattering & LER &  83\\
+		Beam–gas interactions & HER &  1\\
+		Beam–gas interactions & LER &  156\\
+		Two-photon QED & - & 206\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Since the primary goal of Belle II will still be focusing on $B$ physics studies, it is natural that the trigger system should be able to operate over all of the interested $B$ physics conditions, with normally 3 or more CDC tracks and large energy deposition in ECL. By offline reconstructing these events and studying the efficiency, almost of 100\% for $B$ decays are recorded by Belle II trigger. 
+
+However, the extensive capabilities of studying a large range of physics not only in $b$ sector brings a challenge to Belle II DAQ system. Belle II has announced its excellence at performing measurement on other important topics such as $\tau$ physics, dark sector studies and initial state radiation processes (ISR). These topics and $B$ physics studies are mutually beneficial in many ways. The reconstruction of them, as mentioned above, suffer from a large beam background, thus online algorithms must be considered in addition to offline reconstruction. 
+
+Based on the reasons discussed above, Belle II trigger has been designed to have 2 separated levels of triggers. Low level trigger, also called as L1 trigger, is hardware-based trigger. and high level trigger (HLT) is the software based trigger.
+The L1 trigger rate can go up to 30kHz that is also the up-limit of DAQ read-in rate. The latency of L1 is control to be 5 $\mu$s, improved from Belle trigger.
+And yet 30kHz is still to high for writing out the data to tape, so the HLT must be implemented to reduce the trigger rate to about 10kHz and it has to be able to select ROI on the PXD to reduce the data flux limited by bandwidth of read-out cables. To do that, HLT utilize  the full offline reconstruction algorithms to allow the access of full-granularity
+event reconstruction using all detectors except for the PXD. 
+
+\section{Detector simulation}
+As partially described before, the simulation of Belle II make a use of GEANT4 software. GEANT4 package can accept the event created by module called ``particle gun" which directly injects particles to detector volume. Or it takes in software simulated data, which in general is called ``event generator". Belle II Analysis Framework (BASF2) software (see the next section for the details of BASF2) provides the interface for createing simulated data from event generator to GEANT4. Most of the primary particles are simulated by event generator and sent to GEANT4 for simulation between detectors' components. The out-flying particles that has relatively long life time compared to the primary interaction such as $K_S^0 \to \pi^+ \pi^-$ are simulated in GEANT4 after the event generator does its job. Exchanged bosons and primary electrons(positrons) will not be feed into GEANT4. Then GEANT4 creates secondary particles during the particle interaction and detector material, such as the radiations from charged tracks and also the scattering processes with detector materials. The hits digitization are generated by other BASF2 modules using primary and secondary particles together. Finally, the response from detectors are sent to the persistent data storage (called ``DataStore" as C++ objects, detail in next section.) to be used in the analysis chain of BASF2. 
+
+For each type of the particles and each type of detector material, the interaction is varied in different processes. The co-responding process of physics should be specified by the users or using the provided list from GEANT4 developer group. In Belle II simulation, the
+Fritiof quark–gluon string model at high energy and the Bertini intra-nuclear cascade model at low
+energy are used by default from GEANT4 list. 
+
+The simulation of the beam background is done by a software called SAD, as external part of BASF2. It simulates the flux of particles from the beamline of the SuperKEKB accelerator. Whenever a particle trajectory deviates from the beamline region and hit the Belle II detector part, its momentum and position vectors will be saved into a configuration file. Then such configuration file will provide the initial information for GEANT4 simulation software to simulate the interaction between the given particle and Belle II detector, which is eventually analyzed as normal particles by BASF2.
+The output of BASF2 is standard ROOT format and it presents how a beam induced particle interacts with detector material to create simulated hits as beam backgrounds. 
+
+The mixing of background is then implemented to provide a realistic view of physical events and beam background overlay. Since the format of beam background is simulated hits, thus adding the background events is done by injecting the simulated hits, then move to the digitization of hits to detector responses. In a event time window $\Delta t$, assuming the given type background has a average rate of $R$, the mixing number of background hits in such event is: 
+
+\begin{equation}
+\bar{N} = sR\Delta{t}
+\end{equation}
+
+$s$ is optional scaling factor which can be used to study the influence of given type background in different level. Because $R$ is averaged value, in the actual mixing, the number of $\bar{N}$ is used as the expected value of Poisson distribution, which presents the number of observed events when many trials of such events is made with certain small possibility per event.  In order to simulate the effect of timing different of background and physical events, the mixing timing window over $\Delta t$ is randomly shift according to the physical events.
+With the real experimental data comes in handy, the method of adding background events to physics events is slightly different since using real beam background can provide a more precise result than simulation. By setting a random trigger for beam background, the hits digitization from real beam background will be collected and add to simulated physics events. Although the pile-up noise collected in this method is not very precise because of the threshold set for detectors allowing only part of noise to be added, the non-recorded noise can still contribute to the pile-up noise for physics events, and they are not included in this method. Yet overall it provides a more realistic evaluation of beam background overlay.
+
+\section{Belle II Analysis Software Framework} 
+The data acquired by the Belle II experiment or simulation can be processed by  Belle II Analysis Software Framework, as known as BASF2. It has a good capability to handle the tasks of sophisticated algorithms for simulation, reconstruction, visualization, and analysis. The official BASF2 is developed in different release versions, light-versions and featured-versions. For this analysis in this thesis, we use release-05-01-01 version.
+
+\subsection{Core Structure}
+The core structure of BASF2 contains three major parts: the analysis codes specifically required by the needs of Belle II data (called Belle II codes), the external libraries which utilizes the third-party software that Belle II use, and the tools for configuring and installing the BASF2 software. 
+
+The Belle II codes consists of many packages. They are categorized based on the different levels of Belle II detector components, like the packages of base-level system control called "framework", the package for track reconstruction called "tracking", and the one for post-reconstruction data analysis called "analysis".
+Codes are written in C++ for these packages and share a directory called ``lib" on the top level of path. Usually users can work either with compiled binary version of BASF2 installed centrally on the working server or build from the source by their own need. 
+
+As for the externals, it contains various types of the code that installing or running BASF2 requires. For example, some basic packages, like gcc compiler, cmake, tar, wget, Python and git are included. In particular, due to the dependence of the analysis tools that may be frequently used by Python, around 100 additional Python packages are also installed as externals. The complexity of building all of these external software could be tough for users so the compiled versions that covers common user-based platform are available from BASF2 official repository. 
+
+Tools are collections of shell or Python scripts for setting up BASF2 and externals environment. It can easily handle the need of setting up an environment of specific BASF2 version and the externals tied to that version. It also provides a function to setting up the environment of developing BASF2, which developers can get one developing copy of BASF2 and write the additional codes as the modification so the compatibility of BASF2 could be easily maintained by building release version from the developing branches.
+
+\subsection{Event Processing Workflow}
+The data from Belle II detector or from the simulation, are organized into a set of variable-duration runs, and each run contains a sequence of independent events. Every event is recorded as the measurement of by-products of an electron-positron collision or a cosmic ray injection. A set of runs which presents a similar detector conditions is packed as an ``experiment". Such experiment-run-event structure is the basic data structure for BASF2. Thus BASF2 processes the data by a set of modules that contains the following phases as follows:
+
+\textbullet \space initialize: called at the start of a event to properly set up this module
+
+\textbullet \space beginRun: called at the start of each run to handle the run-independent data.
+
+\textbullet \space event: called at the start of each event processing. 
+
+\textbullet \space endRun: called at the end of a sequence of events in a run. 
+
+\textbullet \space terminate: called at the end of the processing of all events. 
+
+BASF2 executes a series of modules loaded dynamically to process the data set according to above sequence, where each module will have above phases inside their python interface. The selection, configuration and executed order of the modules are defined by a file called ``steering file" written in Python as well. The modules parameters are attributes which can be set during the runtime using steering file. For example, the ``Path" object declared in the ``steering file" stores the sequence of modules to be executed, to which allow other modules such as ``mdstInput" or ``reconstructDecay" to be added.
+An integer result set in ``event" phase can be used for a conditional branching of a ``Path" in case that one event needs to be processed with different set of modules based on its features. BASF2 starts running when it checks in the ``steering file" there is at least one module specify the number of events to be processed in a ``path" and return the time and number of events as information printed in standard output or stored in ROOT file. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=6cm]{BASF2-steering}
+	\caption{ Example of BASF2 steering file, setting up a processing of 100 events in path called ``main". }
+\end{figure}
+
+The object that interacts with BASF2 I/O is called Data Store as mentioned before.This implementation doesn't rely on the event data model. The only mandatory component is called EventMetaData which presents the event,run and experiment index and production unique ID to distinguish events. The raw format of data depends on the readout of detector data. Unpacker module of BASF2 converts the raw format into digits object. In simulation, digitization is done by module called digitizer using energy deposition from Geant4. The simulated hits are from common based SimHits object, which allows for adding machine-induced background to an actual physics energy deposition process. 
+
+
+
+\subsection{mDST structure}
+
+The output from the reconstruction will contain several detector-specific objects, which are concluded as mini data summary table (mDST) type file. For instance, the object called ``RecoTracks" will be created for track pattern recognition and perform the track fit using the hits from different detectors. Typically for a reconstruction of recorded detector response of a physical event, mDST could consist of following classes: 
+
+\textbullet \space Track: object presenting any charged particle trajectory, and it's linked to multiple track fit results using different nominal mass hypotheses as well as their track fit quality to help select good tracks.  
+
+\textbullet \space TrackFitResult: the fitting result of tracks with different mass hypotheses. It consists of five helix parameters, their covariance matrix and p-value from the fit. It also stores the information of hit pattern on vertex detector and CDC. 
+
+\textbullet \space V0 objects: for the relative long-lived neutral particles that fly out of interaction region but mostly decay or interact inside detector region. In Belle II, these are mostly $K_S^0$, $\Lambda$ and photon converted to electron pairs. V0 also stores their relation to the charged daughter tracks and track fit result. 
+
+
+\textbullet \space PIDLikelihood: it presents for the possiblity of a charged track to be a electron, muon, charged Kaon and pion, proton and deuteron provided by particle identification system. 
+
+\textbullet \space ECLCluster: : reconstructed cluster in the electromagnetic calorimeter. It consists of energy deposition and hit position. Hit shape related variables. If a cluster is matched with an extrapolated track, a relation between them will also be created. 
+
+\textbullet \space reconstructed cluster from $K_L^0$ and muon detector. It consists of momentum and position measurement. If a cluster is matched with an extrapolated track, a relation between them will also be created. 
+
+\textbullet \space KLId: $K_L^0$ candidates with the particle identification as related to KLM and ECL clusters. 
+
+\textbullet \space TRGSummary:L1 trigger information. 
+ 
+\textbullet \space SoftwareTriggerResult: high level trigger information mapped by trigger names to trigger results. 
+
+\textbullet \space  MCParticle: if data is from simulation, a particle from simulation  containing the
+momentum, production and decay vertex, relations
+to mother and daughter particles, and information
+about traversed detector components. Particle-Detectors relations are
+created if simulated particles are reconstructed as
+tracks or clusters from Belle II.
+
+The size of mDST level data is very important to processing performance. Thus, mDST level data is restricted from contain non-physical analysis related information such as raw detector response digits or calibration constants. For detailed detector
+or reconstruction algorithm performance studies, and also for calibration tasks, a dedicated format higher than mDST, called cDST,
+(calibration data summary table), is provided.
+ 
+
+\subsection{Conditional Database}
+
+In addition to the physics data, analysis relies on various condition data that defines different calibration of detector, weight files for multi-variate analysis usage and more. This part of data is stored in a central data based called central Conditional Database (CDB). 
+
+Conditions are made of payloads and each payload has its own "Intervals of Validity" (IoV). It defines in which runs the payload is valid. A set of payloads and IoVs are called a global tag (GT), and GT is subject to change so the assignment of IoVs or payloads data can be modified. Except for the central database, a local database backend that reads global tag information from GT and uses a local database is implemented. It automatically download the database files that are needed for a BASF2 execution and store them in a local folder. This means even if the computer is offline or the CDB is not reachable, one can still run BASF2 as long as the local folder was there. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=9cm]{CDB}
+	\caption{ Relations of all entities in CDB. \cite{BASF2} }
+\end{figure}
+
+ User access to conditions objects is
+provided by two interface classes, one for single objects
+called DBObjPtr and one for arrays of objects called
+DBArray. To facilitate easy creation of new conditions data – for example, during calibration – we provide two payload creation classes, DBImportObj and DBImportArray. They
+have an interface very similar to DBObjPtr and DBArray. \cite{BASF2}
+Users instantiate one of the creation classes, add objects
+ to them and commit them to the configured database with a user-supplied IoV. This includes support for run dependency. The capability to use a local file-based
+ database allows for easy preparation and validation of
+new payloads before they are uploaded to the CDB. The scheme of this entities and how users interact with CDB object is demonstrated in Fig 2-10.
+
+\subsection{Summary}
+BASF2 has been developed for an emphasis on providing reliable and high quality performance for Belle II analysis. It satisfies the most of demanding requirements of data taking, simulation, reconstruction, and offline analysis. 
+
+
+
+
+
+
+
+

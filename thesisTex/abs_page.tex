@@ -1,0 +1,69 @@
+\documentclass[10.5pt,twoside]{mitthesis}
+\usepackage{lgrind}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{ amssymb }
+
+\RequirePackage{doi}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[graphicx]{realboxes}
+\usepackage{rotating}
+\usepackage{CJKutf8}
+
+\usepackage[labelformat=simple]{subcaption}
+\renewcommand\thesubfigure{\alph{subfigure})}
+
+\usepackage{comment}
+\usepackage{natbib}
+\setcitestyle{numbers}
+\usepackage[compat=1.1.0]{tikz-feynman}
+
+\usepackage{ifthen}
+\pagestyle{plain}
+\graphicspath{{figures/}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+%% This bit allows you to either specify only the files which you wish to
+%% process, or `all' to process all files which you \include.
+%% Krishna Sethuraman (1990).
+%
+%\typein [\files]{Enter file names to process, (chap1,chap2 ...), or `all' to process all files:}
+%\def\all{all}
+%\ifx\files\all \typeout{Including all files.} \else \typeout{Including only \files.} \includeonly{\files} \fi
+
+\begin{document}
+
+\begin{CJK}{UTF8}{min}
+	\large
+	\centering
+	論文の内容の要旨\\
+\end{CJK}
+
+\begin{center}
+	\large
+	Time Dependent Charge-Parity Violation in $B^0 \to K^0_s K^0_s K^0_s $ in Belle II early operation\\
+\end{center}
+\begin{CJK}{UTF8}{min}
+	\large
+	\centering
+	(Belle II 初期データを使った$B^0 \to K_S^0  K_S^0  K_S^0$ 崩壊の時間に依存する荷電・パリティ非保存の研究)\\
+	\vspace{1cm}
+\end{CJK}
+\begin{CJK}{UTF8}{min}
+	\large
+	\centering
+	氏 名 \space \space \space \space  万 琨\\
+\end{CJK}
+\begin{center}
+	\large
+	Wan Kun\\
+\end{center}
+\vspace{1cm}
+Belle II experiment is a next-generation B-factory experiment that is aimed to search for New Physics. Most of data will be collected at $\Upsilon(4S)$ resonance using SuperKEKB facility. It's designed at luminosity of $8 \times 10^{35} cm^{-2}s^{-1}$ which is 40 times higher than its predecessor KEKB.
+
+The thesis is based on the time dependent $\it{CP}$ violation study of $B^0 \to K_S^0 K_S^0 K_S^0$ decay. The purpose is to precisely measure the $\it{CP}$ parameters $\mathcal{S}$ and $\mathcal{A}$ in penguin-dominated $b \to s$ transition. It's sensitive to New Physics effect and quite interesting compared to other modes with tree-level pollution. Any undisputed deviation on $\it{CP}$ parameters could be a signal beyond the SM. Such precise measurement mainly requires clean signal extraction, $B^0$ vertex reconstruction, flavor tagging and proper decay time resolution modeling. This thesis covers the development and optimization of analysis tools on the aspects above. The blind fit and toy MC study are also included before using data which shows a reasonably good consistence in $\it{CP}$ parameters measurement. By using data from Belle II 2019 and 2020 (Spring and Summer) operation at about 62.8 fb$^{-1}$ integral luminosity, the measurement results of $\mathcal{S}$ and $\mathcal{A}$ is: $\mathcal{S}= - sin(2\phi_1) = -0.82 \pm 0.85(stat) \pm 0.07(syst)$ and $\mathcal{A}= -0.21 \pm 0.28(stat) \pm 0.06(syst)$ are obtained. The result is dominated by statistical uncertainty and currently consistent with the Standard Model and also the previous results in Babar and Belle. 
+\end{document}

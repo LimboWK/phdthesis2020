@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: cover.aux
+A level-1 auxiliary file: contents.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: chap3.aux
+A level-1 auxiliary file: chap4.aux
+A level-1 auxiliary file: chap5.aux
+A level-1 auxiliary file: chap7.aux
+A level-1 auxiliary file: appa.aux
+A level-1 auxiliary file: appb.aux
+A level-1 auxiliary file: appc.aux
+A level-1 auxiliary file: biblio.aux
+The style file: unsrtnat.bst
+Database file #1: main.bib
+Warning--empty journal in Abe:2010gxa
+Warning--empty title in jpsiks_ichep
+Warning--empty year in jpsiks_ichep
+Warning--empty title in flavortagger
+Warning--empty year in flavortagger
+You've used 16 entries,
+            2481 wiz_defined-function locations,
+            692 strings with 7993 characters,
+and the built_in function-call counts, 6520 in all, are:
+= -- 518
+> -- 426
+< -- 9
++ -- 162
+- -- 130
+* -- 565
+:= -- 1091
+add.period$ -- 66
+call.type$ -- 16
+change.case$ -- 30
+chr.to.int$ -- 16
+cite$ -- 23
+duplicate$ -- 298
+empty$ -- 525
+format.name$ -- 153
+if$ -- 1345
+int.to.chr$ -- 1
+int.to.str$ -- 17
+missing$ -- 13
+newline$ -- 106
+num.names$ -- 42
+pop$ -- 117
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 186
+stack$ -- 0
+substring$ -- 201
+swap$ -- 49
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 112
+warning$ -- 5
+while$ -- 38
+width$ -- 0
+write$ -- 242
+(There were 5 warnings)

@@ -1,0 +1,82 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1-1}{\ignorespaces Elementary particles in the Standard Model.\relax }}{18}{figure.caption.5}%
+\contentsline {figure}{\numberline {1-2}{\ignorespaces $^{60}$Co decay violates the parity because of the unbalance of electron emissions.\relax }}{21}{figure.caption.6}%
+\contentsline {figure}{\numberline {1-3}{\ignorespaces Box diagram for $B^0$ meson\relax }}{28}{figure.caption.7}%
+\contentsline {figure}{\numberline {1-4}{\ignorespaces penguin mode diagram\relax }}{28}{figure.caption.7}%
+\contentsline {figure}{\numberline {1-5}{\ignorespaces The unitary angles of CKM\relax }}{31}{figure.caption.8}%
+\contentsline {figure}{\numberline {1-6}{\ignorespaces The latest results on UT\cite {b2book}\relax }}{31}{figure.caption.9}%
+\contentsline {figure}{\numberline {1-7}{\ignorespaces Tree level(left) and penguin mode(right) of $B\to J/\psi K_S^0$\relax }}{35}{figure.caption.10}%
+\contentsline {figure}{\numberline {1-8}{\ignorespaces penguin mode $b\to q\bar {q}s$ where $\phi $ is formed by two strange quark as the intermediate state.\relax }}{37}{figure.caption.11}%
+\contentsline {figure}{\numberline {1-9}{\ignorespaces Expected precision of $\Delta S_f$ as the function of integrated luminosity.\relax }}{38}{figure.caption.12}%
+\contentsline {figure}{\numberline {1-10}{\ignorespaces non-resonant (left),resonant (middle) and tree polluted (right) $B^0_d\to 3K^0_S$ diagrams,penguin modes are signal due to the same loop level amplitude in Eq(1.49)\relax }}{39}{figure.caption.14}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2-1}{\ignorespaces Overview of SuperKEKB and Belle II detector.\relax }}{42}{figure.caption.15}%
+\contentsline {figure}{\numberline {2-2}{\ignorespaces Belle II detector top view\relax }}{44}{figure.caption.17}%
+\contentsline {figure}{\numberline {2-3}{\ignorespaces A schematic view of PXD (2 layers in gray) and SVD (4 layers in green and orange).\relax }}{44}{figure.caption.18}%
+\contentsline {figure}{\numberline {2-4}{\ignorespaces CDC tested with a cosmic ray event\relax }}{45}{figure.caption.19}%
+\contentsline {figure}{\numberline {2-5}{\ignorespaces Schematic view of TOP counter (up) and its imaging process of $K^{+/-}$ and $\pi ^{+/-}$ (down)\relax }}{46}{figure.caption.20}%
+\contentsline {figure}{\numberline {2-6}{\ignorespaces photon-electrons acceleration and pixelated APD at the end. (left) a picture of HAPD outlook \cite {Abe:2010gxa}\relax }}{47}{figure.caption.21}%
+\contentsline {figure}{\numberline {2-7}{\ignorespaces ARICH detector (left) and ring of cosmic $\mu $ on HAPD sensor\cite {b2book}\relax }}{47}{figure.caption.22}%
+\contentsline {figure}{\numberline {2-8}{\ignorespaces RPC layers structure\cite {b2book}\relax }}{49}{figure.caption.23}%
+\contentsline {figure}{\numberline {2-9}{\ignorespaces Example of BASF2 steering file, setting up a processing of 100 events in path called ``main". \relax }}{55}{figure.caption.25}%
+\contentsline {figure}{\numberline {2-10}{\ignorespaces Relations of all entities in CDB. \cite {BASF2} \relax }}{58}{figure.caption.26}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3-1}{\ignorespaces Flight length of $K_S^0$ from MC, Blue is from generic $B^0$ decay and orange is from $B^0 \to K_S^0 K_S^0 K_S^0$. Both are from MC13.\relax }}{61}{figure.caption.27}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces The distribution of invariant mass of $K_S^0$ candidates, blue line is the MC truth matched $K_S^0$ and the orange is the fake $K_S^0$ passing the selection.\relax }}{62}{figure.caption.29}%
+\contentsline {figure}{\numberline {3-3}{\ignorespaces Basic structure of a DT with depth = 3 and label of x,y,z. The last layer is terminal node and the number is signal fraction. The number (color demonstrated) is the signal fraction of data points in the nodes\relax }}{64}{figure.caption.30}%
+\contentsline {figure}{\numberline {3-4}{\ignorespaces Runtime in fitting phase with different hyper-parameters comparison among FastBDT and XGBT,TMVA,scikit-learn.\cite {keck2016fastbdt}\relax }}{65}{figure.caption.31}%
+\contentsline {figure}{\numberline {3-5}{\ignorespaces The left shows the case when a charged track (not a pion) combined with a true pion as a fake $K_S^0$, the right shows the case when two daughters are correctly reconstructed as pion but not from the correct mother. \relax }}{66}{figure.caption.32}%
+\contentsline {figure}{\numberline {3-6}{\ignorespaces The left shows the $\Lambda \to p^+ \pi ^-$ decay shape that can be treated as $K_S^0$, the right shows a self-loop formed by a low $p_T$ charged pion reconstructed as two separated tracks with a vertex\relax }}{67}{figure.caption.33}%
+\contentsline {figure}{\numberline {3-7}{\ignorespaces The decay shape parameters, vertex vector takes IP as origin. \relax }}{69}{figure.caption.34}%
+\contentsline {figure}{\numberline {3-8}{\ignorespaces The correlation matrix of the chosen observables. It shows different correlation between observables in signal and background. And there's no single observable showing strong correlation with all other members. \relax }}{70}{figure.caption.35}%
+\contentsline {figure}{\numberline {3-9}{\ignorespaces The left is ROC curve(blue for training and orange for testing) and the right is efficiency and purity (blue for efficiency and orange for purity) depending on cut of classifier output. Results are from $B^0 \to K_S^0 K_S^0 K_S^0$ sample.\relax }}{72}{figure.caption.37}%
+\contentsline {figure}{\numberline {3-10}{\ignorespaces The left is ROC curve (blue for training and orange for testing) and the right is efficiency and purity (blue for efficiency and orange for purity) depending on cut of classifier output. Results are from $B^0$ generic decay sample.\relax }}{72}{figure.caption.38}%
+\contentsline {figure}{\numberline {3-12}{\ignorespaces FOM of classifier output (FBDT\_Ks) in $B^0 \to K_S^0 K_S^0 K_S^0$, maximum value is obtained at 0.74 and curve is almost flat after 0.5.\relax }}{74}{figure.caption.40}%
+\contentsline {figure}{\numberline {3-13}{\ignorespaces $K_S^0$ purity improvement with cut value of FBDT\_Ks at 0.74 applied. Blue solid line is true $K_S^0$ before KsFinder and green dashed line is the true $K_S^0$ after. The orange solid line is fake $K_S^0$ before KsFinder and red dashed line is fake $K_S^0$ after. 95.3\% of true $K_S^0$ are kept while 97.6\% the fake are rejected by the classification. \relax }}{75}{figure.caption.41}%
+\contentsline {figure}{\numberline {3-14}{\ignorespaces The distribution of invariant mass from daughters and the momentum of x,y,z direction. Blue bar is from all MC13, cyan bar is the true $K_S^0$ in it. Yellow step histogram is data with no cut, solid red data with MC13 trained cut, and the dashed is with MC12b cut. Experimental data has a good agreement with MC before and after applying the KsFinder.\relax }}{76}{figure.caption.42}%
+\contentsline {figure}{\numberline {3-16}{\ignorespaces Data MC correction induced by $K_S^0$ classifier.\relax }}{77}{figure.caption.44}%
+\contentsline {figure}{\numberline {3-15}{\ignorespaces Invariant mass fit of $K_S^0$ using cut at 0.2(loose) and 0.9(tight) to calculate $S_{data/MC}$.\relax }}{78}{figure.caption.43}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4-1}{\ignorespaces The distribution of $K_S^0$ momentum. Candidates smaller than 0.05GeV/c are rejected.\relax }}{82}{figure.caption.45}%
+\contentsline {figure}{\numberline {4-2}{\ignorespaces $K_S^0$ flight length on r-$\phi $ plane based on pions SVD hits, SVD11: both pions have SVD hits, SVD10(SVD01), positive(negative) pions have SVD hits, and SVD00: no SVD hits from pions. The result is from MC13 signal of $B^0 \to K_S^0 K_S^0 K_S^0$.\relax }}{83}{figure.caption.46}%
+\contentsline {figure}{\numberline {4-3}{\ignorespaces Layer 5 is at $r = 11$cm and $K_S^0$ that decay outside are very likely to lose SVD hits information. Right figure shows the windmill structure with overlapping area at edges. \relax }}{84}{figure.caption.48}%
+\contentsline {figure}{\numberline {4-4}{\ignorespaces (Top two plots)The invariant mass from daughters' 4-vector named M, the left is $B^0 \to K_S^0 K_S^0 K_S^0$ and the right is generic MC; (bottom two plots)The invariant mass from fitted 4-vector named InvM, the left is $B^0 \to K_S^0 K_S^0 K_S^0$ and the right is generic MC; In both cases, the red shows the clear dispersion on SVD00 type $K_S^0$.\relax }}{85}{figure.caption.49}%
+\contentsline {figure}{\numberline {4-5}{\ignorespaces Fitted invariant mass on $K_S^0$ types, sideband is excluded in each distribution to further reject fake $K_S^0$\relax }}{85}{figure.caption.51}%
+\contentsline {figure}{\numberline {4-6}{\ignorespaces Top left is the candidates per event in data and generic MC before the BCS. Top Right is the $\chi _2$ for data and generic MC before BCS. Bottom left is the number of candidates $B^0$ per event from signal MC. Bottom right is the 2D $M_{bc}$ and $\Delta E$ distribution from signal MC.\relax }}{87}{figure.caption.53}%
+\contentsline {figure}{\numberline {4-7}{\ignorespaces $R_2$ serves as the highest weight as a variable in discriminating the continuum events, having a drastically different distribution between signal and background. $R_2$ is the ratio of the second to the zeroth KSFW momentum in Eq(4.2)\relax }}{90}{figure.caption.55}%
+\contentsline {figure}{\numberline {4-8}{\ignorespaces The top is correlation in variables for continuum suppression. Top left is for signal and top right is for background. The bottom left is the ROC curve (blue for training and orange for testing, in good consistence) The bottom right is the efficiency(blue) and purity(orange) regarding the cut value ``FBDT\_CS"\relax }}{93}{figure.caption.57}%
+\contentsline {figure}{\numberline {4-9}{\ignorespaces Over-training check of continuum classifier, where no overt-taining is found.\relax }}{94}{figure.caption.58}%
+\contentsline {figure}{\numberline {4-10}{\ignorespaces FOM depending on the cut value of continuum classifier output, cut value at 0.66 is used for continuum suppression. \relax }}{94}{figure.caption.59}%
+\contentsline {figure}{\numberline {4-11}{\ignorespaces The distribution of $M_{bc}$ and $\Delta E$ of signal MC13 of $B^0 \to K_S^0 K_S^0 K_S^0$ fitted with single and triple gaussian respectively.\relax }}{98}{figure.caption.61}%
+\contentsline {figure}{\numberline {4-12}{\ignorespaces The distribution of $M_{bc}$ and $\Delta E$ of continuum events fitted with Argus and Chebyshev polynomial respectively.\relax }}{98}{figure.caption.62}%
+\contentsline {figure}{\numberline {4-13}{\ignorespaces Top is the stacked plots for generic MC of $M_{bc}$ and $\Delta E$, where each background components are stacked with signal. The bottom is the 2D fit on generic MC13, the red is signal PDF. The integral luminosity is 1 ab$^{-1}$\relax }}{99}{figure.caption.63}%
+\contentsline {figure}{\numberline {4-14}{\ignorespaces Top: $M_{bc}$ and $\Delta E$ 2D fit using 62.8 fb$^{-1}$data, the red is signal PDF. Bottom: ``M" and ``InvM" from data and generic MC which is scaled to data luminosity. The distributions is in a reasonable consistency. \relax }}{100}{figure.caption.64}%
+\contentsline {figure}{\numberline {4-16}{\ignorespaces Injection test for signal extraction. The linearity is clear between input and output signal events number.\relax }}{104}{figure.caption.67}%
+\contentsline {figure}{\numberline {4-17}{\ignorespaces $M_{bc}$ distribution based number of CDC-only tracks in final states. Up: no $K_S^0$ finder; Down: $K_S^0$ finder used. f is the fraction for the first Gaussian\relax }}{105}{figure.caption.68}%
+\contentsline {figure}{\numberline {4-18}{\ignorespaces $\Delta {E}$ distribution based number of CDC-only tracks in final states. Up: no $K_S^0$ finder; Down: $K_S^0$ finder used. f is the fraction for the first Gaussian\relax }}{106}{figure.caption.69}%
+\contentsline {figure}{\numberline {4-19}{\ignorespaces $\Delta z$ distribution based number of CDC-only tracks in final states. Up: no $K_S^0$ finder; Down: $K_S^0$ finder used. f is the fraction for the first Gaussian\relax }}{107}{figure.caption.70}%
+\contentsline {figure}{\numberline {4-20}{\ignorespaces $\delta \Delta z$ distribution based number of CDC-only tracks in final states. Up: no $K_S^0$ finder; Down: $K_S^0$ finder used.\relax }}{108}{figure.caption.71}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5-1}{\ignorespaces $\chi _2/N$ of selected events from data.\relax }}{113}{figure.caption.72}%
+\contentsline {figure}{\numberline {5-2}{\ignorespaces Resolution functions on $\it {CP}$-side, which shows dependence on the $\chi _2/N$\relax }}{115}{figure.caption.73}%
+\contentsline {figure}{\numberline {5-3}{\ignorespaces $R_{det}^{tag} $ fit\relax }}{118}{figure.caption.76}%
+\contentsline {figure}{\numberline {5-4}{\ignorespaces $R_{np}^{tag}$ fit\relax }}{118}{figure.caption.76}%
+\contentsline {figure}{\numberline {5-5}{\ignorespaces Background fit on data sideband with $M_{bc} < 5.26 GeV$\relax }}{119}{figure.caption.78}%
+\contentsline {figure}{\numberline {5-6}{\ignorespaces Particles and their categories used in flavor tagging algorithm.\relax }}{120}{figure.caption.80}%
+\contentsline {figure}{\numberline {5-7}{\ignorespaces The distribution of flavor tagger output $\mathcal {F}=(q\cdot r)_{FBDT}$ for both tag side of $B^0$ and $\overline {B^0}$.\relax }}{122}{figure.caption.81}%
+\contentsline {figure}{\numberline {5-8}{\ignorespaces The structure of $\it {CP}$ fitter for Belle II\relax }}{124}{figure.caption.82}%
+\contentsline {figure}{\numberline {5-9}{\ignorespaces $\it {CP}$ fit on 8873 signal MC.\relax }}{126}{figure.caption.83}%
+\contentsline {figure}{\numberline {5-10}{\ignorespaces $\it {CP}$ fit on 373 generic MC.\relax }}{126}{figure.caption.83}%
+\contentsline {figure}{\numberline {5-11}{\ignorespaces $\it {CP}$ fit on 30 generic MC.\relax }}{126}{figure.caption.83}%
+\contentsline {figure}{\numberline {5-12}{\ignorespaces $\it {CP}$ fit over 10000 $B^0\to J/\psi K_S^0$ signal MC. \relax }}{127}{figure.caption.84}%
+\contentsline {figure}{\numberline {5-13}{\ignorespaces Linearity test of $\it {CP}$ fit.\relax }}{128}{figure.caption.85}%
+\contentsline {figure}{\numberline {5-14}{\ignorespaces Linearity test of $\it {CP}$ fit.\relax }}{128}{figure.caption.86}%
+\contentsline {figure}{\numberline {5-15}{\ignorespaces Pull of sin$(2\phi _1)$ and $\mathcal {A}$ fitted.\relax }}{129}{figure.caption.87}%
+\contentsline {figure}{\numberline {5-16}{\ignorespaces Lifetime fit on data\relax }}{130}{figure.caption.88}%
+\contentsline {figure}{\numberline {5-17}{\ignorespaces Pull of $\Delta m_d$\relax }}{130}{figure.caption.89}%
+\contentsline {figure}{\numberline {5-18}{\ignorespaces The $\it {CP}$ fit using 26 events from data.\relax }}{131}{figure.caption.90}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B-1}{\ignorespaces The distribution of variables used in KsFinder classification. The variables abbreviation can be referenced from Table III. The yellow solid lines are $K_S^0$ from data without KsFinder, and red solid lines are $K_S^0$ with KsFinder using MC13a for training. The black dashed lines are $K_S^0$ with KsFinder using MC12b (run-dependent). Blue histogram is from MC13a without KsFinder and cyan histogram is from MC13a with KsFinder.\relax }}{146}{figure.caption.99}%
+\addvspace {10\p@ }

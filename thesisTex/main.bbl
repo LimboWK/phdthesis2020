@@ -1,0 +1,126 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Noether}(1971)]{noether}
+Emmy {Noether}.
+\newblock {Invariant variation problems}.
+\newblock \emph{Transport Theory and Statistical Physics}, 1\penalty0
+  (3):\penalty0 186--207, Jan 1971.
+\newblock \doi{10.1080/00411457108231446}.
+
+\bibitem[Lee and Yang(1956)]{PhysRev.104.254}
+T.~D. Lee and C.~N. Yang.
+\newblock Question of parity conservation in weak interactions.
+\newblock \emph{Phys. Rev.}, 104:\penalty0 254--258, Oct 1956.
+\newblock \doi{10.1103/PhysRev.104.254}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.104.254}.
+
+\bibitem[Kobayashi and Maskawa(1973)]{CKM}
+Makoto Kobayashi and Toshihide Maskawa.
+\newblock {CP-Violation in the Renormalizable Theory of Weak Interaction}.
+\newblock \emph{Progress of Theoretical Physics}, 49\penalty0 (2):\penalty0
+  652--657, 02 1973.
+\newblock ISSN 0033-068X.
+\newblock \doi{10.1143/PTP.49.652}.
+\newblock URL \url{https://doi.org/10.1143/PTP.49.652}.
+
+\bibitem[Kou et~al.(2019)Kou, Urquijo, Altmannshofer, Beaujean, Bell, Beneke,
+  Bigi, Bishara, Blanke, Bobeth, and et~al.]{b2book}
+E~Kou, P~Urquijo, W~Altmannshofer, F~Beaujean, G~Bell, M~Beneke, I~I Bigi,
+  F~Bishara, M~Blanke, C~Bobeth, and et~al.
+\newblock The belle ii physics book.
+\newblock \emph{Progress of Theoretical and Experimental Physics},
+  2019\penalty0 (12), Dec 2019.
+\newblock ISSN 2050-3911.
+\newblock \doi{10.1093/ptep/ptz106}.
+\newblock URL \url{http://dx.doi.org/10.1093/ptep/ptz106}.
+
+\bibitem[Gronau et~al.(2004)Gronau, Grossman, and Rosner]{Gronau_2004}
+Michael Gronau, Yuval Grossman, and Jonathan~L Rosner.
+\newblock Interpreting the time-dependent cp asymmetry in b0→pi0ks.
+\newblock \emph{Physics Letters B}, 579\penalty0 (3-4):\penalty0 331–339, Jan
+  2004.
+\newblock ISSN 0370-2693.
+\newblock \doi{10.1016/j.physletb.2003.11.015}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.physletb.2003.11.015}.
+
+\bibitem[Abe et~al.(2010)]{Abe:2010gxa}
+T.~Abe et~al.
+\newblock {Belle II Technical Design Report}.
+\newblock 2010.
+\newblock arXiv:1011.0352.
+
+\bibitem[Kang et~al.(2020)Kang, Park, Higuchi, Miyabayashi, Sumisawa, Adachi,
+  Ahn, Aihara, Said, Asner, et~al.]{kang2020measurement}
+KH~Kang, H~Park, T~Higuchi, K~Miyabayashi, K~Sumisawa, I~Adachi, JK~Ahn,
+  H~Aihara, S~Al Said, DM~Asner, et~al.
+\newblock Measurement of time-dependent cp violation parameters in b0->ksksks
+  decays at belle.
+\newblock \emph{arXiv preprint arXiv:2011.00793}, 2020.
+
+\bibitem[Lees et~al.(2012)Lees, Poireau, Tisserand, Tico, Grauges, Martinelli,
+  Milanes, Palano, Pappagallo, Eigen, et~al.]{lees2012amplitude}
+JP~Lees, V~Poireau, V~Tisserand, J~Garra Tico, E~Grauges, M~Martinelli,
+  DA~Milanes, A~Palano, M~Pappagallo, G~Eigen, et~al.
+\newblock Amplitude analysis and measurement of the time-dependent c p
+  asymmetry of b 0→ k s 0 k s 0 k s 0 decays.
+\newblock \emph{Physical Review D}, 85\penalty0 (5):\penalty0 054023, 2012.
+
+\bibitem[Kuhr et~al.(2018)Kuhr, Pulvermacher, Ritter, Hauth, and Braun]{BASF2}
+T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
+\newblock The belle ii core software.
+\newblock \emph{Computing and Software for Big Science}, 3\penalty0 (1), Nov
+  2018.
+\newblock ISSN 2510-2044.
+\newblock \doi{10.1007/s41781-018-0017-9}.
+\newblock URL \url{http://dx.doi.org/10.1007/s41781-018-0017-9}.
+
+\bibitem[Olshen and Stone(1984)]{olshen1984classification}
+L~Breiman J Friedman~RA Olshen and CJ~Stone.
+\newblock Classification and regression trees. statistics/probability series,
+  1984.
+
+\bibitem[Friedman(2001)]{friedman2001greedy}
+Jerome~H Friedman.
+\newblock Greedy function approximation: a gradient boosting machine.
+\newblock \emph{Annals of statistics}, pages 1189--1232, 2001.
+\newblock URL
+  \url{https://projecteuclid.org/download/pdf_1/euclid.aos/1013203451}.
+
+\bibitem[Keck(2016)]{keck2016fastbdt}
+Thomas Keck.
+\newblock Fastbdt: A speed-optimized and cache-friendly implementation of
+  stochastic gradient-boosted decision trees for multivariate classification.
+\newblock \emph{arXiv preprint arXiv:1609.06119}, 2016.
+\newblock URL \url{https://arxiv.org/pdf/1609.06119}.
+
+\bibitem[{Tenchini, Francesco} and {Krohn, Jo-Frederik}(2019)]{refId0}
+{Tenchini, Francesco} and {Krohn, Jo-Frederik}.
+\newblock Decay chain reconstruction at belle ii.
+\newblock \emph{EPJ Web Conf.}, 214:\penalty0 06023, 2019.
+\newblock \doi{10.1051/epjconf/201921406023}.
+\newblock URL \url{https://doi.org/10.1051/epjconf/201921406023}.
+
+\bibitem[Bevan et~al.(2014)Bevan, Golob, Mannel, Prell, Yabsley, Aihara,
+  Anulli, Arnaud, Aushev, Beneke, and et~al.]{Bevan_2014}
+A.~J. Bevan, B.~Golob, Th. Mannel, S.~Prell, B.~D. Yabsley, H.~Aihara,
+  F.~Anulli, N.~Arnaud, T.~Aushev, M.~Beneke, and et~al.
+\newblock The physics of the b factories.
+\newblock \emph{The European Physical Journal C}, 74\penalty0 (11), Nov 2014.
+\newblock ISSN 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-014-3026-9}.
+\newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-014-3026-9}.
+
+\bibitem[jps()]{jpsiks_ichep}
+URL
+  \url{https://docs.belle2.org/record/1941/files/BELLE2-NOTE-PH-2020-027.pdf}.
+
+\bibitem[fla()]{flavortagger}
+URL
+  \url{https://docs.belle2.org/record/1905/files/BELLE2-NOTE-PH-2020-013_v3.2.pdf?version=1}.
+
+\end{thebibliography}
