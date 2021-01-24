@@ -1,9 +1,16 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[wikipedia(2012)]{sm_particles}
+wikipedia.
+\newblock {Elementary particles in the Standard Model}.
+\newblock
+  \url{https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles_Anti.svg},
+  2012.
 
 \bibitem[{Noether}(1971)]{noether}
 Emmy {Noether}.
@@ -18,6 +25,13 @@ T.~D. Lee and C.~N. Yang.
 \newblock \emph{Phys. Rev.}, 104:\penalty0 254--258, Oct 1956.
 \newblock \doi{10.1103/PhysRev.104.254}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.104.254}.
+
+\bibitem[Wu et~al.(1957)Wu, Ambler, Hayward, Hoppes, and Hudson]{Wu_exp}
+C.~S. Wu, E.~Ambler, R.~W. Hayward, D.~D. Hoppes, and R.~P. Hudson.
+\newblock Experimental test of parity conservation in beta decay.
+\newblock \emph{Phys. Rev.}, 105:\penalty0 1413--1415, Feb 1957.
+\newblock \doi{10.1103/PhysRev.105.1413}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.105.1413}.
 
 \bibitem[Kobayashi and Maskawa(1973)]{CKM}
 Makoto Kobayashi and Toshihide Maskawa.
