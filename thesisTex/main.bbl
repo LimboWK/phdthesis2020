@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,6 +41,23 @@ Makoto Kobayashi and Toshihide Maskawa.
 \newblock ISSN 0033-068X.
 \newblock \doi{10.1143/PTP.49.652}.
 \newblock URL \url{https://doi.org/10.1143/PTP.49.652}.
+
+\bibitem[ckmfitter(2019)]{ckmfitter}
+ckmfitter.
+\newblock {Results of the global CKM fit in the large complex plane}.
+\newblock
+  \url{http://ckmfitter.in2p3.fr/www/results/plots_summer19/ckm_res_summer19.html},
+  2019.
+
+\bibitem[Dighe et~al.(2001)Dighe, Hurth, Kim, and Yoshikawa]{dighe2001width}
+Amol Dighe, Tobias Hurth, Choong~Sun Kim, and Tadashi Yoshikawa.
+\newblock The width difference of $b_d$ mesons, 2001.
+
+\bibitem[Wishahi(2014)]{wishahi2014measurement}
+Julian~Tarek Wishahi.
+\newblock \emph{Measurement of $ CP $ Violation in $B^0 \to J/\psi K_S^0$
+  Decays with the LHCb Experiment}.
+\newblock PhD thesis, Dortmund U., 2014.
 
 \bibitem[Kou et~al.(2019)Kou, Urquijo, Altmannshofer, Beaujean, Bell, Beneke,
   Bigi, Bishara, Blanke, Bobeth, and et~al.]{b2book}

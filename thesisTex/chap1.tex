@@ -113,7 +113,7 @@ t^\prime & b^\prime
 Yukawa matrix is an arbitrary 3 $\times$ 3 complex matrix $Y^{u,d}$ which give the rise of two types of massive quark field $M^{u,d}=Y^{u,d}\nu$. The choosing the weak eigenstates makes these matrices un-diagnosed. So the ``rotation" of weak eigenstates to diagnose them is done by:
 
 \begin{equation}\label{rot1}
-\large
+\small
 S_{L,R}^{u}
 \begin{pmatrix}
 u^\prime   \\
@@ -128,7 +128,7 @@ t
 \end{equation}
 
 \begin{equation}\label{rot2}
-\large
+\small
 S_{L,R}^{d}
 \begin{pmatrix}
 d^\prime   \\
@@ -177,11 +177,11 @@ u\\c\\t\\
 \end{bmatrix}
 \end{equation}
 
-\begin{equation}
-V_{CKM} = 
-{S^{u}_{L}}^{\dag}
-S^{d}_{L}
-\end{equation}
+%\begin{equation}
+%V_{CKM} = 
+%{S^{u}_{L}}^{\dag}
+%S^{d}_{L}
+%\end{equation}
 The Lagrangian hereby clearly declair the transition of different charged quarks through the coupling of charged current $W^{+/-}$. Interestingly, such coupling only applies for the left-handed quarks. For example, a left-handed c quark only transits to left-handed s quark by giving out a $W$ boson. If the Parity conjugation is applied to the Lagrangian, the left-handed quarks becomes right-handed. The same thing happens if the Charge conjugation is applied, cause it changes the chirality of the 4 components quark fields and charge sign at the same time. This means the weak interaction will not conserve the Parity and the Charge symmetries. However, if the $CP$ conjugation is applied, all left-handed quark fields' chirality are  unchanged and only the conjugation of quark fields are made, as Equation \ref{cp-conj} shows.
 \begin{equation}\label{cp-conj}
 \small
@@ -386,7 +386,7 @@ c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta }\\
 s_{12}s_{23}-c_{12}s_{23}s_{13}e^{-i\delta }  & -c_{12}c_{23}-s_{12}c_{23}s_{13}e^{-i\delta } & c_{23}c_{13}
 \end{pmatrix}
 \end{equation}
-where the $c_{jk}=\text{cos}(\theta_{jk})$ and $s_{jk}=\text{sin}(\theta_{jk})$, $\delta$ is the irreducible complex phase. By measuring the relative branching ratio of $b\to c$, $s\to u$ and $b\to u$ in a tree level transitions, the following relation is obtained: 
+where the $c_{jk}=\text{cos}(\theta_{jk})$ and $s_{jk}=\text{sin}(\theta_{jk})$, $\delta$ is the irreducible complex phase. By measuring the relative branching ratio of $b\to c$, $s\to u$ and $b\to u$ in a tree level transitions: 
 \begin{equation}
 |V_{ub}|\ll |V_{cb}|\ll |V_{us}|
 \end{equation}
@@ -400,49 +400,51 @@ By using Equation \ref{ckm_par1}, CKM matrix is parameterized as:
 \begin{equation}
 V_{CKM}=
 \begin{pmatrix}
-1-1/2\lambda^2 & \lambda & A\sqrt{\rho^2+\eta^2}e^{i\delta}\lambda^3\\
+1-1/2\lambda^2 & \lambda & A\lambda^3(\rho-i\eta)\\
 -\lambda & 1-1/2\lambda^2 & A\lambda^2\\
-A(1-\sqrt{\rho^2+\eta^2})\lambda^3& -A\lambda^2 & 1
+A\lambda^3(\rho-i\eta) & -A\lambda^2 & 1
 \end{pmatrix}+\mathcal{O}(\lambda^4)
 \end{equation}
 
-And the unitary conditions gives $6 + 3 = 9$ equations, particularly if focusing on B physics, the elements that connects the bottom quarks fits in: 
-\begin{equation}
+Using the unitary condition, the following equation is obtained.
+\begin{equation}\label{ckm_triangles}
 1+
 \frac{V_{ud}V^*_{ub}}{V_{cd}V^*_{cb}}+
 \frac{V_{td}V^*_{tb}}{V_{cd}V^*_{cb}}
 =0
 \end{equation}
-Plotting the relation in a complex 2D plane and using the parameterazation in Eq(1.24),
+Plotting the relation in a complex 2D plane using Equation \ref{ckm_triangles},
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[height=6cm]{UT}
 	\caption{The unitary angles of CKM}
+	\label{fig:ckm_angles}
 \end{figure}
 \begin{eqnarray}
 \bar{\rho}+i\bar{\eta}=- \frac{V_{ud}V^*_{ub}}{V_{cd}V^*_{cb}}\\
 1-(\bar{\rho}+i\bar{\eta})=-\frac{V_{td}V^*_{tb}}{V_{cd}V^*_{cb}}
 \end{eqnarray}
-These angles are obtained by drawing the $(\bar{\rho},\bar{\eta})$ on the complex coordinates, and they are also well-known in the names as: $\phi_1=\beta,\phi_2=\alpha,\phi_3=\gamma$. The results presenting the measurement of CKM angles or $(\bar{\rho},\bar{\eta})$ in 2016 is shown in Fig(1-6).
+These angles are obtained by drawing the $(\bar{\rho},\bar{\eta})$ on the complex coordinates, and they are also well-known in the names as: $\phi_1=\beta,\phi_2=\alpha,\phi_3=\gamma$. The results presenting the measurement of CKM angles or $(\bar{\rho},\bar{\eta})$ in 2019 is shown in Figure \ref{fig:ckm19}.
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[height=8cm]{UTglobal}
-	\caption{The latest results on UT\cite{b2book}}
+	\includegraphics[height=8cm]{ckm19}
+	\caption{The CKM angles fit in the complex plane of $\bar{\rho}-\bar{\eta}$.\cite{ckmfitter}}
+	\label{fig:ckm19}
 \end{figure}
 
-The measurement of $\phi_1$ and $\phi_2$ are coming from the time-dependent $CP$ violations (TDCPV). $\phi_1$ in the tree-level dominated decays has been precisely measured thanks to the small hadronic uncertainties in $\Delta M_d$. FCNC process rise the $B^0_d-\bar{B^0_d}$ mixing in box diagram, and it's predicted that many New Physics process may contribute to the potential anomaly.
-$B_d^0-\bar{B_d^0}$ mixing can affect the expected values of $\phi_1$ so there could be a tension between results. The large Belle II dataset and precise time resolution performance will be much helpful to clear the tension in future. 
+The measurement of $\phi_1$ and $\phi_2$ are coming from the time-dependent $CP$ violations (TDCPV). $\phi_1$ in the tree-level dominated decays has been precisely measured thanks to the small hadronic uncertainties. FCNC process rises through the $B^0_d-\bar{B^0_d}$ mixing in box diagram, and it's believed that potential New Physics processes might contribute to the difference in between results of CKM angles measured from experiments. For example, angle $\phi_1$ that is observed from tree-level dominated process like $B^0 \to J/\psi K^0_s$ could be different from penguin-dominated $b \to s$ transition. The Standard Model provides an approximated correction on how large the deviation might be, where it requires much precise measurement on each decay channel to validate the potential New Physics effect. The prospective large Belle II data and more precise time resolution performance will be much helpful to clear the tension in future. 
 
 \section{Time Dependent $CP$ violation}
 \subsection{ $CP$ violation in neutral B system}
-The measurement of the $\phi_1$,$\phi_2$ and $\phi_3$ is essentially measuring the CKM $CP$ violating phase because there's only one complex phase in CKM and it can be determined by these angles. And $\phi_{1,2}$ is related to mostly in the time dependent decay rate difference due to the amplitude interference of mixing and weak phase as discussed before. Also, if there's New Physics interference on such single extra $CP$ violating term, the different inputs from different channels can vary as well. From the unitary triangle, we have: 
+The  $\phi_1$,$\phi_2$ and $\phi_3$ are essentially measuring the CKM $CP$ violating phase since there's only one complex phase in CKM and it can be determined by these 3 angles. And $\phi_{1,2}$ are related to mostly in the time dependent decay rate difference. From Figure \ref{fig:ckm_angles}, one can obtain: 
 \begin{eqnarray}
 \phi_1=Arg(-\frac{V_{td}V^*_{tb}}{V_{cd}V^*_{cb}})\\
 \phi_2=Arg(-\frac{V_{td}V^*_{tb}}{V_{ud}V^*_{ub}})
 \end{eqnarray}
 
-The general strategy to extract the $\phi_{1,2}$ is to measure the time-dependent $CP$ violation since it depends on the$B_d^0-\bar{B_d^0}$ mixing interfered with the $B_d^0$ decay amplitudes.
-The mass eigenstates which are driving the evolution of B meson states in the mixing are: $|B\rangle_{H,L}=p|B\rangle \pm q{|\overline{B\rangle}}$, the Hamiltonian matrix involved here can be written under the flavor eigenstates as basis (so they are not diagonalize): 
+The general strategy to extract the $\phi_{1,2}$ is to measure the time-dependent $CP$ violation.
+The mass eigenstates which are driving the propagation of B meson states in the mixing are: $|B\rangle_{H,L}=p|B\rangle \pm q|\overline{B}\rangle $, where $H$ and $L$ stand for the larger and smaller eigenvalues corresponded states. $|B\rangle$ and $|\overline{B}\rangle$ are the flavor eigenstates.
+The Hamiltonian matrix can be written using flavor eigenstates: 
 \begin{equation}
 M_\Gamma=
 \begin{bmatrix}
@@ -450,22 +452,23 @@ m-i/2\Gamma & M_{12}-i/2\Gamma_{12}\\
 M^*_{12}-i/2\Gamma^*_{12}& m-i/2\Gamma 
 \end{bmatrix}
 \end{equation}
-and the time evolution of mass eigenstates are defined as (using notation of $B_{H,L}$ as physical states at $t = 0$): 
+
+and the time evolution of mass eigenstates are defined as (using the notation of $B_{H,L}$ as physical states at $t = 0$): 
 \begin{eqnarray}
-B_H(t)=e^{-im_Ht}e^{-\Gamma_Ht/2}B_H(0)\\
-B_L(t)=e^{-im_Lt}e^{-\Gamma_Lt/2}B_L(0)
+B_H(t)=e^{-im_Ht}e^{-\Gamma_Ht/2}B_H\\
+B_L(t)=e^{-im_Lt}e^{-\Gamma_Lt/2}B_L
 \end{eqnarray}
-Here $M_{H,L}$ and $\Gamma_{H,L}$ are the masses and decay width of two mass eigenstates. By expanding the mass eigenstates using flavor basis, 
+where $M_{H,L}$ and $\Gamma_{H,L}$ are the masses and decay width of two mass eigenstates. By expanding the mass eigenstates using flavor eigenstates, 
 \begin{eqnarray}
 B(t)=(1/2p)e^{-im_Ht}e^{-\Gamma_Ht/2}(pB+q\bar{B})+(1/2p)e^{-im_Lt}e^{-\Gamma_Lt/2}(pB-q\bar{B})\\
 \bar{B}(t)=(1/2q)e^{-im_Ht}e^{-\Gamma_Ht/2}(pB+q\bar{B})-(1/2q)e^{-im_Lt}e^{-\Gamma_Lt/2}(pB-q\bar{B})
 \end{eqnarray}
 and replacing $g_{\pm}(t)=\frac{1}{2}(e^{-im_Ht-\Gamma_H/2t}\pm e^{-im_Lt-\Gamma_L/2t})$, above two equations become:
 \begin{eqnarray}
-B(t)=g_{+}(t)B-\frac{q}{p}g_{-}(t)\bar{B}\\
-\bar{B}(t)=g_{+}(t)\bar{B}-\frac{p}{q}g_{-}(t){B}
+B(t)=g_{+}(t)B +\frac{q}{p}g_{-}(t)\bar{B}\\
+\bar{B}(t)=g_{+}(t)\bar{B} + \frac{p}{q}g_{-}(t){B}
 \end{eqnarray}
-Now if considering all the phases space of the decay from flavor eigenstates to final states $f(\bar{f})$ are included in the amplitudes $\mathcal{A}_f (\bar{\mathcal{A}}_f)$, one needs to expand the flavor eigenstates using such amplitude to have the differential decay rate $\Gamma(B\to f,t)$. From $B(t) \propto \mathcal{A}_f\psi_f+h.c $ and $ (\bar{B}(t) \propto \bar{\mathcal{A}_f}\psi_{\bar{f}}+h.c)$:
+Considering all the phases space of the decay from flavor eigenstates to final states $f(\bar{f})$ are included in the amplitudes $\mathcal{A}_f (\bar{\mathcal{A}}_f)$, one needs to expand the flavor eigenstates using such amplitude to have the differential decay rate $\Gamma(B\to f,t)$. From $B(t) \propto \mathcal{A}_f\psi_f+h.c $ and $ (\bar{B}(t) \propto \bar{\mathcal{A}_f}\psi_{\bar{f}}+h.c)$:
 \begin{eqnarray}
 \Gamma(B\to f,t)=|\mathcal{A}_f|(|g_+(t)|^2+|\lambda_f|^2|g_-(t)|^2+2Re(\lambda_f g^*_+(t)g_-(t))),\\
 \Gamma(\bar{B}\to \bar{f},t)=|\bar{\mathcal{A}_{\bar{f}}}|(|g_+(t)|^2+|\bar{\lambda}_{\bar{f}}|^2|g_-(t)|^2+2Re(\bar{\lambda}_{\bar{f}} g^*_+(t)g_-(t)))
@@ -474,89 +477,119 @@ Now if considering all the phases space of the decay from flavor eigenstates to 
 \lambda_f \equiv (q/p) (\bar{\mathcal{A}}_f / \mathcal{A}_f)\\
 \bar{\lambda}_{\bar{f}} \equiv (q/p) ( \mathcal{A}_{\bar{f}}/\bar{\mathcal{A}}_{\bar{f})}
 \end{eqnarray} 
-Finally the time-dependent $CP$ asymmetries can be calculated using Eq(1.35) to  Eq(1.40)
+$q/p$ is introduced by the coefficient of mass eigenstates from weak eigenstates. Using the Hamiltonian matrix, $q/p$ can be presented as: 
 \begin{equation}
+	q/p = \frac{\Delta M - i/2 \Delta \Gamma}{2(M_{12}- i/2 \Gamma_{12})}
+\end{equation}
+where the $M_{12}$ and $\Gamma_{12}$ stands for the contribution of non-diagnosed term in the Hamiltonian matirx. $\Delta{M}=M_H-M_L$ and $\Delta{\Gamma}=\Gamma_H-\Gamma_L$ are the difference of mass and decay width for two mass eigenstates.
+It's obvious that if $|A_f| \neq |\bar{A}_{\bar{f}}|$, direct $\it{CP}$ violation will occur.  
+
+The time-dependent decay rate difference is defined as Equation \ref{Acp}:
+\begin{equation}\label{Acp}
 \begin{split}
-A_{cp}(t)&\equiv \frac{\Gamma(B\to f,t)-\Gamma(\bar{B}\to \bar{f},t)}{\Gamma(B\to f,t)+\Gamma(\bar{B}\to \bar{f},t)}\\
+A_{CP}(t)&\equiv \frac{\Gamma(B\to f,t)-\Gamma(\bar{B}\to \bar{f},t)}{\Gamma(B\to f,t)+\Gamma(\bar{B}\to \bar{f},t)}\\
 &=\frac{S_f sin(\Delta{M}t)-A_fcos(\Delta{M}t)}
 {cosh(\Delta \Gamma t/2)+A^f_{\Delta \Gamma}sinh(\Delta \Gamma t/2)}
 \end{split}
 \end{equation},where
-\begin{equation}
-S_f=\frac{2Im(\lambda_f)}{1+|\lambda_f|^2};A_f=\frac{1-|\lambda_f|^2}{1+|\lambda_f|^2};A^f_{\Delta \Gamma}=-\frac{2Re(\lambda_f)}{1+|\lambda_f|^2}
+\begin{equation}\label{cp-parameters}
+\mathcal{S}=\frac{2Im(\lambda_f)}{1+|\lambda_f|^2};\mathcal{A}=\frac{1-|\lambda_f|^2}{1+|\lambda_f|^2};A^f_{\Delta \Gamma}=-\frac{2Re(\lambda_f)}{1+|\lambda_f|^2}
 \end{equation}
-and noted with 
-\begin{eqnarray}
-|g_{\pm}(t)|^2=\frac{e^{-\Gamma t}}{2}(cosh(\frac{\Delta \Gamma t}{2})\pm cos(\Delta m t))\\
-g_{+}^*(t)g_{-}(t)=\frac{e^{-\Gamma t}}{2}(sinh(\frac{\Delta \Gamma t}{2})+ isinh(\Delta m t))
-\end{eqnarray}
-Here, $\Delta{M}=M_H-M_L$ and $\Delta{\Gamma}=\Gamma_H-\Gamma_L$ are the difference of mass and decay width for two mass eigenstates. The origin of time is set to the flavor tagged moment, which $B$ is $B^0_d$. The mass difference in $B_d^0-\bar{B_d^0}$ can be safely set to 0.
-Indirect $CP$ asymmetries(mixing induced) can be measured by semi-leptonic decay rates difference, while direct $CP$ violation is well measured by charged or neutral meson system most precisely. Combining the direct and indirect $CP$ violation, even with the absence of themselves alone, can lead to the appearance of time-dependent $CP$ violation. Here $q/p$ is introduced by the coefficient of mass eigenstates from weak eigenstates. It's obvious that the the Hamiltonian matrix which drives the oscillation contained inside this term, presented using: 
+%and noted with A
+%\begin{eqnarray}
+%|g_{\pm}(t)|^2=\frac{e^{-\Gamma t}}{2}(cosh(\frac{\Delta \Gamma t}{2})\pm cos(\Delta m t))\\
+%g_{+}^*(t)g_{-}(t)=\frac{e^{-\Gamma t}}{2}(sinh(\frac{\Delta \Gamma t}{2})+ isinh(\Delta m t))
+%\end{eqnarray}
+
+ The origin of time is set to the flavor tagged moment.
+ %The $\Delta M$ and $\Delta \Gamma$ in $B_d^0-\bar{B_d^0}$ system can be approximately treated as zero. 
+ The time-dependent CP violation parameters are $\mathcal{S}$ and $\mathcal{A}$, which are determined by $\lambda_f$.
+
+
+
+\subsection{$\phi_1$  from $B^0 \to J/\psi K^0_S$}
+If final states are $CP$ definite, the amplitude then equals to: $\mathcal{A}_f \equiv \langle f|H|B\rangle$ and $\bar{\mathcal{A}_f} \equiv \langle f|H|\bar{B}\rangle$. In $B_d^0-\bar{B_d^0}$, $q/p$ can be treated as $e^{i\phi_d}$ safely as pure phase term. This relative phase accounts the transition from $b$ to up-type quarks to $s$ in mixing, so it can be presented as $\phi_d = \text{Arg}(V^*_{td}V_{tb})/(V^*_{tb}V_{td}) \approx 2\phi_1 $ based on negligible correction to the SM. In the golden mode $B^0 \to J/\psi K^0_S$, considering $\Delta \Gamma$ can be treated as zero safely in the Standard Model\cite{dighe2001width} in this case, Equation \ref{Acp} can be reduced to:
+
 \begin{equation}
-q/p = \frac{\Delta M - i/2 \Delta \Gamma}{2(M_{12}- i/2 \Gamma_{12})}
+	A_{CP}(t)=\mathcal{S} \text{sin}(\Delta{M}t)- \mathcal{A}\text{cos}(\Delta{M}t)
 \end{equation}
-where the $M_{12}$ and $\Gamma_{12}$ stands for the contribution of non-diagnosed term in the Hamiltonian matirx. The quantities can be used to defined time-independent pure mixing induced $CP$ violation.It is tested by indirect $CP$ measurement to be close to pure phase. So no wonder it accounts for the mixing phase contribution in mixing and decay interference term.
 
-
-\subsection{$\phi_1$  from $b\to \bar{c}cs$}
-If final states are $CP$ definite, the amplitude then equals to: $\mathcal{A}_f \equiv \langle f|H|B\rangle$ and $\bar{\mathcal{A}_f} \equiv \langle f|H|\bar{B}\rangle$. In $B_d^0-\bar{B_d^0}$, $q/p$ can be treated as $e^{i\phi_d}$ safely as pure phase term. This relative phase connects the transition from $b$ to upside quarks to $s$ in mixing so it can be presented as $\phi_d = Arg(V^*_{td}V_{tb})/(V^*_{tb}V_{td}) \approx 2\phi_1 $ based on negligible correction to the SM, whereas New Physics could drive $\phi_1$ away. This is far more likely to happen in penguin dominated channels since FCNC is suppressed.
-
+\begin{comment}
 Usually, $S_f$ provides a good sensitivity to $\phi_1$ in Eq(1.42) by replacing $\phi_d$ inside $\lambda_f$ since the rest two equations canceled out the complex phase of $(q/p)$. For instance, in the process of  $b\to \bar{c}cs$ ,the amplitude contributions from tree level and loop level diagram can be written in a form as follows using the CKM unitary condition: 
-\begin{equation}
-\mathcal{A}_f= 
-\lambda^s_c T_f + 
-\lambda^s_u P_f; \\
-\lambda^q_i = V^*_{ib}V_{iq}
-\end{equation}
-where $T_f$ and $P_f$ stands for leading order contribution of tree and penguin diagrams, see Fig(1-7). Here, the leading term can be presented as: 
+\end{comment}
+For decay amplitude, which recieve contribution from tree-level and loop-level processes shown in Figure \ref{fig:jpsiks-diagram} , 
+
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[height=4cm]{B2JpsiKs}
-	\caption{Tree level(left) and penguin mode(right) of $B\to J/\psi K_S^0$}
+	\includegraphics[height=4cm]{jpsiks-diagram}
+	\label{fig:jpsiks-diagram}
+	\caption{ The dominated tree-level (left) and the suppressed loop-level (right) of $B\to J/\psi K^0$, in which $K^0$ particles are detected $K_S^0$. \cite{wishahi2014measurement} }
 \end{figure}
 
-Using the relation $|V_{ub}|\ll |V_{cb}|\ll|V_{us}|<|V_{cs}|$, it's obvious that $V^*_{ub}V_{us} \ll V^*_{cb}V_{cs}$, so the penguin-mode is surppressed in SM, define $\eta_f={\bar{T_f}}/{T_f}$ as the $\it{CP}$ eigenvalue for $\it{CP}$ definite final states, Eq(1.46) derives $\bar{\mathcal{A}}_f / \mathcal{A}_f \approx \eta_f {\lambda^{s}_c}^*/\lambda^{s}_c$. Noting that $|\eta_f|\approx1$,so $|\lambda_f|=1$ thus direct $CP$ violation is zero. Mixing induced $CP$ violation is:
-\begin{equation}
-S_f \approx Im(\lambda_f)\approx 
-Im(e^{i\phi_d}\eta_f {\lambda^{s}_c}^*/\lambda^{s}_c)
-=-sin(\phi_d)\eta_f=-sin(2\phi_1)\eta_f
-\end{equation}
-Using  Eq(1.41) and Eq(1.46), given $q/p$ is close to pure phase and final state is $CP$ eigenstates, it reduces the time dependent asymmetries in neutral $B$ system from the Eq(1.41) as: 
-\begin{equation}
-A_{cp}(t)=S_f sin(\Delta{M}t)-A_fcos(\Delta{M}t)
+%\begin{equation}
+%	\mathcal{A}_f= 
+%	\lambda^s_c T_f + 
+%	\lambda^s_u P_f; \\
+%	\lambda^q_i = V^*_{ib}V_{iq}
+%\end{equation}
+%where $T_f$ and $P_f$ stands for leading order contribution of tree and penguin diagrams, see Fig(1-7). Here, the leading term can be presented as: 
+
+Using the relation $|V_{ub}|\ll |V_{cb}|\ll|V_{us}|<|V_{cs}|$, it's obvious that $V^*_{ub}V_{us} \ll V^*_{cb}V_{cs}$, so the penguin-mode is surppressed in the Standard Model. Defining $\eta_f$ as the $\it{CP}$ eigenvalue for $\it{CP}$ definite final states, 
+% $\bar{\mathcal{A}}_f / \mathcal{A}_f \approx \eta_f {\lambda^{s}_c}^*/\lambda^{s}_c$, where 
+
+
+Given $\eta_f=1$ and $|\lambda_f|=1$ in $B^0 \to J/\psi K^0_S$, from \ref{cp-parameters}, $\it{CP}$ parameters can be presented as: 
+\begin{equation}\label{SA}
+\mathcal{S} = Im(\lambda_f)
+=-sin(\phi_d)\eta_f=-sin(2\phi_1) ; \: \mathcal{A} = 0
 \end{equation}
 
-From $A_{cp}$ presentation, in $b\to \bar{c}cs$ we can extract $\phi_1$ pretty precisely in Eq(1.47) due to the most of uncertainties dropped out.
+From Equation \ref{SA} , $\phi_1$ can be accessed pretty precisely in the measurement of time-dependent $\it{CP}$ violation in $B^0 \to J/\psi K^0_S$, whose branching fraction is relatively high. 
+\begin{comment}
 In the $b\to q\bar{q}s$ process where flavor $q$ is not charm, similar to the discussion above, we can extract $\phi_1$ using the same method. Moreover, it provides a penguin-dominated process which is sensitive to the contribution of New Physics, which includes the $B^0_d\to K^0_S K^0_S K^0_S$ decay. In the next section, it's clear that such decay process is important to provide additional insight in seeking the effect beyond the SM (BSM contribution).
+\end{comment}
+
 
 
 \subsection{$\phi_1$ from penguin-dominated mode $b\to q\bar{q}s$}
-The penguin-dominated mode $b\to q\bar{q}s$ is of special interest because of its unique physical insights compared to tree level dominated decays. 
+Compared to $B^0 \to J/\psi K^0_S$ channel, the measurement of $\mathcal{S}$ and $\mathcal{A}$ from penguin-dominated channels through $b \to q\bar{q}s$ where $q$ is $u,d,s$ can be different due to the varied tree-to-penguin amplitude ratio. Furthermore, they are quite interesting for the following reasons\cite{b2book}. First, they can probe $B^0-\bar{B}^0$ through different short-distance vertices than the tree-level dominated decays. Second, the relatively small penguin amplitude may be more sensitive to the NP effects than tree-dominated modes. Last but not least, they comprise a large number of different final states, which can help disentangling non-perturbation long-distance physics from short-distance information, such as $\phi_1$ or NP contributions to the weak Hamiltonian. 
+
+\begin{comment}
 First,  the $b\to q\bar{q}s$  gives a different vertex in gluonic decay than tree diagram. 
 Second, such process is tree level suppressed but penguin-dominated, so the New Physics effects can be easier to be spotted. The SM agrees with tree level process in percent accuracy so the sub-percent BSM effects may be hard to see. Similar to Fig(1-7), due to FCNC tree level forbidden, 
 \begin{figure}[H]
-	\centering
-	\includegraphics[height=5cm]{Bto3Ks}
-	\caption{penguin mode $b\to q\bar{q}s$ where $\phi$ is formed by two strange quark as the intermediate state.}
+\centering
+\includegraphics[height=5cm]{Bto3Ks}
+\caption{penguin mode $b\to q\bar{q}s$ where $\phi$ is formed by two strange quark as the intermediate state.}
 \end{figure}
 
-Considering possible BSM contribution, the amplitude can be rendered as: 
+\end{comment}
+Considering possible New Physics contribution as $A_f^{NP}$, the decay amplitude can be rendered as: 
 \begin{equation}
 \mathcal{A}_f= 
 \lambda^s_u T_f + 
 \lambda^s_c P_f +
-\mathcal{A}_f^{NP} 
+{A}_f^{NP} 
 \end{equation}
-Noting that tree level transition $T_f$ is suppressed and penguin $P_f$ is dominated. If one omits the QCD top loop contribution that is down to the $\mathcal{O}(\lambda^2)$, such process is pure penguin. In such limits, direct $CP$ violation vanishes. If the final states are $CP$ eigenstates, time-dependent $CP$ violation relates to $S_f$ in the same way in Eq(1.41). So the amplitudes of two $CP$ conjugated process are only different at signs. Hereby, $S_f$ only depends on $\pm sin(2\phi_1)$. Since for $B^0 \to K_S^0  K_S^0  K_S^0$ decay, there is no appearance of top side flavor in the final states so the worries about tree-level contribution is absent. The possible contribution of the BSM may lead to the deviation of $\phi_1$ measurement. In order to describe the potential effect from BSM to SM, the following statements usually used\cite{b2book}:
+where $T_f$ and $P_f$ are tree-level and penguin-level amplitude. The coefficients  are determined from CKM matrix elements: $\lambda^q_i \equiv V^*_{ib}V_{iq}$. Note that compared to the $B^0 \to J/\psi K^0_S$,
+the tree level amplitude $T_f$ is suppressed and penguin amplitude $P_f$ is dominated in $b\to q\bar{q}s$. It is worth noting that $T_f$ contains both tree-level W exchange, QCD and electroweak penguin contributions. These carry the combination of CKM matrix elements $\lambda_t^s = V_{ts}V^*_{tb}=-(1+\epsilon_{uc})\lambda^s_c$ where $\epsilon_{uc} \equiv \lambda^s_u / \lambda^s_c = \mathcal{O}(\lambda^2)$. In the Standard Model with neglected $\epsilon$,  $b\to q\bar{q}s$ modes are pure penguin with the same weak phase as $B^0 \to J/\psi K^0_S$ has. Thus, direct $CP$ violation vanishes and time-dependent $CP$ violation reflects $\mathcal{S}$ in the same way as $B^0 \to J/\psi K^0_S$ does. 
 
-\textbullet \space the tree-to-penguin ratio is defined as : $r^T_f=T_f/P_f$
+Departures from this limit, non-neglected tree amplitude $T_f$ (often called ``tree pollution"), as well as possible NP effects, could give different results on $\phi_1$. Introducing the tree-penguin ratio $r^T_f = T_f / P_f$ and NP-to-SM ratio $r^{NP}_f = \mathcal{A}^{NP}_f / (\lambda^s_c P_f)$, the following statements usually used\cite{b2book}:
 
-\textbullet \space the BSM-to-SM ratio is defined as:$ r_f^{NP}=\mathcal{A}^{NP}_f/(\lambda^s_c P_f)$
+\textbullet \space Branching ratios are affected at $\mathcal{O}(|\epsilon_{uc}r^T_f|,|r^{NP}_f|)$
 
-The combination of these process yield the contribution of CKM elements as $\lambda_t^s = -(1+\epsilon_{uc})\lambda^{(s)}_c $, where $\epsilon_{uc} \equiv \lambda^s_u \lambda^s_c = \mathcal{O}(\lambda^2)$. The deviation from the SM in $\mathcal{S}$ of asymmetries can be written as \cite{Gronau_2004}: 
-\begin{equation}
-\Delta S_f=2cos2\phi_1 sin\phi_3 |\epsilon_{uc}| Re(r^t_f) + \Delta S^{NP}_f
-\end{equation}
+\textbullet \space Direct CPV in the SM are of $\mathcal{O}(\epsilon_{uc}\text{Im}(r^T_f))$
+
+
+\textbullet \space $-n^{CP}_f\mathcal{S}_f = \text{sin}(2\phi_1) + \Delta \mathcal{S}_f$, where
+$\Delta \mathcal{S}_f=2\text{cos}2\phi_1 \text{sin}\phi_3 |\epsilon_{uc}| \text{Re}(r^t_f) + \Delta \mathcal{S}^{NP}_f$
+
+
+\subsection{$\phi_1$ from $B^0 \to K_S^0  K_S^0  K_S^0$}% 2021.01.25 ends
+Since for $B^0 \to K_S^0  K_S^0  K_S^0$ decay, there is no appearance of top side flavor in the final states so the worries about tree-level contribution is absent. The possible contribution of the NP may lead to the deviation of $\phi_1$ measurement.
+
+
+
 
 \begin{figure}[H]
 	\centering
