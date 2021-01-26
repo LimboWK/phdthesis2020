@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.24)  26 JAN 2021 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.24)  27 JAN 2021 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,17 +882,8 @@ dfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count305
 \l__pdf_internal_box=\box69
-) (./main.aux (./cover.aux) (./contents.aux) (./chap1.aux
-
-LaTeX Warning: Label `fig:side:a' multiply defined.
-
-) (./chap2.aux) (./chap3.aux
-
-LaTeX Warning: Label `fig:side:a' multiply defined.
-
-
-LaTeX Warning: Label `fig:side:b' multiply defined.
-
+) (./main.aux (./cover.aux) (./contents.aux) (./chap1.aux)
+(./chap2.aux) (./chap3.aux
 
 LaTeX Warning: Label `fig:side:a' multiply defined.
 
@@ -1397,20 +1388,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 510.
 
 Excluding 'comment' comment.
-
-Package caption Warning: \label without proper reference on input line 525.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:jpsiks-diagram' on page 22 undefined on input lin
-e 520.
-
 <figures/jpsiks-diagram.png, id=559, 396.48125pt x 137.51375pt>
 File: figures/jpsiks-diagram.png Graphic file (type png)
 <use figures/jpsiks-diagram.png>
 Package pdftex.def Info: figures/jpsiks-diagram.png  used on input line 524.
 (pdftex.def)             Requested size: 328.15372pt x 113.81102pt.
-Excluding 'comment' comment. [22 <./figures/jpsiks-diagram.png>]
+ Excluding 'comment' comment. [22 <./figures/jpsiks-diagram.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 554.
@@ -1496,64 +1479,24 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 588.
 
-
-Package caption Warning: \label without proper reference on input line 594.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `sensitivity' on page 24 undefined on input line 589.
-
-
-Package caption Warning: \label without proper reference on input line 601.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:sensitivity' on page 24 undefined on input line 5
-89.
-
 [24]
-<figures/sensitivity.png, id=608, 1051.93pt x 907.39pt>
+<figures/sensitivity.png, id=606, 1051.93pt x 907.39pt>
 File: figures/sensitivity.png Graphic file (type png)
 <use figures/sensitivity.png>
-Package pdftex.def Info: figures/sensitivity.png  used on input line 593.
+Package pdftex.def Info: figures/sensitivity.png  used on input line 594.
 (pdftex.def)             Requested size: 329.85089pt x 284.52756pt.
- Excluding 'comment' comment.
-<figures/feynman3Ks01.png, id=611, 491.8375pt x 414.54875pt>
-File: figures/feynman3Ks01.png Graphic file (type png)
-<use figures/feynman3Ks01.png>
-Package pdftex.def Info: figures/feynman3Ks01.png  used on input line 623.
-(pdftex.def)             Requested size: 135.02682pt x 113.81102pt.
-<figures/feynman3Ks02.png, id=612, 364.36125pt x 235.88126pt>
-File: figures/feynman3Ks02.png Graphic file (type png)
-<use figures/feynman3Ks02.png>
-Package pdftex.def Info: figures/feynman3Ks02.png  used on input line 628.
-(pdftex.def)             Requested size: 175.80319pt x 113.81102pt.
-
-Overfull \hbox (32.70781pt too wide) in paragraph at lines 628--631
- [][] 
- []
-
-<figures/feynman3Ks03.png, id=613, 343.2825pt x 190.7125pt>
-File: figures/feynman3Ks03.png Graphic file (type png)
-<use figures/feynman3Ks03.png>
-Package pdftex.def Info: figures/feynman3Ks03.png  used on input line 634.
-(pdftex.def)             Requested size: 153.64284pt x 85.35826pt.
-
-Overfull \hbox (10.54745pt too wide) in paragraph at lines 634--637
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Excluding 'comment' comment.) [25 <./figures/sensitivity.png>] [26 <./figures/f
-eynman3Ks01.png> <./figures/feynman3Ks02.png> <./figures/feynman3Ks03.png>]
+ Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment.) [25 <./figures/sensitivity.png>]
 \openout2 = `chap2.aux'.
 
+ (./chap2.tex
+[26
 
-(./chap2.tex
+
+
+]
 Chapter 2.
-<figures/SuperKEKB-BelleII.jpg, id=632, 992.9898pt x 479.391pt>
+<figures/SuperKEKB-BelleII.jpg, id=627, 992.9898pt x 479.391pt>
 File: figures/SuperKEKB-BelleII.jpg Graphic file (type jpg)
 <use figures/SuperKEKB-BelleII.jpg>
 Package pdftex.def Info: figures/SuperKEKB-BelleII.jpg  used on input line 7.
@@ -1561,24 +1504,20 @@ Package pdftex.def Info: figures/SuperKEKB-BelleII.jpg  used on input line 7.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
-
-
-
-]
+ [27]
 [28 <./figures/SuperKEKB-BelleII.jpg>]
-<figures/Belle2TopView.png, id=645, 1109.14375pt x 780.9175pt>
+<figures/Belle2TopView.png, id=640, 1109.14375pt x 780.9175pt>
 File: figures/Belle2TopView.png Graphic file (type png)
 <use figures/Belle2TopView.png>
 Package pdftex.def Info: figures/Belle2TopView.png  used on input line 52.
 (pdftex.def)             Requested size: 404.11484pt x 284.52756pt.
-<figures/VXDGEO.png, id=646, 1280.785pt x 342.27875pt>
+<figures/VXDGEO.png, id=641, 1280.785pt x 342.27875pt>
 File: figures/VXDGEO.png Graphic file (type png)
 <use figures/VXDGEO.png>
 Package pdftex.def Info: figures/VXDGEO.png  used on input line 62.
 (pdftex.def)             Requested size: 425.86543pt x 113.81102pt.
  [29] [30 <./figures/Belle2TopView.png> <./figures/VXDGEO.png>]
-<figures/CDCcosmic.png, id=660, 473.77pt x 456.70625pt>
+<figures/CDCcosmic.png, id=655, 473.77pt x 456.70625pt>
 File: figures/CDCcosmic.png Graphic file (type png)
 <use figures/CDCcosmic.png>
 Package pdftex.def Info: figures/CDCcosmic.png  used on input line 73.
@@ -1587,18 +1526,18 @@ Package pdftex.def Info: figures/CDCcosmic.png  used on input line 73.
 Underfull \vbox (badness 2707) has occurred while \output is active []
 
  [31 <./figures/CDCcosmic.png>]
-<figures/TOP.png, id=669, 703.62875pt x 513.92pt>
+<figures/TOP.png, id=664, 703.62875pt x 513.92pt>
 File: figures/TOP.png Graphic file (type png)
 <use figures/TOP.png>
 Package pdftex.def Info: figures/TOP.png  used on input line 83.
 (pdftex.def)             Requested size: 389.56303pt x 284.52756pt.
  [32 <./figures/TOP.png>]
-<figures/HAPD.png, id=677, 564.1075pt x 202.7575pt>
+<figures/HAPD.png, id=672, 564.1075pt x 202.7575pt>
 File: figures/HAPD.png Graphic file (type png)
 <use figures/HAPD.png>
 Package pdftex.def Info: figures/HAPD.png  used on input line 91.
 (pdftex.def)             Requested size: 395.81078pt x 142.26378pt.
-<figures/ARICH.png, id=680, 1032.85875pt x 426.59375pt>
+<figures/ARICH.png, id=675, 1032.85875pt x 426.59375pt>
 File: figures/ARICH.png Graphic file (type png)
 <use figures/ARICH.png>
 Package pdftex.def Info: figures/ARICH.png  used on input line 100.
@@ -1620,7 +1559,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 107.
 
-<figures/RPC.png, id=691, 520.94624pt x 465.74pt>
+<figures/RPC.png, id=686, 520.94624pt x 465.74pt>
 File: figures/RPC.png Graphic file (type png)
 <use figures/RPC.png>
 Package pdftex.def Info: figures/RPC.png  used on input line 113.
@@ -1636,13 +1575,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
 [39] [40]
-<figures/BASF2-steering.png, id=729, 558.085pt x 226.8475pt>
+<figures/BASF2-steering.png, id=724, 558.085pt x 226.8475pt>
 File: figures/BASF2-steering.png Graphic file (type png)
 <use figures/BASF2-steering.png>
 Package pdftex.def Info: figures/BASF2-steering.png  used on input line 209.
 (pdftex.def)             Requested size: 419.99336pt x 170.71652pt.
  [41 <./figures/basf2-steering.png>] [42]
-<figures/CDB.png, id=740, 1059.96pt x 626.34pt>
+<figures/CDB.png, id=735, 1059.96pt x 626.34pt>
 File: figures/CDB.png Graphic file (type png)
 <use figures/CDB.png>
 Package pdftex.def Info: figures/CDB.png  used on input line 260.
@@ -1689,13 +1628,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 7.
 
-<figures/KsFlightLength.png, id=760, 515.9275pt x 380.42125pt>
+<figures/KsFlightLength.png, id=755, 515.9275pt x 380.42125pt>
 File: figures/KsFlightLength.png Graphic file (type png)
 <use figures/KsFlightLength.png>
 Package pdftex.def Info: figures/KsFlightLength.png  used on input line 12.
 (pdftex.def)             Requested size: 308.70866pt x 227.62204pt.
 [46]
-<figures/Ks_M.png, id=765, 509.905pt x 380.42125pt>
+<figures/Ks_M.png, id=760, 509.905pt x 380.42125pt>
 File: figures/Ks_M.png Graphic file (type png)
 <use figures/Ks_M.png>
 Package pdftex.def Info: figures/Ks_M.png  used on input line 35.
@@ -1718,7 +1657,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 41.
 
 [48 <./figures/KS_M.png>]
-<figures/DT.png, id=780, 867.24pt x 468.75125pt>
+<figures/DT.png, id=775, 867.24pt x 468.75125pt>
 File: figures/DT.png Graphic file (type png)
 <use figures/DT.png>
 Package pdftex.def Info: figures/DT.png  used on input line 60.
@@ -1727,7 +1666,7 @@ Package pdftex.def Info: figures/DT.png  used on input line 60.
 Underfull \vbox (badness 4995) has occurred while \output is active []
 
  [50 <./figures/DT.png>]
-<figures/speedFBDT.png, id=796, 1062.97125pt x 810.02625pt>
+<figures/speedFBDT.png, id=791, 1062.97125pt x 810.02625pt>
 File: figures/speedFBDT.png Graphic file (type png)
 <use figures/speedFBDT.png>
 Package pdftex.def Info: figures/speedFBDT.png  used on input line 72.
@@ -1777,23 +1716,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51 <./figures/speedFBDT.png>]
-<figures/fakeks1.png, id=807, 847.165pt x 611.28375pt>
+<figures/fakeks1.png, id=802, 847.165pt x 611.28375pt>
 File: figures/fakeks1.png Graphic file (type png)
 <use figures/fakeks1.png>
 Package pdftex.def Info: figures/fakeks1.png  used on input line 86.
 (pdftex.def)             Requested size: 199.16928pt x 143.70766pt.
-<figures/fakeks2.png, id=808, 556.0775pt x 475.7775pt>
+<figures/fakeks2.png, id=803, 556.0775pt x 475.7775pt>
 File: figures/fakeks2.png Graphic file (type png)
 <use figures/fakeks2.png>
 Package pdftex.def Info: figures/fakeks2.png  used on input line 91.
 (pdftex.def)             Requested size: 199.16928pt x 170.40858pt.
  [52 <./figures/fakeks1.png> <./figures/fakeks2.png>]
-<figures/fakeks3.png, id=817, 589.20125pt x 449.68pt>
+<figures/fakeks3.png, id=812, 589.20125pt x 449.68pt>
 File: figures/fakeks3.png Graphic file (type png)
 <use figures/fakeks3.png>
 Package pdftex.def Info: figures/fakeks3.png  used on input line 106.
 (pdftex.def)             Requested size: 199.16928pt x 152.00403pt.
-<figures/fakeks4.png, id=818, 609.27625pt x 410.53375pt>
+<figures/fakeks4.png, id=813, 609.27625pt x 410.53375pt>
 File: figures/fakeks4.png Graphic file (type png)
 <use figures/fakeks4.png>
 Package pdftex.def Info: figures/fakeks4.png  used on input line 111.
@@ -1816,13 +1755,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 119.
 
 [53 <./figures/fakeks3.png> <./figures/fakeks4.png>]
-<figures/decayshape.png, id=826, 551.81157pt x 305.64188pt>
+<figures/decayshape.png, id=821, 551.81157pt x 305.64188pt>
 File: figures/decayshape.png Graphic file (type png)
 <use figures/decayshape.png>
 Package pdftex.def Info: figures/decayshape.png  used on input line 158.
 (pdftex.def)             Requested size: 308.21248pt x 170.71652pt.
  [54]
-<figures/corks.png, id=831, 904.88063pt x 508.90125pt>
+<figures/corks.png, id=826, 904.88063pt x 508.90125pt>
 File: figures/corks.png Graphic file (type png)
 <use figures/corks.png>
 Package pdftex.def Info: figures/corks.png  used on input line 170.
@@ -1832,7 +1771,7 @@ Overfull \hbox (22.71835pt too wide) in paragraph at lines 182--214
  [][] 
  []
 
-<figures/rank1.png, id=839, 262.9825pt x 709.65125pt>
+<figures/rank1.png, id=834, 262.9825pt x 709.65125pt>
 File: figures/rank1.png Graphic file (type png)
 <use figures/rank1.png>
 Package pdftex.def Info: figures/rank1.png  used on input line 218.
@@ -1846,7 +1785,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 179--221
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57 <./figures/rank1.png>]
-<figures/ROC_3Ks.png, id=853, 578.16pt x 433.62pt>
+<figures/ROC_3Ks.png, id=848, 578.16pt x 433.62pt>
 File: figures/ROC_3Ks.png Graphic file (type png)
 <use figures/ROC_3Ks.png>
 Package pdftex.def Info: figures/ROC_3Ks.png  used on input line 236.
@@ -1856,7 +1795,7 @@ Overfull \hbox (10.81523pt too wide) in paragraph at lines 236--238
  [][] 
  []
 
-<figures/eff_3Ks.png, id=854, 578.16pt x 433.62pt>
+<figures/eff_3Ks.png, id=849, 578.16pt x 433.62pt>
 File: figures/eff_3Ks.png Graphic file (type png)
 <use figures/eff_3Ks.png>
 Package pdftex.def Info: figures/eff_3Ks.png  used on input line 241.
@@ -1871,7 +1810,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 234--244
 [][] [] 
  []
 
-<figures/ROC_gen.png, id=855, 578.16pt x 433.62pt>
+<figures/ROC_gen.png, id=850, 578.16pt x 433.62pt>
 File: figures/ROC_gen.png Graphic file (type png)
 <use figures/ROC_gen.png>
 Package pdftex.def Info: figures/ROC_gen.png  used on input line 250.
@@ -1881,7 +1820,7 @@ Overfull \hbox (10.81523pt too wide) in paragraph at lines 250--252
  [][] 
  []
 
-<figures/eff_gen.png, id=856, 578.16pt x 433.62pt>
+<figures/eff_gen.png, id=851, 578.16pt x 433.62pt>
 File: figures/eff_gen.png Graphic file (type png)
 <use figures/eff_gen.png>
 Package pdftex.def Info: figures/eff_gen.png  used on input line 255.
@@ -1897,24 +1836,24 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 248--258
  []
 
 Excluding 'comment' comment.
-<figures/over-3ks.png, id=857, 1175.39125pt x 662.475pt>
+<figures/over-3ks.png, id=852, 1175.39125pt x 662.475pt>
 File: figures/over-3ks.png Graphic file (type png)
 <use figures/over-3ks.png>
 Package pdftex.def Info: figures/over-3ks.png  used on input line 283.
 (pdftex.def)             Requested size: 302.88634pt x 170.71652pt.
-<figures/over-gen.png, id=858, 1170.3725pt x 658.46pt>
+<figures/over-gen.png, id=853, 1170.3725pt x 658.46pt>
 File: figures/over-gen.png Graphic file (type png)
 <use figures/over-gen.png>
 Package pdftex.def Info: figures/over-gen.png  used on input line 290.
 (pdftex.def)             Requested size: 303.43246pt x 170.71652pt.
  [58 <./figures/ROC_3Ks.png> <./figures/eff_3Ks.png> <./figures/ROC_gen.png> <.
 /figures/eff_gen.png>] [59 <./figures/over-3ks.png> <./figures/over-gen.png>]
-<figures/fom3ks.png, id=876, 637.38126pt x 380.42125pt>
+<figures/fom3ks.png, id=871, 637.38126pt x 380.42125pt>
 File: figures/fom3ks.png Graphic file (type png)
 <use figures/fom3ks.png>
 Package pdftex.def Info: figures/fom3ks.png  used on input line 311.
 (pdftex.def)             Requested size: 260.17464pt x 155.28294pt.
-<figures/kscutM.png, id=877, 733.74126pt x 544.0325pt>
+<figures/kscutM.png, id=872, 733.74126pt x 544.0325pt>
 File: figures/kscutM.png Graphic file (type png)
 <use figures/kscutM.png>
 Package pdftex.def Info: figures/kscutM.png  used on input line 319.
@@ -1923,7 +1862,7 @@ Package pdftex.def Info: figures/kscutM.png  used on input line 319.
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
  [61 <./figures/kscutM.png>]
-<figures/dataVarsPlot_Ks.pdf, id=892, page=2, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=887, page=2, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 2>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page2 used on input line
@@ -1934,7 +1873,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 334--335
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=893, page=7, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=888, page=7, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 7>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page7 used on input line
@@ -1945,7 +1884,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 337--338
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=894, page=8, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=889, page=8, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 8>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page8 used on input line
@@ -1956,7 +1895,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 341--342
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=895, page=9, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=890, page=9, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 9>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page9 used on input line
@@ -1990,12 +1929,12 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./figures/dataVarsPlot_Ks.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-<figures/ksDatamva0.2.png, id=965, 598.235pt x 574.145pt>
+<figures/ksDatamva0.2.png, id=960, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.2.png Graphic file (type png)
 <use figures/ksDatamva0.2.png>
 Package pdftex.def Info: figures/ksDatamva0.2.png  used on input line 363.
 (pdftex.def)             Requested size: 216.81pt x 208.07623pt.
-<figures/ksMCmva0.2.png, id=966, 598.235pt x 574.145pt>
+<figures/ksMCmva0.2.png, id=961, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.2.png Graphic file (type png)
 <use figures/ksMCmva0.2.png>
 Package pdftex.def Info: figures/ksMCmva0.2.png  used on input line 367.
@@ -2005,12 +1944,12 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 361--369
 []$[]$ $[]$ 
  []
 
-<figures/ksDatamva0.9.png, id=967, 598.235pt x 574.145pt>
+<figures/ksDatamva0.9.png, id=962, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.9.png Graphic file (type png)
 <use figures/ksDatamva0.9.png>
 Package pdftex.def Info: figures/ksDatamva0.9.png  used on input line 372.
 (pdftex.def)             Requested size: 216.81pt x 208.07623pt.
-<figures/ksMCmva0.9.png, id=968, 598.235pt x 574.145pt>
+<figures/ksMCmva0.9.png, id=963, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.9.png Graphic file (type png)
 <use figures/ksMCmva0.9.png>
 Package pdftex.def Info: figures/ksMCmva0.9.png  used on input line 376.
@@ -2020,7 +1959,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 370--378
 []$[]$ $[]$ 
  []
 
-<figures/Rc.png, id=969, 519.9425pt x 376.40625pt>
+<figures/Rc.png, id=964, 519.9425pt x 376.40625pt>
 File: figures/Rc.png Graphic file (type png)
 <use figures/Rc.png>
 Package pdftex.def Info: figures/Rc.png  used on input line 384.
@@ -2059,12 +1998,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Underfull \vbox (badness 6125) has occurred while \output is active []
 
  [67]
-<figures/ks-p.png, id=995, 852.18375pt x 380.42125pt>
+<figures/ks-p.png, id=990, 852.18375pt x 380.42125pt>
 File: figures/ks-p.png Graphic file (type png)
 <use figures/ks-p.png>
 Package pdftex.def Info: figures/ks-p.png  used on input line 42.
 (pdftex.def)             Requested size: 414.29686pt x 184.9429pt.
-<figures/ks-r-svdxx.png, id=996, 550.055pt x 380.42125pt>
+<figures/ks-r-svdxx.png, id=991, 550.055pt x 380.42125pt>
 File: figures/ks-r-svdxx.png Graphic file (type png)
 <use figures/ks-r-svdxx.png>
 Package pdftex.def Info: figures/ks-r-svdxx.png  used on input line 50.
@@ -2079,12 +2018,12 @@ Package pdftex.def Info: figures/VXDGEO.png  used on input line 68.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [69 <./figures/ks-r-svdxx.png>]
-<figures/m-before-fit.png, id=1010, 1170.62344pt x 476.53032pt>
+<figures/m-before-fit.png, id=1005, 1170.62344pt x 476.53032pt>
 File: figures/m-before-fit.png Graphic file (type png)
 <use figures/m-before-fit.png>
 Package pdftex.def Info: figures/m-before-fit.png  used on input line 76.
 (pdftex.def)             Requested size: 303.53267pt x 123.56049pt.
-<figures/m-after-fit.png, id=1011, 1157.82562pt x 475.7775pt>
+<figures/m-after-fit.png, id=1006, 1157.82562pt x 475.7775pt>
 File: figures/m-after-fit.png Graphic file (type png)
 <use figures/m-after-fit.png>
 Package pdftex.def Info: figures/m-after-fit.png  used on input line 77.
@@ -2093,12 +2032,12 @@ Package pdftex.def Info: figures/m-after-fit.png  used on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/invm1.png, id=1012, 705.38531pt x 246.9225pt>
+<figures/invm1.png, id=1007, 705.38531pt x 246.9225pt>
 File: figures/invm1.png Graphic file (type png)
 <use figures/invm1.png>
 Package pdftex.def Info: figures/invm1.png  used on input line 103.
 (pdftex.def)             Requested size: 303.53267pt x 106.25371pt.
-<figures/invm2.png, id=1013, 707.64375pt x 255.20343pt>
+<figures/invm2.png, id=1008, 707.64375pt x 255.20343pt>
 File: figures/invm2.png Graphic file (type png)
 <use figures/invm2.png>
 Package pdftex.def Info: figures/invm2.png  used on input line 104.
@@ -2121,7 +2060,7 @@ Overfull \hbox (7.49066pt too wide) in paragraph at lines 134--141
  [][] 
  []
 
-<figures/best_ncands_noBCS.png, id=1031, 462.528pt x 346.896pt>
+<figures/best_ncands_noBCS.png, id=1026, 462.528pt x 346.896pt>
 File: figures/best_ncands_noBCS.png Graphic file (type png)
 <use figures/best_ncands_noBCS.png>
 Package pdftex.def Info: figures/best_ncands_noBCS.png  used on input line 148.
@@ -2132,7 +2071,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 148--149
  [][] 
  []
 
-<figures/best_treeFitChi2_noBCS.png, id=1032, 462.528pt x 346.896pt>
+<figures/best_treeFitChi2_noBCS.png, id=1027, 462.528pt x 346.896pt>
 File: figures/best_treeFitChi2_noBCS.png Graphic file (type png)
 <use figures/best_treeFitChi2_noBCS.png>
 Package pdftex.def Info: figures/best_treeFitChi2_noBCS.png  used on input line
@@ -2143,7 +2082,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 153--154
  [][] 
  []
 
-<figures/best_cands.png, id=1033, 462.528pt x 346.896pt>
+<figures/best_cands.png, id=1028, 462.528pt x 346.896pt>
 File: figures/best_cands.png Graphic file (type png)
 <use figures/best_cands.png>
 Package pdftex.def Info: figures/best_cands.png  used on input line 158.
@@ -2153,7 +2092,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 158--159
  [][] 
  []
 
-<figures/hist_sig_MC_Mbc_dE.png, id=1034, 462.528pt x 346.896pt>
+<figures/hist_sig_MC_Mbc_dE.png, id=1029, 462.528pt x 346.896pt>
 File: figures/hist_sig_MC_Mbc_dE.png Graphic file (type png)
 <use figures/hist_sig_MC_Mbc_dE.png>
 Package pdftex.def Info: figures/hist_sig_MC_Mbc_dE.png  used on input line 163
@@ -2185,7 +2124,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75]
-<figures/r2.png, id=1070, 1565.85pt x 923.45pt>
+<figures/r2.png, id=1065, 1565.85pt x 923.45pt>
 File: figures/r2.png Graphic file (type png)
 <use figures/r2.png>
 Package pdftex.def Info: figures/r2.png  used on input line 241.
@@ -2196,27 +2135,27 @@ Overfull \hbox (46.0735pt too wide) in paragraph at lines 254--290
  [][] 
  []
 
-<figures/cs-imp.png, id=1080, 395.4775pt x 923.45pt>
+<figures/cs-imp.png, id=1075, 395.4775pt x 923.45pt>
 File: figures/cs-imp.png Graphic file (type png)
 <use figures/cs-imp.png>
 Package pdftex.def Info: figures/cs-imp.png  used on input line 294.
 (pdftex.def)             Requested size: 113.81102pt x 265.75049pt.
-<figures/corr_cs_kine_sig.png, id=1081, 1397.7018pt x 1334.1042pt>
+<figures/corr_cs_kine_sig.png, id=1076, 1397.7018pt x 1334.1042pt>
 File: figures/corr_cs_kine_sig.png Graphic file (type png)
 <use figures/corr_cs_kine_sig.png>
 Package pdftex.def Info: figures/corr_cs_kine_sig.png  used on input line 300.
 (pdftex.def)             Requested size: 208.64384pt x 199.16928pt.
-<figures/corr_cs_kine_bkg.png, id=1082, 1397.7018pt x 1334.1042pt>
+<figures/corr_cs_kine_bkg.png, id=1077, 1397.7018pt x 1334.1042pt>
 File: figures/corr_cs_kine_bkg.png Graphic file (type png)
 <use figures/corr_cs_kine_bkg.png>
 Package pdftex.def Info: figures/corr_cs_kine_bkg.png  used on input line 304.
 (pdftex.def)             Requested size: 208.64384pt x 199.16928pt.
-<figures/ROC_CS.png, id=1083, 578.16pt x 433.62pt>
+<figures/ROC_CS.png, id=1078, 578.16pt x 433.62pt>
 File: figures/ROC_CS.png Graphic file (type png)
 <use figures/ROC_CS.png>
 Package pdftex.def Info: figures/ROC_CS.png  used on input line 308.
 (pdftex.def)             Requested size: 189.68181pt x 142.26378pt.
-<figures/eff_CS.png, id=1084, 578.16pt x 433.62pt>
+<figures/eff_CS.png, id=1079, 578.16pt x 433.62pt>
 File: figures/eff_CS.png Graphic file (type png)
 <use figures/eff_CS.png>
 Package pdftex.def Info: figures/eff_CS.png  used on input line 312.
@@ -2236,7 +2175,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77]
 [78 <./figures/cs-imp.png>]
-<figures/cs-overtrain.png, id=1095, 1760.5775pt x 1005.7575pt>
+<figures/cs-overtrain.png, id=1090, 1760.5775pt x 1005.7575pt>
 File: figures/cs-overtrain.png Graphic file (type png)
 <use figures/cs-overtrain.png>
 Package pdftex.def Info: figures/cs-overtrain.png  used on input line 323.
@@ -2246,7 +2185,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79 <./figures/corr_cs_kine_sig.png> <./figures/corr_cs_kine_bkg.png> <./figur
 es/ROC_CS.png> <./figures/eff_CS.png>]
-<figures/cs-fom.png, id=1106, 406.51875pt x 271.0125pt>
+<figures/cs-fom.png, id=1101, 406.51875pt x 271.0125pt>
 File: figures/cs-fom.png Graphic file (type png)
 <use figures/cs-fom.png>
 Package pdftex.def Info: figures/cs-fom.png  used on input line 330.
@@ -2265,12 +2204,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [81]
 [82]
-<figures/mbc-hist.png, id=1124, 1547.7825pt x 1533.73pt>
+<figures/mbc-hist.png, id=1119, 1547.7825pt x 1533.73pt>
 File: figures/mbc-hist.png Graphic file (type png)
 <use figures/mbc-hist.png>
 Package pdftex.def Info: figures/mbc-hist.png  used on input line 405.
 (pdftex.def)             Requested size: 143.54552pt x 142.26378pt.
-<figures/dE-hist.png, id=1125, 549.252pt x 550.6974pt>
+<figures/dE-hist.png, id=1120, 549.252pt x 550.6974pt>
 File: figures/dE-hist.png Graphic file (type png)
 <use figures/dE-hist.png>
 Package pdftex.def Info: figures/dE-hist.png  used on input line 410.
@@ -2284,12 +2223,12 @@ Excluding 'comment' comment.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [83]
-<figures/mbc-cs-hist.png, id=1132, 554.5518pt x 546.843pt>
+<figures/mbc-cs-hist.png, id=1127, 554.5518pt x 546.843pt>
 File: figures/mbc-cs-hist.png Graphic file (type png)
 <use figures/mbc-cs-hist.png>
 Package pdftex.def Info: figures/mbc-cs-hist.png  used on input line 442.
 (pdftex.def)             Requested size: 144.26468pt x 142.26378pt.
-<figures/dE-cs-hist.png, id=1133, 551.661pt x 548.7702pt>
+<figures/dE-cs-hist.png, id=1128, 551.661pt x 548.7702pt>
 File: figures/dE-cs-hist.png Graphic file (type png)
 <use figures/dE-cs-hist.png>
 Package pdftex.def Info: figures/dE-cs-hist.png  used on input line 447.
@@ -2299,24 +2238,24 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 440--450
 [][] [] 
  []
 
-<figures/hist_stacked_generic_mbc.png, id=1134, 462.528pt x 346.896pt>
+<figures/hist_stacked_generic_mbc.png, id=1129, 462.528pt x 346.896pt>
 File: figures/hist_stacked_generic_mbc.png Graphic file (type png)
 <use figures/hist_stacked_generic_mbc.png>
 Package pdftex.def Info: figures/hist_stacked_generic_mbc.png  used on input li
 ne 459.
 (pdftex.def)             Requested size: 189.6871pt x 142.26378pt.
-<figures/hist_stacked_generic_dE.png, id=1135, 462.528pt x 346.896pt>
+<figures/hist_stacked_generic_dE.png, id=1130, 462.528pt x 346.896pt>
 File: figures/hist_stacked_generic_dE.png Graphic file (type png)
 <use figures/hist_stacked_generic_dE.png>
 Package pdftex.def Info: figures/hist_stacked_generic_dE.png  used on input lin
 e 464.
 (pdftex.def)             Requested size: 197.27402pt x 147.95424pt.
-<figures/mbc-hist-2d.png, id=1136, 550.6974pt x 549.252pt>
+<figures/mbc-hist-2d.png, id=1131, 550.6974pt x 549.252pt>
 File: figures/mbc-hist-2d.png Graphic file (type png)
 <use figures/mbc-hist-2d.png>
 Package pdftex.def Info: figures/mbc-hist-2d.png  used on input line 469.
 (pdftex.def)             Requested size: 142.63174pt x 142.26378pt.
-<figures/dE-hist-2d.png, id=1137, 552.1428pt x 550.2156pt>
+<figures/dE-hist-2d.png, id=1132, 552.1428pt x 550.2156pt>
 File: figures/dE-hist-2d.png Graphic file (type png)
 <use figures/dE-hist-2d.png>
 Package pdftex.def Info: figures/dE-hist-2d.png  used on input line 474.
@@ -2336,17 +2275,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [84 <./figures/mbc-hist.png> <./figures/dE-hist.png> <./figures/mbc-cs-hist.pn
 g> <./figures/dE-cs-hist.png>]
-<figures/mbc-hist-2d-data.png, id=1148, 455.7828pt x 457.71pt>
+<figures/mbc-hist-2d-data.png, id=1143, 455.7828pt x 457.71pt>
 File: figures/mbc-hist-2d-data.png Graphic file (type png)
 <use figures/mbc-hist-2d-data.png>
 Package pdftex.def Info: figures/mbc-hist-2d-data.png  used on input line 484.
 (pdftex.def)             Requested size: 141.6598pt x 142.26378pt.
-<figures/dE-hist-2d-data.png, id=1149, 1547.7825pt x 1539.7525pt>
+<figures/dE-hist-2d-data.png, id=1144, 1547.7825pt x 1539.7525pt>
 File: figures/dE-hist-2d-data.png Graphic file (type png)
 <use figures/dE-hist-2d-data.png>
 Package pdftex.def Info: figures/dE-hist-2d-data.png  used on input line 489.
 (pdftex.def)             Requested size: 148.71768pt x 147.95424pt.
-<figures/best_KsM.png, id=1150, 462.528pt x 346.896pt>
+<figures/best_KsM.png, id=1145, 462.528pt x 346.896pt>
 File: figures/best_KsM.png Graphic file (type png)
 <use figures/best_KsM.png>
 Package pdftex.def Info: figures/best_KsM.png  used on input line 494.
@@ -2356,7 +2295,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 494--495
  [][] 
  []
 
-<figures/best_KsInvM.png, id=1151, 462.528pt x 346.896pt>
+<figures/best_KsInvM.png, id=1146, 462.528pt x 346.896pt>
 File: figures/best_KsInvM.png Graphic file (type png)
 <use figures/best_KsInvM.png>
 Package pdftex.def Info: figures/best_KsInvM.png  used on input line 498.
@@ -2383,42 +2322,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 E.png> <./figures/mbc-hist-2d.png> <./figures/dE-hist-2d.png>] [86 <./figures/m
 bc-hist-2d-data.png> <./figures/dE-hist-2d-data.png> <./figures/best_KsM.png> <
 ./figures/best_KsInvM.png>]
-<figures/injection_sig_5/ds_gen_Mbc_2D.pdf, id=1172, page=1, 569.12625pt x 558.
+<figures/injection_sig_5/ds_gen_Mbc_2D.pdf, id=1167, page=1, 569.12625pt x 558.
 085pt>
 File: figures/injection_sig_5/ds_gen_Mbc_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_5/ds_gen_Mbc_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_5/ds_gen_Mbc_2D.pdf , page1 used
  on input line 516.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_5/ds_gen_deltaE_2D.pdf, id=1173, page=1, 569.12625pt x 5
+<figures/injection_sig_5/ds_gen_deltaE_2D.pdf, id=1168, page=1, 569.12625pt x 5
 58.085pt>
 File: figures/injection_sig_5/ds_gen_deltaE_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_5/ds_gen_deltaE_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_5/ds_gen_deltaE_2D.pdf , page1 u
 sed on input line 520.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_10/ds_gen_Mbc_2D.pdf, id=1174, page=1, 569.12625pt x 558
+<figures/injection_sig_10/ds_gen_Mbc_2D.pdf, id=1169, page=1, 569.12625pt x 558
 .085pt>
 File: figures/injection_sig_10/ds_gen_Mbc_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_10/ds_gen_Mbc_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_10/ds_gen_Mbc_2D.pdf , page1 use
 d on input line 524.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_10/ds_gen_deltaE_2D.pdf, id=1175, page=1, 569.12625pt x 
+<figures/injection_sig_10/ds_gen_deltaE_2D.pdf, id=1170, page=1, 569.12625pt x 
 558.085pt>
 File: figures/injection_sig_10/ds_gen_deltaE_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_10/ds_gen_deltaE_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_10/ds_gen_deltaE_2D.pdf , page1 
 used on input line 528.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_15/ds_gen_Mbc_2D.pdf, id=1176, page=1, 569.12625pt x 558
+<figures/injection_sig_15/ds_gen_Mbc_2D.pdf, id=1171, page=1, 569.12625pt x 558
 .085pt>
 File: figures/injection_sig_15/ds_gen_Mbc_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_15/ds_gen_Mbc_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_15/ds_gen_Mbc_2D.pdf , page1 use
 d on input line 532.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_15/ds_gen_deltaE_2D.pdf, id=1177, page=1, 569.12625pt x 
+<figures/injection_sig_15/ds_gen_deltaE_2D.pdf, id=1172, page=1, 569.12625pt x 
 558.085pt>
 File: figures/injection_sig_15/ds_gen_deltaE_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_15/ds_gen_deltaE_2D.pdf, page 1>
@@ -2444,14 +2383,14 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 515--539
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [87]
-<figures/injection_sig_20/ds_gen_Mbc_2D.pdf, id=1182, page=1, 569.12625pt x 558
+<figures/injection_sig_20/ds_gen_Mbc_2D.pdf, id=1177, page=1, 569.12625pt x 558
 .085pt>
 File: figures/injection_sig_20/ds_gen_Mbc_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_20/ds_gen_Mbc_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_20/ds_gen_Mbc_2D.pdf , page1 use
 d on input line 544.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_20/ds_gen_deltaE_2D.pdf, id=1183, page=1, 569.12625pt x 
+<figures/injection_sig_20/ds_gen_deltaE_2D.pdf, id=1178, page=1, 569.12625pt x 
 558.085pt>
 File: figures/injection_sig_20/ds_gen_deltaE_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_20/ds_gen_deltaE_2D.pdf, page 1>
@@ -2463,28 +2402,28 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 543--551
 []$[]$ $[]$ 
  []
 
-<figures/injection_sig_25/ds_gen_Mbc_2D.pdf, id=1184, page=1, 569.12625pt x 558
+<figures/injection_sig_25/ds_gen_Mbc_2D.pdf, id=1179, page=1, 569.12625pt x 558
 .085pt>
 File: figures/injection_sig_25/ds_gen_Mbc_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_25/ds_gen_Mbc_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_25/ds_gen_Mbc_2D.pdf , page1 use
 d on input line 553.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_25/ds_gen_deltaE_2D.pdf, id=1185, page=1, 569.12625pt x 
+<figures/injection_sig_25/ds_gen_deltaE_2D.pdf, id=1180, page=1, 569.12625pt x 
 558.085pt>
 File: figures/injection_sig_25/ds_gen_deltaE_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_25/ds_gen_deltaE_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_25/ds_gen_deltaE_2D.pdf , page1 
 used on input line 557.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_30/ds_gen_Mbc_2D.pdf, id=1186, page=1, 569.12625pt x 558
+<figures/injection_sig_30/ds_gen_Mbc_2D.pdf, id=1181, page=1, 569.12625pt x 558
 .085pt>
 File: figures/injection_sig_30/ds_gen_Mbc_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_30/ds_gen_Mbc_2D.pdf, page 1>
 Package pdftex.def Info: figures/injection_sig_30/ds_gen_Mbc_2D.pdf , page1 use
 d on input line 561.
 (pdftex.def)             Requested size: 145.0775pt x 142.26378pt.
-<figures/injection_sig_30/ds_gen_deltaE_2D.pdf, id=1187, page=1, 569.12625pt x 
+<figures/injection_sig_30/ds_gen_deltaE_2D.pdf, id=1182, page=1, 569.12625pt x 
 558.085pt>
 File: figures/injection_sig_30/ds_gen_deltaE_2D.pdf Graphic file (type pdf)
 <use figures/injection_sig_30/ds_gen_deltaE_2D.pdf, page 1>
@@ -2510,12 +2449,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ures/injection_sig_10/ds_gen_deltaE_2D.pdf, page is rotated 90 degrees> <./figu
 res/injection_sig_15/ds_gen_Mbc_2D.pdf, page is rotated 90 degrees> <./figures/
 injection_sig_15/ds_gen_deltaE_2D.pdf, page is rotated 90 degrees>]
-<figures/inject_line_sig.png, id=1452, 462.528pt x 346.896pt>
+<figures/inject_line_sig.png, id=1447, 462.528pt x 346.896pt>
 File: figures/inject_line_sig.png Graphic file (type png)
 <use figures/inject_line_sig.png>
 Package pdftex.def Info: figures/inject_line_sig.png  used on input line 574.
 (pdftex.def)             Requested size: 189.6871pt x 142.26378pt.
-<figures/inject_line_bkg.png, id=1453, 462.528pt x 346.896pt>
+<figures/inject_line_bkg.png, id=1448, 462.528pt x 346.896pt>
 File: figures/inject_line_bkg.png Graphic file (type png)
 <use figures/inject_line_bkg.png>
 Package pdftex.def Info: figures/inject_line_bkg.png  used on input line 579.
@@ -2535,22 +2474,22 @@ igures/injection_sig_25/ds_gen_deltaE_2D.pdf, page is rotated 90 degrees> <./fi
 gures/injection_sig_30/ds_gen_Mbc_2D.pdf, page is rotated 90 degrees> <./figure
 s/injection_sig_30/ds_gen_deltaE_2D.pdf, page is rotated 90 degrees>]
 Excluding 'comment' comment. Excluding 'comment' comment.
-<figures/bias-mbc.png, id=1719, 712.6625pt x 376.40625pt>
+<figures/bias-mbc.png, id=1714, 712.6625pt x 376.40625pt>
 File: figures/bias-mbc.png Graphic file (type png)
 <use figures/bias-mbc.png>
 Package pdftex.def Info: figures/bias-mbc.png  used on input line 646.
 (pdftex.def)             Requested size: 303.53267pt x 160.31227pt.
-<figures/bias-mbc-ks.png, id=1720, 712.6625pt x 376.40625pt>
+<figures/bias-mbc-ks.png, id=1715, 712.6625pt x 376.40625pt>
 File: figures/bias-mbc-ks.png Graphic file (type png)
 <use figures/bias-mbc-ks.png>
 Package pdftex.def Info: figures/bias-mbc-ks.png  used on input line 647.
 (pdftex.def)             Requested size: 303.53267pt x 160.31227pt.
-<figures/bias-de.png, id=1721, 705.63625pt x 375.4025pt>
+<figures/bias-de.png, id=1716, 705.63625pt x 375.4025pt>
 File: figures/bias-de.png Graphic file (type png)
 <use figures/bias-de.png>
 Package pdftex.def Info: figures/bias-de.png  used on input line 652.
 (pdftex.def)             Requested size: 303.53267pt x 161.48293pt.
-<figures/bias-de-ks.png, id=1722, 705.63625pt x 376.40625pt>
+<figures/bias-de-ks.png, id=1717, 705.63625pt x 376.40625pt>
 File: figures/bias-de-ks.png Graphic file (type png)
 <use figures/bias-de-ks.png>
 Package pdftex.def Info: figures/bias-de-ks.png  used on input line 653.
@@ -2558,22 +2497,22 @@ Package pdftex.def Info: figures/bias-de-ks.png  used on input line 653.
  [90 <./figures/inject_line_sig.png> <./figures/inject_line_bkg.png>] [91 <./fi
 gures/bias-mbc.png> <./figures/bias-mbc-ks.png>] [92 <./figures/bias-de.png> <.
 /figures/bias-de-ks.png>]
-<figures/bias-z.png, id=1745, 715.67375pt x 372.39125pt>
+<figures/bias-z.png, id=1740, 715.67375pt x 372.39125pt>
 File: figures/bias-z.png Graphic file (type png)
 <use figures/bias-z.png>
 Package pdftex.def Info: figures/bias-z.png  used on input line 661.
 (pdftex.def)             Requested size: 303.53267pt x 157.93745pt.
-<figures/bias-z-ks.png, id=1746, 705.63625pt x 375.4025pt>
+<figures/bias-z-ks.png, id=1741, 705.63625pt x 375.4025pt>
 File: figures/bias-z-ks.png Graphic file (type png)
 <use figures/bias-z-ks.png>
 Package pdftex.def Info: figures/bias-z-ks.png  used on input line 662.
 (pdftex.def)             Requested size: 303.53267pt x 161.48293pt.
-<figures/bias-zerr.png, id=1747, 712.6625pt x 372.39125pt>
+<figures/bias-zerr.png, id=1742, 712.6625pt x 372.39125pt>
 File: figures/bias-zerr.png Graphic file (type png)
 <use figures/bias-zerr.png>
 Package pdftex.def Info: figures/bias-zerr.png  used on input line 667.
 (pdftex.def)             Requested size: 303.53267pt x 158.60228pt.
-<figures/bias-zerr-ks.png, id=1748, 712.6625pt x 372.39125pt>
+<figures/bias-zerr-ks.png, id=1743, 712.6625pt x 372.39125pt>
 File: figures/bias-zerr-ks.png Graphic file (type png)
 <use figures/bias-zerr-ks.png>
 Package pdftex.def Info: figures/bias-zerr-ks.png  used on input line 668.
@@ -2604,7 +2543,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 44.
 
 [98]
-<figures/redChi2.png, id=1787, 462.528pt x 346.896pt>
+<figures/redChi2.png, id=1782, 462.528pt x 346.896pt>
 File: figures/redChi2.png Graphic file (type png)
 <use figures/redChi2.png>
 Package pdftex.def Info: figures/redChi2.png  used on input line 74.
@@ -2615,12 +2554,12 @@ Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 89.
 
 [99 <./figures/redChi2.png>]
-<figures/residual0_10.png, id=1795, 281.3712pt x 211.992pt>
+<figures/residual0_10.png, id=1790, 281.3712pt x 211.992pt>
 File: figures/residual0_10.png Graphic file (type png)
 <use figures/residual0_10.png>
 Package pdftex.def Info: figures/residual0_10.png  used on input line 95.
 (pdftex.def)             Requested size: 188.82684pt x 142.26378pt.
-<figures/residual0_0.4.png, id=1796, 282.8166pt x 211.5102pt>
+<figures/residual0_0.4.png, id=1791, 282.8166pt x 211.5102pt>
 File: figures/residual0_0.4.png Graphic file (type png)
 <use figures/residual0_0.4.png>
 Package pdftex.def Info: figures/residual0_0.4.png  used on input line 100.
@@ -2630,12 +2569,12 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 93--103
 []$[]$ $[]$ 
  []
 
-<figures/residual0.4_0.8.png, id=1797, 281.3712pt x 209.583pt>
+<figures/residual0.4_0.8.png, id=1792, 281.3712pt x 209.583pt>
 File: figures/residual0.4_0.8.png Graphic file (type png)
 <use figures/residual0.4_0.8.png>
 Package pdftex.def Info: figures/residual0.4_0.8.png  used on input line 107.
 (pdftex.def)             Requested size: 190.995pt x 142.26378pt.
-<figures/residual0.8_1.2.png, id=1798, 283.7802pt x 210.5466pt>
+<figures/residual0.8_1.2.png, id=1793, 283.7802pt x 210.5466pt>
 File: figures/residual0.8_1.2.png Graphic file (type png)
 <use figures/residual0.8_1.2.png>
 Package pdftex.def Info: figures/residual0.8_1.2.png  used on input line 112.
@@ -2645,12 +2584,12 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 105--115
 []$[]$ $[]$ 
  []
 
-<figures/residual1.2_1.6.png, id=1799, 283.7802pt x 210.5466pt>
+<figures/residual1.2_1.6.png, id=1794, 283.7802pt x 210.5466pt>
 File: figures/residual1.2_1.6.png Graphic file (type png)
 <use figures/residual1.2_1.6.png>
 Package pdftex.def Info: figures/residual1.2_1.6.png  used on input line 118.
 (pdftex.def)             Requested size: 191.75986pt x 142.26378pt.
-<figures/residual1.6_10.png, id=1800, 278.4804pt x 212.9556pt>
+<figures/residual1.6_10.png, id=1795, 278.4804pt x 212.9556pt>
 File: figures/residual1.6_10.png Graphic file (type png)
 <use figures/residual1.6_10.png>
 Package pdftex.def Info: figures/residual1.6_10.png  used on input line 123.
@@ -2672,12 +2611,12 @@ g> <./figures/residual1.6_10.png>]
 Underfull \vbox (badness 6348) has occurred while \output is active []
 
  [102]
-<figures/Rdet.png, id=1827, 442.65375pt x 316.93407pt>
+<figures/Rdet.png, id=1822, 442.65375pt x 316.93407pt>
 File: figures/Rdet.png Graphic file (type png)
 <use figures/Rdet.png>
 Package pdftex.def Info: figures/Rdet.png  used on input line 198.
 (pdftex.def)             Requested size: 198.69926pt x 142.26378pt.
-<figures/Rnp.png, id=1828, 433.62pt x 316.18124pt>
+<figures/Rnp.png, id=1823, 433.62pt x 316.18124pt>
 File: figures/Rnp.png Graphic file (type png)
 <use figures/Rnp.png>
 Package pdftex.def Info: figures/Rnp.png  used on input line 203.
@@ -2697,7 +2636,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [103]
 [104 <./figures/Rdet.png> <./figures/Rnp.png>]
-<figures/bkg-cpfit-data-mbc526.png, id=1845, 930.47626pt x 684.5575pt>
+<figures/bkg-cpfit-data-mbc526.png, id=1840, 930.47626pt x 684.5575pt>
 File: figures/bkg-cpfit-data-mbc526.png Graphic file (type png)
 <use figures/bkg-cpfit-data-mbc526.png>
 Package pdftex.def Info: figures/bkg-cpfit-data-mbc526.png  used on input line 
@@ -2707,18 +2646,18 @@ Package pdftex.def Info: figures/bkg-cpfit-data-mbc526.png  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [105 <./figures/bkg-cpfit-data-mbc526.png>]
-<figures/tagger.png, id=1854, 630.10406pt x 453.94594pt>
+<figures/tagger.png, id=1849, 630.10406pt x 453.94594pt>
 File: figures/tagger.png Graphic file (type png)
 <use figures/tagger.png>
 Package pdftex.def Info: figures/tagger.png  used on input line 288.
 (pdftex.def)             Requested size: 303.53267pt x 218.67429pt.
  [106 <./figures/tagger.png>] [107]
-<figures/qr.png, id=1870, 2376.88pt x 1748.5325pt>
+<figures/qr.png, id=1865, 2376.88pt x 1748.5325pt>
 File: figures/qr.png Graphic file (type png)
 <use figures/qr.png>
 Package pdftex.def Info: figures/qr.png  used on input line 315.
 (pdftex.def)             Requested size: 303.53267pt x 223.28845pt.
-<figures/flavor_values.png, id=1871, 460.72125pt x 311.66437pt>
+<figures/flavor_values.png, id=1866, 460.72125pt x 311.66437pt>
 File: figures/flavor_values.png Graphic file (type png)
 <use figures/flavor_values.png>
 Package pdftex.def Info: figures/flavor_values.png  used on input line 316.
@@ -2742,7 +2681,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 349.
 
-<figures/cpfitter-pict.png, id=1886, 1151.05031pt x 551.05875pt>
+<figures/cpfitter-pict.png, id=1881, 1151.05031pt x 551.05875pt>
 File: figures/cpfitter-pict.png Graphic file (type png)
 <use figures/cpfitter-pict.png>
 Package pdftex.def Info: figures/cpfitter-pict.png  used on input line 357.
@@ -2760,17 +2699,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 366.
 
 [111 <./figures/cpfitter-pict.png>]
-<figures/cpfit-10000sig.png, id=1897, 1094.0875pt x 867.24pt>
+<figures/cpfit-10000sig.png, id=1892, 1094.0875pt x 867.24pt>
 File: figures/cpfit-10000sig.png Graphic file (type png)
 <use figures/cpfit-10000sig.png>
 Package pdftex.def Info: figures/cpfit-10000sig.png  used on input line 381.
 (pdftex.def)             Requested size: 179.46489pt x 142.26378pt.
-<figures/cpfit-373gen.png, id=1898, 1158.3275pt x 867.24pt>
+<figures/cpfit-373gen.png, id=1893, 1158.3275pt x 867.24pt>
 File: figures/cpfit-373gen.png Graphic file (type png)
 <use figures/cpfit-373gen.png>
 Package pdftex.def Info: figures/cpfit-373gen.png  used on input line 385.
 (pdftex.def)             Requested size: 190.00229pt x 142.26378pt.
-<figures/cpfit-30gen.png, id=1899, 1074.0125pt x 857.2025pt>
+<figures/cpfit-30gen.png, id=1894, 1074.0125pt x 857.2025pt>
 File: figures/cpfit-30gen.png Graphic file (type png)
 <use figures/cpfit-30gen.png>
 Package pdftex.def Info: figures/cpfit-30gen.png  used on input line 389.
@@ -2782,14 +2721,14 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 380--392
 
 [112 <./figures/cpfit-10000sig.png> <./figures/cpfit-373gen.png> <./figures/cpf
 it-30gen.png>]
-<figures/jpsiks_cpfit10000.png, id=1910, 259.6902pt x 325.6968pt>
+<figures/jpsiks_cpfit10000.png, id=1905, 259.6902pt x 325.6968pt>
 File: figures/jpsiks_cpfit10000.png Graphic file (type png)
 <use figures/jpsiks_cpfit10000.png>
 Package pdftex.def Info: figures/jpsiks_cpfit10000.png  used on input line 419.
 
 (pdftex.def)             Requested size: 142.2634pt x 142.26338pt.
  [113 <./figures/jpsiks_cpfit10000.png>]
-<figures/S-test-line.png, id=1919, 462.528pt x 346.896pt>
+<figures/S-test-line.png, id=1914, 462.528pt x 346.896pt>
 File: figures/S-test-line.png Graphic file (type png)
 <use figures/S-test-line.png>
 Package pdftex.def Info: figures/S-test-line.png  used on input line 429.
@@ -2799,7 +2738,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 429--431
 [][] 
  []
 
-<figures/A-test-line.png, id=1920, 462.528pt x 346.896pt>
+<figures/A-test-line.png, id=1915, 462.528pt x 346.896pt>
 File: figures/A-test-line.png Graphic file (type png)
 <use figures/A-test-line.png>
 Package pdftex.def Info: figures/A-test-line.png  used on input line 433.
@@ -2814,7 +2753,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 428--436
 []$[]$ $[]$ 
  []
 
-<figures/S-test-line_fixS.png, id=1921, 462.528pt x 346.896pt>
+<figures/S-test-line_fixS.png, id=1916, 462.528pt x 346.896pt>
 File: figures/S-test-line_fixS.png Graphic file (type png)
 <use figures/S-test-line_fixS.png>
 Package pdftex.def Info: figures/S-test-line_fixS.png  used on input line 442.
@@ -2824,7 +2763,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 442--444
 [][] 
  []
 
-<figures/A-test-line_fixS.png, id=1922, 462.528pt x 346.896pt>
+<figures/A-test-line_fixS.png, id=1917, 462.528pt x 346.896pt>
 File: figures/A-test-line_fixS.png Graphic file (type png)
 <use figures/A-test-line_fixS.png>
 Package pdftex.def Info: figures/A-test-line_fixS.png  used on input line 446.
@@ -2841,7 +2780,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 441--449
 
 [114 <./figures/S-test-line.png> <./figures/A-test-line.png> <./figures/S-test-
 line_fixS.png> <./figures/A-test-line_fixS.png>]
-<figures/pull_hist_S.png, id=1933, 462.528pt x 346.896pt>
+<figures/pull_hist_S.png, id=1928, 462.528pt x 346.896pt>
 File: figures/pull_hist_S.png Graphic file (type png)
 <use figures/pull_hist_S.png>
 Package pdftex.def Info: figures/pull_hist_S.png  used on input line 458.
@@ -2851,7 +2790,7 @@ Overfull \hbox (10.8117pt too wide) in paragraph at lines 458--460
 [][] 
  []
 
-<figures/pull_hist_A.png, id=1934, 462.528pt x 346.896pt>
+<figures/pull_hist_A.png, id=1929, 462.528pt x 346.896pt>
 File: figures/pull_hist_A.png Graphic file (type png)
 <use figures/pull_hist_A.png>
 Package pdftex.def Info: figures/pull_hist_A.png  used on input line 462.
@@ -2882,13 +2821,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 471.
 
-<figures/lifetime_data.png, id=1936, 844.15375pt x 720.6925pt>
+<figures/lifetime_data.png, id=1931, 844.15375pt x 720.6925pt>
 File: figures/lifetime_data.png Graphic file (type png)
 <use figures/lifetime_data.png>
 Package pdftex.def Info: figures/lifetime_data.png  used on input line 481.
 (pdftex.def)             Requested size: 233.28294pt x 199.16928pt.
 [115 <./figures/pull_hist_S.png> <./figures/pull_hist_A.png>]
-<figures/pull_hist_dm.png, id=1946, 462.528pt x 346.896pt>
+<figures/pull_hist_dm.png, id=1941, 462.528pt x 346.896pt>
 File: figures/pull_hist_dm.png Graphic file (type png)
 <use figures/pull_hist_dm.png>
 Package pdftex.def Info: figures/pull_hist_dm.png  used on input line 489.
@@ -2906,7 +2845,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Underfull \vbox (badness 2119) has occurred while \output is active []
 
  [116 <./figures/lifetime_data.png> <./figures/pull_hist_dm.png>]
-<figures/cpfit-data.png, id=1955, 920.43875pt x 708.6475pt>
+<figures/cpfit-data.png, id=1950, 920.43875pt x 708.6475pt>
 File: figures/cpfit-data.png Graphic file (type png)
 <use figures/cpfit-data.png>
 Package pdftex.def Info: figures/cpfit-data.png  used on input line 499.
@@ -2952,7 +2891,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<figures/FastBDT_eval.pdf, id=2007, page=1, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2002, page=1, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 1>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page1 used on input line 6.
@@ -2963,7 +2902,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 6--7
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2008, page=2, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2003, page=2, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 2>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page2 used on input line 9.
@@ -2974,7 +2913,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 9--10
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2009, page=3, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2004, page=3, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 3>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page3 used on input line 12
@@ -2985,7 +2924,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2010, page=4, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2005, page=4, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 4>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page4 used on input line 15
@@ -2996,7 +2935,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 15--16
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2011, page=5, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2006, page=5, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 5>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page5 used on input line 18
@@ -3007,7 +2946,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 18--19
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2012, page=6, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2007, page=6, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 6>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page6 used on input line 21
@@ -3062,7 +3001,7 @@ multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./figures/FastBDT_eval.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<figures/FastBDT_eval.pdf, id=2083, page=7, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2078, page=7, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 7>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page7 used on input line 28
@@ -3073,7 +3012,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 28--29
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2084, page=8, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2079, page=8, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 8>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page8 used on input line 31
@@ -3084,7 +3023,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 31--32
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2085, page=9, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2080, page=9, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 9>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page9 used on input line 34
@@ -3095,7 +3034,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 34--35
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2086, page=10, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2081, page=10, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 10>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page10 used on input line 3
@@ -3106,7 +3045,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 37--38
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2087, page=11, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2082, page=11, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 11>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page11 used on input line 4
@@ -3117,7 +3056,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 40--41
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2088, page=12, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2083, page=12, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 12>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page12 used on input line 4
@@ -3128,7 +3067,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 43--44
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2089, page=13, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2084, page=13, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 13>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page13 used on input line 4
@@ -3139,7 +3078,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 46--47
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2090, page=14, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2085, page=14, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 14>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page14 used on input line 4
@@ -3150,7 +3089,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 49--50
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2091, page=15, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2086, page=15, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 15>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page15 used on input line 5
@@ -3161,7 +3100,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 52--53
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2092, page=16, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2087, page=16, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 16>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page16 used on input line 5
@@ -3197,7 +3136,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 27--57
 []$ $[]$ 
  []
 
-<figures/FastBDT_eval.pdf, id=2093, page=17, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2088, page=17, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 17>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page17 used on input line 6
@@ -3208,7 +3147,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 61--62
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2094, page=18, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2089, page=18, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 18>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page18 used on input line 6
@@ -3219,7 +3158,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 64--65
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2095, page=19, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2090, page=19, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 19>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page19 used on input line 6
@@ -3230,7 +3169,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 67--68
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2096, page=22, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2091, page=22, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 22>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page22 used on input line 7
@@ -3241,7 +3180,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2097, page=23, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2092, page=23, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 23>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page23 used on input line 7
@@ -3252,7 +3191,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2098, page=24, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2093, page=24, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 24>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page24 used on input line 7
@@ -3263,7 +3202,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2099, page=25, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2094, page=25, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 25>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page25 used on input line 7
@@ -3274,7 +3213,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 79--80
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2100, page=26, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2095, page=26, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 26>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page26 used on input line 8
@@ -3285,7 +3224,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 82--83
 [][] 
  []
 
-<figures/FastBDT_eval.pdf, id=2101, page=27, 578.16pt x 289.08pt>
+<figures/FastBDT_eval.pdf, id=2096, page=27, 578.16pt x 289.08pt>
 File: figures/FastBDT_eval.pdf Graphic file (type pdf)
 <use figures/FastBDT_eval.pdf, page 27>
 Package pdftex.def Info: figures/FastBDT_eval.pdf , page27 used on input line 8
@@ -3408,7 +3347,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<figures/dataVarsPlot_Ks.pdf, id=2172, page=1, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2167, page=1, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 1>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page1 used on input line
@@ -3429,7 +3368,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 9--10
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2173, page=3, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2168, page=3, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 3>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page3 used on input line
@@ -3440,7 +3379,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2174, page=4, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2169, page=4, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 4>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page4 used on input line
@@ -3451,7 +3390,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 15--16
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2175, page=5, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2170, page=5, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 5>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page5 used on input line
@@ -3462,7 +3401,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 18--19
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2176, page=6, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2171, page=6, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 6>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page6 used on input line
@@ -3518,7 +3457,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 33--34
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2177, page=10, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2172, page=10, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 10>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page10 used on input lin
@@ -3529,7 +3468,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 36--37
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2178, page=11, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2173, page=11, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 11>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page11 used on input lin
@@ -3540,7 +3479,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 39--40
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2179, page=12, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2174, page=12, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 12>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page12 used on input lin
@@ -3551,7 +3490,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 42--43
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2180, page=13, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2175, page=13, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 13>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page13 used on input lin
@@ -3562,7 +3501,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 45--46
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2181, page=14, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2176, page=14, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 14>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page14 used on input lin
@@ -3573,7 +3512,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 48--49
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2182, page=15, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2177, page=15, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 15>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page15 used on input lin
@@ -3584,7 +3523,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 51--52
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2183, page=16, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2178, page=16, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 16>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page16 used on input lin
@@ -3649,7 +3588,7 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./figures/dataVarsPlot_Ks.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-<figures/dataVarsPlot_Ks.pdf, id=2257, page=17, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2252, page=17, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 17>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page17 used on input lin
@@ -3660,7 +3599,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 60--61
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2258, page=18, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2253, page=18, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 18>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page18 used on input lin
@@ -3671,7 +3610,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 63--64
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2259, page=19, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2254, page=19, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 19>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page19 used on input lin
@@ -3682,7 +3621,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 66--67
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2260, page=22, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2255, page=22, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 22>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page22 used on input lin
@@ -3693,7 +3632,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 69--70
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2261, page=23, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2256, page=23, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 23>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page23 used on input lin
@@ -3704,7 +3643,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 72--73
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2262, page=24, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2257, page=24, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 24>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page24 used on input lin
@@ -3715,7 +3654,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 75--76
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2263, page=25, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2258, page=25, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 25>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page25 used on input lin
@@ -3726,7 +3665,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 78--79
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2264, page=26, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2259, page=26, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 26>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page26 used on input lin
@@ -3737,7 +3676,7 @@ Overfull \hbox (10.80641pt too wide) in paragraph at lines 81--82
 [][] 
  []
 
-<figures/dataVarsPlot_Ks.pdf, id=2265, page=27, 578.16pt x 289.08pt>
+<figures/dataVarsPlot_Ks.pdf, id=2260, page=27, 578.16pt x 289.08pt>
 File: figures/dataVarsPlot_Ks.pdf Graphic file (type pdf)
 <use figures/dataVarsPlot_Ks.pdf, page 27>
 Package pdftex.def Info: figures/dataVarsPlot_Ks.pdf , page27 used on input lin
@@ -3856,12 +3795,12 @@ File: figures/ksMCmva0.2.png Graphic file (type png)
 <use figures/ksMCmva0.2.png>
 Package pdftex.def Info: figures/ksMCmva0.2.png  used on input line 10.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksDatamva0.4.png, id=2279, 598.235pt x 574.145pt>
+<figures/ksDatamva0.4.png, id=2274, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.4.png Graphic file (type png)
 <use figures/ksDatamva0.4.png>
 Package pdftex.def Info: figures/ksDatamva0.4.png  used on input line 14.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.4.png, id=2280, 598.235pt x 574.145pt>
+<figures/ksMCmva0.4.png, id=2275, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.4.png Graphic file (type png)
 <use figures/ksMCmva0.4.png>
 Package pdftex.def Info: figures/ksMCmva0.4.png  used on input line 18.
@@ -3888,32 +3827,32 @@ Overfull \vbox (43.63521pt too high) has occurred while \output is active []
 
 
 [136 <./figures/ksDatamva0.4.png> <./figures/ksMCmva0.4.png>]
-<figures/ksDatamva0.5.png, id=2290, 598.235pt x 574.145pt>
+<figures/ksDatamva0.5.png, id=2285, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.5.png Graphic file (type png)
 <use figures/ksDatamva0.5.png>
 Package pdftex.def Info: figures/ksDatamva0.5.png  used on input line 27.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.5.png, id=2291, 598.235pt x 574.145pt>
+<figures/ksMCmva0.5.png, id=2286, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.5.png Graphic file (type png)
 <use figures/ksMCmva0.5.png>
 Package pdftex.def Info: figures/ksMCmva0.5.png  used on input line 31.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksDatamva0.55.png, id=2292, 598.235pt x 574.145pt>
+<figures/ksDatamva0.55.png, id=2287, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.55.png Graphic file (type png)
 <use figures/ksDatamva0.55.png>
 Package pdftex.def Info: figures/ksDatamva0.55.png  used on input line 35.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.55.png, id=2293, 598.235pt x 574.145pt>
+<figures/ksMCmva0.55.png, id=2288, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.55.png Graphic file (type png)
 <use figures/ksMCmva0.55.png>
 Package pdftex.def Info: figures/ksMCmva0.55.png  used on input line 39.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksDatamva0.6.png, id=2294, 598.235pt x 574.145pt>
+<figures/ksDatamva0.6.png, id=2289, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.6.png Graphic file (type png)
 <use figures/ksDatamva0.6.png>
 Package pdftex.def Info: figures/ksDatamva0.6.png  used on input line 43.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.6.png, id=2295, 598.235pt x 574.145pt>
+<figures/ksMCmva0.6.png, id=2290, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.6.png Graphic file (type png)
 <use figures/ksMCmva0.6.png>
 Package pdftex.def Info: figures/ksMCmva0.6.png  used on input line 47.
@@ -3933,32 +3872,32 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 25--49
 []$ $[]$ 
  []
 
-<figures/ksDatamva0.65.png, id=2296, 598.235pt x 574.145pt>
+<figures/ksDatamva0.65.png, id=2291, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.65.png Graphic file (type png)
 <use figures/ksDatamva0.65.png>
 Package pdftex.def Info: figures/ksDatamva0.65.png  used on input line 55.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.65.png, id=2297, 598.235pt x 574.145pt>
+<figures/ksMCmva0.65.png, id=2292, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.65.png Graphic file (type png)
 <use figures/ksMCmva0.65.png>
 Package pdftex.def Info: figures/ksMCmva0.65.png  used on input line 59.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksDatamva0.7.png, id=2298, 598.235pt x 574.145pt>
+<figures/ksDatamva0.7.png, id=2293, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.7.png Graphic file (type png)
 <use figures/ksDatamva0.7.png>
 Package pdftex.def Info: figures/ksDatamva0.7.png  used on input line 63.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.7.png, id=2299, 598.235pt x 574.145pt>
+<figures/ksMCmva0.7.png, id=2294, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.7.png Graphic file (type png)
 <use figures/ksMCmva0.7.png>
 Package pdftex.def Info: figures/ksMCmva0.7.png  used on input line 67.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksDatamva0.75.png, id=2300, 598.235pt x 574.145pt>
+<figures/ksDatamva0.75.png, id=2295, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.75.png Graphic file (type png)
 <use figures/ksDatamva0.75.png>
 Package pdftex.def Info: figures/ksDatamva0.75.png  used on input line 71.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.75.png, id=2301, 598.235pt x 574.145pt>
+<figures/ksMCmva0.75.png, id=2296, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.75.png Graphic file (type png)
 <use figures/ksMCmva0.75.png>
 Package pdftex.def Info: figures/ksMCmva0.75.png  used on input line 75.
@@ -3984,22 +3923,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [137 <./figures/ksDatamva0.5.png> <./figures/ksMCmva0.5.png> <./figures/ksData
 mva0.55.png> <./figures/ksMCmva0.55.png> <./figures/ksDatamva0.6.png> <./figure
 s/ksMCmva0.6.png>]
-<figures/ksDatamva0.8.png, id=2307, 598.235pt x 574.145pt>
+<figures/ksDatamva0.8.png, id=2302, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.8.png Graphic file (type png)
 <use figures/ksDatamva0.8.png>
 Package pdftex.def Info: figures/ksDatamva0.8.png  used on input line 84.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.8.png, id=2308, 598.235pt x 574.145pt>
+<figures/ksMCmva0.8.png, id=2303, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.8.png Graphic file (type png)
 <use figures/ksMCmva0.8.png>
 Package pdftex.def Info: figures/ksMCmva0.8.png  used on input line 88.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksDatamva0.85.png, id=2309, 598.235pt x 574.145pt>
+<figures/ksDatamva0.85.png, id=2304, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.85.png Graphic file (type png)
 <use figures/ksDatamva0.85.png>
 Package pdftex.def Info: figures/ksDatamva0.85.png  used on input line 92.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.85.png, id=2310, 598.235pt x 574.145pt>
+<figures/ksMCmva0.85.png, id=2305, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.85.png Graphic file (type png)
 <use figures/ksMCmva0.85.png>
 Package pdftex.def Info: figures/ksMCmva0.85.png  used on input line 96.
@@ -4033,12 +3972,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [138 <./figures/ksDatamva0.65.png> <./figures/ksMCmva0.65.png> <./figures/ksDa
 tamva0.7.png> <./figures/ksMCmva0.7.png> <./figures/ksDatamva0.75.png> <./figur
 es/ksMCmva0.75.png>]
-<figures/ksDatamva0.95.png, id=2316, 598.235pt x 574.145pt>
+<figures/ksDatamva0.95.png, id=2311, 598.235pt x 574.145pt>
 File: figures/ksDatamva0.95.png Graphic file (type png)
 <use figures/ksDatamva0.95.png>
 Package pdftex.def Info: figures/ksDatamva0.95.png  used on input line 112.
 (pdftex.def)             Requested size: 184.28981pt x 176.8705pt.
-<figures/ksMCmva0.95.png, id=2317, 598.235pt x 574.145pt>
+<figures/ksMCmva0.95.png, id=2312, 598.235pt x 574.145pt>
 File: figures/ksMCmva0.95.png Graphic file (type png)
 <use figures/ksMCmva0.95.png>
 Package pdftex.def Info: figures/ksMCmva0.95.png  used on input line 116.
@@ -4112,21 +4051,18 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 25186 strings out of 480608
- 498602 string characters out of 5897686
- 738112 words of memory out of 5000000
- 39830 multiletter control sequences out of 15000+600000
+ 25164 strings out of 480608
+ 498091 string characters out of 5897686
+ 738243 words of memory out of 5000000
+ 39809 multiletter control sequences out of 15000+600000
  573362 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,21n,100p,3102b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,21n,100p,2046b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-s
 uper-ts1.enc}<c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/t
@@ -4170,10 +4106,10 @@ nts/type1/wadalab/dmj/dmjsy.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist
 /fonts/type1/wadalab/mc2j/mc2jkk.pfb><c:/Program Files (x86)/texlive/2020/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/Program Files (x86)/te
 xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (143 pages, 8576858 bytes).
+Output written on main.pdf (143 pages, 8547953 bytes).
 PDF statistics:
- 2589 PDF objects out of 2984 (max. 8388607)
+ 2584 PDF objects out of 2984 (max. 8388607)
  1534 compressed objects within 16 object streams
- 411 named destinations out of 1000 (max. 500000)
- 1601 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 410 named destinations out of 1000 (max. 500000)
+ 1586 words of extra memory for PDF output out of 10000 (max. 10000000)
 
