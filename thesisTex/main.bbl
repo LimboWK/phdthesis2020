@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -70,14 +70,43 @@ E~Kou, P~Urquijo, W~Altmannshofer, F~Beaujean, G~Bell, M~Beneke, I~I Bigi,
 \newblock \doi{10.1093/ptep/ptz106}.
 \newblock URL \url{http://dx.doi.org/10.1093/ptep/ptz106}.
 
-\bibitem[Gronau et~al.(2004)Gronau, Grossman, and Rosner]{Gronau_2004}
-Michael Gronau, Yuval Grossman, and Jonathan~L Rosner.
-\newblock Interpreting the time-dependent cp asymmetry in b0→pi0ks.
-\newblock \emph{Physics Letters B}, 579\penalty0 (3-4):\penalty0 331–339, Jan
+\bibitem[Chen et~al.(2007)Chen, Hara, Hazumi, Higuchi, Miyabayashi, Nakahama,
+  Sumisawa, Tajima, Ushiroda, Yusa, et~al.]{chen2007observation}
+K-F Chen, K~Hara, M~Hazumi, T~Higuchi, K~Miyabayashi, Y~Nakahama, K~Sumisawa,
+  O~Tajima, Y~Ushiroda, Y~Yusa, et~al.
+\newblock Observation of time-dependent c p violation in b0 $\to \eta^{'}$ k0
+  decays and improved measurements of c p asymmetries in b0 $\to \varphi$ k0,
+  ks ks ks and b0→ j/$\psi$ k0 decays.
+\newblock \emph{Physical review letters}, 98\penalty0 (3):\penalty0 031802,
+  2007.
+
+\bibitem[Gershon and Hazumi(2004)]{gershon2004time}
+Tim Gershon and Masashi Hazumi.
+\newblock Time-dependent cp violation in b0→ p0p0x0 decays.
+\newblock \emph{Physics Letters B}, 596\penalty0 (3-4):\penalty0 163--172,
   2004.
-\newblock ISSN 0370-2693.
-\newblock \doi{10.1016/j.physletb.2003.11.015}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.physletb.2003.11.015}.
+
+\bibitem[Beneke(2005)]{beneke2005corrections}
+Martin Beneke.
+\newblock Corrections to sin (2$\beta$) from cp asymmetries in b0→($\pi$0,
+  $\rho$0, $\eta$, $\eta^{'}$, $\omega$, $\phi$) ks decays.
+\newblock \emph{Physics Letters B}, 620\penalty0 (3-4):\penalty0 143--150,
+  2005.
+
+\bibitem[Kang et~al.(2020)Kang, Park, Higuchi, Miyabayashi, Sumisawa, Adachi,
+  Ahn, Aihara, Said, Asner, et~al.]{kang2020measurement}
+KH~Kang, H~Park, T~Higuchi, K~Miyabayashi, K~Sumisawa, I~Adachi, JK~Ahn,
+  H~Aihara, S~Al Said, DM~Asner, et~al.
+\newblock Measurement of time-dependent cp violation parameters in $ b^0{} \to
+  k_s k_s k_s $ decays at belle.
+\newblock \emph{arXiv preprint arXiv:2011.00793}, 2020.
+
+\bibitem[Lees et~al.(2012{\natexlab{a}})]{Lees:2011nf}
+J.~P. Lees et~al.
+\newblock {Amplitude analysis and measurement of the time-dependent CP
+  asymmetry of $B^0 \to K_S^0 K_S^0 K_S^0$ decays}.
+\newblock \emph{Phys. Rev. D}, 85:\penalty0 054023, 2012{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRevD.85.054023}.
 
 \bibitem[Abe et~al.(2010)]{Abe:2010gxa}
 T.~Abe et~al.
@@ -85,21 +114,15 @@ T.~Abe et~al.
 \newblock 2010.
 \newblock arXiv:1011.0352.
 
-\bibitem[Kang et~al.(2020)Kang, Park, Higuchi, Miyabayashi, Sumisawa, Adachi,
-  Ahn, Aihara, Said, Asner, et~al.]{kang2020measurement}
-KH~Kang, H~Park, T~Higuchi, K~Miyabayashi, K~Sumisawa, I~Adachi, JK~Ahn,
-  H~Aihara, S~Al Said, DM~Asner, et~al.
-\newblock Measurement of time-dependent cp violation parameters in b0->ksksks
-  decays at belle.
-\newblock \emph{arXiv preprint arXiv:2011.00793}, 2020.
-
-\bibitem[Lees et~al.(2012)Lees, Poireau, Tisserand, Tico, Grauges, Martinelli,
-  Milanes, Palano, Pappagallo, Eigen, et~al.]{lees2012amplitude}
+\bibitem[Lees et~al.(2012{\natexlab{b}})Lees, Poireau, Tisserand, Tico,
+  Grauges, Martinelli, Milanes, Palano, Pappagallo, Eigen,
+  et~al.]{lees2012amplitude}
 JP~Lees, V~Poireau, V~Tisserand, J~Garra Tico, E~Grauges, M~Martinelli,
   DA~Milanes, A~Palano, M~Pappagallo, G~Eigen, et~al.
 \newblock Amplitude analysis and measurement of the time-dependent c p
   asymmetry of b 0→ k s 0 k s 0 k s 0 decays.
-\newblock \emph{Physical Review D}, 85\penalty0 (5):\penalty0 054023, 2012.
+\newblock \emph{Physical Review D}, 85\penalty0 (5):\penalty0 054023,
+  2012{\natexlab{b}}.
 
 \bibitem[Kuhr et~al.(2018)Kuhr, Pulvermacher, Ritter, Hauth, and Braun]{BASF2}
 T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
