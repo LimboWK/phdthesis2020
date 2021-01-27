@@ -11,17 +11,16 @@
 \contentsline {section}{\numberline {2.1}Belle II and SuperKEKB overview}{27}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Vertex detector (VXD)}{29}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Central drift chamber (CDC)}{31}{section.2.3}%
-\contentsline {section}{\numberline {2.4}TOP and ARICH detector}{32}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Electromagnetic calorimeter (ECL)}{33}{section.2.5}%
-\contentsline {section}{\numberline {2.6}$K_L^0$ muon detector (KLM}{34}{section.2.6}%
+\contentsline {section}{\numberline {2.4}TOP and ARICH detectors}{32}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Electromagnetic calorimeter (ECL)}{34}{section.2.5}%
+\contentsline {section}{\numberline {2.6}$K_L^0$ muon detector (KLM)}{35}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Trigger and DAQ system}{35}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Detector simulation}{37}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Belle II Analysis Software Framework}{39}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Core Structure}{39}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}Event Processing Workflow}{40}{subsection.2.9.2}%
-\contentsline {subsection}{\numberline {2.9.3}mDST structure}{41}{subsection.2.9.3}%
-\contentsline {subsection}{\numberline {2.9.4}Conditional Database}{43}{subsection.2.9.4}%
-\contentsline {subsection}{\numberline {2.9.5}Summary}{44}{subsection.2.9.5}%
+\contentsline {section}{\numberline {2.8}Belle II Analysis Software Framework}{37}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Core Structure}{38}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Event Processing Workflow}{39}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}mDST structure}{40}{subsection.2.8.3}%
+\contentsline {subsection}{\numberline {2.8.4}Conditional Database}{42}{subsection.2.8.4}%
+\contentsline {subsection}{\numberline {2.8.5}Summary}{43}{subsection.2.8.5}%
 \contentsline {chapter}{\numberline {3}$K_S^0$ Reconstruction Study}{45}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{46}{section.3.1}%
 \contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{48}{section.3.2}%
