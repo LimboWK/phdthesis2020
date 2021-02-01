@@ -20,45 +20,45 @@
 \contentsline {subsection}{\numberline {2.8.2}Event Processing Workflow}{39}{subsection.2.8.2}%
 \contentsline {subsection}{\numberline {2.8.3}mDST structure}{41}{subsection.2.8.3}%
 \contentsline {subsection}{\numberline {2.8.4}Conditional Database}{42}{subsection.2.8.4}%
-\contentsline {subsection}{\numberline {2.8.5}Summary}{44}{subsection.2.8.5}%
-\contentsline {chapter}{\numberline {3}$K_S^0$ Reconstruction Study}{45}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{46}{section.3.1}%
-\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{48}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Experience from Belle}{48}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{49}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{52}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{53}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Training, Testing and Application of KsFinder}{55}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{56}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{60}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{62}{subsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.2.9}Summary}{65}{subsection.3.2.9}%
-\contentsline {chapter}{\numberline {4}Analysis Strategies}{67}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{67}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{68}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}$B^0$ Signal Reconstruction}{72}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Continuum Suppression}{74}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Resonance Background}{80}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{81}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{83}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on KsFinder}{90}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}Summary}{95}{subsection.4.1.8}%
-\contentsline {chapter}{\numberline {5}\textit {CP} Parameters measurement}{97}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Vertex Resolution Model}{98}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{98}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Tag-side resolution function}{102}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Background events distribution}{104}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Flavor Tagging}{106}{section.5.2}%
-\contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{110}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Blind Fit}{111}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{111}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{113}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{114}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{115}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{117}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{117}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Summary}{121}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Conclusion and Prospective}{123}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{127}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{131}{appendix.B}%
-\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{135}{appendix.C}%
+\contentsline {section}{\numberline {2.9}Belle II simulation}{44}{section.2.9}%
+\contentsline {chapter}{\numberline {3}$K_S^0$ Reconstruction Study}{49}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{50}{section.3.1}%
+\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{52}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Experience from Belle}{52}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{53}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{56}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{57}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Training, Testing and Application of KsFinder}{59}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{60}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{64}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{66}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Summary}{69}{subsection.3.2.9}%
+\contentsline {chapter}{\numberline {4}Analysis Strategies}{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{71}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{72}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}$B^0$ Signal Reconstruction}{76}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Continuum Suppression}{78}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Resonance Background}{84}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{85}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{87}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on KsFinder}{94}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}Summary}{99}{subsection.4.1.8}%
+\contentsline {chapter}{\numberline {5}\textit {CP} Parameters measurement}{101}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Vertex Resolution Model}{102}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{102}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Tag-side resolution function}{106}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Background events distribution}{108}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Flavor Tagging}{110}{section.5.2}%
+\contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{114}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Blind Fit}{115}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{115}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{117}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{118}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{119}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{121}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{121}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Summary}{125}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Conclusion and Prospective}{127}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{131}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{135}{appendix.B}%
+\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{139}{appendix.C}%

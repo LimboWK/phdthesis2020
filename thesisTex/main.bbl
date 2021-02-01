@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -137,6 +137,13 @@ T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
 \newblock ISSN 2510-2044.
 \newblock \doi{10.1007/s41781-018-0017-9}.
 \newblock URL \url{http://dx.doi.org/10.1007/s41781-018-0017-9}.
+
+\bibitem[evt()]{evtgen}
+URL \url{https://evtgen.hepforge.org/doc/models.html}.
+
+\bibitem[pdg()]{pdg}
+URL
+  \url{https://pdglive.lbl.gov/Particle.action?init=0&node=S042&home=MXXX045}.
 
 \bibitem[Olshen and Stone(1984)]{olshen1984classification}
 L~Breiman J Friedman~RA Olshen and CJ~Stone.
