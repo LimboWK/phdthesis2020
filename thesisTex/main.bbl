@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -144,6 +144,18 @@ URL \url{https://evtgen.hepforge.org/doc/models.html}.
 \bibitem[pdg()]{pdg}
 URL
   \url{https://pdglive.lbl.gov/Particle.action?init=0&node=S042&home=MXXX045}.
+
+\bibitem[b2o()]{b2onlinelumi}
+URL \url{https://confluence.desy.de/display/BI/Phase+3+luminosity+monitoring}.
+
+\bibitem[Krohn et~al.(2020)Krohn, Tenchini, Urquijo, Abudin{\'e}n, Cunliffe,
+  Ferber, Gelb, Gemmler, Goldenzweig, Keck, et~al.]{krohn2020global}
+J-F Krohn, F~Tenchini, P~Urquijo, F~Abudin{\'e}n, S~Cunliffe, T~Ferber, M~Gelb,
+  J~Gemmler, P~Goldenzweig, T~Keck, et~al.
+\newblock Global decay chain vertex fitting at belle ii.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  976:\penalty0 164269, 2020.
 
 \bibitem[Olshen and Stone(1984)]{olshen1984classification}
 L~Breiman J Friedman~RA Olshen and CJ~Stone.

@@ -21,17 +21,18 @@
 \contentsline {subsection}{\numberline {2.8.3}mDST structure}{41}{subsection.2.8.3}%
 \contentsline {subsection}{\numberline {2.8.4}Conditional Database}{42}{subsection.2.8.4}%
 \contentsline {section}{\numberline {2.9}Belle II simulation}{44}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Belle II data taking}{47}{section.2.10}%
 \contentsline {chapter}{\numberline {3}$K_S^0$ Reconstruction Study}{49}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{50}{section.3.1}%
-\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{52}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Experience from Belle}{52}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{53}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{53}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Experience from Belle}{53}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{54}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{56}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{57}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Training, Testing and Application of KsFinder}{59}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{60}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{64}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{66}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{58}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Training, Testing and Application of KsFinder}{60}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{61}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{65}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{67}{subsection.3.2.8}%
 \contentsline {subsection}{\numberline {3.2.9}Summary}{69}{subsection.3.2.9}%
 \contentsline {chapter}{\numberline {4}Analysis Strategies}{71}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{71}{section.4.1}%

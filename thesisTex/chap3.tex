@@ -1,27 +1,34 @@
 \chapter{$K_S^0$ Reconstruction Study}
 
-
-
-The final states of $B^0 \to K_S^0  K_S^0  K_S^0 $ only depends on the decay of $K_S^0$. The main decay channels of $K_S^0$ is to either $\pi^+ \pi^-$ at branching fraction of about 0.692, or to $\pi^0 \pi^0$ at branching fraction of 0.307. The characteristics of these two decays are much different in terms of the response from Belle II detector. The charged decay that yields  $\pi^+ \pi^-$ leaves two tracks (track as data object) originating from VXD or CDC volumes with opposite charge. While the $\pi^0$ main decay channel is $\pi^0 \to \gamma \gamma$. This creates a bunch of clusters on ECL (ECLClusters as data object). The reconstruction of the decay channel is performed through  $\pi^+ \pi^-$. There are mainly two reasons for not selecting $\pi^0$ as final states.
- Firstly, $\pi^0 \to \gamma \gamma$ comes with a big load of background as fake $K_S^0$. The reconstruction of ECLClusters provides no constrain on $K_S^0$ vertex so it's almost impossible to suppress the combination background using vertexing quality in this case. The only reliable selection will be the mass of $K_S^0$ which typically varied around its nominal mass with a few hundred of keV. 
- The $\gamma$ however, could be originating from many other resource, such as beam background, and charged track radiation. Using mass window of $K_S^0$ could not effectively reject the noticeable fraction of fake rate. The MC study shows the fraction of true $K_S^0$ among all accepted candidates using mass cut only is about 3\% using 2 neutral pions.  Secondly, with $K_S^0$ from neutral pions  included, the events of $B^0$ that consist of one or more such $K_S^0$ will have poorly reconstructed vertices. The precise measurement of time-dependent \textit{CP} violation emphasizes vertexing quality. Even with $B^0 \to K_S^0  K_S^0  K_S^0 $ that only uses charged pions for final states, it already has no primary vertex from $B^0$ which leads to the worse resolution of vertex position compared to the channel like $B^0 \to J/\psi K_S^0$, which has two direct charged tracks of $e^+e^-$ or $\mu^+ \mu^-$  because of the very short flight distance of $J/\psi$. If one or more of $K^0_S$ has bad vertexing quality from its decay products, it will further reduce the precision of vertexing of $B^0$. This leads to a large uncertainties in defining the decay time of signal $B^0$ so as to the decay time difference which is the key observable to TDCPV measurement. Based on above, we only reconstruct $K_S^0$ from its charged decay products to improve the vertexing quality of $B^0$.
+The final states of $B^0 \to K_S^0  K_S^0  K_S^0 $ only depends on the decay of $K_S^0$. The main decay channels of $K_S^0$ is to either $\pi^+ \pi^-$ at branching fraction of about 0.692, or to $\pi^0 \pi^0$ at branching fraction of 0.307, which are referenced from PDG\cite{pdg}.
+ The characteristics of these two decays are much different in terms of the response from Belle II detector. The charged decay that yields  $\pi^+ \pi^-$ leaves two tracks originating from VXD or CDC volumes with opposite charges. On the other hand, the $\pi^0$ main decay channel is $\pi^0 \to \gamma \gamma$. This creates a bunch of clusters on ECL. The reconstruction of the decay channel is performed through  $\pi^+ \pi^-$. There are mainly two reasons for not selecting $\pi^0$ as final states.
+ First, $\pi^0 \to \gamma \gamma$ can yield a large fraction of fake $K_S^0$. The reconstruction of two ECL clusters provides no constrain on $K_S^0$ vertex so it's almost impossible to suppress the combinatorial background using vertexing quality in this case. The only reliable selection will be the mass of $K_S^0$ which is typically distributed around its nominal mass with a few hundred of keV. 
+ The $\gamma$ however, could be originating from many other resources, such as beam background and charged track radiation. Using mass window of $K_S^0$ could not effectively reject the noticeable fraction of fake $K_S^0$. Second, with $K_S^0$ reconstructed from neutral pions , the events of $B^0$ that consist of one or more such $K_S^0$ have poorly reconstructed vertices. To be noted that even with $B^0 \to K_S^0  K_S^0  K_S^0 $ which only uses $K_S^0$ from charged pions as the final states, there is no direct charged tracks from the interaction region, which leads to the worse resolution of vertex position compared to the channel like $B^0 \to J/\psi K_S^0$, which has two direct charged tracks of $e^+e^-$ or $\mu^+ \mu^-$ thanks to the very short flight distance of $J/\psi$. If one or more of $K^0_S$ has poor vertexing quality from its decay products, it will further reduce the precision of vertex positions of $B^0$. This leads to a large uncertainties in defining the decay time of signal $B^0$ and the decay time difference. The latter is the key observable in TDCPV measurement. Based on above, only $K_S^0$ reconstructed using charged pions are considered in this analysis.
  
  \section{Cut-based $K_S^0$ Reconstruction}
- The $K_S^0$ has average life time at $(8.954 \pm 0.004) \times 10 ^{-11}s$ so the flight length of $K_S^0$ before it decays could be compared with the scale of detector size. In the typical Belle II energy scale, $K_S^0$ mainly decays inside of VXD volume, which covers from a few micrometer inside first layer of PXD, to the even outside of last layer of SVD ladder that is placed at 14cm away from the interaction point(IP). The flight length of $K_S^0$ from $B^0$ generic decay and $B^0 \to K_S^0  K_S^0  K_S^0 $ are shown in Fig 3-1 from MC13: 
  
+ The $K_S^0$ has average life time at $(8.954 \pm 0.004) \times 10 ^{-11} \:\text{s}$. Therefore, the flight length of $K_S^0$ is comparable with the scale of detector size. In the typical Belle II energy scale, the flight length of $K_S^0$ is in a range from a few micrometer away from $B$ vertex, to more than 14 cm that is outside of the last layer of SVD ladder, which the actually distance is largely dependent on the momentum of $K_S^0$. 
+
+ % check this plot for how to normalize
  \begin{figure}[htpb]
  	\centering 
  	\includegraphics[height=8cm]{KsFlightLength}
  	\caption{Flight length of $K_S^0$ from MC, Blue is from generic $B^0$ decay and  orange is from $B^0 \to K_S^0  K_S^0  K_S^0$. Both are from MC13.}
  \end{figure}
  
- Due to the different topology of $B^0$ decay, the average momentum of $K_S^0$ in generic decay is smaller than the ones from generic $B^0$ decay, as well as the average flight length. It's clear that the fraction of $K_S^0$ decaying outside the IP is majority and there's no reason to constrain the origin of $K_S^0$ decay vertex to IP. So the basic cut-based reconstruction of $K_S^0$ is performed by the selection of invariant mass from its decay products then putting requirements on its vertexing fit quality without geometric constrain. The cu-based selection of $K_S^0$ is done by using BASF2 ``stdKshort:merged" list. In this ``stdKshort:merged" list, we first take all the ``V0" objects from BASF2 which use 2 online reconstructed charged tracks with opposite charge and a converged fitted vertex. The invariant mass between $0.45 < M < 0.55$ GeV is applied, where M is calculated from daughters' 4-vector. Then the reconstruction of $K_S^0$ is also performed by offline reconstruction using BASF2 which loads all tracks as charged pions and also requires the invariant mass between $0.45 < M < 0.55$ GeV and a converged fitted vertex. In both cases, the vertex fit is performed using TreeFit. The reconstruction efficiency $B^0$ is highly sensitive to the efficiency of charged pions, so we use charged pions with no extra cuts but only the M and converged vertex. Compared the $K_S^0$ from V0 and offline reconstructions, we can remove the duplicated $K_S^0$ when the two pions are from two same tracks, to form the $K_S^0$ candidates that still have many fake ones, see Fig 3-2.
+ Due to the different topology of $B^0$ decay, the average momentum of $K_S^0$ in generic MC is different from the ones from signal MC. While it's clear that the fraction of $K_S^0$ decaying outside the IP is the majority in both MC samples and therefore there's no reason to constrain $K_S^0$ decay vertices in IP. In general, the cut-based reconstruction for $K_S^0$ is first performed by the selection of invariant mass from its decay products. After the selection on invariant mass is applied, a vertex fit for each $K_S^0$ using charged pions' tracks is done without IP constraint. This reconstruction is mainly achieved by using standard BASF2 particle list called ``stdKshort:merged". In this ``stdKshort:merged" list, two $K_S^0$ particle collections are first reconstructed and then merged.
+  
+  We first take all the ``V0" objects from BASF2 Datastore which use 2 online reconstructed charged tracks with opposite charges and a converged fitted vertex. The invariant mass ``M" from two pions' 4-vector is calculated. The $K_S^0$ candidates with ``M" between $0.45 < M < 0.55$ GeV are selected, named ``Ks:V0". In addition to these $K_S^0$ from ``V0" objects, another $K_S^0$ collection from offline reconstruction is also formed. In this step, charged tracks with mass hypothesis of $\pi^{\pm}$ is used, which the tracks and PID of charged pions are pre-selected by the criteria in Table \ref{tab:kspipi_select}. Then $K_S^0$ are found by combining all of these tracks and the candidates with ``M" in between $0.3 \sim 0.7$ GeV before the vertex fit are kept. Then, vertex fit is perform for these candidates and the ones that have converged vertices and $0.45 < \text{M} < 0.55$ GeV are considered as the $K_S^0$ candidates, named ``Ks:reco", which uses the same criteria as ``V0"-based reconstruction. In both cases, the vertex fit is performed using ``TreeFit"\cite{krohn2020global} that is the recommended algorithm in Belle II. It's clear that there are duplication of $K_S^0$ if two collections are merged directly. Therefore, the objects' index of two daughters' tracks in the Datastore are compared between $K_S^0$ from these two collections, from which the identical combinations are removed to avoid duplication. 
+  
+  
+   The $B^0$ reconstruction efficiency is highly sensitive to the efficiency of charged pions because the final states particles are three identical $K_S^0$ decaying to 6 charged pions. That's why only a very loose selection on $\pi^{\pm}$ is applied. The selected $K_S^0$ collection using cut-based method therefore contains many fake candidates, see the distribution of ``M" from cut-based selected $K_S^0$ from signal MC in Figure \ref{fig:ksM_sigmc}.
  
  
  \begin{table}[htbp]
  	\centering
  	\large
- 	\caption{Pre-selection criteria of $\pi^+ \pi^-$}
+ 	\caption{Pre-selection criteria of $\pi^+ \pi^-$ for $K_S^0$ offline reconstruction.}
+ 	\label{tab:kspipi_select}
  	\begin{tabular}{c c c c }
  		\toprule
  		Selection & $\theta$ & CDC Hits Number & PID  \\
@@ -31,15 +38,20 @@ The final states of $B^0 \to K_S^0  K_S^0  K_S^0 $ only depends on the decay of 
  	\end{tabular}
  \end{table}
 
-
+% check y-axis and how many ks here.
 \begin{figure}[htpb]
 	\centering 
 	\includegraphics[height=8cm]{Ks_M}
-	\caption{The distribution of invariant mass of $K_S^0$ candidates, blue line is the MC truth matched $K_S^0$ and the orange is the fake $K_S^0$ passing the selection.}
+	\caption{The distribution of invariant mass ``M" of $K_S^0$ using cut-based selection, the blue line is the MC truth matched $K_S^0$ and the orange is the fake $K_S^0$. The result is from one block of signal MC ().}
+	\label{fig:ksM_sigmc}
 \end{figure}
-The $K_S^0$ candidates from ``stdKshort:merged" is the default way to obtain $K_S^0$ in BASF2, 
-however, the limitation of this cut-based $K_S^0$ reconstruction is the pollution from fake $K_S^0$. When using these $K_S^0$ candidates to reconstruct $B^0 \to K_S^0  K_S^0  K_S^0$, each of the fake $K_S^0$ has the chance to propagate to form a fake $B^0$ since $K_S^0$ is only intermediate states in this channel. This creates high fake rates in $B^0$ candidates and costs a large extra processing time for computing the kinematics and vertex fit of $B^0$ which could've been avoid. Even by then, the number of combinatorial backgrounds in $B^0$ from 3$K_S^0$ is still high. Thus, a multi-variate analysis (MVA) based $K_S^0$ identification package is developed.
 
+The $K_S^0$ candidates from ``stdKshort:merged" is the default way to obtain $K_S^0$ in the current BASF2, 
+however, the limitation of this cut-based $K_S^0$ reconstruction is the pollution from fake $K_S^0$. Using these $K_S^0$ candidates to reconstruct $B^0 \to K_S^0  K_S^0  K_S^0$, as long as one of three $K_S^0$ is fake, the reconstructed $B^0$ is fake, too. 
+ This creates high fake rates in $B^0$ candidates and costs a large extra processing time for computing the kinematics and vertex fit of $B^0$ which should be avoided. Plus, the number of combinatorial backgrounds in $B^0$ from 3$K_S^0$ is also high. It largely reduces the signal significance and introduce systematic bias to the result of $\it{CP}$ parameters. Thus, a multi-variate analysis (MVA) based $K_S^0$ identification package, called ``KsFinder", is developed.
+
+
+% 2021.02.03 ends
 \section{MVA-based $K_S^0$ Identification: KsFinder}
 
 \subsection{Experience from Belle}
