@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: cover.aux
@@ -29,45 +29,45 @@ Warning--empty title in jpsiks_ichep
 Warning--empty year in jpsiks_ichep
 Warning--empty title in flavortagger
 Warning--empty year in flavortagger
-You've used 30 entries,
+You've used 32 entries,
             2481 wiz_defined-function locations,
-            752 strings with 9983 characters,
-and the built_in function-call counts, 10902 in all, are:
-= -- 883
-> -- 620
-< -- 18
-+ -- 248
-- -- 188
-* -- 871
-:= -- 1743
-add.period$ -- 100
-call.type$ -- 30
-change.case$ -- 53
-chr.to.int$ -- 30
-cite$ -- 50
-duplicate$ -- 548
-empty$ -- 959
-format.name$ -- 224
-if$ -- 2287
+            764 strings with 10183 characters,
+and the built_in function-call counts, 11645 in all, are:
+= -- 954
+> -- 642
+< -- 20
++ -- 258
+- -- 194
+* -- 927
+:= -- 1855
+add.period$ -- 106
+call.type$ -- 32
+change.case$ -- 57
+chr.to.int$ -- 32
+cite$ -- 52
+duplicate$ -- 586
+empty$ -- 1035
+format.name$ -- 234
+if$ -- 2446
 int.to.chr$ -- 1
-int.to.str$ -- 31
-missing$ -- 19
-newline$ -- 167
-num.names$ -- 72
-pop$ -- 260
+int.to.str$ -- 33
+missing$ -- 21
+newline$ -- 177
+num.names$ -- 78
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 32
 quote$ -- 0
-skip$ -- 352
+skip$ -- 375
 stack$ -- 0
-substring$ -- 335
-swap$ -- 93
+substring$ -- 389
+swap$ -- 97
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 210
+type$ -- 224
 warning$ -- 14
-while$ -- 66
+while$ -- 74
 width$ -- 0
-write$ -- 396
+write$ -- 422
 (There were 14 warnings)
