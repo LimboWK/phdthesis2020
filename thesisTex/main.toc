@@ -27,13 +27,13 @@
 \contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{52}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Experience from Belle}{52}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{54}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{57}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{56}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{58}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Training, Testing and Application of KsFinder}{60}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.5}Training, Testing and Application of KsFinder}{61}{subsection.3.2.5}%
 \contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{61}{subsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{65}{subsection.3.2.7}%
 \contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{67}{subsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.2.9}Summary}{70}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.9}Summary}{69}{subsection.3.2.9}%
 \contentsline {chapter}{\numberline {4}Analysis Strategies}{71}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{71}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{72}{subsection.4.1.1}%
