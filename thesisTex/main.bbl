@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -140,6 +140,15 @@ T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
 
 \bibitem[evt()]{evtgen}
 URL \url{https://evtgen.hepforge.org/doc/models.html}.
+
+\bibitem[Agostinelli et~al.(2003)Agostinelli, Allison, Amako, Apostolakis,
+  Araujo, Arce, Asai, Axen, Banerjee, Barrand, et~al.]{agostinelli2003geant4}
+Sea Agostinelli, John Allison, K~al Amako, John Apostolakis, H~Araujo, P~Arce,
+  M~Asai, D~Axen, S~Banerjee, G~2 Barrand, et~al.
+\newblock Geant4—a simulation toolkit.
+\newblock \emph{Nuclear instruments and methods in physics research section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  506\penalty0 (3):\penalty0 250--303, 2003.
 
 \bibitem[pdg()]{pdg}
 URL

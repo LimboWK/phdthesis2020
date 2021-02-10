@@ -1,4 +1,4 @@
-\chapter{Analysis Strategies}
+\chapter{Analysis strategies}
 
 \begin{comment}
 \section{Time Dependent \textit{CP} violation measurement}
@@ -29,62 +29,35 @@ Here, same as discussed in Chapter 1, $\Delta M_d$ is the mass difference of two
 
 
 \section{Data Sample and Event Selection}
+\begin{comment}
 The simulation data (MC) is taken from Belle II official MC campaign 13, named MC13. Both signal MC and generic MC are produced. In signal MC, one of the $B^0$ from $\Upsilon(4S)$ decays into final states 3$K_S^0$ then into 6 charged pions, while the other $B^0$ decays generically using all possible channels. In generic MC,  $B^0$ from  $\Upsilon(4S)$ all decay generically using all possible channels.
+The signal MC sample is produced by EvtGen package with provided ``decay.dec" file that describes the required decay mode and branching fraction. As $K_S^0 \to \pi^0 \pi^0$ leads to large background with poor vertex quality, only the final states to 6 charged pions is used.
+\end{comment}
 
-The signal MC sample is produced by EvtGen package with provided ``decay.dec" file that describes the required decay mode and branching fraction. As $K_S^0 \to \pi^0 \pi^0$ leads to large background with poor vertex quality, only the final states to 6 charged pions is used. The corresponding branching fraction used is $\mathcal{B}(B^0 \to K_S^0  K_S^0  K_S^0) = 6.0 \times 10^{-6}$. The simulation takes the $\Upsilon(4S)$ as the mother particle and uses decay mode ``VSSBMIX" to generate its decay process to two scalar $B^0$ mesons with mixing. Then the $B^0 \to K_S^0  K_S^0  K_S^0$ is simulated based on only the possible phase-space of kinematics that final states could have, which no $\it{CP}$ violation parameters is used, so the generated sample in both generic and signal MC13 has zero input for sin2$\phi_1$ and $\mathcal{A}$.
-In this analysis of $B^0 \to K_S^0  K_S^0  K_S^0$ , 1 million signal MC events with and without overlay of beam background are generated separately independent from physics runs, and 1ab$^{-1}$ generic MC is also generated. 
+As introduced in section 2.9, the branching fraction of $\mathcal{B}(B^0 \to K_S^0  K_S^0  K_S^0) = 6.0 \times 10^{-6}$. The simulation takes the $\Upsilon(4S)$ as the mother particle and generate its decay process to two scalar $B^0$ mesons with mixing. $B^0 \to K_S^0  K_S^0  K_S^0$ is simulated based on only the possible phase-space of kinematics that final states could have, which no $\it{CP}$ violation is assigned for $\mathcal{S}$(sin2$\phi_1$) and $\mathcal{A}$ in both signal and generic MC.
 
 \subsection{$K_S^0$ Selection}
-Benefiting from the KsFinder, $K_S^0$ reconstruction is first based on the cut-based selection, then candidates is purified largely by cutting on the KsFinder output. Here two major additional selections are used in addition to the cut-based method in section 3.1. Firstly, in order to reduce the impact from slow pions from $D^{*}$ decays, $K_S^0$ momentum is set to larger than 0.05 GeV/c, see Fig 4-1. Secondly, regarding the different tracking quality of daughter $\pi^{+/-}$, the distribution of fitted invariant mass named ``InvM" of $K_S^0$ are varied. So based on the SVD hits number pions from $K_S^0$ have, different cuts of fitted invariant mass ``InvM" are used on the $K_S^0$ to further improve the reconstruction purity, see the discussion in detail as Fig 4-5 shows.
-
-\begin{figure}[H]
+$K_S^0$ reconstruction is first reconstructed by the cut-based reconstruction which contains a large fraction of fake candidates, as discussed in chapter 3. In addition, a momentum cut on $K_S^0$ is used considering distribution in $B^0 \to K_S^0  K_S^0  K_S^0$. Only the $K_S^0$ candidates with momentum larger than 0.05 GeV are selected, as shown in Figure \ref{fig:ks-p}. 
+\begin{figure}[ht]
 	\centering
 	\includegraphics[height=6.5cm]{ks-p}
-	\caption{The distribution of $K_S^0$ momentum. Candidates smaller than 0.05GeV/c are rejected.}
+	\caption{The distribution of $K_S^0$ momentum. Candidates smaller than 0.05GeV/c are rejected. (Both plots shares the same y-axis scale on the left side.)}
 	\label{fig:ks-p}
 \end{figure}
-
-The reconstruction quality of $K_S^0$ highly depends on the flight distance. $K_S^0$ that decay in the inner region of VXD yields more hits on the SVD layers from its charged daughters, which is critical in performing a proper tracking. An essential difference between Belle and Belle II is the level of beam background which Belle II is around 10 $\sim$ 20 times higher regarding the luminosity. So the CDC of Belle II becomes much more sensitive to this effect when doing track finding. Track finding is performed on VXD and CDC separately. The track candidates from different sub-detectors then merged into a same track by extrapolating the trajectory and pattern matching. However, for certain fraction of $K_S^0$, they decay outside of layer 5 of SVD, and if these tracks are not passing the windmill structure of SVD, there will be no SVD information recorded. This is due to the feature of SVD track finding, where a track candidate needs either at least 3 SVD hits to form a SVD-only track, or 2 hits to form a hit double-lets, to be used for combining tracks with other track candidates. Single hit case is filtered out to suppress the large fraction of beam background induced by fake hits on a single layer. This effect is shown in Fig 4-2. Similar to Fig 3-1, $K_S^0$ are categorized based on how many SVD hits their daughters have. SVD10 and SVD01 stands for $K_S^0$ that only $\pi^+$ and $\pi^-$ has non-zero SVD hits number. SVD11 and SVD00 stands for $K_S^0$ that both or neither charged pions have SVD hit non-zero SVD hits number. This is related to the track quality of $K_S^0$ such that SVD11 $K_S^0$ has the best quality and SVD00 has the worst. It's clear that SVD00 $K_S^0$ show up at about 10 cm where SVD layer 5 is placed at $r=10.5$ cm. And most of SVD10(SVD01) $K_S^0$ also show at same range because one of the pions is passing the overlapping area. The structure of SVD is shown in Fig 4-3 and the fraction for each types of $K_S^0$ in $B^0 \to K_S^0  K_S^0  K_S^0$ is listed in Table 4.1.
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.7\linewidth]{ks-r-svdxx}
-	\caption{$K_S^0$ flight length on r-$\phi$ plane based on pions SVD hits, SVD11: both pions have SVD hits, SVD10(SVD01), positive(negative) pions have SVD hits, and SVD00: no SVD hits from pions. The result is from MC13 signal of $B^0 \to K_S^0  K_S^0  K_S^0$.}
-	\label{fig:ks-r-svdxx}
-\end{figure}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|c|c|c|c|c|}
-	\hline
-	$K_S^0$ type & SVD11 & SVD00 & SVD10 & SVD01\\
-	\hline
-	\% in Belle II & 52\% & 39\% & 5\% & 5\%\\
-	\hline
-	\end{tabular}
-	\caption{The fraction of each types $K_S^0$ based on pions SVD hits in $B^0 \to K_S^0  K_S^0  K_S^0$ MC in Belle I \& II.}
-\end{table}
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[height=4cm]{VXDGEO.png}
-	\caption{Layer 5 is at $r = 11$cm and $K_S^0$ that decay outside are very likely to lose SVD hits information. Right figure shows the windmill structure with overlapping area at edges. }
-\end{figure}
-
-The vertex fit of $K_S^0$ is performed using TreeFit package. \cite{refId0} Using fitted $K_S^0$ momentum and energy as four-vector, fitted invariant mass (called InvM) is different from the one obtained directly using daughters' four-momentum (calle M). This quantity often receive impact of the measurement uncertainties. If we check out the distribution of fitted invariant mass based on daughters' SVD hits. The dispersion if much severe in $B^0 \to K_S^0  K_S^0  K_S^0$ than it is in generic sample due to the larger fraction of long flight length $K_S^0$, see Fig 4-4. 
+Next, the vertex fit of $K_S^0$ is performed using \textit{TreeFit} package\cite{refId0}. Using fitted $K_S^0$ momentum and energy, fitted invariant mass is different from the one obtained directly using daughters' 4-vector. This quantity often receives impact of the measurement uncertainties. If we check out the distribution of fitted invariant mass based on daughters' SVD hits as section 3.1 discussed, \textit{SVD00} $K_S^0$ shows a large dispersion from the central region of the distribution of invariant mass after vertex fit, while \textit{SVD11} $K_S^0$ shows a small dispersion as shown in Figure \ref{fig:invm1}. Therefore, considering the $K_S^0$ candidates with different SVD hits, see Figure \ref{fig:ks-r-svdxx} and Table \ref{tab:svdxx}, reflecting the different tracking quality of daughter $\pi^{\pm}$, the different cut on invariant mass M$_{\pi^+\pi^-}$ after vertex fit is applied depending on the SVD hits number of pion tracks. As shown in Figure \ref{fig:invm}, the sideband regions where fake $K_S^0$ is much higher than true $K_S^0$ are excluded. The cut windows are listed in Table \ref{tab:ks_invm}. This improves the reconstruction purity.
 
 \begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.7\linewidth]{m-before-fit}
-	\includegraphics[width=0.7\linewidth]{m-after-fit}
-	\caption{(Top two plots)The invariant mass from daughters' 4-vector named M, the left is $B^0 \to K_S^0  K_S^0  K_S^0$  and the right is generic MC;
-	(bottom two plots)The invariant mass from fitted 4-vector named InvM, the left is $B^0 \to K_S^0  K_S^0  K_S^0$  and the right is generic MC;
-	In both cases, the red shows the clear dispersion on SVD00 type $K_S^0$.}
-	\label{fig:m-before-fit}
+\centering
+\includegraphics[width=0.7\linewidth]{m-before-fit}
+\includegraphics[width=0.7\linewidth]{m-after-fit}
+\caption{(Top two plots)The invariant mass from daughters' 4-vector, the left is $B^0 \to K_S^0  K_S^0  K_S^0$  signal MC and the right is generic MC;
+(bottom two plots)The invariant mass after vertex fit, the left is $B^0 \to K_S^0  K_S^0  K_S^0$  signal MC and the right is generic MC;
+In both cases, the red shows the clear dispersion on \textit{SVD00} type $K_S^0$.}
+\label{fig:invm1}
 \end{figure}
-Using the fitted invariant mass (the bottom left in Fig 4-4), a slight tuned mass window can be set on each $K_S^0$ type and improve the purity. We apply the cut on InvM based on $K_S^0$ types to reduce background in mass sideband.
- Details of the InvM window are in Table 4.2.
  
- In summary, we first select $K_S^0$ using ``stdKshort:merged" from BASF2 library, which the internal cut on M is 0.45 to 0.55 GeV/c and all converged vertex fit candidates are kept using TreeFit. Then we reject $K_S^0$ candidates with momentum smaller than 0.05 GeV/c. After this, InvM cut on each $K_S^0$ types are applied and finally the candidates are selected by KsFinder cut at 0.74. 
- 
+In summary, $K_S^0$ are first reconstructed using BASF2 standard library with all converged vertex fit candidates are kept using \textit{TreeFit}. Then we reject $K_S^0$ candidates with momentum smaller than 0.05 GeV/c. After this, tuned cuts on invariant mass after vertex fit for each $K_S^0$ based on their SVD hits of pions are applied according to Table \ref{tab:ks_invm}. 
+Eventually, only $K_S^0$ with ``FBDT\_Ks" larger than 0.74 are kept based on Figure \ref{fig:ks_fom}.
  
 \begin{table}[h]
 	\centering 
@@ -92,24 +65,22 @@ Using the fitted invariant mass (the bottom left in Fig 4-4), a slight tuned mas
 		\hline
 		$K_S^0$ type & SVD11 & SVD10 & SVD01  & SVD00  \\
 		\hline
-		InvM window (GeV) & (0.45,0.55) & (0.38,0.7)  & (0.38,0.7)  & (0.3,0.7) \\
+		M$_{\pi^+\pi^-}$ window (GeV) & (0.45,0.55) & (0.38,0.7)  & (0.38,0.7)  & (0.3,0.7) \\
 		\hline
 	\end{tabular}
-\caption{fitted invariant mass window used for $K_S^0$ based on Fig 4-6.}
+\caption{Invariant mass cut window after vertex fit for $K_S^0$ based on Figure \ref{fig:invm}.}
+\label{tab:ks_invm}
 \end{table}
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{invm1}
 	\includegraphics[width=0.7\linewidth]{invm2}
-	\caption{Fitted invariant mass on $K_S^0$ types, sideband is excluded in each distribution to further reject fake $K_S^0$}
-	\label{fig:invm1}
+	\caption{Invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
+	\label{fig:invm}
 \end{figure}
 
-\subsection{$B^0$ Signal Reconstruction}
-
-
-
+\subsection{$B^0$  Reconstruction}
 \begin{comment}
 The energy of $B^0$ should be exactly the half of the energy in CMS frame, so replacing the energy of $B^0$ with half of the beam energy in the calculation of invariant mass of reconstructed $B^0$, $M_{bc}$ can be expressed as: 
 
@@ -125,22 +96,16 @@ where $q_B$ and $q_0$ are the 4-vector of $B^0$ and CMS in lab frame. \cite{Beva
  The reconstruction are conducted on both samples with or without beam background, to evaluate the influence of beam background. As discussed in previous section, $K_S^0$ efficiency is depending on the CDC tracking especially for the long-lived ones. Yet CDC is suffering from the high beam background level at targeted luminosity of SuperKEKB. Even though at current stage, the MC samples are generated with early phase 3 geometry and luminosity, such effect might be trivial, the comparison of sensitivity among them is still worth noticing. The event selection of using different $K_S^0$ criteria are included as well.
  
 \end{comment}
-By combining three $K_S^0$ particles from selected dataset, we can reconstruct $B^0$. The beam-constraint mass $M_{bc}$ and energy difference $\Delta E$ are used to extract signal. 
- The $B^0$ candidates with $M_{bc} > 5.2$ GeV and $|\Delta{E}| < 0.2$ GeV are accepted. Then the vertex fit using TreeFit is performed on each $B^0$ candidate and we keep ones with chiProb $> 0.001$. When multiple $B^0$ candidates show up in a single event, a rank by their vertexing quality is performed using $\chi^2$ of the vertex fit, where the smallest have the highest rank. The best candidates are selected  by the highest rank. Since the BCS is based on the vertexing quality that might introduce bias in the vertex positions for $\it{CP}$ fit, we check the distribution of the vertex $\chi_2$ from TreeFit before the BCS is used, as shown in Fig 4-6 top right. The distribution of candidates number per event without BCS is shown in top left of Fig 4-6 as well, showing small difference between data and generic MC. The distribution of candidates per event is consistent with the one from signal MC (bottom left of Fig 4-6). The 2D distribution of $M_{bc}$ and $\Delta E$ from $B^0 \to K_S^0  K_S^0  K_S^0$ signal MC13 is shown in Fig 4-6 bottom right.
+By combining three $K_S^0$ particles from selected dataset, we can reconstruct $B^0$. The beam-constraint mass $M_{bc}$ and energy difference $\Delta E$ are used to extract signal, as defined in Equation \ref{eq:mbc} and \ref{eq:dE}, respectively. 
+ The $B^0$ candidates with $M_{bc} > 5.2$ GeV and $|\Delta{E}| < 0.2$ GeV are requested. Then the vertex fit using \textit{TreeFit} is performed on each $B^0$ candidate and only $B^0$ with converged vertex fit result is kept. When multiple $B^0$ candidates show up in a single event, the best candidates selection (BCS) is performed by ranking their vertex fit quality. Since the BCS is based on the vertexing quality that might introduce bias in the vertex positions for $\it{CP}$ fit, we check the distribution of the vertex $\chi_2$, as shown in Figure \ref{fig:b0dist} top right. The distribution of candidates number per event without BCS is shown in top left of Figure \ref{fig:b0dist} as well, showing a consistence between data and generic MC within 1$\sigma$. The distribution of candidates per event is in an agreement with the one from signal MC (bottom left of Figure \ref{fig:b0dist}). The 2D distribution of $M_{bc}$ and $\Delta E$ from $B^0 \to K_S^0  K_S^0  K_S^0$ signal MC is shown in Figure \ref{fig:b0dist}  bottom right.
  
- The summary of $B^0$ selections for is:
- \begin{table}[H]
- 	\centering 
- 	\begin{tabular}{|c|c|c|c|c|c|c|c|} 
- 		\hline
- 		$B^0$  & $M_{bc}$/GeV& $\Delta E$/GeV & chiProb & Rank & FBDT\_CS & FBDT\_Ks\\
- 		\hline
- 		Selection & $> 5.20$ \& $< 5.29$  &  $ |\Delta E|< 0.2$ & $> 0.001$  & $=1$ & $>0.66$ & $>0.74$\\
- 		\hline
- 	\end{tabular}
- 	\caption{$B^0$ selection criteria}
- \end{table}
- where FBDT\_CS is for continuum suppression which is covered in the next section.
+ \begin{equation}\label{eq:mbc}
+ M_{bc} = \sqrt{\frac{s}{4}-p^{*2}_B} 
+ \end{equation}
+ 
+ \begin{equation}\label{eq:dE}
+ \Delta E = E^*_B - \frac{\sqrt{s}}{2}
+ \end{equation}
  
 \begin{figure}[H]
 	\begin{minipage}[b]{0.5\linewidth}
@@ -165,7 +130,24 @@ By combining three $K_S^0$ particles from selected dataset, we can reconstruct $
 	\end{minipage}
 	
 	\caption{Top left is the candidates per event in data and generic MC before the BCS. Top Right is the $\chi_2$ for data and generic MC before BCS. Bottom left is the number of candidates $B^0$ per event from signal MC. Bottom right is the 2D $M_{bc}$ and $\Delta E$ distribution from signal MC.}
+	\label{fig:b0dist}
 \end{figure}
+
+
+% move to after CS
+The summary of $B^0$ selections for is:
+\begin{table}[H]
+	\centering 
+	\begin{tabular}{|c|c|c|c|c|c|c|c|} 
+		\hline
+		$B^0$  & $M_{bc}$/GeV& $\Delta E$/GeV & chiProb & Rank & FBDT\_CS & FBDT\_Ks\\
+		\hline
+		Selection & $> 5.20$ \& $< 5.29$  &  $ |\Delta E|< 0.2$ & $> 0.001$  & $=1$ & $>0.66$ & $>0.74$\\
+		\hline
+	\end{tabular}
+	\caption{$B^0$ selection criteria}
+\end{table}
+
 The Table 4.4 shows that, given the newly developed $K_S^0$ selection, efficiency of $B^0$ reconstruction as well as purity is slight improved in Belle II compared to Belle.
 \begin{table}[H]
 	\centering
@@ -184,73 +166,75 @@ The Table 4.4 shows that, given the newly developed $K_S^0$ selection, efficienc
 	\caption{The efficiency is defined by the fraction of best candidates among the MC input number. Purity is the fraction of true $B^0$ in best candidates. $f_{MB}$ stands for multiple $B^0$ events fraction in signal. BCS is the fraction of best candidates being a true signal. All values in the parenthesis are calculated in $| M_{bc} |- 5.28 < 0.1$ and $|\Delta E| < 0.1$, or called ``signal region" where efficiency is lower but purity is higher. }
 \end{table}
 \subsection{Continuum Suppression}
-The production cross-section of $B\bar{B}$ from $\Upsilon{(4S)}$ receives a sizable contribution from other flavor of quarks other than b quark. This calls a demand to distinguish a specific $B\bar{B}$ decay events from combinatorial background from $e^+e^- \to q\bar{q}$, so called continuum suppression. The background shape projection on spectrum of $M_{bc}$ is a continuum shape. The rejection of this background is essential since they are the dominated background.  In the case of $b \to s$ charmless decay like $B^0 \to K_S^0  K_S^0  K_S^0$, the number of continuum background can exceed the signals by a few orders of magnitudes. They can be reduced by taking advantage of the difference on kinematics of their decay products.
-It's also useful to perform a decay products angular distribution study to further reduce the continuum background. In a $B\bar{B}$ event, two mesons ae produced almost at rest in the CMS frame since the resonance state $\Upsilon(4S)$ is  just slightly lighter than beam energy. As a results, decay products fly out more isotopically, compared to other lighter flavor decay which  flying-out particles trajectories are more back-to-back distributed. Thanks to experience from ARGUS and CLEO collaboration\cite{Bevan_2014}, a set of practically useful variables has been implemented into BASF2 framework that can be used in continuum suppression. CLEO cones momentum can be presented as Eq (4.1), where $ p_i $ is momentum of particle i in Rest Of Event (particles in a event except for the ones used to reconstructed $\it{CP}$-side $B^0$), $\theta_i$is angle against thrust of reconstructed $\it{CP}$-side B meson.
+The production cross-section of $B\bar{B}$ from $\Upsilon{(4S)}$ receives a sizable contribution from other flavor of quarks other than b quark. This calls a demand to distinguish a specific $B\bar{B}$ decay events from combinatorial background from $e^+e^- \to q\bar{q}$, so called continuum suppression (CS). The rejection is essential because it's the dominated background.  In the case of $b \to s$ charmless decay like $B^0 \to K_S^0  K_S^0  K_S^0$, the number of continuum background can exceed the signals by a few orders of magnitudes without suppression. In a $B\bar{B}$ event, two mesons are produced almost at rest in the CMS frame since the resonance state $\Upsilon(4S)$ is  just slightly lighter than beam energy. As a result	, decay products are emitted more isotopically, compared to continuum background. The ARGUS and CLEO collaboration\cite{Bevan_2014} developed a set of variables to suppress the continuum, which has also been implemented into BASF2 framework. 
 
-\begin{equation}
+CLEO cones momentum can be presented as Equation \ref{eq:ln}, where $ p_i $ is momentum of i-th particle in Rest-Of-Event (ROE) particles in a event except for the ones used to reconstructed $\it{CP}$-side $B^0$, $\theta_i$ is angle against momentum thrust of reconstructed $\it{CP}$-side of \textit{B} meson.
+
+\begin{equation}\label{eq:ln}
 L_n = \sum_{i\in ROE}^{} p_i \times |cos\theta_i|
 \end{equation}
 
-Not only the variables defined by  CLEO cones of momentum are used, in fact, the modified Super Fox-wolfram momentum named  KSFW momentum are calculated based on event-shape based variables from every event in Belle II case as well.
-KSFW momentum are defined as: 
-\begin{equation}
+Besides, the modified Super Fox-wolfram momentum named  KSFW momentum, are calculated in each event. The KSFW momentum are defined as shown in Equation \ref{eq:ksfw}. 
+\begin{equation}\label{eq:ksfw}
 KSFW = \sum_{l=0}^{4}( R_l^{so} + R_l^{oo}) + \gamma \sum_{n=1}^{N_t}|P(t)_n|
 \end{equation}
-The first term is:
-\begin{equation}
+where the first term is shown in Equation \ref{eq:rlso}.
+\begin{equation}\label{eq:rlso}
 R_l^{so} = \frac{\alpha_{cl}H_{cl}^{so} +
 				\alpha_{nl}H_{nl}^{so}+
 			\alpha_{ml}H_{ml}^{so}}{E^*_{beam}-\Delta E}
 \end{equation}
 
-when l is odd: 
+when l is odd in Equation \ref{eq:rlso}: 
 \begin{equation}
 	H_{nl}^{so}=H_{ml}^{so}=0
 \end{equation}
-and in the meanwhile: 
-\begin{equation}
+and $H_{cl}^{SO}$ is defined as shown in Equation \ref{eq:hclso}: 
+\begin{equation}\label{eq:hclso}
 	H_{cl}^{so} = \sum_i \sum_{jx}Q_i Q_{jx}|p_{jx}|P_l(cos\theta_{i,jx})
 \end{equation}
-i runs over B daughters particles and jx for other particles in ROE. Q is charge and p is momentum for each particle. $P_l(cos\theta_{i,jx}$ is the l-th order Legendre polynomial of cosine of i and jx-th particles.
-On the other hand, for l is even, 
-\begin{equation}
+\textit{i} runs over \textit{B} daughter particles and \textit{jx} for other particles in ROE. \textit{Q} is charge and $p_{jx}$ is momentum for each particle. $P_l(cos\theta_{i,jx})$ is the \textit{i}-th order Legendre polynomial of cosine of \textit{i} and \textit{jx}-th particles.
+On the other hand, for \textit{l} is even, $H_{xl}^{SO}$ can be written in Equation \ref{eq:hxlso}.
+\begin{equation}\label{eq:hxlso}
 	H_{xl}^{so}=\sum_i \sum_{jx}|p_{jx}|P_l(cos\theta_{i,jx})
 \end{equation}
-The second term in Eq (4.2), when l is odd: 
-\begin{equation}
+The second term in Equation \ref{eq:ksfw}, when \textit{l} is odd, can be defined as Equation \ref{eq:roo}.
+\begin{equation}\label{eq:roo}
 	R^{oo}_l = \sum_j \sum_k \beta_l Q_j Q_k |p_j||p_k|P_l(cos\theta_j,k)
 \end{equation}
-j and k runs over ROE particles and others are same as Eq(4.8).
-For even l: 
+\textit{j} and \textit{k} runs over ROE particles and others are same as Equation \ref{eq:hclso}.
+For an even \textit{l}: 
 \begin{equation}
 	R^{oo}_l = \sum_j \sum_k \beta_l |p_j||p_k|P_l(cos\theta_j,k)
 \end{equation}
-$\beta$ is five Fisher coefficient to determine in training. 
-Using above definitions, we can form the possibility density functions for KSFW, cosine angle against B meson thrust and $\Delta Z$ of two side vertex.  Then based on each event's variables' value, we can calculate a ratio as Eq(4.9), where the Likelihood $L$ of signal and background are obtained from the possibility density functions, see Eq(4.10).
+$\beta$ is five Fisher coefficient to be determined. 
+Using above definitions, we can form the possibility density functions for KSFW, cosine angle against \textit{B} meson thrust and $\Delta Z$ of two side vertices.  Then based on each event's variables' value, we can calculate a ratio $\mathcal{R}$ as Equation \ref{eq:Rcs}, where the likelihood $L$ of signal($L_S$) and background($L_B$) are obtained from the possibility density functions defined in Equation \ref{eq:Lsb}.
 The $ \mathcal{R} $ is: 
-\begin{equation}
+\begin{equation}\label{eq:Rcs}
 	\mathcal{R} = \frac{L_S}{L_S+L_B}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:Lsb}
 L_{S/B} = P(KSFW)_{S/B} \times P(cos\theta_B)_{S/B} \times P(\Delta Z)_{S/B}
 \end{equation}
-where P is probability density function for signal and continuum, regarding the discriminating variables in the parentheses. For example, the distribution of a variable called $R_2$ that is the most important one shown in Fig(4-7) which possibility density function is varied in signal and background.
+where \textit{P} is probability density function for signal and continuum, depending on the discriminating variables in the parentheses. For example, the distribution of a variable called $R_2$ shown in Figure \ref{fig:R2} where the possibility density function is different for signal and continuum events in generic MC.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{r2}
-	\caption{$R_2$ serves as the highest weight as a variable in discriminating the continuum events, having a drastically different distribution between signal and background. $R_2$ is the ratio of the second to the zeroth KSFW momentum in Eq(4.2)}
+	\caption{$R_2$ is the ratio of the second to the zeroth KSFW momentum in Equation \ref{eq:ksfw}. Its distribution in generic MC sample which serves as the highest weight as a variable in discriminating the continuum events, having a quite different distribution between signal and background.}
+	\label{fig:R2}
 \end{figure}
 
 
 
-  In order to maximize the performance for this analysis, these categories of variables (KSFW, CLEO cone momentum and angular distributions) are combined as a training input for FastBDT classifier, and targeted variables is the continuum event flag. The working principles of this framework is much similar to KsFinder. The MC samples using signal $B\bar{B}$ events and off-resonance in each of the flavor ($q\bar{q}$) are prepared in a scaled ratio of their cross-section in $\Upsilon{(4S)}$ energy. The same events reconstruction procedures for $B^0$ is applied as well. Then the events passing the reconstruction for $B^0$ are used for training the continuum suppression. The fraction of signal and background is set to 1:1 during the training. Noted that the ratio does affect the choice of cut value when applying the suppression. The 1:1 ratio is chosen to make classifier learns about signal and background equally. Then we determine the cut based on the curve of FOM like KsFinder. The variables used in training are listed in Table 4.5 with their abbreviations and importance rank is in Table 4.6.
+  In order to maximize suppression power in this analysis, these variables (KSFW, CLEO cone momentum and angular distributions) are combined as an input for FastBDT classifier. The targeted variable is the continuum event truth. The MC samples using signal $B\bar{B}$ events from signal MC and continuum events from generic MC ($q\bar{q}$ component) are prepared in a ratio of their cross-section at $\Upsilon{(4S)}$ energy. The same events reconstruction procedures for $B^0$ is applied for both MC samples. Events passing the reconstruction for $B^0$ are used for training the continuum suppression classifier. The fraction of signal and background is set to 1:1 during the training.  The output of continuum suppression classifier is renamed as ``FBDT\_CS". Then we determine the cut value at 0.66 based on the maximum of \textit{FOM} curve, as shown in Figure \ref{fig:cs_fom}. The variables used in training are listed in Table \ref{tab:cs_abr} with their abbreviations and the rank of important variables is in Table \ref{tab:cs_imp}.
 
-The correlation between these training variables are shown in Figure 4-8. The correlation among the variables are varied in signal and background. Also, no strong correlation for one variable over the others is found, which shows a good selection of using these variables. The output of continuum suppression classifier is called ``FBDT\_CS".
+The correlation between these training variables are shown in Figure \ref{fig:cs_cor}. The correlation among the variables are varied in signal and background. The ROC curve and the efficiency/purity with respect to the classifier output are shown in Figure \ref{fig:cs_roc}.
 \begin{table}[htpb]
 	\begin{minipage}[t]{0.4\linewidth}
 		\centering
-		\caption{The Abbreviations.}
+		\caption{Variables and the abbreviations for CS.}
+		\label{tab:cs_abr}
 		\begin{tabular}{c|c}
 			\hline
 			Observables &  Abbreviations\\
@@ -290,11 +274,13 @@ The correlation between these training variables are shown in Figure 4-8. The co
 	\end{minipage}
 	\begin{minipage}[t]{0.5\linewidth}
 		\centering 
-		\caption{Importance rank }
+		\caption{The rank of important variables for CS. }
+		\label{tab:cs_imp}
 		\includegraphics[width=4cm]{cs-imp}
 	\end{minipage}
 \end{table}
-\begin{figure}[H]
+
+\begin{figure}[ht]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
 		\includegraphics[height=7cm]{figures/corr_cs_kine_sig}	
@@ -303,6 +289,11 @@ The correlation between these training variables are shown in Figure 4-8. The co
 	\centering 
 	\includegraphics[height=7cm]{figures/corr_cs_kine_bkg}	
 \end{minipage}
+	\caption{The correlation in variables for continuum suppression. The left is for signal and the right is for background.}
+	\label{fig:cs_cor}
+\end{figure}
+
+\begin{figure}[ht]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
 		\includegraphics[height=5cm]{figures/ROC_CS}	
@@ -311,32 +302,36 @@ The correlation between these training variables are shown in Figure 4-8. The co
 		\centering 
 		\includegraphics[height=5cm]{figures/eff_CS}	
 	\end{minipage}
-	\caption{The top is correlation in variables for continuum suppression. Top left is for signal and top right is for background.
-		The bottom left is the ROC curve (blue for training and orange for testing, in good consistence)
-		The bottom right is the efficiency(blue) and purity(orange) regarding the cut value ``FBDT\_CS"}
-	
+\caption{The left is the ROC curve (blue for training and orange for testing)
+	and the right is the efficiency(blue) and purity(orange) regarding the classifier output ``FBDT\_CS"}
+	\label{fig:cs_roc}
 \end{figure}
 
-Overtraining check is made by comparing the distribution of signal and background regarding the classifier output in both training and testing samples, which no clear difference is found thus no evidence of over-training found.
+Overtraining check is made by comparing the distribution of signal and background depending on the classifier output in both training and testing samples. The testing samples show about 1\% lower in each bin for both signal and background events, which is within the acceptable range.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{cs-overtrain}
-	\caption{Over-training check of continuum classifier, where a very small difference in training and testing (1\%) is found.}
+	\caption{Over-training check of continuum classifier, where a very small difference in training and testing (1\%) is shown.}
 \end{figure}
 
-We implemented the continuum suppression by defining the cut at maximum of FOM using classifier output like Fig(4-10) shows. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{cs-fom}
-	\caption{FOM depending on the cut value of continuum classifier output, cut value at 0.66 is used for continuum suppression. }
+	\caption{\textit{FOM} depending on the cut value of continuum classifier output, cut value at 0.66 is used for continuum suppression. }
+	\label{fig:cs_fom}
 \end{figure}
 
+% summary of $B^0$ stats goes here
 \subsection{Resonance Background}
-Besides the major contribution from continuum background, charmonium resonance that mediates through $b \to c$ transition brings odd $\textit{CP}$ eigenvalue in the final states as same as $B^0 \to K_S^0  K_S^0  K_S^0$. Monitoring their contribution is also important. Basically, one needs to check the resonance states formed by two $K_S^0$ with corresponding invariant mass. In $B^0 \to X(K_S^0 K_S^0) K_S^0$,  there are two types of resonant events that give out same final states, one is resonant signal and the other is resonant background. For $b \to s$ transitions as resonance signal because of the $\it{CP}$-even final states, X could be $f_2(1270)$,$f_0(1500)$,$f_{2}^{'}(1525)$,$f_0(980)$,$f_0(1710)$ and $f_2(2010)$. And for $b \to c$ transition as resonance background because of $\it{CP}$-odd final states, X could be $D^0$, $J/\psi$, $\psi(2S)$,  $\chi_{c0}$, $\chi_{c1}$, and $\chi_{c2}$.
+Besides the major contribution from continuum background, charmonium resonance that mediates through $b \to c$ transition brings odd $\textit{CP}$ eigenvalue in the final states as same as $B^0 \to K_S^0  K_S^0  K_S^0$. Monitoring their contribution is also important. Basically, one needs to check the resonance states formed by two $K_S^0$ with corresponding invariant mass. In $B^0 \to X(K_S^0 K_S^0) K_S^0$,  there are two types of resonant events that give out same final states, one is resonant signal and the other is resonant background. For $b \to s$ transitions as resonance signal because of the $\it{CP}$-even final states, \textit{X} could be $f_2(1270)$, $f_0(1500)$, $f_{2}^{'}(1525)$, $f_0(980)$, $f_0(1710)$ and $f_2(2010)$. For $b \to c$ transition as resonance background because of $\it{CP}$-odd final states, \textit{X} could be $D^0$, $J/\psi$, $\psi(2S)$,  $\chi_{c0}$, $\chi_{c1}$, and $\chi_{c2}$.
 
-The number of these background in signal reconstruction could be further reduced by implementing veto on invariant mass of 2$K_S^0$. However, such veto should be carefully validated with data. The distribution of invariant mass of X should agree well in MC and data. Some of these resonance have not been implemented inside generic MC production for Belle II. Given the very limited statistics of data accumulation we used in this analysis, we only present the expected number of these resonances in 400$fb^{-1}$ luminosity from generic $\Upsilon{(4S)}$ events. These numbers should be re-checked in the future when data accumulation increases, and veto must be based on the structure of 2$K_S^0$ invariant mass from data as well. Details about the expected yields can be found in Table 4.6. Currently there is no veto used for rejecting the resonant background, which should be fine given the estimated background number is about 1 event.
+The number of these background in signal reconstruction could be further reduced by implementing veto on invariant mass of 2$K_S^0$. However, such veto should be carefully validated with data. The distribution of invariant mass of \textit{X} should agree well in MC and data, which is hard to check in the low luminosity. The distribution of 2$K_S^0$ invariant mass in generic MC and data are shown in the Appendix 
+
+
+ Some of these resonance have not been implemented inside generic MC production in the current Belle II simulation. Given the very limited statistics of data accumulation we used in this analysis, we only present the expected number of these resonances in 400$fb^{-1}$ luminosity (about $2.14 \times 10^8$ events) from generic $\Upsilon{(4S)}$ events. These numbers should be re-checked in the future when data accumulation increases, and veto must be based on the structure of 2$K_S^0$ invariant mass from data as well. Details about the expected yields can be found in Table \ref{tab:f_res}. Currently there is no veto applied for rejecting these resonant background considering the estimated background number is about 1 event in the current luminosity.
 \begin{sidewaystable}
 	\caption{Expected yield for signal and background resonances $2.14\times 10^8 B\bar{B}$ in generic MC. The branching fraction of $B\to X K_S$ and $X \to 2K_S$ are listed for both PDG value and value in Belle II DEC. file. The number expected from $\it{CP}$-odd contamination is very low at current luminosity.  }
+	\label{tab:f_res}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
 		\hline
@@ -373,6 +368,8 @@ The number of these background in signal reconstruction could be further reduced
 	\end{tabular}
 \end{sidewaystable}
 
+
+% 2021.02.10 mid
 \subsection{$B\bar{B}$ background and self-cross feed}
 Another possible contribution of backgrounds are the background from $B\bar{B}$ events including the charged and the neutral ones. The estimated contributions of these types can be checked with charged $B\bar{B}$ samples and the mixed samples. For this channel, the number of events from  \textbf{$B\bar{B}$} is very limited. Self-cross feed backgrounds stands for the events from the signal-like events but the tag-side particles help form a fake signal. The combined contributions from $B\bar{B}$ background and self-cross feed is about 3\% in the channel and we don't perform special treatment on them at current luminosity.
 
