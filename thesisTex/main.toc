@@ -51,14 +51,13 @@
 \contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{109}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Blind analysis and fit}{110}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{110}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{113}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{114}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{112}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{113}{subsection.5.4.3}%
 \contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{114}{subsection.5.4.4}%
 \contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{116}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{117}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Summary}{120}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Conclusion and Prospect}{123}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{127}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{131}{appendix.B}%
-\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{135}{appendix.C}%
-\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution}{141}{appendix.D}%
+\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{116}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusion and Prospect}{121}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{125}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{129}{appendix.B}%
+\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{133}{appendix.C}%
+\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution}{139}{appendix.D}%
