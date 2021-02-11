@@ -1,7 +1,8 @@
 \chapter{\textit{CP} parameters measurement}
-The measurement of $\it{CP}$ parameters requires the fit to the time-dependent distribution of events based on the decay time difference, flavor, and $\it{CP}$ parameters, in which $\Delta t$ is decay time difference and q is flavor of tag-side meson. $q = \pm 1$ when tag-side is $B^0$ or $\bar{B^0}$. The physical distribution of events satisfies the function in Eq(5.1), where we use the notations that is slightly different than Chapter 1. The $S_f$ and $A_f$ which stand for mixing induced and direct $\it{CP}$ violation that are noted as $\mathcal{S}$ and $\mathcal{A}$.
 
-\begin{equation}
+The measurement of $\it{CP}$ parameters $\mathcal{S}$ and $\mathcal{A}$ are perform by fitting  Equation \ref{eq:tdcpv_sig} to the distribution of events with respect to the decay time difference $\Delta t$ and flavor $q$, where $\Delta t = t_{CP}-t_{tag}$ and $q =  +1(-1)$ when the tag-side $B$ meson is $B^0$($\bar{B^0}$). 
+
+\begin{equation}\label{eq:tdcpv_sig}
 \mathcal{P}_{sig}(\Delta t, q ) = 
 \frac{e^{-|\Delta t|/\tau_{B^0}}}{4\tau_{B^0}}
 \begin{Bmatrix}
@@ -13,10 +14,9 @@ The measurement of $\it{CP}$ parameters requires the fit to the time-dependent d
 \end{Bmatrix}
 \end{equation}
 
-In above function, it's parameterized by $\mathcal{S}$ and $\mathcal{A}$.
-A complete model that includes the overlay of background components and outlier bands can be defined as : 
+The Equation \ref{eq:tdcpv_sig} describes the physics distribution of signal events only. To perform the unbinned maximum likelihood fit on data, a complete model for \textit{i}-th event that includes the overlay of background components and outlier bands can be defined as Equation \ref{eq:tdcpv_all}.
 
-\begin{equation}
+\begin{equation}\label{eq:tdcpv_all}
 \begin{split}
 \mathcal{P}(\Delta t_i,q_i,f_i^{sig},\mathcal{S},\mathcal{A})
 &=(1-f_{ol})\begin{bmatrix}f_{sig}\mathcal{P}_{sig}(\Delta t_i,q_i,\mathcal{S},\mathcal{A})+(1-f_{sig}\mathcal{P}_{bkg}(\Delta t_i))
@@ -25,71 +25,71 @@ A complete model that includes the overlay of background components and outlier 
 \end{split}
 \end{equation}
 
-where $\mathcal{P}_{bkg}$ and $\mathcal{P}_{ol}$ are defined by: 
+where $f_{sig}$ and $f_{ol}$ are the fraction of signal and outlier components, respectively. The $\mathcal{P}_{bkg}$ and $\mathcal{P}_{ol}$ are defined by Equation \ref{eq:p_bkg} and \ref{eq:p_out}.
 
-\begin{equation}
+\begin{equation}\label{eq:p_bkg}
 \mathcal{P}_{bkg} (\Delta t_i)=
 f_{bkg}^{\delta}\delta(\Delta t_i-\mu_{bkg}^{\delta})+(1-f_{bkg}^{\delta})
 \frac{1}{2\tau_{bkg}}e^{-|\Delta t_i-\mu_{\tau}^{bkg}|/\tau_{bkg}}
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{eq:p_out}
 \mathcal{P}_{ol} (\Delta t_i)=
 G(\Delta t_i, \sigma_{ol})
 \end{equation}
 
-$\delta(\Delta t_i-\mu_{bkg}^{\delta})$ is Dirac type $\delta$ function. Eq(5.2) is using $\Delta t_i$ as i-th event's  decay time difference $\Delta t_i = \Delta z / \beta\gamma c$ in data set, where $\Delta z = z_{cp}-z_{tag}$. 
+where $\delta(\Delta t_i-\mu_{bkg}^{\delta})$ is Dirac $\delta$ function and $G$ is single Gaussian. The outlier component is to improve the fit quality with large $\Delta t$ events.
 
 \section{Vertex Resolution Model}
-\subsection{$\it{CP}$-side resolution function}
-Eq(5.2) presents an ideal distribution of $\Delta t_i$ without considering the difference between measured vertex position and the physical ones. The difference can be described by introducing resolution functions. If considering resolution function, Eq(5.2) turns into: 
-\begin{equation}
+
+The Equation \ref{eq:tdcpv_all} presents an ideal distribution of $\Delta t_i$ for each event without considering the difference between measured and the true position of the vertex. The difference can be described by introducing resolution functions. This turns Equation \ref{eq:tdcpv_all} into Equation \ref{eq:tdcpv_all_res}.
+\begin{equation}\label{eq:tdcpv_all_res}
 \begin{split}
 \mathcal{P}(\Delta t_i,q_i,f_i^{sig},\mathcal{S},\mathcal{A})
-&=(1-f_{ol})\text{[}f_{sig}\mathcal{P}_{sig}(\Delta t_i)\circledast R_{sig}(\Delta t_i)\\
-&+(1-f_{sig})\mathcal{P}_{bkg}(\Delta t_i)\circledast R_{bkg}(\Delta t_i)
+&=(1-f_{ol})\text{[}f_{sig}\mathcal{P}_{sig}(\Delta t_i)\otimes R_{sig}(\Delta t_i)\\
+&+(1-f_{sig})\mathcal{P}_{bkg}(\Delta t_i)\otimes R_{bkg}(\Delta t_i)
 \text{]}\\
-&+f_{ol}\mathcal{P}_{ol}(\Delta t_i)\circledast R_{ol}(\Delta t_i)
+&+f_{ol}\mathcal{P}_{ol}(\Delta t_i)\otimes R_{ol}(\Delta t_i)
 \end{split}
 \end{equation}
 
-$R_{sig}$ stands as resolution function for signal component, which receives smearing effect from \textit{CP} and tag side, namely $R_{cp}$ and  $R_{tag}$. The treatment of \textit{CP} side and tag side is different because of vertexing strategies. For \textit{CP} side, vertex of $B^0$ is reconstructed by fully fitting all the daughter particles. Instead, in tag side, there's no reconstruction of $B^0$ so vertex fit is performed by geometric fitting with selected charged tracks. The background events has its own resolution model which is independent from any $\it{CP}$ violation parameters. The outlier is used to compensate and smooth the long tails when $\Delta t$ becomes very large. In this analysis, we don't include the outlier to have a more realistic model under very low statistics. 
+The $R_{sig}$ stands for the resolution function for signal events, which receives smearing effect from \textit{CP} and tag side separately, namely $R_{cp}$ and  $R_{tag}$. The treatment of \textit{CP} side and tag side is different because of vertexing strategies. For \textit{CP} side, vertex of $B^0$ is reconstructed by fully fitting all the daughter particles. Instead, in tag side, there's no full reconstruction of $B^0$ so vertex fit is applied for the selected charged tracks in ROE. The background events have its own resolution model which is independent from  $\it{CP}$ violation parameters. The outlier is used to compensate and smooth the long tails when $\Delta t$ becomes very large. In the early stage of Belle II, we don't include the outlier to have a more realistic model under very low statistics. 
 
+For signal events, the resolution functions are studied for $\it{CP}$-side and tag-side based on each possible degradation such as detector resolutions, effect of tracks from non-primary $B$ vertex and so on. Such a method is used in Belle analysis and named as artificial model. Details are summarized in \cite{Yusa-note}. Considered the vertex position difference $\Delta z$ for signal events as shown in Equation \ref{eq:dz}. 
 
-Considered only the detector effect on vertex difference along z-axis $\Delta z$. 
-
-\begin{equation}
+\begin{equation}\label{eq:dz}
 \Delta z 
 =\Delta z^{'} + (z_{cp}^{}- z_{cp}^{'}) - (z_{tag}^{}- z_{tag}^{'}) 
-\end{equation}where the primed ones stands for physical truth of position and the non-primed is measured. Footnotes are from either \textit{CP} side or tag side position. The resolution function clearly comes from $\it{CP}$ and tag-side, so for signal events, we determine the resolution models from $\it{CP}$ and tag-side separately. The resolutions on both sides also depends on the fitting method and the applied constraint, so to generalize the options used, there's no IP constraint from both side when the vertex is fitted, which avoids potential bias from  IP profile under this low statistical situation.
+\end{equation}where the primed ones stands for physics truth of the position and the non-primed is the measured value, the resolution function receives contribution from both $\it{CP}$ and tag-side effects. In the meantime, the resolution functions on both sides also depend on the applied constraint. Considering that the fine structure of IP profile is not yet fully understood and small discrepancies have been observed between data and simulation\cite{jpsiks_ichep}, there's no IP constraint applied for both sides in vertex fit, which avoids potential bias from  IP profile under this low statistical situation. The combined contributions can be presented as Equation \ref{eq:Rsig}.
 
-%\begin{equation}
-%R_{sig}=R_{cp}( z_{cp}- z_{cp}^{'})\circledast
-%R_{tag}( z_{tag}- z_{tag}^{'})
-%\end{equation}
-$\it{CP}$-side vertex is fitted with TreeFit as mentioned in the previous section where all tracks from a reconstructed event is used, thus the resolution models only depends on detectors' performance. For the $\it{CP}$-side vertex from TreeFit, the vertex resolution has relation towards the reconstruction quality, or to be more specific, the $\chi_2/N$ value, which $\chi_2$ represents the goodness of fit and N is the fitting's degree of freedom. The distribution of $\chi_2/N$ (called as reduced $\chi_2$) in selected events are shown below: 
+\begin{equation}\label{eq:Rsig}
+R_{sig}=R_{cp}\otimes R_{tag}
+\end{equation}
+
+\subsection{$\it{CP}$-side resolution function}
+
+$\it{CP}$-side vertex is fitted with all tracks from a reconstructed $B^0$, thus the resolution models only depend on detectors' effect. For each event, the resolution effect can be different based on event-by-event reconstruction quality, primarily presented by the reduced $\chi^2$ called $\chi_2/N$ from \textit{TreeFit}, which N is the degree of freedom of the fit. The distribution of $\chi_2/N$ in data are shown in Figure \ref{fig:redchi2}. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=6cm]{redChi2.png}
 	\caption{$\chi_2/N$ of selected events from data.}
+	\label{fig:redchi2}
 \end{figure}
 
-Based on this, we model the resolution functions on $\it{CP}$-side vertexing using a double-gaussian function, whose mean is set to zero and the standard deviation is scaled by $\chi_2/N$ and the error of vertexing. 
-
-\begin{equation}
+Therefore, we model the resolution functions on $\it{CP}$-side by using a double Gaussian function, where the mean is fixed to zero and the standard deviation is scaled by $\chi_2/N$ and the error of reconstructed vertex $\sigma_{z_{cp}}$, as shown in Equation \ref{eq:Rcp}.
+\begin{equation}\label{eq:Rcp}
 R_{cp}(\delta z_{cp}) = (1-f_{cp}^{tail})G(0,s_{cp}^{main})+
 f_{cp}^{tail}G(0,s_{cp}^{tail})
-\end{equation} where: 
-
-\begin{eqnarray}
+\end{equation} where $s_{cp}^{main}$ and $s_{cp}^{tail}$ are defined in Equation \ref{eq:scp_mt}.
+\begin{eqnarray}\label{eq:scp_mt}
 \begin{split}
-s_{cp}^{main}&=(s_0^{main} + s_1^{main}\cdot \chi^2_{cp}/NDF )\cdot \sigma_{z_{cp}}\\
-s_{cp}^{tail}&=(s_0^{tail} + s_1^{tail}\cdot \chi^2_{cp}/NDF )\cdot \sigma_{z_{cp}}
+s_{cp}^{main}&=(s_0^{main} + s_1^{main}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}\\
+s_{cp}^{tail}&=(s_0^{tail} + s_1^{tail}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}
 \end{split}
 \end{eqnarray} 
-The dependence of resolution models on $\chi_2/N$ is shown as follows. Restrictively speaking, the $\it{CP}$-side resolution for $B^0 \to K_S^0  K_S^0  K_S^0$ is slight different from other channels such as $B^0\to J/\psi K_S^0$, due to the lack of the direct charged tracks from the $B^0$ vertex. The way of scaling the resolution will be further studied along with more data available. Given the current low statistics, the above model works well as an approximation. By fitting the resolution functions from signal MC on $\it{CP}$-side, we could determine the parameters in Eq(5.7), and it's listed in Table 5.1.
-\begin{figure}[H]
+The dependence of resolution models on $\chi_2/N$ is shown in Figure \ref{fig:redchi2fit}. Restrictively speaking, the $\it{CP}$-side resolution for $B^0 \to K_S^0  K_S^0  K_S^0$ is slight different from $B^0\to J/\psi K_S^0$, due to the absence of the direct charged tracks from the $B^0$ vertex. The modification of the resolution function on $\it{CP}$-side will be further studied when more data becomes available in future. Given the current low statistics, the Equation \ref{eq:Rcp} works well as an approximation. By fitting the resolution function using signal MC on $\it{CP}$-side, we can determine the parameters which are listed in Table \ref{tab:Rcp}.
+\begin{figure}[htbp]
 	\begin{subfigure}{0.5\linewidth}
 		\caption{$0<\chi_2/N<10$}
 		\includegraphics[height=5cm]{figures/residual0_10}
@@ -124,12 +124,14 @@ The dependence of resolution models on $\chi_2/N$ is shown as follows. Restricti
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
 	\caption{Resolution functions on $\it{CP}$-side, which shows dependence on the $\chi_2/N$}
+	\label{fig:redchi2fit}
 \end{figure}
 
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Parameters in $R_{cp}$.}
+		\label{tab:Rcp}
 		\begin{tabular}{|c|c|}
 			\hline
 			$f_{cp}^{tail}$ & $0.07424 \pm 0.0008$\\
@@ -144,70 +146,60 @@ The dependence of resolution models on $\chi_2/N$ is shown as follows. Restricti
 
 \subsection{Tag-side resolution function}
 
-For the tag-side, the vertexing is done by using KFit and No IP constraint. Since we don't reconstruct certain decay channel like $\it{CP}$-side, there's no guarantee that tracks used by KFit are all from the primary vertex. This leads to the resolution degradation on tag side vertexing called $R_{np}$. To the contrary, if all tracks that are used for tag vertexing are from primary vertex, then resolution will only be affected by the detector, and this is called $R_{det}$, similarly to $R_{cp}$. The model is demonstrated as below:
-\begin{equation}
+For the tag-side, the vertexing is done by using \textit{KFit} and no IP constraint used. Due to the charged tracks from non-primary $B$ vertex, the resolution functions on tag-side not only receives contribution from detectors' effect $R_{det}^{tag}$ but also the resolution degradation from secondary vertex, called $R_{np}^{tag}$. To the contrary, if all tracks that are used for tag-side vertexing are primary tracks, the resolution will only be affected by the detectors' effect. The vertex position difference is defined as Equation \ref{eq:ztag}. Therefore, the effects from both detectors and non-primary tracks contributes to the total resolution on tag-side as Equation \ref{eq:Rtag} shows.
+\begin{equation}\label{eq:ztag}
 \begin{split}
-z_{tag} - z_{tag}^{'} =& z_{tag}^{'} + \delta z_{tag}^{det} + \delta z_{tag}^{np} - z_{tag}^{'}\\
+z_{tag} - z_{tag}^{'} =& (z_{tag}^{'} + \delta z_{tag}^{det} + \delta z_{tag}^{np}) - z_{tag}^{'}\\
 =&\delta z_{tag}^{det} + \delta z_{tag}^{np}
 \end{split}
 \end{equation}
-\begin{equation}
-R_{tag}( z_{tag}- z_{tag}^{'}) = R_{det}^{tag}(\delta z_{tag}^{det}) \circledast
+\begin{equation}\label{eq:Rtag}
+R_{tag}( z_{tag}- z_{tag}^{'}) = R_{det}^{tag}(\delta z_{tag}^{det}) \otimes
 R_{np}^{tag}( \delta z_{tag}^{np})
 \end{equation}
 
-\begin{equation}
+Similarly to $\it{CP}$-side resolution function, detectors' effect is presented in Equation \ref{eq:Rtagdet}
+\begin{equation}\label{eq:Rtagdet}
 R_{det}^{tag}(\delta z_{tag}^{det}) = (1-f_{tag}^{tail})G(0,s_{tag}^{main}\cdot\sigma_{z_{tag}})+
 f_{tag}^{tail}G(0,s_{tag}^{tail}\cdot\sigma_{z_{tag}})
-\end{equation} where main and tail parts share same main value at zero, but deviation is defined by using uncertainties in each event $\chi^2_{tag}/N$: 
+\end{equation} where main and tail Gaussian functions have the same central value at zero, but the standard deviation is scaled by $\chi^2_{tag}/N$ on the tag-side as shown in Equation \ref{eq:stag}.
 
-\begin{equation}
-s_{tag}^{main/tail} = s_0^{main/tail} + s_1^{main/tail}\cdot\chi^2_{tag}/NDF
-\end{equation} where $\chi^2_{tag}/N$ is returned by tag side vertexing tool on event-by-event basis.
-Technically $R^{tag}_{det}$ can be fitted with MC of which tag side tracks are all from primary vertex. Then after fixing the fitted parameters of $R^{tag}_{det}$ , $R^{tag}$ will only be dependent on $R^{tag}_{np}$. 
+\begin{equation}\label{eq:stag}
+s_{tag}^{main/tail} = s_0^{main/tail} + s_1^{main/tail}\cdot\chi^2_{tag}/N
+\end{equation} 
+Technically $R^{tag}_{det}$ can be fitted with MC samples of which tag-side tracks are all from primary vertex. After obtaining the fitted parameters of $R^{tag}_{det}$ , $R^{tag}$ will only be dependent on $R^{tag}_{np}$. The fit model of $R_{np}^{tag}$ is shown in Equation \ref{eq:Rnp}. It consists of three functions, including one Dirac $\delta$ function and two single-side exponential functions $E_p$ and $E_n$. The $E_p(x,\tau_p)=(1/\tau_p)e^{-x/\tau_p} $ when $x > 0$ and the $E_n(x,\tau_n)=(1/\tau_n)e^{x/\tau_n} $ when $x < 0$.
+The exponential factors in both positive and negative components are scaled by the tag-side vertex uncertainty $\sigma_{z_{tag}}$. 
 
-As for the fit of $R_{np}$, similar event-by-event fit is also implemented. The fit model of $R_{np}$ is inherited Belle experience. It consists of three functions, including one Dirac type $\delta$ function and two single side exponential. 
-
-\begin{equation}
-R_{tag}^{np}(\delta z_{tag}^{np})=f_{\delta}\delta(\delta z_{tag}^{np}) + 
+\begin{equation}\label{eq:Rnp}
+R_{np}^{tag}(\delta z_{tag}^{np})=f_{\delta}\delta(\delta z_{tag}^{np}) + 
 (1-f_{\delta})[f_p E_p(\delta z_{tag}^{np},\tau_p\cdot \sigma_{z_{tag}}) +
 (1-f_p)E_n(\delta z_{tag}^{np},\tau_n\cdot \sigma_{z_{tag}}) ]
-\end{equation} where $E_p(x,\tau_p)=(1/\tau_p)exp(-x/\tau_p) $ when $x > 0$ and $E_n(x,\tau_n)=(1/\tau_n)exp(x/\tau_n) $ when $x < 0$.
+\end{equation} 
 
-Also, since tag-side has no dependence of how $\it{CP}$-side decays, its resolution is almost mode-independent. We use the parameters that is obtained by fitting to the control sample data. The details about control sample study are here\cite{jpsiks_ichep}. The fit results for tag-side resolution is shown in Fig 5-3 and 5-4 and Table 5.3 and Table 5.4.
 
-\begin{table}[H]
-	\begin{minipage}[b]{1.0\linewidth}
-		\centering
-		\caption{Parameters in $R_{cp}$.}
-		\begin{tabular}{|c|c|}
-			\hline
-			$f_{cp}^{tail}$ & $0.07424 \pm 0.0008$\\
-			$s_0^{main}$&  $0.9151 \pm 0.0077$ \\
-			$s_1^{main}$ & $0.2142\pm 0.0064$\\
-			$s_0^{tail}$ &  $2.0477\pm 0.0779$\\
-			$s_1^{tail}$  & $1.3470\pm 0.0720$ \\
-			\hline
-		\end{tabular}
-	\end{minipage}
-\end{table}
+Also, since tag-side has no dependence on how $\it{CP}$-side is reconstructed, the resolution functions on tag-sdie are almost mode-independent. We use the parameters that is obtained by fitting to the control sample data. The details about control sample study are here\cite{jpsiks_ichep}. The fit plots for tag-side resolution functions are shown in Figure \ref{fig:Rtagdet} and \ref{fig:Rtagnp}. The parameters obtained from the fit are listed in Table \ref{tab:Rtagdet} and Table \ref{tab:Rtagnp}.
+
 
 \begin{figure}[H]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering
 		\includegraphics[height=5cm]{figures/Rdet}
 		\caption{$R_{det}^{tag} $ fit}
+		\label{fig:Rtagdet}
 	\end{minipage}
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering
 		\includegraphics[height=5cm]{figures/Rnp}
 		\caption{$R_{np}^{tag}$ fit}
+		\label{fig:Rtagnp}
 	\end{minipage}
 \end{figure}
+
 \begin{table}[H]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering
 		\caption{Parameters in $R^{tag}_{det}$}
+		\label{tab:Rtagdet}
 		\begin{tabular}{|c|c|}
 			\hline
 			$f_{tag}^{tail}$ & $0.0523 \pm 0.0025$\\
@@ -221,6 +213,7 @@ Also, since tag-side has no dependence of how $\it{CP}$-side decays, its resolut
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering
 		\caption{Parameters in $R^{tag}_{np}$}
+		\label{tab:Rtagnp}
 		\begin{tabular}{|c|c|}
 			\hline
 			$f_{\delta}$ & $0.6256\pm 0.0049$\\
@@ -233,25 +226,21 @@ Also, since tag-side has no dependence of how $\it{CP}$-side decays, its resolut
 \end{table}
 
 
- Last but not least, the boost direction of each event is not constant event-by-event, so the z-axis position of vertex may not be optimized by calculating  $\Delta t_i = \Delta z / \beta\gamma c$. This effect can be reduced by replacing z position with the relative distance along the boosting direction, or introducing another resolution function called $R_k$. In the current modeling of Belle II tag side resolution, distance along the boost direction is available so $R_k$ is not yet implemented. So we use the $\Delta Z$ projection on the boosted direction of each event to account for this effect when we define the parameters of resolution and also for the final fit to Eq(5.5).
+ The boost direction of each event is not constant event-by-event, so the position of vertex may not be optimized by calculating $\Delta t_i = \Delta z / \beta\gamma c$. This effect can be reduced by replacing vertex position difference on z-axis with the relative distance along the boosting direction, or introducing another resolution function called $R_k$\cite{tajima2004proper}. The $R_k$ has not been implemented in Belle II resolution model. Therefore, $\Delta z$ projection on the boosted direction of each event is used for reducing this kinematics effect on resolution function.
 
 
 
-\subsection{Background events distribution}
-Instead, $R_{bkg}$ is in a simpler shape and it's uncorrelated to vertexing method approximately. Because the source of background mainly comes from continuum events passing the selection, it's reasonable to model its resolution by Gaussian-like function. We define a double-Gaussian with its standard deviation scaled by the measured uncertainties from both sides as Eq(5.14) shows. 
+\subsection{Background events $\Delta t$ distribution}
+The $R_{bkg}$ is uncorrelated to vertex reconstruction method approximately. Because the background mainly comes from continuum events passing the selection, it's reasonable to model its resolution by a Gaussian-like function. A double-Gaussian with its standard deviation scaled by the measured uncertainties from both sides is used as Equation \ref{eq:Rbkg}. To be noted, unlike resolution functions on $\it{CP}$ or tag-side, the standard deviations of the double Gaussian are scaled by both the vertex position uncertainties $\sigma_{z_{cp}}$ and $\sigma_{z_{tag}}$. 
 
-\begin{equation}
-R_{bkg} = (1-f^{bkg}_{tail})G(\Delta t_i, \sigma^{bkg}_{main}\sqrt{\sigma^2_{cp}+\sigma^2_{tag}})
-+ f^{bkg}_{tail}G(\Delta t_i, \sigma^{bkg}_{tail}\sqrt{\sigma^2_{cp}+\sigma^2_{tag}})
-\end{equation} It convolution integrals with $\mathcal{P}_{bkg}$:
-
-\begin{equation}
-\mathcal{P}_{bkg}=f_{\delta}^{bkg}\delta(\Delta t - \mu^{bkg}_{\delta})+
-(1-f_{\delta}^{bkg})\frac{1}{2\tau_{bkg}}e^{-|\Delta t - \mu^{bkg}_{\tau}|/\tau_{bkg}}
+\begin{equation}\label{eq:Rbkg}
+R_{bkg} = (1-f^{bkg}_{tail})G(\Delta t_i, \sigma^{bkg}_{main}\sqrt{\sigma^2_{z_{cp}}+\sigma^2_{z_{tag}}})
++ f^{bkg}_{tail}G(\Delta t_i, \sigma^{bkg}_{tail}\sqrt{\sigma^2_{z_{cp}}+\sigma^2_{z_{tag}}})
 \end{equation}
-With this definition, one can make background component $\mathcal{P}_{bkg}\circledast R_{bkg}$ and fit to side-band data to obtained the parameters. There are total seven parameters in float to determine which are listed down below with primary fit results on sideband data, which according to the previous section, is totally 60 events in $M_{bc} <5.26$ GeV.
 
-\begin{figure}[H]
+The background events $\Delta t$ shapes $\mathcal{P}_{bkg}\otimes R_{bkg}$ can be determined by fitting to side-band data. There are totally seven floating parameters which are listed in Table  \ref{tab:Pbkg} with fitted values using 60 sideband events at $M_{bc} < 5.26$ GeV, shown in Figure \ref{fig:Pbkg}
+
+\begin{figure}[htpb]
 	%	\begin{minipage}[b]{0.5\linewidth}
 	%		\centering
 	%		\includegraphics[height=5cm]{figures/bkg-cpfit-gen-mbc526}
@@ -260,7 +249,8 @@ With this definition, one can make background component $\mathcal{P}_{bkg}\circl
 	%	\begin{minipage}[b]{0.5\linewidth}
 	\centering
 	\includegraphics[height=5cm]{figures/bkg-cpfit-data-mbc526}
-	\caption{Background fit on data sideband with $M_{bc} < 5.26 GeV$}
+	\caption{$\mathcal{P}_{bkg}\otimes R_{bkg}$ fit  using 60 sideband events at $M_{bc} < 5.26$ GeV.}
+	\label{fig:Pbkg}
 	%	\end{minipage}
 \end{figure}
 \begin{table}[H]
@@ -277,70 +267,62 @@ With this definition, one can make background component $\mathcal{P}_{bkg}\circl
 		\hline
 	\end{tabular}
 	\caption{Parameters in Background $\Delta t$ distribution. }
+	\label{tab:Pbkg}
 \end{table}
 
 
 \section{Flavor Tagging}
- In order to determine the flavor of tag side $B^0$, flavor tagging algorithm is being developed. The tagger uses information from $\mu^{\pm}$, $\pi^{\pm}$,$K^{\pm}$ and $\Lambda^{}$ and categorized them into 13 different types as illustrated below. 
+ In order to determine the flavor of tag side $B^0$, flavor tagging algorithm is being developed. The flavor tagging uses information from $\mu^{\pm}$, $\pi^{\pm}$,$K^{\pm}$ and $\Lambda^{}$ which are categorized into 13 different types as illustrated in Figure \ref{fig:flavortagger}. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{tagger}
-\caption{Particles and their categories used in flavor tagging algorithm.}
+\caption{Particles and their categories used in flavor tagging algorithm\cite{flavortagger}.}
+\label{fig:flavortagger}
 \end{figure}
  
  
-For each particle that has been used from above categories, PID and kinematics (such as $p_t$,$cos\theta$,$d_0$,etc) information are extracted and feed to the combiner as training variables, to form a output corresponding each category. Then for all outputs from these categories, a total classifier is trained to present the likelihood of flavor $q$. This algorithm is called category-based algorithm which is used in our analysis. Similar tagger based on deep neural-network algorithm is also available but will not be further discussed here. After the reconstruction on the \textit{CP} side is done, ROE objects that contains the tracks from tag side is formed, and tracks that will be used to fill the above particle lists are selected. Just like $K_S^0$ finder and continuum suppression, we choose FastBDT as classifier back-end algorithm. Targeted variable is $q$ of tag side in MC truth. The ROE selection is affected by the cleanness of \textit{CP} reconstruction, but flavor tagging should be almost mode-independent. To minimize impact of the reconstruction performance, MC sample of $B^0 \to \nu \nu$ is used for training the tagger where \textit{CP} side is completely invisible. Then the trained classifier can be applied to signal sample.
+For each particle that has been used from above categories, PID and kinematics information are extracted and feed to the combiner as training variables, to obtained a classifier response corresponding to each category. Then for all responses from these categories, a total classifier is trained to present the likelihood of flavor $q$. This algorithm is called category-based method which is used in this thesis. To be specific, after the reconstruction on the \textit{CP}-side $B^0$ is done, the rest-of-events tracks that are used to form the particle lists \ref{fig:flavortagger} are selected. The FastBDT as the back-end algorithm is chosen for performing training on the classifier of flavor tagging. Targeted variable is true $q$ of tag-side neutral $B$ in MC. To minimize impact of the reconstruction performance on $\it{CP}$-side, MC sample of $B^0 \to \nu \nu$ is used as the training sample where the final states are completely invisible. 
 
- The statistical uncertainty of $\mathcal{S}$ now receives contribution from $\epsilon$ and $w$: $\delta(\mathcal{S}) \propto \frac{1}{\epsilon (1-2w)N_{rec}}$, which make it crucial to correctly measure tagging efficiency and wrong tag fraction. $w$ can be estimate using MC sample which the bias on individual events could propagate to the fit of $\mathcal{S}$. By measuring $w$ from flavor specific decay using real data, bias from MC can be avoid. The validation of flavor tagger using flavor specific control sample is summarized here: \cite{flavortagger}. For flavor specific decay, the Eq(5.17) and Eq(5.18) could be used to fit the wrong tagging fraction and efficiency.
- 
- \begin{equation}
- \mathcal{P}_{SF/OF}^{obs}(\Delta t, q_{cp},q_{tag}, \epsilon, w) = 
- \frac{e^{-|\Delta t|/\tau_{B^0}}}{4\tau_{B^0}}
- \epsilon
- \begin{bmatrix}
- 1 + q_{cp}\cdot q_{tag}(1-2w)\cdot 
- cos(\Delta M_d \Delta t)
- \end{bmatrix}
- \end{equation} so wrong tag fraction can be measured by: 
- 
- \begin{equation}
- \frac{\mathcal{P}_{OF}^{obs}-\mathcal{P}_{SF}^{obs}}{\mathcal{P}_{OF}^{obs}+\mathcal{P}_{SF}^{obs}}=(1-2w)cos(\Delta M_d \Delta t)
- \end{equation}
- 
-  If $w$ is extracted from MC, which is what we implemented in this analysis, bias could be reduced by using binned values of tagger output. To be more specific, saying the output of tagging classifier is $\alpha$ in range $[0,1]$, wrong tag probability of being $q= +1$ is defined as $ \beta = 1-\alpha$, and flavor tagger will eventually gives tagged flavor as $ \mathcal{F}= 1-2\beta = 2\alpha -1$. It's obvious that $\mathcal{F} < 0$ means the tagged flavor is $q=-1$ instead of $+1$. The distribution of $\mathcal{F}$ is shown in Fig 5-7 (up) from signal MC. The average efficiency of among all tag-able event is measured to be $99.92 \pm 0.01 \%$, and effective efficiency (percentage of correctly tagged events) is $31.31 \pm 0.52\%$ for $B^0$ and $31.13 \pm 0.51\%$ for $\overline{B^0}$. No clear bias on effective tagging efficiency is found considering the MC fraction of $B^0$ and $\overline{B^0}$ are $50.11\%$ and $48.89\%$ respectively.
- 
+Considering the limited power of flavor tagging accuracy, there is a certain fraction of events that are wrongly tagged, among all events that can be flavor tagged based on the final states. Thus, the flavor tagging efficiency $\epsilon$ and wrong tag fraction $w$ are defined, respectively. Taking into account of the performance of flavor tagging, the observed distribution of Equation \ref{eq:tdcpv_all} becomes Equation \ref{eq:tdcpv_all_ft}.
+
+\begin{equation}\label{eq:tdcpv_all_ft}
+\small
+\mathcal{P}_{sig}^{obs}(\Delta t, q, \epsilon, w) = 
+\frac{e^{-|\Delta t|/\tau_{B^0}}}{4\tau_{B^0}}
+\epsilon
+\begin{Bmatrix}
+1 - q\cdot \Delta w+ q(1-2w)\cdot 
+\begin{bmatrix}
+\mathcal{S}sin(\Delta M_d \Delta t) + 
+\mathcal{A}cos(\Delta M_d \Delta t)
+\end{bmatrix}
+\end{Bmatrix}
+\end{equation} 
+Compared to the original, the term with $\mathcal{S}$ and $\mathcal{A}$ is reduced by factor $r\equiv |1-2w|$, defined as the dilution factor. 
+
+The statistical uncertainty of $\mathcal{S}$ now receives contribution from $\epsilon$ and $w$: $\delta(\mathcal{S}) \propto \frac{1}{\epsilon (1-2w)N_{rec}}$, which means it's quite important to correctly measure $\epsilon$ and $w$ . The uncertainty of $w$ is much larger than $\epsilon$ which makes $w$ an important source of systematic uncertainty. The validation of flavor tagger using flavor specific control sample is summarized here: \cite{flavortagger}. The $w$ for each single event is defined as a probability which can be presented by the average wrong tag fraction within a close range. The binned values of dilution factor $r$ is defined for the calculation of $w$ as $[0,0.1,0.25,0.5,0.625,0.75,0.875,1]$, which is called $r$-bin. For all events that have been successful tagged, they are projected into histogram of $r$-bin, and $w$ is calculated in each bin by the fraction of events with $q\cdot r$ opposite to its MC flavor. The distribution of $q\cdot r$ is shown in Figure \ref{fig:ft_qr} using signal MC of $B^0 \to K_S^0  K_S^0  K_S^0$. 
+
+Besides, $w$ can be different between $B^0$ and $\overline{B^0}$, where
+$\bar{w} = (w_{B^0}+w_{\overline{B^0}})/2$ and $\Delta w = w_{B^0}-w_{\overline{B^0}}$. Due to the small value of $\Delta w$, the contribution from $\Delta w$ can be safely treated as zero in Equation \ref{eq:tdcpv_all_ft}. Similarly, for $\epsilon$, the values calculated based on each $r$-bin are used in Equation \ref{eq:tdcpv_all_ft} as well. The difference $\mu = \epsilon_{B^0}-\epsilon_{\overline{B^0}} $ is about 1\% to 2\% in each $r$-bin, thus treated as zero, too. The distributions of $w$, $\Delta w$, $\epsilon$, and $\mu$ in each $r$-bin are shown in Figure \ref{fig:ft_wtag}.
  \begin{figure}[htpb]
  	\centering
  	\includegraphics[width=0.7\linewidth]{figures/qr}
+ 	\caption{The distribution of flavor tagger output $(q\cdot r)$ for both tag-side of $B^0$ and $\overline{B^0}$}
+ 	\label{fig:ft_qr}
+ 	\end{figure}
+ \begin{figure}[htpb]
  	\includegraphics[height=9cm]{flavor_values}
- 	\caption{Top:the distribution of flavor tagger output $\mathcal{F}=(q\cdot r)_{FBDT}$ for both tag side of $B^0$ and $\overline{B^0}$. Bottom: flavor tagging efficiency, wrong tagging fraction, tagging difference in regard to rbin.}
- 	\label{fig:qr}
+ 	\caption{The flavor tagging efficiency, wrong tagging fraction, and their difference between different flavors in each of the $r$-bin.}
+ 	\label{fig:ft_wtag}
  \end{figure}
+
+ 
+
  
  
- The r-bins are intervals that splits the absolute value of $\mathcal{F}$, namely $r_{FBDT}=|\mathcal{F}|$, where the true flavor $q$ is irrelevant to r-bins. Belle experience on defining the r-bins is inherited where bins are set as $[0,0.1,0.25,0.5,0.625,0.75,0.875,1]$.For all MC events that have been successful tagged, they are projected into histogram of $|\mathcal{F}|$, $w$ can be calculated in each bin in the way  dividing the number of events that its $\mathcal{F}$ is opposite to its MC flavor to all the events in the same bin. The binned tagging efficiency is calculated through dividing the number of successfully tagged events by all events in the same bin. 
  
- Besides, $w$ can be different between $B^0$ and $\overline{B^0}$. Considering 
- $w = (w_{B^0}+w_{\overline{B^0}})/2$ and $\Delta w = w_{B^0}-w_{\overline{B^0}} $, so for each event of flavor $q$, it may from a correct or incorrect tagged event when we look at the distribution of Eq(5.1). 
  
- From Eq(5.1), it's obvious that the distribution of $\Delta t$ is independent from the flavor $q$, while this is not true considering the limit power of flavor tagging as we discussed. Only certain fraction of events can be flavor tagged and also only part of events are correctly tagged. Considering the effect from flavor tagging, the observed distribution of $\Delta t$ is turning into:
- 
- \begin{equation}
- \mathcal{P}_{sig}^{obs}(\Delta t, q, \epsilon, w) = 
- \frac{e^{-|\Delta t|/\tau_{B^0}}}{4\tau_{B^0}}
- \epsilon
- \begin{Bmatrix}
- 1 - q\cdot \Delta w+ q(1-2w)\cdot 
- \begin{bmatrix}
- \mathcal{S}sin(\Delta M_d \Delta t) + 
- \mathcal{A}cos(\Delta M_d \Delta t)
- \end{bmatrix}
- \end{Bmatrix}
- \end{equation} 
- compared to the original, the fluctuation is reduced by factor $r\equiv |1-2w|$, called as dilution factor. 
- 
- As for efficiency $\epsilon$, the difference $\mu = \epsilon_{B^0}-\epsilon_{\overline{B^0}} $ is about 1\% to 2\% in each bin, thus treated as zero. The average $r$ is also calculated in r-bins. Fig 5-7 (down) shows the flavor tagging results on $w$,$\Delta w$, $\epsilon$ and $\mu$ in each of the r-bin. 
  
 
 
@@ -348,19 +330,21 @@ For each particle that has been used from above categories, PID and kinematics (
 
 \section{$\it{CP}$ Fitter}
 
-The parameters that are needed for \textit{CP} fit is basically all studied and obtainable for extracting $\mathcal{S}$ and $\mathcal{A}$ from Eq(5.2) with using observed $\Delta t$ distribution. The fit is taking the $\Delta t$, signal fraction $f_{sig}$, the flavor charge q as observables, and in the meantime the vertexing error and $\chi_2/N$ are used as event-by-event conditional variables. RooFit is configured based on this setup and unbinned maximum likelihood fit is used as the fitting strategy.
-To actually perform the fit, the computation work load is an important factor to consider when the event number goes high in future.
-Especially, the multiple convolution integrals of resolution model and probability density functions are a set of computing intensive works. Belle legacy fitter utilize a highly customized library called ``Tatami" to perform the convolution integrals. For Belle II, a new $\it{CP}$ fitter is developed based on Python (version 3.7) and RooFit, which is naturally easy to use and maintain with BASF2 due to BASF2's analysis controls are mostly done by Python. The code management shows a modern, good consistency and readability, which will be aimed for providing a universal fitting tool to TDCPV analysis in Belle II. The fitter requires a configuration files which contains all the observables and parameters definition including their range, value, floating state. Data that is fed to the fitter will be converted into the RooDataSet object associated with each variables from configuration file. The models of fit such as each resolution functions, signal and background P.D.F is formed with the data set in the same workspace. The convolution of each components are handled by a customized shared object written in C++ from ``SignalPdf.cxx". Combined these tools, the unbinned maximum likelihood fit is performed that can either be used to determine  $\mathcal{S}$ and $\mathcal{A}$ or other parameters when they are floating. The result of the fit then restore as ROOT files as well as corresponding plots.
+The parameters that are needed for \textit{CP} fit is all studied and obtainable for measuring $\mathcal{S}$ and $\mathcal{A}$  with using observed $\Delta t$ distribution based on Equation \ref{eq:tdcpv_all_res}. The fit is taking the $\Delta t$, signal fraction $f_{sig}$, the flavor charge $q$ as observables, and in the meantime the vertexing error $\sigma_{z_{cp}}$, $\sigma_{z_{tag}}$ and $\chi_2/N$ are used as event-by-event conditional variables.
+For Belle II, a new $\it{CP}$ fitter is developed based on Python (version 3.7) and RooFit, which is naturally easy to use and maintain with BASF2 due to BASF2's analysis controls are mostly done by Python. The fitter requires a configuration files which contains all the observables and parameters' definitions including their range, value, floating state and uncertainties. The unbinned maximum likelihood fit is performed that can either be used to determine  $\mathcal{S}$ and $\mathcal{A}$, or other parameters when they are floating.
 
+\begin{comment}
 \begin{figure}[H]
-	\centering
-	\includegraphics[height=6cm]{cpfitter-pict}
-	\caption{The structure of $\it{CP}$ fitter for Belle II. Users provide configuration file containing the definitions of all parameters and observables in the $\it{CP}$ fit. Data input files are used to create dataset for fitting. External library called ``SignalPdf.cxx" are generated in runtime to calculate the integral of resolutions and physics distribution event by event, which the fit is performed by maximizing the ``fcn\_core" function, presenting the likelihood of the dataset to the fit model. }
+\centering
+\includegraphics[height=6cm]{cpfitter-pict}
+\caption{The structure of $\it{CP}$ fitter for Belle II. Users provide configuration file containing the definitions of all parameters and observables in the $\it{CP}$ fit. Data input files are used to create dataset for fitting. External library called ``SignalPdf.cxx" are generated in runtime to calculate the integral of resolutions and physics distribution event by event, which the fit is performed by maximizing the ``fcn\_core" function, presenting the likelihood of the dataset to the fit model. }
 \end{figure}
+\end{comment}
 
 
 
-\section{Blind Fit}
+%2021/02/11 mid
+\section{Blind analysis and fit}
 As a required procedure to make sure the $\it{CP}$ parameters are measured without bias due to the preconceived results, a blind analysis procedure is conducted before the fit is actually performed using the experimental data. The blind fit procedure includes the $\it{CP}$ fit on signal MC and generic MC, with different number of events used. To check the reliablity of fit result from $\it{CP}$ fitter, a linearity test and toy MC study is also performed. 
 
 \subsection{$\it{CP}$ fit on MC samples}

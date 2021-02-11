@@ -265,8 +265,8 @@ As a FastBDT method relies on the distribution of variables to calculate CPH, th
 \label{fig:ks_cov}
 \end{figure}
 
- \begin{table} [ht]
- 	\begin{minipage}[t]{0.5\linewidth}
+ \begin{table}[htpb]
+ 	\begin{minipage}[ht]{0.5\linewidth}
  		\centering
  		%\caption{The Abbreviations.}
  		\begin{tabular}{c|c}
@@ -302,7 +302,7 @@ As a FastBDT method relies on the distribution of variables to calculate CPH, th
  		\end{tabular}
  		%\label{fig:side:a} 
  	\end{minipage}
- 	\begin{minipage}[t]{0.5\linewidth}
+ 	\begin{minipage}[ht]{0.5\linewidth}
  		\centering 
  		%\caption{Importance rank }
  		\includegraphics[width=4cm]{rank1}
@@ -319,14 +319,14 @@ As a FastBDT method relies on the distribution of variables to calculate CPH, th
 \subsection{Training, Applying and Testing of KsFinder}
 The variables are internally registered inside the KsFinder so it can automatically retrieve their values from a mDST file in BASF2. The first step of using KsFinder is to call KsFinderSampler on a MC sample to generate training and testing data sample. To show the flexibility and stability of KsFinder on different modes, KsFinderSampler extracts MC data points from both signal MC and generic MC (see MC definition in section 2.9), respectively.  KsFinder configures that the depth of each DT is 3 and boosting steps is 200. In both MC samples, the ratio of true and fake $K_S^0$ is set to 1:1 and each component contains 200000 data points. The distribution of input variables in signal MC is shown in Appendix A. 
 
-To train the KsFinder, KsFinderTeacher function is called for the training samples from signal/generic MC and weight files are saved. To apply the classification of $K_S^0$, KsFinderApplier reads in the testing samples of signal/generic MC and calculate output using saved weight files, so that each $K_S^0$ candidates is assigned with a goodness index named ``FBDT\_Ks". It ranges from 0 to 1 where 1 stands for the best goodness. After the applying of KsFinder on the testing samples, KsFinderTest is called to check the performance and over-training of KsFinder on the testing samples, which will be discussed in the next section. 
+To train the KsFinder, KsFinderTeacher function is called for the training samples from signal/generic MC and weight files are saved. To apply the classification of $K_S^0$, KsFinderApplier reads in the testing samples of signal/generic MC and calculate output using saved weight files, so that each $K_S^0$ candidate is assigned with a goodness index named ``FBDT\_Ks". It ranges from 0 to 1 where 1 stands for the best goodness. After the applying of KsFinder on the testing samples, KsFinderTest is called to check the performance and over-training of KsFinder on the testing samples, which will be discussed in the next section. 
 
 \subsection{The Performance and Over-fitting check}
 To evaluate the performance of KsFinder on both signal/generic samples,  signal efficiency and background rejection are first calculated by cutting on the different values on ``FBDT\_Ks", as defined in Equation \ref{eq:ks_eff} and \ref{eq:ks_rej}.
 
 \begin{eqnarray}
-	\text{signal efficency} = \frac{\text{Number of true $K_S^0$ with output $>$ cut value}}{\text{Number of all true $K_S^0$ }} \label{eq:ks_eff}\\
-	\text{background rejection} = \frac{\text{Number of fake $K_S^0$ with output $<$ cut value}}{\text{Number of fake true $K_S^0$ }} \label{eq:ks_rej}
+	\text{signal efficency} = \frac{\text{Number of true $K_S^0$ with FBDT\_Ks $>$ cut value}}{\text{Number of all true $K_S^0$ }} \label{eq:ks_eff}\\
+	\text{background rejection} = \frac{\text{Number of fake $K_S^0$ with FBDT\_Ks $<$ cut value}}{\text{Number of fake true $K_S^0$ }} \label{eq:ks_rej}
 \end{eqnarray}
 
 In order to check the performance of KsFinder as a classification tool, the ROC (receiver operating characteristics) curve is plotted, which shows the dependence of rejection power with respect to the signal purity. The larger area under a ROC curve means that the better performance is achieved since background rejection drops slower when increasing the cut. The ROC curves and efficiency/background rejections are shown in Figure \ref{fig:3Ks_performance} and \ref{fig:gen_performance}, where the former is for signal MC and the latter is for generic MC.

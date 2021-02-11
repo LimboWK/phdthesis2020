@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -215,9 +215,24 @@ A.~J. Bevan, B.~Golob, Th. Mannel, S.~Prell, B.~D. Yabsley, H.~Aihara,
 \newblock \doi{10.1140/epjc/s10052-014-3026-9}.
 \newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-014-3026-9}.
 
+\bibitem[Yus()]{Yusa-note}
+\emph{BELLE-II-NOTE-TE-2019-010 (2020)}.
+\newblock URL \url{https://docs.belle2.org/record/1384/files/belle2-
+  note-resol_belle.pdf}.
+
 \bibitem[jps()]{jpsiks_ichep}
 URL
   \url{https://docs.belle2.org/record/1941/files/BELLE2-NOTE-PH-2020-027.pdf}.
+
+\bibitem[Tajima et~al.(2004)Tajima, Aihara, Higuchi, Kawai, Nakadaira, Tanaka,
+  Tomura, Yokoyama, Hazumi, Sakai, et~al.]{tajima2004proper}
+H~Tajima, H~Aihara, T~Higuchi, H~Kawai, T~Nakadaira, J~Tanaka, T~Tomura,
+  M~Yokoyama, M~Hazumi, Y~Sakai, et~al.
+\newblock Proper-time resolution function for measurement of time evolution of
+  b mesons at the kek b-factory.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  533\penalty0 (3):\penalty0 370--386, 2004.
 
 \bibitem[fla()]{flavortagger}
 URL
