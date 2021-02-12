@@ -1,63 +1,63 @@
 \contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}The Standard Model}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Symmetry Violation}{11}{section.1.2}%
-\contentsline {section}{\numberline {1.3}CKM mechanism}{14}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Time Dependent $CP$ violation}{19}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1} $CP$ violation in neutral B system}{19}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}$\phi _1$ from $B^0 \to J/\psi K^0_S$}{22}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}$\phi _1$ from penguin-dominated mode $b\to q\bar {q}s$}{23}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}$\phi _1$ from $B^0 \to K_S^0 K_S^0 K_S^0$}{24}{subsection.1.4.4}%
-\contentsline {chapter}{\numberline {2}Belle II experiment}{27}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Belle II and SuperKEKB overview}{27}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Vertex detector (VXD)}{29}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Central drift chamber (CDC)}{31}{section.2.3}%
-\contentsline {section}{\numberline {2.4}TOP and ARICH detectors}{32}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Electromagnetic calorimeter (ECL)}{34}{section.2.5}%
-\contentsline {section}{\numberline {2.6}$K_L^0$ muon detector (KLM)}{35}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Trigger and DAQ system}{35}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Analysis Software}{37}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}BASF2 Core Structure}{38}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Event Processing Workflow}{39}{subsection.2.8.2}%
-\contentsline {subsection}{\numberline {2.8.3}mDST structure}{41}{subsection.2.8.3}%
-\contentsline {subsection}{\numberline {2.8.4}Conditional Database}{42}{subsection.2.8.4}%
-\contentsline {section}{\numberline {2.9}Belle II simulation}{44}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Belle II data taking}{47}{section.2.10}%
-\contentsline {chapter}{\numberline {3}$K_S^0$ reconstruction study}{49}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{50}{section.3.1}%
-\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{53}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Belle II $K_S^0$ classification}{53}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{56}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{58}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{60}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Training, Applying and Testing of KsFinder}{62}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{64}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{67}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{69}{subsection.3.2.8}%
-\contentsline {chapter}{\numberline {4}Analysis strategies}{73}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{73}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{73}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}$B^0$ Reconstruction}{76}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Continuum Suppression}{77}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Resonance Background}{84}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{85}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{85}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on KsFinder}{90}{subsection.4.1.7}%
-\contentsline {chapter}{\numberline {5}\textit {CP} parameters measurement}{99}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Vertex Resolution Model}{100}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{101}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Tag-side resolution function}{102}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Background events $\Delta t$ distribution}{106}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Flavor Tagging}{107}{section.5.2}%
-\contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{109}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Blind analysis and fit}{110}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{110}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{112}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{113}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{114}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{116}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{116}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Conclusion and Prospect}{121}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{125}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{129}{appendix.B}%
-\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{133}{appendix.C}%
-\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution}{139}{appendix.D}%
+\contentsline {section}{\numberline {1.2}Symmetry Violation}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}CKM mechanism}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Time Dependent $CP$ violation}{17}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1} $CP$ violation in neutral B system}{17}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}$\phi _1$ from $B^0 \to J/\psi K^0_S$}{20}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}$\phi _1$ from penguin-dominated mode $b\to q\bar {q}s$}{21}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}$\phi _1$ from $B^0 \to K_S^0 K_S^0 K_S^0$}{22}{subsection.1.4.4}%
+\contentsline {chapter}{\numberline {2}Belle II experiment}{25}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Belle II and SuperKEKB overview}{25}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Vertex detector (VXD)}{27}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Central drift chamber (CDC)}{29}{section.2.3}%
+\contentsline {section}{\numberline {2.4}TOP and ARICH detectors}{30}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Electromagnetic calorimeter (ECL)}{32}{section.2.5}%
+\contentsline {section}{\numberline {2.6}$K_L^0$ muon detector (KLM)}{33}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Trigger and DAQ system}{33}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Analysis Software}{35}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}BASF2 Core Structure}{36}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Event Processing Workflow}{37}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}mDST structure}{39}{subsection.2.8.3}%
+\contentsline {subsection}{\numberline {2.8.4}Conditional Database}{40}{subsection.2.8.4}%
+\contentsline {section}{\numberline {2.9}Belle II simulation}{42}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Belle II data taking}{45}{section.2.10}%
+\contentsline {chapter}{\numberline {3}$K_S^0$ reconstruction study}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{48}{section.3.1}%
+\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ Identification: KsFinder}{51}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Belle II $K_S^0$ classification}{51}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}FastBDT algorithm}{54}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{56}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Determination of training observables from $K_S^0$ decay }{58}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Training, Applying and Testing of KsFinder}{60}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}The Performance and Over-fitting check}{62}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Data Validation for Classifier}{65}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}KsFinder Effects on Kinematics Evaluation}{67}{subsection.3.2.8}%
+\contentsline {chapter}{\numberline {4}Analysis strategies}{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{71}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{71}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}$B^0$ Reconstruction}{74}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Continuum Suppression}{75}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Resonance Background}{82}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{83}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{83}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on KsFinder}{88}{subsection.4.1.7}%
+\contentsline {chapter}{\numberline {5}\textit {CP} parameters measurement}{97}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Vertex Resolution Model}{98}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{99}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Tag-side resolution function}{100}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Background events $\Delta t$ distribution}{104}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Flavor Tagging}{105}{section.5.2}%
+\contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{107}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Blind analysis and fit}{108}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{108}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{110}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{111}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{112}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{114}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{114}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusion and Prospect}{119}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{123}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{127}{appendix.B}%
+\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{131}{appendix.C}%
+\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution}{137}{appendix.D}%
