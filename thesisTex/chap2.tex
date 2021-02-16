@@ -1,6 +1,6 @@
 \chapter{Belle II experiment}
 \section{Belle II and SuperKEKB overview}
-The fundamental goals of Belle II experiment are to search for evidence of New Physics in the luminosity frontier, and to improve the precision of the measurement of the SM parameters, such as $CP$ parameter.\cite{b2book} It uses SuperKEKB accelerator as its particle collider at the center-of-mass energy in the region of $\Upsilon(4S)$ resonances. The majority of the production will at the $\upsilon(4S)$ resonance that is slightly above the mass of two $B$ mesons. The electron and positron beams are designed at 7 GeV and 4 GeV, respectively, with boost factor of 0.28. This creates an environment for measuring time-dependent $CP$ violation by displacing the decay vertices of a $B$ meson pair in a measurable distance along the boosted direction. SuperKEKB has a targeted luminosity of $8\times 10^{35}\: \text{cm}^{-2} \text{s}^{-1}$, 40 times higher than its predecessor, KEKB at peak luminosity. The expected operation period is from 2019 to the end of 2030. These facilities are located in KEK, Tsukuba City, around 70 km in the north of Tokyo, Japan. Some key parameters of SuperKEKB are listed in Table \ref{tab:superkekb_pars}. The overview of SuperKEKB and Belle II are shown in Figure \ref{fig:superkekb_belle2}.
+The goal of the Belle II experiment is to search for evidence of New Physics, and the expected operation period is from 2019 to the end of 2030. The facilities are located in KEK, Tsukuba City, around 70 km in the north of Tokyo, Japan. The SuperKEKB accelerator enables electron-positron collision at the center-of-mass energy on the region of $\Upsilon(4S)$ resonances which is about the mass of two $B$ mesons. The electron and positron beams are designed at 7 GeV and 4 GeV, respectively, with boost factor of 0.28, providing an environment for measuring time-dependent $CP$ violation by displacing the decay vertices of a $B$ meson pair in a measurable distance along the boosted direction. The SuperKEKB has a targeted luminosity of $8\times 10^{35}\: \text{cm}^{-2} \text{s}^{-1}$, a factor of 40 times higher than its predecessor, the KEKB.  Some key parameters of the SuperKEKB are listed in Table \ref{tab:superkekb_pars}. The overview of SuperKEKB and Belle II are shown in Figure \ref{fig:superkekb_belle2}.
 
 \begin{figure}
 	\centering 
@@ -23,7 +23,7 @@ The fundamental goals of Belle II experiment are to search for evidence of New P
 		Half crossing angle & \multicolumn{2}{c}{41.5} & mrad\\
 		Horizontal emittance & 3.2 & 4.6 & nm \\
 		Emittance ratio & 0.27 & 0.25 & \%\\
-		Beta functions at IP (x / y) & 32/0.27 & 25/0.30 & mm\\
+		Beta functions at IP ($x$/$y$ ) & 32/0.27 & 25/0.30 & mm\\
 		Beam currents & 3.6 & 2.6 &  A \\
 		Beam–beam parameter & 0.0881 & 0.0807 & {}\\
 		Luminosity & \multicolumn{2}{c}{$8\times 10^{35}$} &  $\text{cm}^{-2} \text{s}^{-1}$\\
@@ -34,7 +34,10 @@ The fundamental goals of Belle II experiment are to search for evidence of New P
 \end{table}
 
 
-Belle II detector has a similar size as Belle so that it fits in the previous shell, but all sub-detectors and components have been either newly built or considerably upgraded. The advantage of SuperKEKB requires that Belle II has to be able to stably operate at 40 times higher events rates as well as 10 to 20 times higher beam background compared to Belle at its peak luminosity. This means the mitigation of the effects caused by such high beam background is essential to the success of Belle II. Higher background level leads to high occupancy and radiation damage to the detectors at close range, along with more fake hits in the vertex detectors, pile-up noises in electromagnetic calorimeter and neutron-induced hits in muon detector. Data-acquisition system (DAQ) and trigger are also upgraded not only to adapt to higher luminosity but also for low-multiplicity event sensitivity to support a broader search especially in dark sector. Belle II detector top view is shown in Figure \ref{fig:belle2_view}, and expected performances are summarized as follows: 
+The Belle II detector has a close size as the Belle detector so that it is placed in the same shell, but all sub-detectors and electronic systems have been either newly built or considerably upgraded. The advantage of the SuperKEKB requires that the Belle II has to be able to stably operate at a 40 times higher events rates as well as 10 to 20 times higher beam background compared to Belle. The mitigation of the effects caused by such high beam background is essential to the success of Belle II. Higher background level leads to higher occupancy and radiation damage to the detectors, along with more fake hits in the vertex detectors and central drift chamber, pile-up backgrounds in electromagnetic calorimeter and neutron-induced hits in muon detector. Data-acquisition system (DAQ) and trigger are also upgraded not only to adapt to higher luminosity but also for a better low-multiplicity event sensitivity. Belle II detector in the top view is shown in Figure \ref{fig:belle2_view}.
+
+\begin{comment}
+ and expected performances are summarized as follows: 
 
 
 \textbullet \space vertex resolution of $B$ mesons of $\sim 50 \: \mu\text{m}$,
@@ -48,6 +51,7 @@ Belle II detector has a similar size as Belle so that it fits in the previous sh
 \textbullet \space full cover of experimental acceptance solid angle,
 
 \textbullet \space ultra fast and highly efficiency DAQ and trigger system to cope with large data quantities and fast triggering frequency. 
+\end{comment}
 
 \begin{figure}[htbp]
 	\centering 
@@ -59,43 +63,82 @@ Belle II detector has a similar size as Belle so that it fits in the previous sh
 The success of Belle II detector depends on the complex of sub-detectors which each of them is design for specific purposes. The critical components and features are explained in the following sections. 
 
 \section{Vertex detector (VXD)}
-There are two components in VXD, the silicon based pixel detector (PXD) and silicon based vertex detector (SVD), where total 6 layers are placed in the inner-most region from interaction point (IP). As for PXD, two layers are placed at radii of $r=14$ mm and $r=22$ mm with DEPFET type pixel sensors, respectively. 
-The PXD layers are the closest to Interaction point (IP) so the vertex resolution can be much improved. However, much higher events rate comes with much higher background level on PXD sensors. The overloaded occupancy leads to severe dead time and incredibly large data size from PXD if no data reduction scheme is implemented. In order to trim down data from PXD, a fast online tracking system is built up. In the data taking workflow, the data from PXD will be first readout to a system called ``ONSEN" which can store large size temporary data up to 5 seconds. In this timing window, a fast online tracking system will perform a track fitting extrapolate the fitted tracks backward to PXD plane so the region of interest (ROI) on PXD sensors can be defined. The data outside of the ROI are not read out from ONSEN system to external tapes where offline data is written. This scheme helps reduce large fraction of data especially in the very high luminosity.
-
-For the SVD detector, the sensors are made of ``double-sided silicon strip sensors" (DSSD) with 4 layers at 39 mm, 80 mm, 104 mm, and 135 mm. The geometry of VXD from the is shown in Figure \ref{svd_geo}. The outmost layer of SVD is also larger than Belle SVD1/2. This could be helpful for ensure the reconstruction efficiency for the decay like $K_S^0 \to \pi^+ \pi^- $. However, the current hit filter of SVD doesn't allow the ``single-hit seeding" in the track recontruction, which means any track candidate should have at least two SVD hits. This is due to the concern of the large fraction of single-hit background. For the $K^0_S$ with long flight length, if the daughter $\pi^{\pm}$ only hits one layer of SVD, the reconstruction efficiency is dropped. 
-\begin{figure}[H]
+The vertex detector is composed of two components, the silicon based pixel detector (PXD) and silicon based vertex detector (SVD), where total 6 layers are placed in the inner-most region from interaction point (IP).  The geometry of VXD is shown in Figure \ref{VXDGEO}. The PXD is placed at a radii of $r=14$ mm and $r=22$ mm with DEPFET\cite{Abe:2010gxa} type pixel sensors, which is designed to provide two dimensional hit position information. The inner layer leaves a sufficient space for possible variations of the beampipe layout. The size of two layers are determined by the required acceptance angle, which is 17 degrees (forward) to 150 degrees (backward). The pixel sensor is a monolithic structure with current-digitizing electronics at the end of the senor which makes the a very thin a layer at about 50 microns. The schematic view of sensors on PXD is shown in Figure \ref{fig:pxd}.
+\begin{figure}[htpb]
 	\centering
-	\includegraphics[height=4cm]{VXDGEO.png}
-	\caption{A schematic view of PXD (2 layers in gray) and SVD (4 layers in green and orange) \cite{Abe:2010gxa}.}
+	\includegraphics[height=5cm, width=1\linewidth]{VXDGEO.png}
+	\caption{A schematic view of PXD (2 layers in gray) and SVD (4 layers in green and orange). \cite{Abe:2010gxa}.}
 	\label{fig:svdgeo}
+\end{figure}
+\begin{figure}[htpb]
+\centering
+\includegraphics[width=0.6\linewidth]{pxd}
+\caption{The geometry of sensors on PXD where the light grey surfaces are DEPFET sensors with a thinness of 50 microns. The full length including the out modules is 174 mm\cite{Abe:2010gxa}. }
+\label{fig:pxd}
+\end{figure}
+ As the very close range the PXD is, the sensors are exposed to a very high event rate and very high beam background environment. The large data flow from PXD without any data reduction scheme is problematic for data acquisition system. In order to reduce the data that is not interested by physics analysis such as beam backgrounds, a fast online tracking system is built up for searching a ``region of interest" (ROI) on the PXD sensors. To be specific, the data from PXD will be first readout to a system called ``ONSEN" which can store large size temporary data up to 5 seconds. In this timing window, a fast online tracking system will perform a track fitting using vertext detector and central drift chamber to extrapolate the fitted tracks backward to PXD plane so the ROI on the PXD sensors can be defined. The data from PXD outside of the ROI is not read out to external tapes where offline data is written. 
+
+SVD detector consists of 4 layers of detectors called  ``double-sided silicon detectors" (DSSDs) at 39 mm, 80 mm, 104 mm, and 135 mm away from IP, respectively. The two sides of the sensors are called $p$-side and $n$-side, where the former is for strips on $r-\phi$ direction and the latter is for strips on the $z$ direction. To suppress the background hits, a readout chip with a fast shaping time of $\mathcal{O}$(50 ns) is indispensable. The APV25 chip\cite{french2001design} is chosen as the readout chip that was original developed for CMS silicon tracker, with total 128 identical channels of low-noise preamplifiers followed by a 50 ns peaking time shaper stage. The polar angular acceptance ranges from 17 degrees to 150 degrees, which is asymmetric to account for theforward boost of the center-of-mass frame. The combination between sensors, electronics and the supporting structure uses so-called ``Origami" concept which stands for a Chip-on-Sensor design. In the Origami scheme, the readout chips APV25 are placed on a single flexible circuit mounted on the $n$-side of the sensors. The channels of $p$-side are attached by small flexible fan-outs wrapped around the edge of the sensors. All connections between flex pieces, sensor, and APV25 chips aremade by wire bonds.
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=1\linewidth]{ori1}
+	\includegraphics[width=1\linewidth]{ori2}
+	\caption{The top and side views of Origami Chip-on-Sensor design for DSSDs of SVD. Top: the APV25 chips in grep read out the same side sensors channel while chips in green read out the sensors on the opposite side using wrapped-around flex pieces. Bottom: side view of the Origami design shows the location of wrapped flex which connects the strips of the bottom sides which are placed at the left edge.\cite{Abe:2010gxa}}
+	\label{fig:origami}
 \end{figure}
 
 
 
 \section{Central drift chamber (CDC)}
-The central tracking system is the core component of spectrometer in Belle II, which consists of a fairly big drift chamber made of many small drift cells filled with He-C$_2$H$_6$ gas. The out radius of CDC has been extended to 1130 mm from 880 mm of Belle thanks to the much thinner layers in barrel region. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction or the stereo direction. Such design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which forms helix tracks in CDC volume. Thus, CDC is one of the key components for measuring the helix parameters for tracking system. The example of CDC tracking of a cosmic ray event  is shown in Figure \ref{CDC_cosmic}
+The Central drift chamber (CDC) is the core component of spectrometer in Belle II, which consists of a fairly big drift chamber made of many small drift cells filled with gas. The chambergas is comprised of a He–C$_2$H$_6$ 50\%:50\% mixture with an average drift velocity of 3.3 cm $\mu$s$^{-1}$ and amaximum drift time of about 350 ns for a 17 mm cell size.The out radius of CDC has been extended to 1130 mm from 880 mm of Belle thanks to the much thinner layers in barrel region. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction and the stereo direction\cite{Abe:2010gxa}\cite{b2book}. Such a design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which reflects helix tracks in CDC volume. Thus, CDC is one of the key components for measuring the helix parameters for tracking, providing precise information on the charged tracks momentum. Also, it provides particle identification information using measurements of energy loss within its gas volume. Low-momentum tracks, which do not reach the particle identification device, can be identified usingthe CDC alone. Finally, it provides efficient and reliable trigger signals for charged particles.
+
+Belle II CDC is expected to handle higher trigger rates with less dead time. The front-end electronics are located near the backward end-plate and send digital signals to the
+electronics hut through optical fibers. Due to the higher radiation and higher beam background in Belle II, also to create more space for SVD volume, the inner radius of CDC in Belle II is 160 mm and the outer radius is 1130 mm. Within this volume, CDC can create three dimensional trigger information. A dedicated trigger type called $z$ trigger\cite{Abe:2010gxa} based on the 3D tracking achieved by an FPGA using axial and stereo wires is implemented. 
+
+The structure of CDC consists of three main components which are a thin carbon-fiber reinforced
+plastic (CFRP) inner cylinder, two aluminum endplates, and a CFRP outer cylinder, as shown in Figure \ref{fig:cdc_full}. The outer cylinder is a thickness of 5 mm structure supporting most of the wire tension of 4 tonnes. The inner cylinder is as thin as 0.5 mm to minimize the material and support small cell chamber such as the layers in the inner most region. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm]{CDCcosmic}
-	\caption{CDC tested with a cosmic ray event \cite{b2book}}
-	\label{CDC_cosmic}
+	\includegraphics[width=1\linewidth]{cdc_full}
+	\caption{CDC structure schematic view\cite{Abe:2010gxa}.}
+	\label{fig:cdc_full}
 \end{figure}
+
+
+
 
 
 \section{TOP and ARICH detectors}
-The particle identification system of Belle II mainly consists of two parts, time-of-propagation counter (TOP) and aerogal based Cherenkov radiation imaging ring (ARICH). TOP is the specialized detector that can reconstruct Cherenkov radiation's time of arrival and generated position by a photon detector placed at the end of a 2.6 cm quartz bar. Due to the ultra-fast flying time of photon, the TOP detectors has to achieve timing resolution at around 100 ps. A 16 channels micro-channel plate photon-multiplier (MCP-PMT) with custom-made waveform electronics of readout is used. The resolution of starting time is achieved about 50 ps. \cite{Abe:2010gxa}. 
+The particle identification system of Belle II mainly consists of two parts, time-of-propagation counter (TOP) and aerogal based Cherenkov radiation imaging ring (ARICH).
 
-\begin{figure}[H]
+TOP is the specialized detector that can reconstruct Cherenkov radiation's time of arrival and generated position by a photon detector placed at the end of a 2.6 cm quartz bar. The TOP is placed at the barrel region of the spectrometer, as shown in Figure \ref{fig:belle2_view}. The conceptional view and the working principle of TOP counter are shown in Figure \ref{fig:top}. In this counter, the time of propagation of the Cherenkov photons internallyreflected inside a quartz radiator is measured. The quartz radiator is composed of three components: a long bar for radiating
+Cherenkov light and propagating this light via total internal reflection to the bar end, where the
+MCP-PMTs are mounted; a spherical mirror mounted on the forward end of the bar for focusing
+the light; and, for the 1-bar design, a prism that attaches to the backward end of the bar and
+allows the Cherenkov ring image to expand before the photons are recorded by the PMTs. A 3-dimentional information with $x-y$ position and a timing information are obtained by micro-channel plate (MCP) PMTs at the end surfaces of the quartz bar.
+The resolution of starting time is achieved about 50 ps\cite{Abe:2010gxa}. As the key component of the photon detector, the squared shape MCP PMTs, donated as SL-10\cite{inami2008cross}, have been developed with a $4\times 4$ anode array, a multi-alkali photocathode,two MCP plates with 10 $\mu$m pore size, and an aluminum layer on the second MCP to protectagainst ion feedback. The image of a SL-10 MCP PMT and an anode schematic view are shown in Figure \ref{fig:mcppmt}. 
+
+\begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{top_mod}
 	\includegraphics[width=0.7\linewidth]{top_img}
-	\caption{Schematic view of TOP counter (up) and its imaging process of $K^{\pm}$ and $\pi^{\pm}$ (down)\cite{Abe:2010gxa}.}
+	\caption{Conceptional view of TOP counter (up) and its imaging process of $K^{\pm}$ and $\pi^{\pm}$ (down)\cite{Abe:2010gxa} for PID purpose.}
+	\label{fig:top}
 \end{figure}
 
-As for ARICH, it uses areogal as the sensitive material to approximately image the Cherenkov ring by a special focusing structure to identify charged particles. ARICH should be able to separate charged particles in a momentum range from 0.5 GeV to 4 GeV. ARICH requires single-photon-sensitive  high-granularity sensor to reconstruct the Cherenkov angle with small photon yield. Hamamatsu Corporation, Japan, has developed a hybrid avalanche photon detector (HAPD) to meet the requirements. Each sensor is $73 \times 73$ mm$^2$ embedded with 144 channels to accelerate emitted electrons in a 8 kV field. Avalanche photo-diodes (APD) are used for the detection of electrons at the end of electron acceleration, see Figure \ref{fig:arich_img}. The ARICH detector outlook and the ring image of cosmic $\mu$ on the HAPD sensors are shown in Figure \ref{fig:HAPD}.
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{mcppmt}
+	\caption{SL-10 MCP PMT (left) and the schematic view of $4\times 4$ anode (right)\cite{Abe:2010gxa}}
+	\label{fig:mcppmt}
+\end{figure}
 
-\begin{figure}[H]
+Aerogel Ring-Imaging Cherenkov
+detector (ARICH) is located at the forward endcap in Figure \ref{fig:belle2_view} to separate charged particles in a momentum range from 0.5 GeV to 4 GeV, which requires single-photon-sensitive high-granularity sensor to reconstruct the Cherenkov angle with small photon yield. ARICH 
+Japan has developed a hybrid avalanche photon detector (HAPD) to meet the requirements. Each sensor is $73 \times 73$ mm$^2$ embedded with 144 channels to accelerate emitted electrons in a 8 kV field. Avalanche photo-diodes (APD) are used for the detection of electrons at the end of electron acceleration, see Figure \ref{fig:arich_img}. The ARICH detector outlook and the ring image of cosmic muon on the HAPD sensors are shown in Figure \ref{fig:HAPD}.
+
+\begin{figure}[htpb]
 	\centering
 	\includegraphics[height=5cm]{HAPD}
 	\caption{Photon-electrons acceleration (left) and pixelated APD (right) at the end\cite{Abe:2010gxa}.}
@@ -104,35 +147,46 @@ As for ARICH, it uses areogal as the sensitive material to approximately image t
 
 
 
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\centering
 	\includegraphics[height=6cm]{ARICH}
-	\caption{ARICH detector (left) and the ring image of cosmic $\mu$ on the HAPD sensors\cite{b2book}}
+	\caption{ARICH detector (left) and the ring image of cosmic muon on the HAPD sensors\cite{b2book}}
 	\label{fig:HAPD}
 \end{figure}
 
 \section{Electromagnetic calorimeter (ECL)}
-The electromagnetic calorimeter of Belle II is mainly responsible for the detection of $\gamma$ radiation and electrons. The  thallium doped caesium iodide CsI(Tl) crystals are assembled tightly in all three different regions, backward/forward end-caps and barrel region. Compared to the previous ECL in Belle, the pre-amplifiers and the structures remain unchanged, while the readout  electronics have been upgraded. The estimated background level in Belle II ECL will cause the much longer decay time in the scintillation of CsI(TI). This will lead to the pile-up effect of readout noise. To compensate this effect, wave-form sampling electronics are embedded with the photon detectors (PMT). Especially in the forward direction of the electron beamline, where the level of beam background is much higher, the effect of pile-up noise becomes even worse and the performance of ECL will be of trouble if no special measure taken. In this situation, the pure CsI crystal is chosen as the material of detector to achieve a fast wave-shaping time and higher radiation tolerance compared to the dosed CsI(TI). 
+The electromagnetic calorimeter (ECL) in Belle II is mainly responsible for the detection of $\gamma$ radiation and electrons, providing energy deposition information for trigger, particle reconstruction and PID. ECL consists of three sections as shown in Figure \ref{fig:belle2_view}: a 3 m long barrel section with an inner radius 1.25 m, and two annular endcaps at $z = 1.96$ m (forward) and $z = -1.02$ m (backward) from the IP. The barrel section contains 6624 CsI(TI) crystals of 29 distinct shapes and each crystal is a pyramid shape with about $6\times 6$ in cross section and 30 cm in length. The endcaps section contains 2112 CsI crystals of 69 shapes and the total number of crystals is 8736, with a totalmass of about 43 tons\cite{Abe:2010gxa}.
+
+ As the basic component of ECL, the  thallium doped caesium iodide CsI(TI) crystals are assembled tightly in end-caps and barrel sections. Compared to the previous ECL in Belle, the pre-amplifiers and the structures remain unchanged, while the readout  electronics have been upgraded. The estimated background level in Belle II ECL will cause the much longer decay time in the scintillation of CsI(TI). This will lead to the pile-up effect of readout noise. To compensate this effect, wave-form sampling electronics are embedded with the photon detectors (PMT). Especially in the forward direction of the electron beamline, where the level of beam background is much higher, the effect of pile-up noise becomes even worse and the performance of ECL will be of trouble if no special measure taken. Therefore, the pure CsI crystal is considered to be chosen as the material of detector to achieve a fast wave-shaping time and higher radiation tolerance compared to the dosed CsI(TI), which is an back-up option for the future upgrade. ECL is the most important detector for providing trigger information for low multiplicity events, since the main feature of these events is one or two energetic photon(s) emitted from IP region while the charged tracks are missing. 
 
 \section{$K_L^0$ muon detector (KLM)}
-KLM system of Belle II consists of a sandwich stacked iron plates and detectors at outside of the superconducting solenoid. The iron plates serve as the interaction materials with $>$ 3.9 times the interacting length of material compared to the ECL, allowing $K_L^0$ particles to shower through.
-The Belle KLM material uses the glass-electrode resistivity plate chambers (RPC) which is not suitable for Belle II due to high background level.  Neutrons dose is significantly larger due to the much more electromagnetic radiation reaction on detector materials. The long dead time of RPC under such dose rate will reduce the efficiency of KLM. Besides, the mis-identification possibility would be raised so PID contribution from this part of detector will be meaningless. To mitigate this problem, the RPCs are replaced by the layers of scintillator strips with wavelength-shifting ﬁbers, read out by silicon photomultipliers ( called ``SiPMs", Geiger mode operated APDs) as light sensors, which is proven to be able to reliably operate by setting up the discrimination threshold \cite{b2book}.
+The $K_L^0$ and muon detector (KLM) system of Belle II consists of a sandwich stacked iron plates at outside of the superconducting solenoid. The iron plates serve as the interaction materials with $>$ 3.9 times the interacting length of material compared to the ECL, allowing $K_L^0$ particles to shower through. The octagonal barrel covers the polar angle range from 45 degrees to 125 degrees, while the endcaps extendthis coverage from 20 degrees to 155 degrees. There are 15 detector layers and 14 iron plates in the barrel and14 detector layers and 14 iron plates in each endcap. The side view of KLM is shown in Figure \ref{fig:klm}.
+The Belle KLM material uses the glass-electrode resistivity plate chambers (RPC) which is not suitable for Belle II due to high background level.  Neutrons dose is significantly larger due to the much more electromagnetic radiation reaction on detector materials. The long dead time of RPC under such dose rate will reduce the efficiency of KLM. To mitigate this problem, the RPCs are replaced by the layers of scintillator strips with wavelength-shifting ﬁbers, read out by silicon photomultipliers (called ``SiPMs", Geiger mode operated APDs) as light sensors, which is proven to be able to reliably operate by setting up the discrimination threshold \cite{b2book}.
 
-\begin{comment}
 \begin{figure}[htbp]
-\centering
-\includegraphics[height=10cm]{RPC}
-\caption{ RPC layers structure\cite{b2book}}
+	\centering
+\includegraphics[width=1\linewidth]{klm}
+\caption{The side view of KLM in between the ECL and the solenoid, which the grey lines presents the nominal acceptance angle of the Belle II\cite{Abe:2010gxa}. }
+\label{fig:klm}
 \end{figure}
-\end{comment}
+
 
 
 
 \section{Trigger and DAQ system}
-The interesting topics in Belle II physics analysis highly depend on the trigger system. With the upgraded capabilities to study a wide range of physics analysis at a very high luminosity in Belle II, the trigger system is expected to properly operate at a high event rate. The Belle II trigger system is composed of two levels: a hardware-based, low-level trigger called ``L1" trigger, and a software-based high-level trigger (HLT). The L1 trigger has a latency of $\sim 5 \mu\text{s}$ and the maximum trigger output rate is 30 kHz, which is limited by the read-in rate of data acquisition system (DAQ). Considered the high event rate and background level from future Belle II luminosity, a series of upgrades have been implemented for L1 trigger. The key improvements of L1 come from the firmware-based reconstruction algorithm and trigger logic. It's worth noting that a specialized set of hardware trigger lines for dark sector researches are implemented, which improves the trigger efficiency for single energetic photon in the final states. 
+The interesting topics in Belle II physics analysis highly depend on the trigger system. The Belle II trigger system is composed of two levels: a hardware-based, low-level trigger called ``L1" trigger, and a software-based high-level trigger (HLT). The L1 trigger has a latency of $\sim 5 \mu\text{s}$ and the maximum trigger output rate is 30 kHz, which is limited by the read-in rate of data acquisition system (DAQ). Considered the high event rate and background level from future Belle II luminosity, a series of upgrades have been implemented for L1 trigger. The key improvements of L1 come from the firmware-based reconstruction algorithm and trigger logic.
 
-HLT, as the second level of Belle II trigger systema, plays an important role in DAQ. As discussed in the section of PXD, the data size in PXD is huge at high luminosity and the ROI selection must be applied to reduce the online event rate. The event rate reduction relies on the tracking extrapolation on PXD plane, which is the key function of HLT. HLT can suppress the event rate down to 15 kHz using the information from the CDC tracking and ECL reconstruction. The event rate is further reduced to 10kHz by using full reconstruction information. 
+HLT, as the second level of Belle II trigger systema, plays an important role in DAQ. As discussed in the section of PXD, the data size in PXD is huge at high luminosity and the ROI selection must be applied to reduce the data size. The event rate reduction relies on the tracking extrapolation on PXD plane, which is the key function of HLT. HLT can suppress the event rate down to 15 kHz using the information from the CDC tracking and ECL reconstruction. The information from the detectors other than PXD are fed into the first event builder for full event reconstruction. The event rate is further reduced to below 10kHz by using full reconstruction information to find track-associated hits on PXD, as introduced as ROI before. The workflow of DAQ with HLT is demonstrated in Figure \ref{fig:daq}. The reduced event rate by applying HLT on PXD and other detector read-out systems are combined into the second event builder and eventually written to the offline storage. 
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Belle2DAQ}
+	\caption{The Belle II DAQ workflow with HLT between two event builder to reduce the original 30 kHz event rate down to about 6 kHz for offline storage.}
+	\label{fig:daq}
+\end{figure}
+
+
+%2021/02/16 ends
 Since the primary goal of Belle II is focusing on $B$ physics studies, it is natural that the trigger system should be able to operate over all of the interesting $B$ physics conditions, with normally 3 or more CDC tracks and large energy deposition in ECL. By offline reconstructing the simulated events and studying the efficiency, close to 100\% $B$ decays are recorded by Belle II trigger system. However, the extensive capabilities of studying a large range of physics not only in $b$ sector brings a challenge to Belle II trigger and DAQ system. Belle II is expected to show the excellence at performing measurements on other important topics such as $\tau$ physics and dark sector researches. These topics usually suffer from the high beam background. Thus, the control of beam background becomes essential.
 With SuperKEKB, beam background is about 10 to 20 times higher than Belle at the peak instantaneous luminosity. This rises a challenge for Belle II trigger and DAQ system. The main sources of beam background are beam-gas scattering, synchrotron radiation, the radioactive Bhabha scattering, the two-photon process, beam-beam effects, and Touschek effect. Their impacts depend on many factors such as beam current, luminosity and vacuum conditions, etc. One of the featured topology of these beam background events is the combination of two charged tracks in CDC and one or two clusters in ECL. Beam background events are often assembled with low-multiplicity events from primary collision, and the latter is the main focus of dark sector studies. It's quite important to distinguish these low-multiplicity events from various beam backgrounds. The simulated beam background rate and their sources are listed in Table \ref{tab:BG}.
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -142,6 +142,25 @@ T.~Abe et~al.
 \newblock {Belle II Technical Design Report}.
 \newblock 2010.
 \newblock arXiv:1011.0352.
+
+\bibitem[French et~al.(2001)French, Jones, Morrissey, Neviani, Turchetta,
+  Fulcher, Hall, Noah, Raymond, Cervelli, et~al.]{french2001design}
+MJ~French, LL~Jones, Q~Morrissey, A~Neviani, R~Turchetta, J~Fulcher, G~Hall,
+  E~Noah, M~Raymond, G~Cervelli, et~al.
+\newblock Design and results from the apv25, a deep sub-micron cmos front-end
+  chip for the cms tracker.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  466\penalty0 (2):\penalty0 359--365, 2001.
+
+\bibitem[Inami et~al.(2008)Inami, Mori, Matsumura, Kurimoto, Hasegawa, Suzuki,
+  Murase, Yurikusa, Akatsu, Enari, et~al.]{inami2008cross}
+K~Inami, T~Mori, T~Matsumura, K~Kurimoto, S~Hasegawa, Y~Suzuki, T~Murase,
+  Y~Yurikusa, M~Akatsu, Y~Enari, et~al.
+\newblock Cross-talk suppressed multi-anode mcp-pmt.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  592\penalty0 (3):\penalty0 247--253, 2008.
 
 \bibitem[De~Pietro(2018)]{de2018first}
 Giacomo De~Pietro.

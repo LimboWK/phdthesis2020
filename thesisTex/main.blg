@@ -42,45 +42,45 @@ Warning--empty title in jpsiks_ichep
 Warning--empty year in jpsiks_ichep
 Warning--empty title in flavortagger
 Warning--empty year in flavortagger
-You've used 41 entries,
+You've used 43 entries,
             2481 wiz_defined-function locations,
-            802 strings with 11662 characters,
-and the built_in function-call counts, 15081 in all, are:
-= -- 1193
-> -- 891
+            812 strings with 12152 characters,
+and the built_in function-call counts, 16317 in all, are:
+= -- 1265
+> -- 1029
 < -- 24
-+ -- 354
-- -- 272
-* -- 1214
-:= -- 2414
-add.period$ -- 127
-call.type$ -- 41
-change.case$ -- 73
-chr.to.int$ -- 41
-cite$ -- 71
-duplicate$ -- 761
-empty$ -- 1328
-format.name$ -- 319
-if$ -- 3148
++ -- 402
+- -- 316
+* -- 1348
+:= -- 2640
+add.period$ -- 133
+call.type$ -- 43
+change.case$ -- 77
+chr.to.int$ -- 43
+cite$ -- 73
+duplicate$ -- 799
+empty$ -- 1404
+format.name$ -- 365
+if$ -- 3384
 int.to.chr$ -- 1
-int.to.str$ -- 42
-missing$ -- 28
-newline$ -- 215
-num.names$ -- 99
-pop$ -- 370
+int.to.str$ -- 44
+missing$ -- 30
+newline$ -- 225
+num.names$ -- 105
+pop$ -- 384
 preamble$ -- 1
-purify$ -- 41
+purify$ -- 43
 quote$ -- 0
-skip$ -- 478
+skip$ -- 498
 stack$ -- 0
-substring$ -- 489
-swap$ -- 120
+substring$ -- 543
+swap$ -- 124
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 287
+type$ -- 301
 warning$ -- 22
-while$ -- 97
+while$ -- 105
 width$ -- 0
-write$ -- 516
+write$ -- 542
 (There was 1 error message)
