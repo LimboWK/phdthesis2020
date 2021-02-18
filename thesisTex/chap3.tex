@@ -469,15 +469,15 @@ Implementing KsFinder cut on data may induce bias on the event numbers for $K_S^
 
 where $N_{sig}$ is the signal number from the fit result and $N_{tot}$ is the total events number.
 The fit is performed on both generic MC and data to obtained $f_{K_S} $, respectively.
-The $\mathcal{R}_{K_S}$ is defined as the ratio of signal yield fraction  $f_{K_S} $ from MC and data as shown in Equation \ref{eq:R_Ks}. The ratio at cut value of 0.74 is $\mathcal{R}_{K_S} = 1.009\pm 0.011$ from the fit, as shown in Figure \ref{fig:Rfit}. Since the final state consists of three $K_S^0$, the expected ratio between MC and data for $B^0$ is expected as Equation \ref{eq:R_B}, with the uncertainty propagated from the uncertainty of $\mathcal{R}_{K_S}$.  Therefore, the upper and lower limit for the correction ratio  $\mathcal{R}_{B^0}$ is expected to be $1.060$ and $0.994$. The result of $\mathcal{R}_{B^0}$ is $1.027 \pm 0.033$, which is close to 1 within its uncertainty. Hence, the correction $\mathcal{R}_{B^0}$ is not applied in signal extraction of $B^0$, but the uncertainty is taken into account as a possible systematic uncertainty term. 
+The $\mathcal{R}_{K_S}$ is defined as the ratio of signal yield fraction  $f_{K_S} $ from MC and data as shown in Equation \ref{eq:R_Ks}. The ratio at cut value of 0.74 is $\mathcal{R}_{K_S} = 1.009\pm 0.011$ from the fit, as shown in Figure \ref{fig:Rfit}. Since the final state consists of three $K_S^0$, the expected ratio between MC and data for $B^0$ is expected to be the cube of $\mathcal{R}_{K_S}$, with the uncertainty propagated from the uncertainty of $\mathcal{R}_{K_S}$.  Therefore, the upper and lower limit for the correction ratio  $\mathcal{R}_{B^0}$ is expected to be $1.060$ and $0.994$. The result of $\mathcal{R}_{B^0}$ is $1.027 \pm 0.033$, which is close to 1 within its uncertainty. Hence, the correction $\mathcal{R}_{B^0}$ is not applied in signal extraction of $B^0$, but the uncertainty is taken into account as a possible systematic uncertainty term. 
  
 \begin{equation}\label{eq:R_Ks}
 \mathcal{R}_{K_S} = \frac{f_{K_S}^{MC}}{f_{K_S}^{data}}
 \end{equation}
 
-\begin{equation}\label{eq:R_B}
-\mathcal{R}_{B^0} = \mathcal{R}_{K_S}^3
-\end{equation}
+%\begin{equation}\label{eq:R_B}
+%\mathcal{R}_{B^0} = \mathcal{R}_{K_S}^3
+%\end{equation}
 
 \begin{figure}[htpb]
 	\begin{subfigure}{0.5\linewidth}
