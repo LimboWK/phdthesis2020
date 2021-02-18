@@ -144,7 +144,7 @@ against ion feedback. The image of a SL-10 MCP PMT and an anode schematic view a
 \end{figure}
 
 Aerogel Ring-Imaging Cherenkov
-detector (ARICH) is located at the forward endcap in Figure \ref{fig:belle2_view} to separate charged particles in a momentum range from 0.5 GeV to 4 GeV, which requires single-photon-sensitive high-granularity sensor to reconstruct the Cherenkov angle with small photon yield. ARICH 
+detector (ARICH) is located at the forward endcap in Figure \ref{fig:belle2_view} to separate charged particles in a momentum range from 0.5 GeV to 4 GeV, which requires single-photon-sensitive high-granularity sensor to reconstruct the Cherenkov angle with small photon yield.  
 Japan has developed a hybrid avalanche photon detector (HAPD) to meet the requirements. Each sensor is $73 \times 73$ mm$^2$ embedded with 144 channels to accelerate emitted electrons in a 8 kV field. Avalanche photo-diodes (APD) are used for the detection of electrons at the end of electron acceleration, see Figure \ref{fig:arich_img}. The ARICH detector outlook and the ring image of cosmic muon on the HAPD sensors are shown in Figure \ref{fig:HAPD}.
 
 \begin{figure}[htpb]
@@ -258,13 +258,17 @@ With the real experimental data comes in handy, the method of adding background 
 \end{comment}
 
 \section{Analysis software framework} 
-The data acquired by the Belle II experiment or simulation can be processed by  Belle II Analysis Software Framework, called BASF2. It has a good capability to handle multiple tasks for the Belle II data analysis, from the simulated data production to physics events reconstruction. BASF2 takes the advantage of good efficiency and reliability of C++ as the programming languages, but the use ofPython is also allowed when it shows clear advantages, such as steering the analysis workflow. 
+The data acquired by the Belle II experiment or simulation can be processed by  Belle II Analysis Software Framework, called BASF2. It has a good capability to handle multiple tasks for the Belle II data analysis, from the simulated data production to physics events reconstruction. BASF2 takes the advantage of good efficiency and reliability of C++ as the programming languages, but the use of
+Python is also allowed when it shows clear advantages, such as steering the analysis workflow. 
 
  %The official BASF2 is developed in different release versions, light-versions and featured-versions. In this thesis, release-05-01-01 version is used. 
 
 \subsection{BASF2 Core Structure}
-The core structure of BASF2 contains three major parts: the analysis packages required by the needs of analyzing the Belle II data such as finding tracks and combining particles, the external libraries as the third-party such as ROOT, and the tools for configuring and installing BASF2 which are mostly Python and shell scripts. Physics analysis is supported by providinga series of modules belonged to BASF2 for appropriate reconstruction based on their specific
-needs. To realize this, a modular analysis workflow, where each module can handle the eventdata through an unified method such as ROOT I/O based object persistency, is desired. Otherprocesses, such as data summary table (DST) processing, simulation of each sub-detectors, and data skimming, are done with the packages built for sub-detectors.
+The core structure of BASF2 contains three major parts: the analysis packages required by the needs of analyzing the Belle II data such as finding tracks and combining particles, the external libraries as the third-party such as ROOT, and the tools for configuring and installing BASF2 which are mostly Python and shell scripts. Physics analysis is supported by providing
+a series of modules belonged to BASF2 for appropriate reconstruction based on their specific
+needs. To realize this, a modular analysis workflow, where each module can handle the event
+data through an unified method such as ROOT I/O based object persistency, is desired. Other
+processes, such as data summary table (DST) processing, simulation of each sub-detectors, and data skimming, are done with the packages built for sub-detectors.
 
 The analysis packages are categorized based on the different levels of Belle II detector components, like the packages of base-level system control called ``framework", the package that provides the simulation of each sub-detectors like ``svd",  the package for track reconstruction called ``tracking",  and the one for post-reconstruction data analysis called ``analysis", etc. Users can work either with compiled binary version of BASF2 installed centrally on working servers, or build from the source based on their own need. Furthermore, the distributed computing is also supported by the installations of BASF2 through the managment service provided by DIRAC system\cite{dirac}. The detail information about the core structure of BASF2 can be found here\cite{kuhr2019belle}. 
 
@@ -300,7 +304,7 @@ Users can use ``boolean" type variable set in ``event" function to create a cond
 	\label{fig:b2flow}
 \end{figure}
 
-The object that interacts with BASF2 I/O is called ``Datastore", as shown in Figure \ref{fig:b2flow}. This implementation doesn't depend on the event data model. The only mandatory component is called ``EventMetaData" which presents the experiment, run  and event number of a event. ``Unpacker" module converts the raw digits into digits-based object in BASF2. In simulation, digitization is done by module called ``digitizer". The digits-based objects are further processed to form hits or clusters depending on detector types. Higher level functions such as tracking and decay reconstructions are implemented based on these basic information by their packages. Eventually, BASF2 writes out the information based on users' needs, like kinematics variables, to ROOT\cite{ROOTcern} format files, or simply prints out processing statistics to the standard output. In practice, BASF2 starts running when it checks there is at least one module specifying the number of events to be processed in a ``path"  from the ``steering file", then it reads in the information from Datastore in the input ROOT file, execute all the requested modules in the ``steering file" and return the time and number of events as information printed in standard output.
+The object that interacts with BASF2 I/O is called ``DataStore", as shown in Figure \ref{fig:b2flow}. This implementation doesn't depend on the event data model. The only mandatory component is called ``EventMetaData" which presents the experiment, run  and event number of a event. ``Unpacker" module converts the raw digits into digits-based object in BASF2. In simulation, digitization is done by module called ``digitizer". The digits-based objects are further processed to form hits or clusters depending on detector types. Higher level functions such as tracking and decay reconstructions are implemented based on these basic information by their packages. Eventually, BASF2 writes out the information based on users' needs, like kinematics variables, to ROOT\cite{ROOTcern} format files, or simply prints out processing statistics to the standard output. In practice, BASF2 starts running when it checks there is at least one module specifying the number of events to be processed in a ``path"  from the ``steering file", then it reads in the information from DataStore in the input ROOT file, execute all the requested modules in the ``steering file" and return the time and number of events as information printed in standard output.
 
 
 \subsection{mDST structure}
@@ -415,7 +419,7 @@ In total, there are 2 million events generated in signal MC. Half of the signal 
 
 \begin{table}
 	\large
-	\caption{M}
+	\caption{MC samples with and without beam background used in $B^0 \to K_S^0  K_S^0  K_S^0$ analysis.}
 	\label{tab:mc_all}
 	\centering
 	\begin{tabular}{c|c|c}
