@@ -78,7 +78,9 @@ The vertex detector is composed of two components, the silicon based pixel detec
 \end{figure}
  As the very close range the PXD is, the sensors are exposed to a very high event rate and very high beam background environment. The large data flow from PXD without any data reduction scheme is problematic for data acquisition system. In order to reduce the data that is not interested by physics analysis such as beam backgrounds, a fast online tracking system is built up for searching a ``region of interest" (ROI) on the PXD sensors. To be specific, the data from PXD will be first readout to a system called ``ONSEN" which can store large size temporary data up to 5 seconds. In this timing window, a fast online tracking system will perform a track fitting using vertext detector and central drift chamber to extrapolate the fitted tracks backward to PXD plane so the ROI on the PXD sensors can be defined. The data from PXD outside of the ROI is not read out to external tapes where offline data is written. 
 
-SVD detector consists of 4 layers of detectors called  ``double-sided silicon detectors" (DSSDs) at 39 mm, 80 mm, 104 mm, and 135 mm away from IP, respectively. The two sides of the sensors are called $p$-side and $n$-side, where the former is for strips on $r-\phi$ direction and the latter is for strips on the $z$ direction. To suppress the background hits, a readout chip with a fast shaping time of $\mathcal{O}$(50 ns) is indispensable. The APV25 chip\cite{french2001design} is chosen as the readout chip that was original developed for CMS silicon tracker, with total 128 identical channels of low-noise preamplifiers followed by a 50 ns peaking time shaper stage. The polar angular acceptance ranges from 17 degrees to 150 degrees, which is asymmetric to account for theforward boost of the center-of-mass frame. The combination between sensors, electronics and the supporting structure uses so-called ``Origami" concept which stands for a Chip-on-Sensor design. In the Origami scheme, the readout chips APV25 are placed on a single flexible circuit mounted on the $n$-side of the sensors. The channels of $p$-side are attached by small flexible fan-outs wrapped around the edge of the sensors. All connections between flex pieces, sensor, and APV25 chips aremade by wire bonds.
+SVD detector consists of 4 layers of detectors called  ``double-sided silicon detectors" (DSSDs) at 39 mm, 80 mm, 104 mm, and 135 mm away from IP, respectively. The two sides of the sensors are called $p$-side and $n$-side, where the former is for strips on $r-\phi$ direction and the latter is for strips on the $z$ direction. To suppress the background hits, a readout chip with a fast shaping time of $\mathcal{O}$(50 ns) is indispensable. The APV25 chip\cite{french2001design} is chosen as the readout chip that was original developed for CMS silicon tracker, with total 128 identical channels of low-noise preamplifiers followed by a 50 ns peaking time shaper stage. The polar angular acceptance ranges from 17 degrees to 150 degrees, which is asymmetric to account for the
+forward boost of the center-of-mass frame. The combination between sensors, electronics and the supporting structure uses so-called ``Origami" concept which stands for a Chip-on-Sensor design. In the Origami scheme, the readout chips APV25 are placed on a single flexible circuit mounted on the $n$-side of the sensors. The channels of $p$-side are attached by small flexible fan-outs wrapped around the edge of the sensors. All connections between flex pieces, sensor, and APV25 chips are
+made by wire bonds.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=1\linewidth]{ori1}
@@ -90,7 +92,11 @@ SVD detector consists of 4 layers of detectors called  ``double-sided silicon de
 
 
 \section{Central drift chamber (CDC)}
-The Central drift chamber (CDC) is the core component of spectrometer in Belle II, which consists of a fairly big drift chamber made of many small drift cells filled with gas. The chambergas is comprised of a He–C$_2$H$_6$ 50\%:50\% mixture with an average drift velocity of 3.3 cm $\mu$s$^{-1}$ and amaximum drift time of about 350 ns for a 17 mm cell size.The out radius of CDC has been extended to 1130 mm from 880 mm of Belle thanks to the much thinner layers in barrel region. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction and the stereo direction\cite{Abe:2010gxa}\cite{b2book}. Such a design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which reflects helix tracks in CDC volume. Thus, CDC is one of the key components for measuring the helix parameters for tracking, providing precise information on the charged tracks momentum. Also, it provides particle identification information using measurements of energy loss within its gas volume. Low-momentum tracks, which do not reach the particle identification device, can be identified usingthe CDC alone. Finally, it provides efficient and reliable trigger signals for charged particles.
+The Central drift chamber (CDC) is the core component of spectrometer in Belle II, which consists of a fairly big drift chamber made of many small drift cells filled with gas. The chamber
+gas is comprised of a He–C$_2$H$_6$ 50\%:50\% mixture with an average drift velocity of 3.3 cm $\mu$s$^{-1}$ and a
+maximum drift time of about 350 ns for a 17 mm cell size.
+The out radius of CDC has been extended to 1130 mm from 880 mm of Belle thanks to the much thinner layers in barrel region. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction and the stereo direction\cite{Abe:2010gxa}\cite{b2book}. Such a design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which reflects helix tracks in CDC volume. Thus, CDC is one of the key components for measuring the helix parameters for tracking, providing precise information on the charged tracks momentum. Also, it provides particle identification information using measurements of energy loss within its gas volume. Low-momentum tracks, which do not reach the particle identification device, can be identified using
+the CDC alone. Finally, it provides efficient and reliable trigger signals for charged particles.
 
 Belle II CDC is expected to handle higher trigger rates with less dead time. The front-end electronics are located near the backward end-plate and send digital signals to the
 electronics hut through optical fibers. Due to the higher radiation and higher beam background in Belle II, also to create more space for SVD volume, the inner radius of CDC in Belle II is 160 mm and the outer radius is 1130 mm. Within this volume, CDC can create three dimensional trigger information. A dedicated trigger type called $z$ trigger\cite{Abe:2010gxa} based on the 3D tracking achieved by an FPGA using axial and stereo wires is implemented. 
@@ -112,12 +118,15 @@ plastic (CFRP) inner cylinder, two aluminum endplates, and a CFRP outer cylinder
 \section{TOP and ARICH detectors}
 The particle identification system of Belle II mainly consists of two parts, time-of-propagation counter (TOP) and aerogal based Cherenkov radiation imaging ring (ARICH).
 
-TOP is the specialized detector that can reconstruct Cherenkov radiation's time of arrival and generated position by a photon detector placed at the end of a 2.6 cm quartz bar. The TOP is placed at the barrel region of the spectrometer, as shown in Figure \ref{fig:belle2_view}. The conceptional view and the working principle of TOP counter are shown in Figure \ref{fig:top}. In this counter, the time of propagation of the Cherenkov photons internallyreflected inside a quartz radiator is measured. The quartz radiator is composed of three components: a long bar for radiating
+TOP is the specialized detector that can reconstruct Cherenkov radiation's time of arrival and generated position by a photon detector placed at the end of a 2.6 cm quartz bar. The TOP is placed at the barrel region of the spectrometer, as shown in Figure \ref{fig:belle2_view}. The conceptional view and the working principle of TOP counter are shown in Figure \ref{fig:top}. In this counter, the time of propagation of the Cherenkov photons internally
+reflected inside a quartz radiator is measured. The quartz radiator is composed of three components: a long bar for radiating
 Cherenkov light and propagating this light via total internal reflection to the bar end, where the
 MCP-PMTs are mounted; a spherical mirror mounted on the forward end of the bar for focusing
 the light; and, for the 1-bar design, a prism that attaches to the backward end of the bar and
 allows the Cherenkov ring image to expand before the photons are recorded by the PMTs. A 3-dimentional information with $x-y$ position and a timing information are obtained by micro-channel plate (MCP) PMTs at the end surfaces of the quartz bar.
-The resolution of starting time is achieved about 50 ps\cite{Abe:2010gxa}. As the key component of the photon detector, the squared shape MCP PMTs, donated as SL-10\cite{inami2008cross}, have been developed with a $4\times 4$ anode array, a multi-alkali photocathode,two MCP plates with 10 $\mu$m pore size, and an aluminum layer on the second MCP to protectagainst ion feedback. The image of a SL-10 MCP PMT and an anode schematic view are shown in Figure \ref{fig:mcppmt}. 
+The resolution of starting time is achieved about 50 ps\cite{Abe:2010gxa}. As the key component of the photon detector, the squared shape MCP PMTs, donated as SL-10\cite{inami2008cross}, have been developed with a $4\times 4$ anode array, a multi-alkali photocathode,
+two MCP plates with 10 $\mu$m pore size, and an aluminum layer on the second MCP to protect
+against ion feedback. The image of a SL-10 MCP PMT and an anode schematic view are shown in Figure \ref{fig:mcppmt}. 
 
 \begin{figure}[htpb]
 	\centering
@@ -155,12 +164,15 @@ Japan has developed a hybrid avalanche photon detector (HAPD) to meet the requir
 \end{figure}
 
 \section{Electromagnetic calorimeter (ECL)}
-The electromagnetic calorimeter (ECL) in Belle II is mainly responsible for the detection of $\gamma$ radiation and electrons, providing energy deposition information for trigger, particle reconstruction and PID. ECL consists of three sections as shown in Figure \ref{fig:belle2_view}: a 3 m long barrel section with an inner radius 1.25 m, and two annular endcaps at $z = 1.96$ m (forward) and $z = -1.02$ m (backward) from the IP. The barrel section contains 6624 CsI(TI) crystals of 29 distinct shapes and each crystal is a pyramid shape with about $6\times 6$ in cross section and 30 cm in length. The endcaps section contains 2112 CsI crystals of 69 shapes and the total number of crystals is 8736, with a totalmass of about 43 tons\cite{Abe:2010gxa}.
+The electromagnetic calorimeter (ECL) in Belle II is mainly responsible for the detection of $\gamma$ radiation and electrons, providing energy deposition information for trigger, particle reconstruction and PID. ECL consists of three sections as shown in Figure \ref{fig:belle2_view}: a 3 m long barrel section with an inner radius 1.25 m, and two annular endcaps at $z = 1.96$ m (forward) and $z = -1.02$ m (backward) from the IP. The barrel section contains 6624 CsI(TI) crystals of 29 distinct shapes and each crystal is a pyramid shape with about $6\times 6$ in cross section and 30 cm in length. The endcaps section contains 2112 CsI crystals of 69 shapes and the total number of crystals is 8736, with a total
+mass of about 43 tons\cite{Abe:2010gxa}.
 
  As the basic component of ECL, the  thallium doped caesium iodide CsI(TI) crystals are assembled tightly in end-caps and barrel sections. Compared to the previous ECL in Belle, the pre-amplifiers and the structures remain unchanged, while the readout  electronics have been upgraded. The estimated background level in Belle II ECL will cause the much longer decay time in the scintillation of CsI(TI). This will lead to the pile-up effect of readout noise. To compensate this effect, wave-form sampling electronics are embedded with the photon detectors (PMT). Especially in the forward direction of the electron beamline, where the level of beam background is much higher, the effect of pile-up noise becomes even worse and the performance of ECL will be of trouble if no special measure taken. Therefore, the pure CsI crystal is considered to be chosen as the material of detector to achieve a fast wave-shaping time and higher radiation tolerance compared to the dosed CsI(TI), which is an back-up option for the future upgrade. ECL is the most important detector for providing trigger information for low multiplicity events, since the main feature of these events is one or two energetic photon(s) emitted from IP region while the charged tracks are missing. 
 
 \section{$K_L^0$ muon detector (KLM)}
-The $K_L^0$ and muon detector (KLM) system of Belle II consists of a sandwich stacked iron plates at outside of the superconducting solenoid. The iron plates serve as the interaction materials with $>$ 3.9 times the interacting length of material compared to the ECL, allowing $K_L^0$ particles to shower through. The octagonal barrel covers the polar angle range from 45 degrees to 125 degrees, while the endcaps extendthis coverage from 20 degrees to 155 degrees. There are 15 detector layers and 14 iron plates in the barrel and14 detector layers and 14 iron plates in each endcap. The side view of KLM is shown in Figure \ref{fig:klm}.
+The $K_L^0$ and muon detector (KLM) system of Belle II consists of a sandwich stacked iron plates at outside of the superconducting solenoid. The iron plates serve as the interaction materials with $>$ 3.9 times the interacting length of material compared to the ECL, allowing $K_L^0$ particles to shower through. The octagonal barrel covers the polar angle range from 45 degrees to 125 degrees, while the endcaps extend
+this coverage from 20 degrees to 155 degrees. There are 15 detector layers and 14 iron plates in the barrel and
+14 detector layers and 14 iron plates in each endcap. The side view of KLM is shown in Figure \ref{fig:klm}.
 The Belle KLM material uses the glass-electrode resistivity plate chambers (RPC) which is not suitable for Belle II due to high background level.  Neutrons dose is significantly larger due to the much more electromagnetic radiation reaction on detector materials. The long dead time of RPC under such dose rate will reduce the efficiency of KLM. To mitigate this problem, the RPCs are replaced by the layers of scintillator strips with wavelength-shifting ﬁbers, read out by silicon photomultipliers (called ``SiPMs", Geiger mode operated APDs) as light sensors, which is proven to be able to reliably operate by setting up the discrimination threshold \cite{b2book}.
 
 \begin{figure}[htbp]
@@ -187,13 +199,12 @@ HLT, as the second level of Belle II trigger systema, plays an important role in
 
 
 %2021/02/16 ends
-Since the primary goal of Belle II is focusing on $B$ physics studies, it is natural that the trigger system should be able to operate over all of the interesting $B$ physics conditions, with normally 3 or more CDC tracks and large energy deposition in ECL. By offline reconstructing the simulated events and studying the efficiency, close to 100\% $B$ decays are recorded by Belle II trigger system. However, the extensive capabilities of studying a large range of physics not only in $b$ sector brings a challenge to Belle II trigger and DAQ system. Belle II is expected to show the excellence at performing measurements on other important topics such as $\tau$ physics and dark sector researches. These topics usually suffer from the high beam background. Thus, the control of beam background becomes essential.
-With SuperKEKB, beam background is about 10 to 20 times higher than Belle at the peak instantaneous luminosity. This rises a challenge for Belle II trigger and DAQ system. The main sources of beam background are beam-gas scattering, synchrotron radiation, the radioactive Bhabha scattering, the two-photon process, beam-beam effects, and Touschek effect. Their impacts depend on many factors such as beam current, luminosity and vacuum conditions, etc. One of the featured topology of these beam background events is the combination of two charged tracks in CDC and one or two clusters in ECL. Beam background events are often assembled with low-multiplicity events from primary collision, and the latter is the main focus of dark sector studies. It's quite important to distinguish these low-multiplicity events from various beam backgrounds. The simulated beam background rate and their sources are listed in Table \ref{tab:BG}.
+Since the primary goal of Belle II is focusing on $B$ physics studies, it is natural that the trigger system should be able to operate over all of the interesting $B$ physics conditions, with normally 3 or more CDC tracks and large energy deposition in ECL. By offline reconstructing the simulated events and studying the efficiency, close to 100\% $B$ decays are recorded by Belle II trigger system. However, the extensive capabilities of studying a large range of physics not only in $b$ sector brings a challenge to Belle II trigger and DAQ system. The control of beam background becomes essential. The main sources of beam background are beam-gas scattering, synchrotron radiation, the radioactive Bhabha scattering, the two-photon process, beam-beam effects, and Touschek effect. Their impacts depend on many factors such as beam current, luminosity and vacuum conditions, etc. One of the featured topology of these beam background events is the combination of two charged tracks in CDC and one or two clusters in ECL. The sources of the main beam backgrounds and their event rates in simulation is listed in Table \ref{tab:BG}.
 
 \begin{table}[htbp]
 	\centering
 	\large
-	\caption{Simulated beam background rate (12th BG campaign)\cite{b2book}}
+	\caption{Simulated beam background rate\cite{b2book}}
 	\label{tab:BG}
 	\begin{tabular}{c c c}
 		\toprule
@@ -212,7 +223,7 @@ With SuperKEKB, beam background is about 10 to 20 times higher than Belle at the
 	\end{tabular}
 \end{table}
 
-The improvements on both L1 and HLT triggers, along with DAQ upgrade has shown a good potential in dark sector researches\cite{de2018first}\cite{macqueen2020dark}, thanks to the improved discriminating ability of low-multiplicity events against beam background. In future, several modifications on the current trigger system is under consideration, such as the partially pre-scaled trigger lines, which is expected to be optimized for dark sector studies\cite{b2book}. 
+The improvements on both L1, HLT and the DAQ system are dedicated to serve the operation of the Belle II detector with much higher event rate in future. The further upgrades are also considered such as the replacement of the current DAQ module (COPPER board\cite{Abe:2010gxa} on the read-out PCs) with the latest PCIe-40 platform\cite{mitra2016gbt} to enlarge the bandwidth between detector front-end electronics and the event builder in Figure \ref{fig:daq}.
 
 
 \begin{comment}
@@ -246,22 +257,27 @@ With the real experimental data comes in handy, the method of adding background 
 
 \end{comment}
 
-\section{Analysis Software} 
-The data acquired by the Belle II experiment or simulation can be processed by  Belle II Analysis Software Framework, called BASF2. It has a good capability to handle the tasks of sophisticated algorithms for simulation, reconstruction, visualization, and analysis. The official BASF2 is developed in different release versions, light-versions and featured-versions. In this thesis, release-05-01-01 version is used. 
+\section{Analysis software framework} 
+The data acquired by the Belle II experiment or simulation can be processed by  Belle II Analysis Software Framework, called BASF2. It has a good capability to handle multiple tasks for the Belle II data analysis, from the simulated data production to physics events reconstruction. BASF2 takes the advantage of good efficiency and reliability of C++ as the programming languages, but the use ofPython is also allowed when it shows clear advantages, such as steering the analysis workflow. 
+
+ %The official BASF2 is developed in different release versions, light-versions and featured-versions. In this thesis, release-05-01-01 version is used. 
 
 \subsection{BASF2 Core Structure}
-The core structure of BASF2 contains three major parts: the analysis codes specifically required by the needs of Belle II data (called Belle II codes), the external libraries that are the third-party software which Belle II utilize, and the tools for configuring and installing the BASF2 software. 
+The core structure of BASF2 contains three major parts: the analysis packages required by the needs of analyzing the Belle II data such as finding tracks and combining particles, the external libraries as the third-party such as ROOT, and the tools for configuring and installing BASF2 which are mostly Python and shell scripts. Physics analysis is supported by providinga series of modules belonged to BASF2 for appropriate reconstruction based on their specific
+needs. To realize this, a modular analysis workflow, where each module can handle the eventdata through an unified method such as ROOT I/O based object persistency, is desired. Otherprocesses, such as data summary table (DST) processing, simulation of each sub-detectors, and data skimming, are done with the packages built for sub-detectors.
 
-The Belle II codes consists of many packages. They are categorized based on the different levels of Belle II detector components, like the packages of base-level system control called ``framework", the package for track reconstruction called ``tracking", and the one for post-reconstruction data analysis called ``analysis".
-Users can work either with compiled binary version of BASF2 installed centrally on working servers, or build from the source based on their own need. 
+The analysis packages are categorized based on the different levels of Belle II detector components, like the packages of base-level system control called ``framework", the package that provides the simulation of each sub-detectors like ``svd",  the package for track reconstruction called ``tracking",  and the one for post-reconstruction data analysis called ``analysis", etc. Users can work either with compiled binary version of BASF2 installed centrally on working servers, or build from the source based on their own need. Furthermore, the distributed computing is also supported by the installations of BASF2 through the managment service provided by DIRAC system\cite{dirac}. The detail information about the core structure of BASF2 can be found here\cite{kuhr2019belle}. 
 
+
+
+
+\begin{comment}
 As for the externals, it contains the many packages or libraries that provide functionalities BASF2 needs during the execution or installation. For example, some basic packages, like gcc compiler, cmake, tar, wget, Python and git are included. In particular, due to the dependence of the analysis tools that may be frequently used by Python, around 100 additional Python packages are installed as the externals, such as ``Numpy" and ``matplotlib" packages that provide functions for statistical calculations and plotting. The complexity of building all of these external software could be tough for users so that the compiled versions that cover the common platforms are available from BASF2 official repository. 
-
 Tools are collections of shell or Python scripts for setting up BASF2 and externals environment. It can easily handle the need of setting up an environment of specific BASF2 version and the externals tied to that version. It also provides a function to setting up the environment of developing BASF2, where developers can get one developing copy of BASF2 and write the additional codes as the modification, so the compatibility of BASF2 could be easily maintained by building a release version from the developing branches. In this thesis, two new packages are developed and built with release-05-01-01 version BASF2. This developing version of BASF2 contains all functions that release-05-01-01 has. The details will be discussed later. 
+\end{comment}
 
-\subsection{Event Processing Workflow}
-The data from Belle II detector or from the simulation, are organized into a set of runs that are defined by either experimental conditions or simulation conditions. For instance, the simulation data from a certain detectors' condition are packed together, marked with the conditions' database index that is used during the simulation.  Such data sample then is divided into different runs based on estimated luminosity from experiment, which can contain the different number of events in each run.  This scheme is used for categorizing experimental data as well, so that users can easily know which experiment conditions are used. 
- In a run, every event is recorded as an independent measurement of  an electron-positron collision, a cosmic ray injection or background event. Such experiment-run-event structure is the basic data structure that BASF2 handles. Thus, when BASF2 processes a data set, the functions are called for every event based on different configurations that are corresponding to the different experiment conditions. For example, in a data set where events are recorded with the different magnetic fields, BASF2 can automatically change the configurations of the magnetic fields event-by-event to provide a better track measurement. Based on this idea, all BASF2 functions (called ``modules") are developed based on a python module class which contains following embedded functions to be called at event-based level: 
+\subsection{Event processing workflow}
+The data from Belle II detector or from the simulation, are organized into a set of runs that are defined by either experimental conditions or simulation conditions. For instance, the simulation data from a certain detectors' condition are packed together, marked with the conditions' database index that is used during the simulation.  Such data sample then is divided into different runs based on estimated luminosity from experiment, which can contain the different number of events in each run.  This scheme is used for categorizing experimental data as well, so that users can easily know which experiment conditions are used. Thus, when BASF2 processes a data set, the functions are called for every event based on different configurations that are corresponding to the different experiment conditions. For example, in a data set where events are recorded with the different magnetic fields, BASF2 can automatically change the configurations of the magnetic fields event-by-event to provide a better track measurement. Based on this idea, all BASF2 functions (called ``modules") are developed based on a python module class which contains following embedded functions to be called at event-based level: 
 
 
 \textbullet \space initialize: called at the start of processing a event to properly set up constants needed for this run.
@@ -274,37 +290,34 @@ The data from Belle II detector or from the simulation, are organized into a set
 
 \textbullet \space terminate: called at the end of the processing of all events, release the buffered space and memory.
 
-BASF2 executes a series of modules loaded dynamically to process the data set according to above sequence. The selection, configuration and executed order of the modules are defined by a file called ``steering file" written in Python. The modules parameters are attributes which can be set during the runtime using the steering file. For example, the ``Path" object declared in a steering file stores the sequence of modules that will be executed, to which allow other modules such as ``mdstInput" or ``reconstructDecay" to be added.
+BASF2 executes a series of modules loaded dynamically to process the data set for analysis purposes, which is shown as Figure \ref{fig:b2flow}. The selection, configuration and executed order of the modules are defined by a file called ``steering file" written in Python. The modules parameters are attributes which can be set during the runtime using the steering file. For example, the ``Path" object declared in a steering file stores the sequence of modules that will be executed, to which allow other modules such as ``mdstInput" or ``reconstructDecay" to be added.
 Users can use ``boolean" type variable set in ``event" function to create a conditional branch of a ``Path" in case that one event needs to be processed with different modules at the same time. For instance, in the decay reconstruction package, if a decay chain is not fulfilled by missing one particle in the ``event" functions, other back-up decay chains can be checked to see if a successful reconstruction is possible.  
 
-The object that interacts with BASF2 I/O is called ``Datastore". This implementation doesn't depend on the event data model. The only mandatory component is called ``EventMetaData" which presents the experiment, run  and event number of a event. ``Unpacker" module converts the raw digits into digits-based object in BASF2. In simulation, digitization is done by module called ``digitizer". The digits-based objects are further processed to form hits or clusters depending on detector types. Higher level functions such as tracking and decay reconstructions are implemented based on these basic information by their packages. Eventually, BASF2 writes out the information based on users' needs, like kinematics variables, to ROOT\cite{ROOTcern} format files, or simply prints out processing statistics to the standard output.
-
- In practice, BASF2 starts running when it checks there is at least one module specifying the number of events to be processed in a ``path"  from the ``steering file", then it reads in the information from Datastore in the input ROOT file, execute all the requested modules in the ``steering file" and return the time and number of events as information printed in standard output. In Figure  \ref{fig:basf2_eg}, an example of ``steering file" is shown, with a ``path" called ``main" created and a module called ``EventInfoSetter" added. This steering file will process 100 event, set their experimental numbers, run numbers and event numbers.
-
-\begin{figure}[htbp]
+\begin{figure}[htpb]
 	\centering
-	\includegraphics[height=6cm]{BASF2-steering}
-	\caption{ An minimal example of BASF2 steering file, setting up a basic processing of 100 events in ``path" called ``main"\cite{Abe:2010gxa}. }
-	\label{fig:basf2_eg}
+	\includegraphics[width=0.8\linewidth]{b2flow}
+	\caption{The module-based analysis workflow in BASF2.}
+	\label{fig:b2flow}
 \end{figure}
 
-
-
+The object that interacts with BASF2 I/O is called ``Datastore", as shown in Figure \ref{fig:b2flow}. This implementation doesn't depend on the event data model. The only mandatory component is called ``EventMetaData" which presents the experiment, run  and event number of a event. ``Unpacker" module converts the raw digits into digits-based object in BASF2. In simulation, digitization is done by module called ``digitizer". The digits-based objects are further processed to form hits or clusters depending on detector types. Higher level functions such as tracking and decay reconstructions are implemented based on these basic information by their packages. Eventually, BASF2 writes out the information based on users' needs, like kinematics variables, to ROOT\cite{ROOTcern} format files, or simply prints out processing statistics to the standard output. In practice, BASF2 starts running when it checks there is at least one module specifying the number of events to be processed in a ``path"  from the ``steering file", then it reads in the information from Datastore in the input ROOT file, execute all the requested modules in the ``steering file" and return the time and number of events as information printed in standard output.
 
 
 \subsection{mDST structure}
 
-The output from BASF2 processing can contain several detector-specific objects, which are restored as mini data summary table (mDST) type ROOT file. For instance, in a mDST file, the object called ``RecoTracks" will be created if track pattern recognition is called and ``Track" object will be created if the track fit is performed. For a mDST level analysis, the goal is usually aimed to find particles from physics processes and reconstruct decay information. A output mDST ROOT file could typically contain the following objects:
+The output of BASF2 processing from the online data contains several detector-specific objects, which are restored as mini data summary table (mDST) type ROOT file. For a mDST level analysis, the goal is usually aimed to find particles from physics processes and reconstruct decay information. A output mDST ROOT file contains the reconstructed objects from each sub-detectors, and the following items are required for $B^0 \to K_S^0  K_S^0  K_S^0$ analysis. 
+
 
 \textbullet \space Track: object presenting any charged particle trajectory. It's linked to multiple track fit results using different nominal mass hypotheses as well as their track fit quality to help select good tracks.  
 
-\textbullet \space TrackFitResult: the fitting result of tracks with different mass hypotheses. It consists of five helix parameters, their covariance matrix and p-value from the fit. It also stores the information of hit pattern on vertex detector and CDC. 
+\textbullet \space TrackFitResult: the fitting result of tracks with different mass hypotheses. It consists of five helix parameters, their covariance matrix and p-value from the fit. It also stores the information of hit pattern on VXD and CDC. 
 
 \textbullet \space V0: object for the relative long-lived neutral particles that fly out of interaction region but mostly decay or interact inside detector region. In Belle II, these are mostly $K_S^0$, $\Lambda$ and photon converted to electron pairs. V0 also stores their relation to the charged daughter tracks and track fit results for further selections.
 
 
 \textbullet \space PIDLikelihood: it presents for the possiblity of a charged track to be an electron, muon, charged kaon and pion, proton and deuteron provided by particle identification system. 
 
+\begin{comment}
 \textbullet \space ECLCluster: reconstructed cluster in ECL detector. It consists of energy deposition and hit positions as well as other hit shape related variables. If a cluster is matched with an extrapolated track, a relation between them will also be created. 
 
 \textbullet \space Reconstructed cluster KLM detector. It consists of momentum and position measurement. If a cluster is matched with an extrapolated track, a relation between them will also be created. 
@@ -312,45 +325,51 @@ The output from BASF2 processing can contain several detector-specific objects, 
 \textbullet \space KLId: $K_L^0$ candidates with the particle identification as related to KLM and ECL clusters. 
 
 \textbullet \space TRGSummary: L1 trigger information. 
- 
-\textbullet \space SoftwareTriggerResult: HLT information mapped by trigger names to trigger results. 
 
-\textbullet \space  MCParticle: simulated particles containing 
-momentum, production and decay vertex, relations
-to mother and daughter particles, and traversed detector components. Particle-detectors relations are
+\textbullet \space SoftwareTriggerResult: HLT information mapped by trigger names to trigger results. 
+\end{comment}
+
+\textbullet \space  MCParticle: simulated particles and particle-detectors relations are
 created if simulated particles are correctly reconstructed as
 tracks or clusters.
-
-The size of mDST level data is very important to BASF2 offline processing performance. Thus, mDST level data is restricted from contain non-physical analysis related information such as raw digits or calibration constants. For detailed detector
-or reconstruction algorithm performance studies, and also for calibration tasks, a dedicated format higher than mDST, called cDST 
-(calibration data summary table), is used.
  
 
 %2020.01.28 ends
 \subsection{Conditional Database}
 
-In addition to the physics data, analysis relies on various conditional data that are different calibration of detector, weight files for multi-variate analysis usage like PID and so on. This data is stored in a central database server called central Conditional Database (CDB). 
+In addition to the physics data, analysis relies on various conditional data that are different calibration of detector, weight files for multi-variate analysis usage like PID and so on. This data is stored in a central database server called central Conditional Database (CDB)\cite{BASF2}. 
 
-Conditions are made of payloads and each payload has its own``Intervals of Validity" (IoV). It defines in which runs the payload is valid. A set of payloads and IoVs are called a global tag (GT). Considered the GT that is required by the different analysis purposes may change even though the experiment condition is still same, GT is subjected to be updated once new calibrations of detectors or weight files for MVA tools are available. On the users' side, except for just using central database, a local database back-end that takes GT information such as calibration data while uses a local database, such as a customized PID weight file,  is also possible.  It automatically download the needed database files that are required for a BASF2 execution and stores them in a local folder. This means even if the local machine is offline or the CDB is not accessible, one can still run BASF2 as long as the local folder is there. 
+Conditions are made of payloads and each payload has its own``Intervals of Validity" (IoV). It defines in which runs the payload is valid. A set of payloads and IoVs are called a global tag (GT). Considered the GT that is required by the different analysis purposes may change even though the experiment condition is still same, GT is subjected to be updated once new calibrations of detectors or weight files for analysis tools are available.
 
+\begin{comment}
+On the users' side, except for just using central database, a local database back-end that takes GT information such as calibration data while uses a local database, such as a customized PID weight file,  is also possible.  It automatically download the needed database files that are required for a BASF2 execution and stores them in a local folder. This means even if the local machine is offline or the CDB is not accessible, one can still run BASF2 as long as the local folder is there. 
 \begin{figure}[htbp]
-	\centering
-	\includegraphics[height=9cm]{CDB}
-	\caption{ Relations of all entities in CDB\cite{BASF2}, showing the management logic from users' end to each CDB files and services. }
-	\label{fig:CDB}
+\centering
+\includegraphics[height=9cm]{CDB}
+\caption{ Relations of all entities in CDB\cite{BASF2}, showing the management logic from users' end to each CDB files and services. }
+\label{fig:CDB}
 \end{figure}
+\end{comment}
+ 
 
+
+
+\begin{comment}
 The management of CBD with the extension of local database gives a good convenience for users to perform their own analysis and share the results with collaborators.
 Users' access to conditions objects in the CDB is
 provided by two interface classes, one for single objects
 called ``DBObjPtr" and one for arrays of objects called
 ``DBArray". To facilitate easy creation of new conditions data – for example, during calibration – we provide two payload creation classes, ``DBImportObj" and ``DBImportArray". They
 have an interface very similar to DBObjPtr and DBArray\cite{BASF2}.
-Users instantiate one of the creation classes, add objects
- to them and commit them to the configured database with a user-supplied IoV. This includes the support for run dependency as well. The capability to use a local file-based
- database allows for easy preparation and validation of
-new payloads before they are uploaded to the CDB. The scheme of this entities and how users interact with CDB object is demonstrated in Figure \ref{fig:CDB}. For example, user can perform their analysis and first locally generate weight files or calibration data based on different run conditions and reconstruction criteria, which are stated by their names of the IoVs. Once the results are good to share, they can create a GT in CDB of which they have the full ownership, add all database files into the GT and open it to Belle II collaboration. Anyone who would like to re-calibrate data or use their weight files for PID and so on, can simply use the built-in function ``basf2.useCentralDB()" in the BASF2 steering file to directly access the corresponding data. However, only the creator of the CDB objects has the right to add, recall, replace and remove the GT, which guarantees the stability of the CDB and responsibilities for each user.
+\end{comment}
 
+Users instantiate one of the creation classes, add objects to them and commit them to the configured database with a user-supplied IoV. This includes the support for run dependency as well. The capability to use a local file-based
+ database allows for easy preparation and validation of new payloads before they are uploaded to the CDB. Only the creator of the CDB objects has the right to add, recall, replace and remove the GT from CDB, which guarantees the stability.
+
+\begin{comment}
+The scheme of this entities and how users interact with CDB object is demonstrated in Figure \ref{fig:CDB}. For example, user can perform their analysis and first locally generate weight files or calibration data based on different run conditions and reconstruction criteria, which are stated by their names of the IoVs. Once the results are good to share, they can create a GT in CDB of which they have the full ownership, add all database files into the GT and open it to Belle II collaboration. Anyone who would like to re-calibrate data or use their weight files for PID and so on, can simply use the built-in function ``basf2.useCentralDB()" in the BASF2 steering file to directly access the corresponding data. However, only the creator of the CDB objects has the right to add, recall, replace and remove the GT, which guarantees the stability of the CDB and responsibilities for each user.
+
+\end{comment}
 
 \begin{comment}
 \subsection{Summary}
@@ -361,14 +380,14 @@ BASF2 has been developed for an emphasis on providing reliable and high quality 
 
 This section briefly describes simulation (MC) used in the studies presented in this thesis. As for the focus of this analysis is in $b$ sector which is mainly from $\Upsilon$(4S) decay, the discussed simulation is based on the collisions with center-of-mass (CMS) energy at $\sqrt{s} = 10.58 $ GeV.
 
-In the previous section, it's shown that many packages and functionalities have been integrated with BASF2, including the core components of Belle II simulation in $B$ decay: ``evtgen" as event generator\cite{evtgen} and ``GEANT4" as the simulator of detectors\cite{agostinelli2003geant4}. Along with the active development of BASF2 in the early stage of Belle II, the versions of software that is used for simulation and reconstruction are often different. For the simulation used in this analysis, BASF2 version release-04-02-08 was used. For the event reconstruction, the used BASF2 version is release-05-01-01. This is not a problem thanks to the CDB management, allowing modified software to use the same constants such as magnetic field distribution for the consistence between simulation and reconstruction.
+In the previous section, it's shown that external packages and functionalities have been integrated with BASF2, including the core components of Belle II simulation in $B$ decay: \textit{evtgen} as event generator\cite{evtgen} and \textit{GEANT4} as the simulator of detectors\cite{agostinelli2003geant4}. For the simulation and the reconstruction used in this analysis, the latest release of BASF2 was used. Thanks to the CDB management, BASF2 can utilize the same constants such as the magnetic field distribution for the consistence between simulation and reconstruction.
 
- All simulations start with at least one event generator that configures the physics processes. In Belle II, the configuration of ``evtgen" requires a decay file called ``xxx.dec" that describes the decay chain from a certain mother particle, branching fraction for all processes and decay-related information such as flavor mixing or $\it{CP}$ violation information. For different type of decays, the different decay files are prepared. MC sample is centrally produced using Belle II GRID computing service based on these files periodically, so that the latest improvements of software can be applied. Each round of MC sample is called a campaign named with their index, such as ``MC13", which is the 13th (latest in 2020 Winter) Belle II official MC production (in the following content of this thesis, all MC samples are produced in the 13th MC campaign if not specifically stated). 
+ All simulations start with at least one event generator that configures the physics processes. The \textit{evtgen} requires a decay file that describes the decay chain from a certain mother particle, branching fraction for all processes and decay-related information such as flavor mixing or $\it{CP}$ violation information. MC sample is centrally produced using Belle II grid computing service by DIRAC system and skimmed, of which the output is for physics analysis to create ROOT files. Each round of MC sample is packed and marked by their production index, such as \textit{MC13}, which is the latest MC sample with improvements in PID. In the following content of this thesis, all MC samples are produced in \textit{MC13} if not specifically stated. 
  
- For the analysis in this thesis, there are two MC samples, one is called ``signal MC" and the other is called ``generic MC". Both MC samples use ``evtgen" as event generator. Signal MC, as its name suggests, is the MC sample that describes the whole decay chain of $B^0 \to K_S^0  K_S^0  K_S^0$. The mother particle of the decay chain is $\Upsilon$(4S), then it decays into a pair of $B^0-\bar{B}^0$ at branching fraction of 100\%, with the model ``EvtVSSMix"\cite{evtgen} describing the decay model. Then, one of the $B$ meson is set to decay into three $K_S^0$ based on phase-space model (``PHSP") at 100\% branching fraction. To be noted, the phase-space model doesn't provide any time-dependent $\it{CP}$ violation. The default configuration of ``evtgen" can not handle multi-bodies charmless $B$ decay with TDCPV. A modified decay model profile is under-development and not fully validated yet. Thus, MC sample of $B^0 \to K_S^0  K_S^0  K_S^0$ yields zero $\it{CP}$ parameters by default. As for the other $B$ meson, it decays into all possible final states that are described by Belle II generic decay file. 
+ For the analysis in this thesis, there are two MC samples, one is called \textit{signal MC} and the other is called \textit{generic MC}. Signal MC, as its name suggests, is the MC sample that describes the whole decay chain of $B^0 \to K_S^0  K_S^0  K_S^0$. The mother particle of the decay chain is $\Upsilon$(4S), then it decays into a pair of $B^0-\bar{B}^0$ at branching fraction of 100\%, with the model \textit{EvtVSSMix}\cite{evtgen} describing the decay model. Then, one of the $B$ meson is set to decay into three $K_S^0$ based on phase-space model (``PHSP") at 100\% branching fraction. The default configuration of evtgen can not handle multi-bodies charmless $B$ decay with TDCPV. A modified decay model profile is under-development and not fully validated yet. Thus, MC sample of $B^0 \to K_S^0  K_S^0  K_S^0$ yields zero $\it{CP}$ parameters by default. As for the other $B$ meson, it decays into all possible final states that are described by Belle II generic decay file. 
  
  As for generic MC, all hadronic processes in a  $\sqrt{s} = 10.58 $ GeV collision are simulated. The total production cross section receives contributions from not only $\Upsilon$(4S) ($b$ -flavor decay dominated), but also $u, d, s, c$. 
- Their relative branching fractions are taken from cross sections at  $\sqrt{s} = 10.58 $ GeV as shown in Table \ref{tab:generic_br}. Generic MC sample contains 6 types of MC samples due to this production arrangement, where $\Upsilon$(4S) produces ``mixed" (neutral) and ``charged" $B$ meson pairs and the rest are ``uubar", ``ddbar", ``ccbar" and ``ssbar", respectively. In this thesis, the latter 4 types of MC samples are combined and called ``qqbar" for simplicity. In the mixed MC sample, the branching fraction of $B^0 \to K_S^0  K_S^0  K_S^0$ is set at $6 \times 10^{-6}$ and the branching fraction of $K_S^0 \to \pi^{+}\pi^{-}$ is set at 0.692. Both values are taken from PDG\cite{pdg}. Same as signal MC, $\it{CP}$ violation is set to zero for signal events in generic MC since they use the same model at generator level.
+ Their relative branching fractions are taken from cross sections at  $\sqrt{s} = 10.58 $ GeV as shown in Table \ref{tab:generic_br}. Generic MC sample contains 6 types of MC samples due to this production arrangement, where $\Upsilon$(4S) produces \textit{mixed} (neutral) and \textit{charged} $B$ meson pairs and the rest are \textit{uubar}, \textit{ddbar}, \textit{ccbar} and \textit{ssbar}, respectively. In this thesis, the latter 4 types of MC samples are combined and called \textit{qqbar} for simplicity. In the mixed MC sample, the branching fraction of $B^0 \to K_S^0  K_S^0  K_S^0$ is set at $6 \times 10^{-6}$ and the branching fraction of $K_S^0 \to \pi^{+}\pi^{-}$ is set at 0.692. Both values are taken from Particle Data Group (PDG)\cite{pdg}. Same as signal MC, $\it{CP}$ violation is set to zero for signal events in generic MC since they use the same model at generator level.
  
  \begin{table}
  	\caption{Production cross section for different hadronic flavors from collision at  $\sqrt{s} = 10.58 $ GeV used in Belle II generic MC.\cite{b2book}}
@@ -383,19 +402,36 @@ In the previous section, it's shown that many packages and functionalities have 
  	\end{tabular}
  \end{table}
  
-In addition to the simulation of physics processes,  MC campaigns are produced with at least two beam background conditions, called ``BG0" and ``BG1". The former stands for no beam background and the latter is produced with one overlay of beam background. The components of them have been discussed briefly in section 2.7. The mixing of simulated beam background to simulated physics events is done by adding simulated hits on each sub-detector output. Possible pile-up of hits is therefore inherently included. The average number of background events of a given type to be added to a single simulated event is determined from the rate R of a particular background sample and the time window $\Delta t$ in which the background is mixed in Equation \ref{bkgn}:
+In addition to the simulation of physics processes,  MC data is produced with at least two beam background conditions, called \textit{BG0} without beam background and \textit{BG1} with one overlay of beam background. The components of them have been discussed briefly in section 2.7. The mixing of simulated beam background to simulated physics events is done by adding simulated hits on each sub-detector output. Possible pile-up of hits is therefore inherently included. The average number of background events of a given type to be added to a single simulated event is determined from the rate $R_{BG}$ of beam background sample and the time window $\Delta t$ in which the background is mixed shown in Equation \ref{bkgn}:
 
 \begin{equation}\label{bkgn}
-	\bar{N} = sR\Delta t
+	\bar{N} = sR_{BG}\Delta t
 \end{equation}
 
 where $s$ is an optional scaling factor. The injected background events are based on a Poisson distribution with mean $\bar{N}$. Within the timing window, the background events are shifted randomly to simulate contributions from different bunches. To use real experiment background events (data-based beam background), the random triggered events are measured and added to
-simulated BG0 MC sample for a more precised background configuration. This method can give a more realistic description of actual beam background but with a possibility to introduce bias due to the pile-up effect of multiple background events in a short timing window. In the early stage of Belle II, the level of background is not high and the background pile-up effect is small. Therefore, for MC13, BG1 sample is produced with data-based beam background.
+simulated BG0 MC sample for a more precised background configuration. This method can give a more realistic description of actual beam background but with a possibility to introduce bias due to the pile-up effect of multiple background events in a short timing window. In the early stage of Belle II, the level of background is not high and the background pile-up effect is small.
 
-In total, there are 2 million events generated in signal MC. Half of the signal MC (1 million) is produced without beam background for cross-checking the reconstruction performance. For generic MC, 1 ab$^{-1}$ sample including mixed, charged and $q\bar{q}$ events are produced with beam background at  $\sqrt{s} = 10.58 $ GeV.
+In total, there are 2 million events generated in signal MC. Half of the signal MC (1 million) is produced without beam background for cross-checking the reconstruction performance. For generic MC, 1 ab$^{-1}$ sample including mixed, charged and $q\bar{q}$ events are produced with beam background at  $\sqrt{s} = 10.58 $ GeV. The MC sample used in this analysis is summarized in Table \ref{tab:mc_all}
+
+\begin{table}
+	\large
+	\caption{M}
+	\label{tab:mc_all}
+	\centering
+	\begin{tabular}{c|c|c}
+		\hline 
+		Events number & BG0 & BG1 \\
+		\hline
+		\textit{signal MC} & $10^6$ & $10^6$ \\
+		\hline
+		\textit{generic MC} & 1 ab$^{-1}$ & -\\
+		\hline
+	\end{tabular}
+\end{table}
+
 
 \section{Belle II data taking}
-Belle II Phase I operation started in 2016 which was focused on the commissioning and test of SuperKEKB. Later in 2018, the commissioning of Belle II detector and SuperKEKB was finished. From 2019 April, Phase III operation that marked the beginning of official physics runs has started. By the end of 2020, Belle II has been operating in Phase III for 4 total run seasons. The integrated luminosity collected during this period of time is about 84.73 fb$^{-1}$, see Figure \ref{fig:b2lumi}. The official processing of recorded data is performed along with the data taking. For the analysis reported in this thesis, the experimental data collection from experiment number 7, 8, 10 and 12 is used.  Only the data collected at  $\Upsilon$(4S) energy is included. Correspondingly, the integrated luminosity that is used for this thesis is about 62.8 fb$^{-1}$\cite{b2onlinelumi}. 
+The Belle II beam test operation started in 2016 which was focused on the commissioning and test of the SuperKEKB accelerator. Later in 2018, the commissioning of the Belle II detector was accomplished, with partial installation of PXD and full installation of SVD. From 2019 April, the Phase 3 operation that marked the beginning of official physics runs has started. By the end of 2020, Belle II has been operating in Phase III for 4 total run seasons. The integrated luminosity collected during this period of time is about 84.73 fb$^{-1}$, shown in Figure \ref{fig:b2lumi}. The data processing is regularly performed along with the data taking. For the analysis reported in this thesis, the experimental data collection from experiment number 7, 8, 10 and 12 is used. The data of experiment 7, 8 and 10 were collected during 2019 and the data of experiment 12 and 14 were collected during 2020, as shown in Figure \ref{fig:b2lumi}. Correspondingly, the integrated luminosity for offline reconstruction that is used for this thesis is about 62.8 fb$^{-1}$\cite{b2onlinelumi} which is from experiment 7, 8, 10 and 12. The experiment 14 is not used due to the unfinished processing of the latest experiment data. 
 
 \begin{figure}
 	\centering
