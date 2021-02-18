@@ -30,8 +30,8 @@
 \contentsline {subsection}{\numberline {3.2.3}Determination of training observables from $K_S^0$ decay }{57}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Training, Applying and Testing of KsFinder}{59}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}The Performance and Over-fitting check}{61}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Data Validation for Classifier}{64}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}KsFinder Effects on Kinematics Evaluation}{66}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.6}Data Validation for KsFinder}{64}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Data and MC correction by KsFinder}{66}{subsection.3.2.7}%
 \contentsline {chapter}{\numberline {4}Analysis strategies}{69}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{69}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{69}{subsection.4.1.1}%
@@ -58,5 +58,4 @@
 \contentsline {chapter}{\numberline {6}Conclusion and Prospect}{117}{chapter.6}%
 \contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{121}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{125}{appendix.B}%
-\contentsline {chapter}{\numberline {C}$K_S^0$ mass fit with varied cut value}{129}{appendix.C}%
-\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution}{135}{appendix.D}%
+\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution}{129}{appendix.C}%

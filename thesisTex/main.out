@@ -30,8 +30,8 @@
 \BOOKMARK [2][-]{subsection.3.2.3}{Determination of training observables from KS0 decay }{section.3.2}% 30
 \BOOKMARK [2][-]{subsection.3.2.4}{Training, Applying and Testing of KsFinder}{section.3.2}% 31
 \BOOKMARK [2][-]{subsection.3.2.5}{The Performance and Over-fitting check}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.6}{Data Validation for Classifier}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.7}{KsFinder Effects on Kinematics Evaluation}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.6}{Data Validation for KsFinder}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.7}{Data and MC correction by KsFinder}{section.3.2}% 34
 \BOOKMARK [0][-]{chapter.4}{Analysis strategies}{}% 35
 \BOOKMARK [1][-]{section.4.1}{Data Sample and Event Selection}{chapter.4}% 36
 \BOOKMARK [2][-]{subsection.4.1.1}{KS0 Selection}{section.4.1}% 37
@@ -58,5 +58,4 @@
 \BOOKMARK [0][-]{chapter.6}{Conclusion and Prospect}{}% 58
 \BOOKMARK [0][-]{appendix.A}{Training Observables for KS0 Classifier}{}% 59
 \BOOKMARK [0][-]{appendix.B}{Data Validation Plots for KS0}{}% 60
-\BOOKMARK [0][-]{appendix.C}{KS0 mass fit with varied cut value}{}% 61
-\BOOKMARK [0][-]{appendix.D}{2KS0 invariant mass distribution}{}% 62
+\BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution}{}% 61

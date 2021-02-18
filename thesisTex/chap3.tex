@@ -425,75 +425,86 @@ In the signal MC sample, the true $K_S^0$ fraction before applying KsFinder cut 
 \end{figure}
 
 %2021/02/17 mids
-\subsection{Data Validation for Classifier}
+\subsection{Data Validation for KsFinder}
 The results from MC studies show an excellent performance of KsFinder. However, the validation of such a tool on the real experiment data is necessary. Since there's no MC truth on target variable in real data, the FastBDT method is based on variables in MC samples. If these variables shows close distribution among MC and data, the classification performance is expected to be similar.
 
-In addtion, due to the fact that $K_S^0$ candidates are used for further reconstruction of $B^0$, the  mass and energy distributions may change after applying the cut, thus the validation that approves no clear bias on $B^0$'s variables that are used for signal extraction is also required. For comparison between MC and data, a small data sample from Belle II  experiment 7 and 8 is used. The integral luminosity at $\Upsilon(4S)$ resonance for this data sample is about 5.17 $\text{fb}^{-1}$. The MC sample is extracted from generic MC with equivalent events number which includes two types of MC: \textit{MC12b} is the one produced in early 2019, and the latest MC in 2020.
+In addtion, due to the fact that $K_S^0$ candidates are used for further reconstruction of $B^0$, the  mass and energy distributions may change after applying the cut, thus the validation that approves no clear bias on $B^0$'s variables that are used for signal extraction is also required. For comparison between MC and data, a small data sample from Belle II  experiment 7 and 8 is used. The integral luminosity at $\Upsilon(4S)$ resonance for this data sample is about 5.17 $\text{fb}^{-1}$. The MC sample is extracted from generic MC with equivalent luminosity.
 
-%0217 ends
 
- The Figure \ref{fig:ksvalid_1} shows the invariant mass and momentum distributions from data and MC samples, and full comparison of all training variables is included in Appendix B. 
- 
- It shows that kinematics of $K_S^0$ in data and MC yield fairly close distributions and no clear bias is seen by applying the KsFinder cut.
+ The Figure \ref{fig:ksvalid_1} shows the invariant mass and momentum distributions from data and MC samples, where the data and generic MC agree well. The uncertainties in data are calculated based on three times the Poisson standard deviation in each bin. The variable with the highest importance is the cosine angle between $K_S^0$ vertex and the direction of momentum, named as \textit{cosVertexMomentum}, of which distribution is shown in Figure \ref{fig:cosVex_dataMC}. In these comparison plots, the generic MC is shown in blue solid lines with no KsFinder cut used. Similarly, data without using cut of KsFinder are shown in yellow dots, which are closely distributed as the generic MC, indicating a good data MC consistency. Since the FastBDT algorithm relies on the probability density functions to seperate signal and backgrounds in each tree node, the similar distribution can lead to close classification power in data. The purple solid lines are presenting the true $K_S^0$ distribution in generic MC, while the red dots are the $K_S^0$ in data after using the cut value at 0.74. The reduced fraction of $K_S^0$ in data  is close to the signal MC. All distributions comparison between data and generic MC by using KsFinder cut are shown in Appendix B.
 
-\begin{figure}[H]
-	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=2,height=4cm]{dataVarsPlot_Ks.pdf}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=7,height=4cm]{dataVarsPlot_Ks.pdf}
-	\end{subfigure}
-	\bigskip
-	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=8,height=4cm]{dataVarsPlot_Ks.pdf}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=9,height=4cm]{dataVarsPlot_Ks.pdf}
-	\end{subfigure}
-\caption{The distribution of invariant mass from charged pions and the momentum of $K_S^0$ in $x,y,z$ directions. Blue bar is from all MC13, cyan bar is the true $K_S^0$ in it. Yellow step histogram is data with no cut, solid red data with MC13 trained cut, and the dashed is with MC12b cut. Experimental data has a good agreement with MC before and after applying the KsFinder.}
+%\begin{comment}
+\begin{figure}[htpb]
+\begin{subfigure}{0.5\linewidth}
+\includegraphics[page=2,width=1.1\linewidth]{dataVarsPlot_Ks}
+\end{subfigure}
+\begin{subfigure}{0.5\linewidth}
+\includegraphics[page=7,width=1.1\linewidth]{dataVarsPlot_Ks}
+\end{subfigure}
+\bigskip
+\begin{subfigure}{0.5\linewidth}
+\includegraphics[page=8,width=1.1\linewidth]{dataVarsPlot_Ks}
+\end{subfigure}
+\begin{subfigure}{0.5\linewidth}
+\includegraphics[page=9,width=1.1\linewidth]{dataVarsPlot_Ks}
+\end{subfigure}
+\caption{The distribution of invariant mass from charged pions and the momentum of $K_S^0$ in $x,y,z$ directions. The blue line is from all generic MC where the purple line is the true $K_S^0$ in it. The yellow dots are data with no KsFinder cut applied and the solid red dots are data after applying KsFinder cut at 0.74.}
 \label{fig:ksvalid_1}
 \end{figure}
+%\end{comment}
 
-\subsection{KsFinder Effects on Kinematics Evaluation}
-Implementing KsFinder for $K_S^0$ may induce extra bias on the event numbers for $K_S^0$. It's not easy to direct evaluate the impact of each variables in training towards the final signal yield because the output is non-linear dependence on those variables. However, we can directly use the output of KsFinder and introduce the scale factor when check the data and MC signal yields. 
- 
-A fit on invariant mass $M$ of $K_S^0$ candidates after varied cut on KsFinder output is done by modeling signal shape as double-Gaussian and background as Chebyshev polynomial. Significance is define as $S_{data/MC} = N_{signal} /N_total$ in data and MC from fitting using RooFit. A list of intervals of cut value on KsFinder output is made and the significance is calculated within each interval. Fitting results are shown in Fig 3.17 using loose and tight cut respectively. The fit plots in all cut intervals are included in Appendix C.  Data/MC correction is defined as:
+ \begin{figure}[htpb]
+	\centering
+	\includegraphics[page=6,width=0.7\linewidth]{dataVarsPlot_Ks}
+	\caption{The distribution of {cosVertexMomentum} in data and MC with/without KsFinder cut applied.}
+	\label{fig:cosVex_dataMC}
+\end{figure}
 
-\begin{equation}
-	R = \frac{S_{MC}}{S_{data}}
+\subsection{Data and MC correction by KsFinder}
+Implementing KsFinder cut on data may induce bias on the event numbers for $K_S^0$ because the training set of KsFinder is extracted from MC. To compensate such potential effect, a ratio as the data and MC correction is calculated based on the expected signal yield after using KsFinder. A maximum likelihood fit on invariant mass $M_{\pi^+\pi^-}$ for $K_S^0$ after applying cut value at 0.74 of KsFinder output is performed, where signal shape is modeled as a triple-Gaussian and background shape is modeled as a Chebyshev polynomial. The signal yield fraction is defined as Equation \ref{eq:S_ratio}.
+
+\begin{equation}\label{eq:S_ratio}
+	f_{K_S} = \frac{N_{sig}}{N_{tot}}
 \end{equation}
 
+where $N_{sig}$ is the signal number from the fit result and $N_{tot}$ is the total events number.
+The fit is performed on both generic MC and data to obtained $f_{K_S} $, respectively.
+The $\mathcal{R}_{K_S}$ is defined as the ratio of signal yield fraction  $f_{K_S} $ from MC and data as shown in Equation \ref{eq:R_Ks}. The ratio at cut value of 0.74 is $\mathcal{R}_{K_S} = 1.009\pm 0.011$ from the fit, as shown in Figure \ref{fig:Rfit}. Since the final state consists of three $K_S^0$, the expected ratio between MC and data for $B^0$ is expected as Equation \ref{eq:R_B}, with the uncertainty propagated from the uncertainty of $\mathcal{R}_{K_S}$.  Therefore, the upper and lower limit for the correction ratio  $\mathcal{R}_{B^0}$ is expected to be $1.060$ and $0.994$. The result of $\mathcal{R}_{B^0}$ is $1.027 \pm 0.033$, which is close to 1 within its uncertainty. Hence, the correction $\mathcal{R}_{B^0}$ is not applied in signal extraction of $B^0$, but the uncertainty is taken into account as a possible systematic uncertainty term. 
+ 
+\begin{equation}\label{eq:R_Ks}
+\mathcal{R}_{K_S} = \frac{f_{K_S}^{MC}}{f_{K_S}^{data}}
+\end{equation}
 
+\begin{equation}\label{eq:R_B}
+\mathcal{R}_{B^0} = \mathcal{R}_{K_S}^3
+\end{equation}
 
 \begin{figure}[htpb]
 	\begin{subfigure}{0.5\linewidth}
-		\caption{Data,cut=0.2}
-		\includegraphics[width=1\linewidth]{ksDatamva0.2.png}
+		\caption{Data,cut=0.74}
+		\includegraphics[width=1\linewidth]{ksDatamva0.75.png}
 	\end{subfigure}
 \begin{subfigure}{0.5\linewidth}
-	\caption{MC,cut=0.2}
-	\includegraphics[width=1\linewidth]{ksMCmva0.2.png}
+	\caption{MC,cut=0.74}
+	\includegraphics[width=1\linewidth]{ksMCmva0.75.png}
 \end{subfigure}
+\caption{The fit on invariant mass $M_{\pi^+\pi^-}$ where signal component is modeled as a triple-Gaussian and background component is modeled as a Chebyshev polynomial. The signal fraction is slight higher in MC compared to that in data.}
+\label{fig:Rfit}
+\end{figure}
 
+\begin{comment}
 \begin{subfigure}{0.5\linewidth}
-	\caption{Data,cut=0.9}
-	\includegraphics[width=1\linewidth]{ksDatamva0.9.png}
+\caption{Data,cut=0.9}
+\includegraphics[width=1\linewidth]{ksDatamva0.9.png}
 \end{subfigure}
 \begin{subfigure}{0.5\linewidth}
-	\caption{MC,cut=0.9}
-	\includegraphics[width=1\linewidth]{ksMCmva0.9.png}
+\caption{MC,cut=0.9}
+\includegraphics[width=1\linewidth]{ksMCmva0.9.png}
 \end{subfigure}
 \caption{Invariant mass fit of $K_S^0$ using cut at 0.2(loose) and 0.9(tight) to calculate $S_{data/MC}$.}
 \end{figure}
+\end{comment}
 
-The correction is defined by taking the R value within the chosen interval. Uncertainty of R is defined by the difference of maximum and minimum of R in all intervals. R is distributed as: 
-\begin{figure}[H]
-	\centering 
-	\includegraphics[width=0.7\linewidth]{Rc}
-	\caption{Data MC correction induced by $K_S^0$ classifier.}
-\end{figure}
-
-The R, for example in cut value 0.74 of maximum FOM, is $R = 1.009\pm 0.081$. In $B^0 \to K_S^0  K_S^0  K_S^0$, the correction of $B^0$ events should be proportional to R to the three.  Correction that is implemented for $B^0$ is $1.027^{+0.33}_{-0.18}$. In most of the cut intervals, the R is within 2.5\% so the bias on $K_S^0$ numbers is very small.
 \begin{comment}
 \subsection{Summary}
 The development of Belle II $K_S^0$ classifier is enlighten by the experience from Belle. A comprehensive study of training observables from $K_S^0$ decay characteristics has been exploited. It takes the advantage of FastBDT algorithm to achieve a high fake rejection power. As a result, classifier is able to give a output which can be used as a cut to select good $K_S^0$ candidates with high purity. The classifier is validated with real experimental data as well. A primary data validation study of KsFinder is conducted with implementing correction on data and MC along with its contribution to $B^0$. The performance of KsFinder is in a good shape and no clear bias is found on the yield of the number of $K_S^0$. For the reconstruction of $B^0 \to K_S^0  K_S^0  K_S^0$, the development of KsFinder is critical to suppress large fraction of combination background from fake $K_S^0$.
