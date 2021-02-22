@@ -28,10 +28,10 @@
 \contentsline {subsection}{\numberline {3.2.1}Belle II $K_S^0$ classification}{53}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{55}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Determination of training observables from $K_S^0$ decay }{57}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Training, Applying and Testing of KsFinder}{59}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Training, Applying and Testing of \textit {KsFinder}}{59}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}The Performance and Over-fitting check}{61}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Data Validation for KsFinder}{64}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Data and MC correction by KsFinder}{66}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.6}Data Validation for \textit {KsFinder}}{64}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Data and MC correction by \textit {KsFinder}}{66}{subsection.3.2.7}%
 \contentsline {chapter}{\numberline {4}Analysis strategies}{69}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{69}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{69}{subsection.4.1.1}%
@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {4.1.4}Resonance Background}{80}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{81}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{81}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on KsFinder}{86}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on \textit {KsFinder}}{86}{subsection.4.1.7}%
 \contentsline {chapter}{\numberline {5}\textit {CP} parameters measurement}{95}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Vertex Resolution Model}{96}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{97}{subsection.5.1.1}%

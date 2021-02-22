@@ -68,16 +68,16 @@ R_{sig}=R_{cp}\otimes R_{tag}
 
 \subsection{$\it{CP}$-side resolution function}
 
-$\it{CP}$-side vertex is fitted with all tracks from a reconstructed $B^0$, thus the resolution models only depend on detectors' effect. For each event, the resolution effect can be different based on event-by-event reconstruction quality, primarily presented by the reduced $\chi^2$ called $\chi_2/N$ from \textit{TreeFit}, which N is the degree of freedom of the fit. The distribution of $\chi_2/N$ in data are shown in Figure \ref{fig:redchi2}. 
+$\it{CP}$-side vertex is fitted with all tracks from a reconstructed $B^0$, thus the resolution models only depend on detectors' effect. For each event, the resolution effect can be different based on event-by-event reconstruction quality, primarily presented by the reduced $\chi^2$ called $\chi^2/N$ from \textit{TreeFit}, which $N$ is the degree of freedom of the fit. The distribution of $\chi^2/N$ in data are shown in Figure \ref{fig:redchi2}. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=6cm]{redChi2.png}
-	\caption{$\chi_2/N$ of selected events from data.}
+	\caption{$\chi^2/N$ of selected events from data.}
 	\label{fig:redchi2}
 \end{figure}
 
-Therefore, we model the resolution functions on $\it{CP}$-side by using a double Gaussian function, where the mean is fixed to zero and the standard deviation is scaled by $\chi_2/N$ and the error of reconstructed vertex $\sigma_{z_{cp}}$, as shown in Equation \ref{eq:Rcp}.
+Therefore, we model the resolution functions on $\it{CP}$-side by using a double Gaussian function, where the mean is fixed to zero and the standard deviation is scaled by $\chi^2/N$ and the error of reconstructed vertex $\sigma_{z_{cp}}$, as shown in Equation \ref{eq:Rcp}.
 \begin{equation}\label{eq:Rcp}
 R_{cp}(\delta z_{cp}) = (1-f_{cp}^{tail})G(0,s_{cp}^{main})+
 f_{cp}^{tail}G(0,s_{cp}^{tail})
@@ -88,42 +88,42 @@ s_{cp}^{main}&=(s_0^{main} + s_1^{main}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}
 s_{cp}^{tail}&=(s_0^{tail} + s_1^{tail}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}
 \end{split}
 \end{eqnarray} 
-The dependence of resolution models on $\chi_2/N$ is shown in Figure \ref{fig:redchi2fit}. Restrictively speaking, the $\it{CP}$-side resolution for $B^0 \to K_S^0  K_S^0  K_S^0$ is slight different from $B^0\to J/\psi K_S^0$, due to the absence of the direct charged tracks from the $B^0$ vertex. The modification of the resolution function on $\it{CP}$-side will be further studied when more data becomes available in future. Given the current low statistics, the Equation \ref{eq:Rcp} works well as an approximation. By fitting the resolution function using signal MC on $\it{CP}$-side, the parameters are fitted which are listed in Table \ref{tab:Rcp}.
+The dependence of resolution models on $\chi^2/N$ is shown in Figure \ref{fig:redchi2fit}. Restrictively speaking, the $\it{CP}$-side resolution for $B^0 \to K_S^0  K_S^0  K_S^0$ is slight different from $B^0\to J/\psi K_S^0$, due to the absence of the direct charged tracks from the $B^0$ vertex. The modification of the resolution function on $\it{CP}$-side will be further studied when more data becomes available in future. Given the current low statistics, the Equation \ref{eq:Rcp} works well as an approximation. By fitting the resolution function using \textit{signal MC} on $\it{CP}$-side, the parameters are fitted which are listed in Table \ref{tab:Rcp}.
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\linewidth}
-		\caption{$0<\chi_2/N<10$}
+		\caption{$0<\chi^2/N<10$}
 		\includegraphics[height=5cm]{figures/residual0_10}
 		
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\caption{$0<\chi_2/N<0.4$}
+		\caption{$0<\chi^2/N<0.4$}
 		\includegraphics[height=5cm]{figures/residual0_0.4}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
 	
 	
 	\begin{subfigure}{0.5\linewidth}
-		\caption{$0.4<\chi_2/N<0.8$}
+		\caption{$0.4<\chi^2/N<0.8$}
 		\includegraphics[height=5cm]{figures/residual0.4_0.8}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\caption{$0.8<\chi_2/N<1.2$}
+		\caption{$0.8<\chi^2/N<1.2$}
 		\includegraphics[height=5cm]{figures/residual0.8_1.2}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
 	
 	\begin{subfigure}{0.5\linewidth}
-		\caption{$1.2<\chi_2/N<1.6$}
+		\caption{$1.2<\chi^2/N<1.6$}
 		\includegraphics[height=5cm]{figures/residual1.2_1.6}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\caption{$1.6<\chi_2/N<10$}
+		\caption{$1.6<\chi^2/N<10$}
 		\includegraphics[height=5cm]{figures/residual1.6_10}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
-	\caption{Resolution functions on $\it{CP}$-side, which shows dependence on the $\chi_2/N$}
+	\caption{Resolution functions on $\it{CP}$-side, which shows dependence on the $\chi^2/N$}
 	\label{fig:redchi2fit}
 \end{figure}
 
@@ -299,10 +299,10 @@ Considering the limited power of flavor tagging accuracy, there is a certain fra
 \end{bmatrix}
 \end{Bmatrix}
 \end{equation} 
-Compared to the original, the term with $\mathcal{S}$ and $\mathcal{A}$ is scaled by factor $r\equiv |1-2w|$, defined as the dilution factor. The statistical uncertainty of $\mathcal{S}$ now receives contribution from $\epsilon$ and $w$: $\delta(\mathcal{S}) \propto \frac{1}{\epsilon (1-2w)N_{rec}}$, which means it's quite important to correctly measure $\epsilon$ and $w$ . The uncertainty of $w$ is much larger than $\epsilon$ which makes $w$ an important source of systematic uncertainty. The validation of flavor tagger using flavor specific control sample is summarized here\cite{flavortagger}. The $w$ for each single event is defined as a probability which can be presented by the average wrong tag fraction within a close range. The binned values of dilution factor $r$ is defined for the calculation of $w$ as $[0,0.1,0.25,0.5,0.625,0.75,0.875,1]$, which is called $r$-bin. For all events that have been successful tagged, they are projected into histogram of $r$-bin, and $w$ is calculated in each bin by the fraction of events with $q\cdot r$ opposite to its MC flavor. The distribution of $q\cdot r$ is shown in Figure \ref{fig:ft_qr} using signal MC of $B^0 \to K_S^0  K_S^0  K_S^0$. 
+Compared to the original, the term with $\mathcal{S}$ and $\mathcal{A}$ is scaled by factor $r\equiv |1-2w|$, defined as the dilution factor. The statistical uncertainty of $\mathcal{S}$ now receives contribution from $\epsilon$ and $w$: $\delta(\mathcal{S}) \propto \frac{1}{\epsilon (1-2w)N_{rec}}$, which means it's quite important to correctly measure $\epsilon$ and $w$ . The uncertainty of $w$ is much larger than $\epsilon$ which makes $w$ an important source of systematic uncertainty. The validation of flavor tagger using flavor specific control sample is summarized here\cite{flavortagger}. The $w$ for each single event is defined as a probability which can be presented by the average wrong tag fraction within a close range. The binned values of dilution factor $r$ is defined for the calculation of $w$ as $[0,0.1,0.25,0.5,0.625,0.75,0.875,1]$, which is called $r$-bin. For all events that have been successful tagged, they are projected into histogram of $r$-bin, and $w$ is calculated in each bin by the fraction of events with $q\cdot r$ opposite to its MC flavor. The distribution of $q\cdot r$ is shown in Figure \ref{fig:ft_qr} using \textit{signal MC} of $B^0 \to K_S^0  K_S^0  K_S^0$. 
 
 Besides, $w$ can be different between $B^0$ and $\overline{B^0}$, where
-$\bar{w} = (w_{B^0}+w_{\overline{B^0}})/2$ and $\Delta w = w_{B^0}-w_{\overline{B^0}}$. Due to the small value of $\Delta w$, the contribution from $\Delta w$ can be treated as zero in Equation \ref{eq:tdcpv_all_ft}. Similarly, for $\epsilon$, the values calculated based on each $r$-bin are used in Equation \ref{eq:tdcpv_all_ft} as well. The difference $\mu = \epsilon_{B^0}-\epsilon_{\overline{B^0}} $ is about 1\% to 2\% in each $r$-bin, thus treated as zero, too. The distributions of $w$, $\Delta w$, $\epsilon$, and $\mu$ in each $r$-bin are shown in Figure \ref{fig:ft_wtag}.
+$\bar{w} = (w_{B^0}+w_{\overline{B^0}})/2$ and $\Delta w = w_{B^0}-w_{\overline{B^0}}$. Due to the small value of $\Delta w$, the contribution from $\Delta w$ can be treated as zero in Equation \ref{eq:tdcpv_all_ft}. Similarly, for $\epsilon$, the values calculated based on each $r$-bin are used in Equation \ref{eq:tdcpv_all_ft} as well. The difference $\mu = \epsilon_{B^0}-\epsilon_{\overline{B^0}} $ is about 1 \% to 2 \% in each $r$-bin, thus treated as zero, too. The distributions of $w$, $\Delta w$, $\epsilon$, and $\mu$ in each $r$-bin are shown in Figure \ref{fig:ft_wtag}.
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=0.7\linewidth]{figures/qr}
@@ -317,7 +317,7 @@ $\bar{w} = (w_{B^0}+w_{\overline{B^0}})/2$ and $\Delta w = w_{B^0}-w_{\overline{
 
 \section{$\it{CP}$ Fitter}
 
-The parameters that are needed for measuring $\mathcal{S}$ and $\mathcal{A}$ are studied and obtainable. Using observed $\Delta t$ distribution from selected events, Equation \ref{eq:tdcpv_all_res} can be fitted using unbinned maximum likelihood fit which takes $\Delta t$, signal fraction $f_{sig}$, the flavor charge $q$ as observables. In the meantime the vertexing error $\sigma_{z_{cp}}$, $\sigma_{z_{tag}}$ and $\chi_2/N$ are used as event-by-event conditional variables that are accessed during the fitting.
+The parameters that are needed for measuring $\mathcal{S}$ and $\mathcal{A}$ are studied and obtainable. Using observed $\Delta t$ distribution from selected events, Equation \ref{eq:tdcpv_all_res} can be fitted using unbinned maximum likelihood fit which takes $\Delta t$, signal fraction $f_{sig}$, the flavor charge $q$ as observables. In the meantime the vertexing error $\sigma_{z_{cp}}$, $\sigma_{z_{tag}}$ and $\chi^2/N$ are used as event-by-event conditional variables that are accessed during the fitting.
 For Belle II, a new $\it{CP}$ fitter is developed based on Python and RooFit, which is naturally easy to use and maintained with BASF2. The fitter requires a configuration files which contains all the parameters' definitions including their ranges, initial values, floating states and uncertainties. 
 
 \begin{comment}
@@ -332,19 +332,19 @@ For Belle II, a new $\it{CP}$ fitter is developed based on Python and RooFit, wh
 
 %2021/02/11 mid
 \section{Blind analysis and fit}
-As a required procedure to make sure the $\it{CP}$ parameters are measured without bias due to the preconceived results, a blind analysis procedure is conducted before the fit is actually performed using the experimental data. The blind fit procedure includes the $\it{CP}$ fit on signal MC and generic MC, with different number of events used. To check the reliablity of fit result from $\it{CP}$ fitter, a linearity test and toy MC study is also performed. 
+As a required procedure to make sure the $\it{CP}$ parameters are measured without bias due to the preconceived results, a blind analysis procedure is conducted before the fit is actually performed using the experimental data. The blind fit procedure includes the $\it{CP}$ fit on \textit{signal MC} and \textit{generic MC}, with different number of events used. To check the reliablity of fit result from $\it{CP}$ fitter, a linearity test and toy MC study are also performed. 
 
 \subsection{$\it{CP}$ fit on MC samples}
-Using $\it{CP}$ fitter, we first perform the $\it{CP}$ fit on events in signal MC and generic MC.
-The signal and generic MC are generated with phase-space model which contains zero $\it{CP}$ violation ($\mathcal{S}=\mathcal{A}=0$). The events that pass the selections in Table \ref{tab:cutCP} are used for $\it{CP}$ parameters fit.
+Using $\it{CP}$ fitter, we first perform the $\it{CP}$ fit on events in \textit{signal MC} and \textit{generic MC}.
+The \textit{signal MC} and \textit{generic MC} are generated with phase-space model which contains zero $\it{CP}$ violation ($\mathcal{S}=\mathcal{A}=0$). The events that pass the selections in Table \ref{tab:cutCP} are used for $\it{CP}$ parameters fit.
 \begin{table}
 	\centering
 \begin{tabular}{c|c}
 	\hline
 	Observables & Selections \\
 	$\Delta t$ & $-70 < \Delta t < 70$ ps\\
-	$\it{CP}$-side $\chi_2/N$ & $0 < (\chi_2/N)_{cp} < 8 $ \\
-	tag-side $\chi_2/N$  & $0 < (\chi_2/N)_{tag} < 50 $\\
+	$\it{CP}$-side $\chi^2/N$ & $0 < (\chi^2/N)_{cp} < 8 $ \\
+	tag-side $\chi^2/N$  & $0 < (\chi^2/N)_{tag} < 50 $\\
 	$\sigma_{z_{tag}}$ &  $\sigma_{z_{tag}} < 0.1$ cm\\
 	signal region & $5.27 < M_{bc} < 5.29$ GeV and $|\Delta E| < 0.1$ GeV\\
 	\hline
@@ -356,23 +356,23 @@ The signal and generic MC are generated with phase-space model which contains ze
 
 
 
-We have 10000 (8873 passing selections) events from signal sample and 415 (373 passing selections) events from 1 ab$^{-1}$ generic MC to fit $\it{CP}$ parameters. To mimic the events number expected in data sample, 30 events randomly taken from generic MC are used to perform the fit as well. The fit results are shown in Figure \ref{fig:cpfit_sig}, \ref{fig:cpfit_gen} and \ref{fig:cpfit_gen_data}. The fit results of $\mathcal{S}$ and $\mathcal{A}$ are summarized in Table \ref{tab:cpfit_result_mc}.
+We have 10000 (8873 passing selections) events from signal sample and 415 (373 passing selections) events from 1 ab$^{-1}$ \textit{generic MC} to fit $\it{CP}$ parameters. To mimic the events number expected in data sample, 30 events randomly taken from \textit{generic MC} are used to perform the fit as well. The plots are shown in Figure \ref{fig:cpfit_sig}, \ref{fig:cpfit_gen} and \ref{fig:cpfit_gen_data}. The fit results of $\mathcal{S}$ and $\mathcal{A}$ are summarized in Table \ref{tab:cpfit_result_mc}.
 \begin{figure}[H]
 	\begin{minipage}{0.5\linewidth}
 		\includegraphics[height=5cm]{figures/cpfit-10000sig}
-		\caption{$\it{CP}$ fit on 8873 signal MC.}
+		\caption{$\it{CP}$ fit on 8873 \textit{signal MC}.}
 		\label{fig:cpfit_sig}
 	\end{minipage}
 	\begin{minipage}{0.5\linewidth}
 		\includegraphics[height=5cm]{figures/cpfit-373gen}
-		\caption{$\it{CP}$ fit on 373 generic MC.}
+		\caption{$\it{CP}$ fit on 373 \textit{generic MC}.}
 		\label{fig:cpfit_gen}
 	\end{minipage}
 \vspace{0.5cm}
 	\begin{minipage}{1\linewidth}
 		\centering
 		\includegraphics[height=5cm]{figures/cpfit-30gen}
-		\caption{$\it{CP}$ fit on 30 generic MC.}
+		\caption{$\it{CP}$ fit on 30 \textit{generic MC}.}
 		\label{fig:cpfit_gen_data}
 	\end{minipage}
 \end{figure}
@@ -380,17 +380,17 @@ We have 10000 (8873 passing selections) events from signal sample and 415 (373 p
 
 \begin{table}
 	\centering
-	\caption{The $\it{CP}$ fit results using signal and generic MC.}
+	\caption{The $\it{CP}$ fit results using \textit{signal MC} and \textit{generic MC}.}
 	\label{tab:cpfit_result_mc}
 \begin{tabular}{|c|c|c|}
 	\hline
-	MC sample (events)& $\mathcal{S}$ &  $\mathcal{A}$\\
+	Sample (events)& $\mathcal{S}$ &  $\mathcal{A}$\\
 	\hline
-	signal MC (8873) & sin$(2\phi_1) = 0.00 \pm 0.04 $ &  $\mathcal{A} = -0.01 \pm 0.02$\\
+	\textit{signal MC} (8873) & sin$(2\phi_1) = 0.00 \pm 0.04 $ &  $\mathcal{A} = -0.01 \pm 0.02$\\
 	\hline
-	generic MC (373) &  sin$(2\phi_1)  = 0.00 \pm 0.21$ & $\mathcal{A}  = -0.05 \pm 0.07$ \\
+	\textit{generic MC} (373) &  sin$(2\phi_1)  = 0.00 \pm 0.21$ & $\mathcal{A}  = -0.05 \pm 0.07$ \\
 	\hline
-	generic MC (30) & sin$(2\phi_1) = 0.20 \pm 0.85 $& $\mathcal{A} = -0.06 \pm 0.30$ \\
+	\textit{generic MC} (30) & sin$(2\phi_1) = 0.20 \pm 0.85 $& $\mathcal{A} = -0.06 \pm 0.30$ \\
 	\hline
 \end{tabular}
 \end{table}
@@ -418,17 +418,17 @@ sin(2\phi_1) & = 0.20 \pm 0.85 \\
 \end{equation} 
 \end{comment}
 
-The fit results are consistent with expectation in non-$\it{CP}$ violation from MC input, and the statistical uncertainties has the tendency $\delta \propto 1/\sqrt{N}$ as poission distribution, where $N$ is events number used for $\it{CP}$ fit. To test fit on non-zero $\it{CP}$ violating MC, the fit on $B^0\to J/\psi K_S^0$ signal MC is also done, the details of events selection as well as fit model determination can be found\cite{jpsiks_ichep}. The fit result over 10000 events is shown in Figure \ref{fig:cpfit_jpsiks}, which results in sin$(2\phi_1) = 0.70 \pm 0.05 $ and $\mathcal{A} = -0.01\pm 0.02$. The results agree with the input.
+The fit results are consistent with expectation in non-$\it{CP}$ violation from MC input, and the statistical uncertainties has the tendency $\delta \propto 1/\sqrt{N}$ as poission distribution, where $N$ is events number used for $\it{CP}$ fit. To test fit on non-zero $\it{CP}$ violating MC, the fit on $B^0\to J/\psi K_S^0$ \textit{signal MC} is also done, the details of events selection as well as fit model determination can be found\cite{jpsiks_ichep}. The fit result over 10000 events is shown in Figure \ref{fig:cpfit_jpsiks}, which results in sin$(2\phi_1) = 0.70 \pm 0.05 $ and $\mathcal{A} = -0.01\pm 0.02$. The results agree with the input.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=5cm,width=6cm]{figures/jpsiks_cpfit10000}
-	\caption{$\it{CP}$ fit over 10000 $B^0\to J/\psi K_S^0$ signal MC. }
+	\caption{$\it{CP}$ fit over 10000 $B^0\to J/\psi K_S^0$ \textit{signal MC}. }
 	\label{fig:cpfit_jpsiks}
 \end{figure}
 %We test the $\it{CP}$ fit on the sideband data with $M_{bc} < 5.27$ GeV.
 
 \subsection{Linearity Test}
-To validate the $\it{CP}$ fit linearity, a series of toy MC samples is generated, which the $\chi_2$ from vertex fit, events number $N$ and vertex errors on $\it{CP}$ and tag-side are sampled from the distribution of signal MC. The resolution functions parameters are kept as same as $\it{CP}$ fit on generic MC. The input $\mathcal{A}$ is set to zero while the input value of sin$(2\phi_1)$ is running from 0.1 to 0.9. Each dataset contains 10000 events. The dependence between input and output are shown in Figure \ref{fig:cpfit_line_S}. The linearity fit shows a good agreement between input and output.
+To validate the $\it{CP}$ fit linearity, a series of toy MC samples is generated, which the $\chi^2$ from vertex fit, events number $N$ and vertex errors on $\it{CP}$ and tag-side are sampled from the distribution of \textit{signal MC}. The resolution functions parameters are kept as same as $\it{CP}$ fit on \textit{generic MC}. The input $\mathcal{A}$ is set to zero while the input value of sin$(2\phi_1)$ is running from 0.1 to 0.9. Each dataset contains 10000 events. The dependence between input and output are shown in Figure \ref{fig:cpfit_line_S}. The linearity fit shows a good agreement between input and output.
 
 \begin{figure}[H]
 	\begin{minipage}{0.5\linewidth}
@@ -458,7 +458,7 @@ Also, we fix sin$(2\phi_1)$ at zero while floating $\mathcal{A}$ from  0.1 to 0.
 \end{figure}
 
 \subsection{Toy MC Fit Pull}
-In order to check the fit bias with input-output method, a series of 1000 dataset of toy MC has been created containing about 26 events in each. The event number is set based on the expected number from signal region in data after the selection. The $\chi_2$ from vertext fit, events number $N$ and vertex errors on $\it{CP}$ and tag-side are sampled from the distribution of data. The fit to dataset is performed with zero input sin(2$\phi_1$) and $\mathcal{A}$ as floating parameters.
+In order to check the fit bias with input-output method, a series of 1000 dataset of toy MC has been created containing about 26 events in each. The event number is set based on the expected number from signal region in data after the selection. The $\chi^2$ from vertext fit, events number $N$ and vertex errors on $\it{CP}$ and tag-side are sampled from the distribution of data. The fit to dataset is performed with zero input sin(2$\phi_1$) and $\mathcal{A}$ as floating parameters.
 We expect to use the normal distribution to fit the pull of sin(2$\phi_1$) and $\mathcal{A}$. 
 
 \begin{figure}[H]
@@ -477,12 +477,12 @@ The fit results shows a good recovery of input sin$(2\phi_1)$ and $\mathcal{A}$ 
 
 
 \subsection{Lifetime and $\Delta m_d$ Fit}
-Before looking at $\it{CP}$ parameters in data, we need to check if the physics parameters are consistent when setting the $\it{CP}$ fitter to fit them in float. To test lifetime fit, first we use 10000 signal MC events which is generated by $\tau_{B^0} = 1.520$ from PDG value. The sin$(2\phi_1)$ and $\mathcal{A}$ are fixed at zero during the fit, for which the generator level $\it{CP}$ violation is zero. This is equivalent fit to Equation \ref{eq:cpfit_mc_life}.
+Before looking at $\it{CP}$ parameters in data, we need to check if the physics parameters are consistent when setting the $\it{CP}$ fitter to fit them in float. To test lifetime fit, first we use 10000 \textit{signal MC} events which is generated by $\tau_{B^0} = 1.520$ from PDG value. The sin$(2\phi_1)$ and $\mathcal{A}$ are fixed at zero during the fit, for which the generator level $\it{CP}$ violation is zero. This is equivalent fit to Equation \ref{eq:cpfit_mc_life}.
 \begin{equation}\label{eq:cpfit_mc_life}
 \mathcal{P}(\Delta t,\tau_{B^0}) = 
 \frac{e^{-|\Delta t|/\tau_{B^0}}}{4\tau_{B^0}}
 \end{equation}
-The fit result on signal MC is $1.537 \pm 0.024$ ps which is consistent with the input. We perform the lifetime fit on data in signal region, and the $\it{CP}$ parameters are fixed based on PDG values to: sin$(2\phi_1)=0.69$ and $\mathcal{A} = 0$. The fitted lifetime from $B^0 \to K_S^0  K_S^0  K_S^0$ is $1.431\pm 0.382$ ps. The result is consistent with PDG value. The distribution of $\Delta t$ in lifetime fit is shown as Figure \ref{fig:cpfit_data_life}.
+The fit result on \textit{signal MC} is $1.537 \pm 0.024$ ps which is consistent with the input. We perform the lifetime fit on data in signal region, and the $\it{CP}$ parameters are fixed based on PDG values to: sin$(2\phi_1)=0.69$ and $\mathcal{A} = 0$. The fitted lifetime from $B^0 \to K_S^0  K_S^0  K_S^0$ is $1.431\pm 0.382$ ps. The result is consistent with PDG value. The distribution of $\Delta t$ in lifetime fit is shown as Figure \ref{fig:cpfit_data_life}.
 The $B^0$ and $B^+$ lifetime fit using control sample is also performed and summarized in here\cite{jpsiks_ichep}. The results are consistent with PDG values as input in MC generator. 
 \begin{figure}[H]
 	\centering
@@ -535,7 +535,7 @@ The systematic uncertainty that affects the fit results may come from many aspec
 		fit bias & 0.01 & 0.01 \\
 		flavor tagging  & 0.004 & 0.004 \\
 		physics parameters & 0.007 & 0.001\\ 
-		KsFinder impact on data & 0.004 & 0.001\\
+		\textit{KsFinder} impact on data & 0.004 & 0.001\\
 		vertex reconstruction & 0.019 & 0.021\\
 		\hline
 		Total & 0.07 & 0.06\\
@@ -679,7 +679,7 @@ The background $\Delta t$ shapes' parameters are determined from data sideband $
 		\end{tabular}
 	\end{minipage}
 \end{table}
-The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determined from signal MC. The impact in each rbin on fit results is summarized as follows: 
+The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determined from \textit{signal MC}. The impact in each rbin on fit results is summarized as follows: 
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
@@ -781,7 +781,7 @@ The signal fraction is determined using 2D fit results of $M_{bc}$ and $\Delta E
 		\end{tabular}
 	\end{minipage}
 \end{table}
-The fit bias uncertainties is determined by the fit error of 100k signal MC events, which is $\delta {\mathcal{S}}=0.009817$ and $\delta {\mathcal{A}}=0.005702$.
+The fit bias uncertainties is determined by the fit error of 100000 \textit{signal MC} events, which is $\delta {\mathcal{S}}=0.009817$ and $\delta {\mathcal{A}}=0.005702$.
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
@@ -815,9 +815,9 @@ Applying KsFinder cut at 0.74 based on MC study may introduce small impact on da
 	\end{minipage}
 \end{table}
 
-For the contributions from vertex reconstruction, the impacts from the selections in Table \ref{tab:cutCP} are considered. Given the fact that cut values in Table \ref{tab:cutCP} are very loose and the statistics from data is very limited, the changing of the these values doesn't affect events collected from data so that systematic uncertainty can not be reflected correctly. Therefore, 1 ab$^{-1}$ generic MC is used with the modified ranges to estimate the potential systematic uncertainty from vertex reconstruction. Besides, due to the absence of IP constraint in vertex fit, the impact from the IP constraint options as well as the potential bias are not considered. The summarized systematic uncertainties are listed in Table \ref{tab:sy_vertex}.
+For the contributions from vertex reconstruction, the impacts from the selections in Table \ref{tab:cutCP} are considered. Given the fact that cut values in Table \ref{tab:cutCP} are very loose and the statistics from data is very limited, the changing of the these values doesn't affect events collected from data so that systematic uncertainty can not be reflected correctly. Therefore, 1 ab$^{-1}$ \textit{generic MC} is used with the modified ranges to estimate the potential systematic uncertainty from vertex reconstruction. Besides, due to the absence of IP constraint in vertex fit, the impact from the IP constraint options as well as the potential bias are not considered. The summarized systematic uncertainties are listed in Table \ref{tab:sy_vertex}, where the zero values appear due to the unchanged events input under the modified ranges.
 
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{systematic uncertainty from vertex reconstruction}
@@ -829,14 +829,14 @@ For the contributions from vertex reconstruction, the impacts from the selection
 & -0.003599
 \\
 			$\sigma_{z_{tag}}<0.15$ cm & 0.000000 & 0.000000 \\
-			$\chi_2/N(CP)<3$ & 0.018197
+			$\chi^2/N(CP)<3$ & 0.018197
 & -0.020242
 \\
-			$\chi_2/N(CP)<13$ & 0.000000 & 0.000000\\
-			$\chi_2/N(tag)<40$ & 0.000000
+			$\chi^2/N(CP)<13$ & 0.000000 & 0.000000\\
+			$\chi^2/N(tag)<40$ & 0.000000
 & 0.000000
 \\
-			$\chi_2/N(tag)<60$ & 0.000000 & 0.000000\\
+			$\chi^2/N(tag)<60$ & 0.000000 & 0.000000\\
 			$|\Delta t|<50 $ ps & 0.003325
 & -0.000396
 \\
