@@ -11,7 +11,6 @@ A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: chap7.aux
 A level-1 auxiliary file: appa.aux
 A level-1 auxiliary file: appb.aux
-A level-1 auxiliary file: appc.aux
 A level-1 auxiliary file: appd.aux
 A level-1 auxiliary file: biblio.aux
 The style file: unsrtnat.bst
@@ -46,7 +45,7 @@ Warning--empty title in flavortagger
 Warning--empty year in flavortagger
 You've used 44 entries,
             2481 wiz_defined-function locations,
-            817 strings with 12671 characters,
+            816 strings with 12663 characters,
 and the built_in function-call counts, 17355 in all, are:
 = -- 1312
 > -- 1173

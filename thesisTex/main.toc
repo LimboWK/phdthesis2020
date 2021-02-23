@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.2}Symmetry Violation}{10}{section.1.2}%
 \contentsline {section}{\numberline {1.3}CKM mechanism}{12}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Time Dependent $CP$ violation}{17}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1} $CP$ violation in neutral B system}{17}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1} $CP$ violation in neutral $B$ system}{17}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}$\phi _1$ from $B^0 \to J/\psi K^0_S$}{20}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}$\phi _1$ from penguin-dominated mode $b\to q\bar {q}s$}{21}{subsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.4.4}$\phi _1$ from $B^0 \to K_S^0 K_S^0 K_S^0$}{22}{subsection.1.4.4}%
@@ -55,7 +55,8 @@
 \contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{110}{subsection.5.4.4}%
 \contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{112}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Systematic Uncertainty}{112}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Conclusion and Prospect}{117}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{117}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Improvements in statistical uncertainty}{118}{subsection.6.0.1}%
 \contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{121}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{125}{appendix.B}%
 \contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution}{129}{appendix.C}%
