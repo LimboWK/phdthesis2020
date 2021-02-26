@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -296,5 +296,22 @@ H~Tajima, H~Aihara, T~Higuchi, H~Kawai, T~Nakadaira, J~Tanaka, T~Tomura,
 \bibitem[fla()]{flavortagger}
 URL
   \url{https://docs.belle2.org/record/1905/files/BELLE2-NOTE-PH-2020-013_v3.2.pdf?version=1}.
+
+\bibitem[Abudin{\'e}n et~al.(2020)Abudin{\'e}n, Adachi, Adak, Adamczyk,
+  Ahlburg, Ahn, Aihara, Akopov, Aloisio, Ameli, et~al.]{abudinen2020first}
+F~Abudin{\'e}n, I~Adachi, R~Adak, K~Adamczyk, P~Ahlburg, JK~Ahn, H~Aihara,
+  N~Akopov, A~Aloisio, F~Ameli, et~al.
+\newblock First flavor tagging calibration using 2019 belle ii data.
+\newblock \emph{arXiv preprint arXiv:2008.02707}, 2020.
+
+\bibitem[Amhis et~al.(2017)Amhis, Banerjee, Ben-Haim, Bernlochner, Bozek,
+  Bozzi, Chrz{\k{a}}szcz, Dingfelder, Duell, Gersabeck,
+  et~al.]{amhis2017averages}
+Y~Amhis, Sw~Banerjee, E~Ben-Haim, F~Bernlochner, A~Bozek, C~Bozzi,
+  M~Chrzaszcz, J~Dingfelder, S~Duell, M~Gersabeck, et~al.
+\newblock Averages of b-hadron, c-hadron, and $\tau$-lepton properties as of
+  summer 2016.
+\newblock \emph{The European Physical Journal C}, 77\penalty0 (12):\penalty0
+  1--335, 2017.
 
 \end{thebibliography}

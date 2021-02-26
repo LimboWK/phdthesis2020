@@ -56,7 +56,11 @@
 \BOOKMARK [1][-]{section.5.5}{CP fit on data}{chapter.5}% 56
 \BOOKMARK [1][-]{section.5.6}{Systematic Uncertainty}{chapter.5}% 57
 \BOOKMARK [0][-]{chapter.6}{Conclusion, discussion and prospect}{}% 58
-\BOOKMARK [1][-]{subsection.6.0.1}{Improvements in statistical uncertainty}{chapter.6}% 59
-\BOOKMARK [0][-]{appendix.A}{Training Observables for KS0 Classifier}{}% 60
-\BOOKMARK [0][-]{appendix.B}{Data Validation Plots for KS0}{}% 61
-\BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution}{}% 62
+\BOOKMARK [1][-]{subsection.6.0.1}{Improvements on statistical uncertainty}{chapter.6}% 59
+\BOOKMARK [2][-]{subsection.6.0.2}{Improvements on systematic uncertainty}{subsection.6.0.1}% 60
+\BOOKMARK [2][-]{subsection.6.0.3}{Total uncertainty of S at 50 ab-1}{subsection.6.0.1}% 61
+\BOOKMARK [2][-]{subsection.6.0.4}{KsFinder importance}{subsection.6.0.1}% 62
+\BOOKMARK [2][-]{subsection.6.0.5}{Prospect}{subsection.6.0.1}% 63
+\BOOKMARK [0][-]{appendix.A}{Training Observables for KS0 Classifier}{}% 64
+\BOOKMARK [0][-]{appendix.B}{Data Validation Plots for KS0}{}% 65
+\BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution}{}% 66

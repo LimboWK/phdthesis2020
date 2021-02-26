@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {4.1.4}Resonance Background}{80}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{81}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{81}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on \textit {KsFinder}}{86}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on \textit {KsFinder}}{88}{subsection.4.1.7}%
 \contentsline {chapter}{\numberline {5}\textit {CP} parameters measurement}{95}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Vertex Resolution Model}{96}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{97}{subsection.5.1.1}%
@@ -56,7 +56,11 @@
 \contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{112}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Systematic Uncertainty}{112}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{117}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Improvements in statistical uncertainty}{118}{subsection.6.0.1}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{121}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{125}{appendix.B}%
-\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution}{129}{appendix.C}%
+\contentsline {subsection}{\numberline {6.0.1}Improvements on statistical uncertainty}{118}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Improvements on systematic uncertainty}{119}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{123}{subsection.6.0.3}%
+\contentsline {subsection}{\numberline {6.0.4}\textit {KsFinder} importance}{125}{subsection.6.0.4}%
+\contentsline {subsection}{\numberline {6.0.5}Prospect}{126}{subsection.6.0.5}%
+\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{129}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{133}{appendix.B}%
+\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution}{137}{appendix.C}%
