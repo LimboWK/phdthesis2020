@@ -26,41 +26,40 @@
 \contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{50}{section.3.1}%
 \contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ selection}{53}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Belle II $K_S^0$ classification}{53}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{55}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Determination of training observables from $K_S^0$ decay }{57}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Training, Applying and Testing of \textit {KsFinder}}{59}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}The Performance and Over-fitting check}{61}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Data Validation for \textit {KsFinder}}{64}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Data and MC correction by \textit {KsFinder}}{66}{subsection.3.2.7}%
-\contentsline {chapter}{\numberline {4}Analysis strategies}{69}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Sample and Event Selection}{69}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}$K_S^0$ Selection}{69}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}$B^0$ Reconstruction}{72}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Continuum Suppression}{73}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Resonance Background}{80}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}$B\bar {B}$ background and self-cross feed}{81}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Signal Extraction}{81}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Kinematics and Vertexing Dependence on \textit {KsFinder}}{88}{subsection.4.1.7}%
-\contentsline {chapter}{\numberline {5}\textit {CP} parameters measurement}{95}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Vertex Resolution Model}{96}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{97}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Tag-side resolution function}{98}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Background events $\Delta t$ distribution}{102}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Flavor Tagging}{103}{section.5.2}%
-\contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{105}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Blind analysis and fit}{106}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{106}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{108}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{109}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{110}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{112}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{112}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{117}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Improvements on statistical uncertainty}{118}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Improvements on systematic uncertainty}{119}{subsection.6.0.2}%
-\contentsline {subsection}{\numberline {6.0.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{123}{subsection.6.0.3}%
-\contentsline {subsection}{\numberline {6.0.4}\textit {KsFinder} importance}{125}{subsection.6.0.4}%
-\contentsline {subsection}{\numberline {6.0.5}Prospect}{126}{subsection.6.0.5}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{129}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{133}{appendix.B}%
-\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution}{137}{appendix.C}%
+\contentsline {subsection}{\numberline {3.2.2}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{57}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Determination of training observables from $K_S^0$ decay }{59}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Training, Applying and Testing of \textit {KsFinder}}{61}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}The Performance and Over-fitting check}{63}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Data Validation for \textit {KsFinder}}{66}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Data and MC correction by \textit {KsFinder}}{68}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}$B^0$ reconstruction study}{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}$K_S^0$ Selection}{71}{section.4.1}%
+\contentsline {section}{\numberline {4.2}$B^0$ Reconstruction}{71}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Continuum Suppression}{73}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Resonance Background}{80}{section.4.4}%
+\contentsline {section}{\numberline {4.5}$B\bar {B}$ background and self-cross feed}{81}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Signal Extraction}{81}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Kinematics and Vertexing Dependence on \textit {KsFinder}}{88}{section.4.7}%
+\contentsline {chapter}{\numberline {5}\textit {CP} parameters measurement}{97}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Vertex Resolution Model}{98}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}$\it {CP}$-side resolution function}{99}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Tag-side resolution function}{100}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Background events $\Delta t$ distribution}{104}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Flavor Tagging}{105}{section.5.2}%
+\contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{107}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Blind analysis and fit}{108}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{108}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{110}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{111}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{112}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{114}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{114}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{119}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Improvements on statistical uncertainty}{120}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Improvements on systematic uncertainty}{121}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{126}{subsection.6.0.3}%
+\contentsline {subsection}{\numberline {6.0.4}\textit {KsFinder} importance}{127}{subsection.6.0.4}%
+\contentsline {subsection}{\numberline {6.0.5}Prospect}{128}{subsection.6.0.5}%
+\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{133}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{137}{appendix.B}%
+\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{141}{appendix.C}%

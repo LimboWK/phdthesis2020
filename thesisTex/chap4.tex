@@ -1,4 +1,4 @@
-\chapter{Analysis strategies}
+\chapter{$B^0$ reconstruction study}
 
 \begin{comment}
 \section{Time Dependent \textit{CP} violation measurement}
@@ -28,69 +28,41 @@ Here, same as discussed in Chapter 1, $\Delta M_d$ is the mass difference of two
 \end{comment}
 
 
-\section{Data Sample and Event Selection}
+%\section{Data Sample and Event Selection}
 \begin{comment}
 The simulation data (MC) is taken from Belle II official MC campaign 13, named MC13. Both\textit{signal MC} and \textit{signal MC} are produced. In\textit{signal MC}, one of the $B^0$ from $\Upsilon(4S)$ decays into final states 3$K_S^0$ then into 6 charged pions, while the other $B^0$ decays generically using all possible channels. In \textit{signal MC},  $B^0$ from  $\Upsilon(4S)$ all decay generically using all possible channels.
 The\textit{signal MC} sample is produced by EvtGen package with provided ``decay.dec" file that describes the required decay mode and branching fraction. As $K_S^0 \to \pi^0 \pi^0$ leads to large background with poor vertex quality, only the final states to 6 charged pions is used.
 \end{comment}
 
-As introduced in section 2.9, the branching fraction of $\mathcal{B}(B^0 \to K_S^0  K_S^0  K_S^0) = 6.0 \times 10^{-6}$. The simulation takes the $\Upsilon(4S)$ as the mother particle and generate its decay process to two scalar $B^0$ mesons with mixing. $B^0 \to K_S^0  K_S^0  K_S^0$ is simulated based on only the possible phase-space of kinematics that final states could have, which no $\it{CP}$ violation is assigned for $\mathcal{S}$(sin2$\phi_1$) and $\mathcal{A}$ in both \textit{signal MC} and \textit{generic MC}.
+As introduced in section 2.9, the branching fraction of $\mathcal{B}(B^0 \to K_S^0  K_S^0  K_S^0) = 6.0 \times 10^{-6}$. The simulation takes the $\Upsilon(4S)$ as the mother particle and generate its decay process to two scalar $B^0$ mesons with mixing. $B^0 \to K_S^0  K_S^0  K_S^0$ is simulated based on only the possible phase-space of kinematics that final states could have, which no $\it{CP}$ violation is assigned for $\mathcal{S}$(sin2$\phi_1$) and $\mathcal{A}$ in both one million \textit{signal MC} and 1 ab$^{-1}$ \textit{generic MC}.
 
-\subsection{$K_S^0$ Selection}
-$K_S^0$ reconstruction is first reconstructed by the cut-based reconstruction which contains a large fraction of fake candidates, as discussed in chapter 3. In addition, a momentum cut on $K_S^0$ is used considering distribution in $B^0 \to K_S^0  K_S^0  K_S^0$. Only the $K_S^0$ candidates with momentum larger than 0.05 GeV are selected, as shown in Figure \ref{fig:ks-p}. 
+\section{$K_S^0$ Selection}
+$K_S^0$ is first reconstructed by the cut-based method which contains a large fraction of fake candidates, as discussed in chapter 3.1. In addition, a momentum cut on $K_S^0$ is used considering distribution in $B^0 \to K_S^0  K_S^0  K_S^0$. Only the $K_S^0$ candidates with momentum larger than 0.05 GeV are selected, as shown in Figure \ref{fig:ks-p}. In addition, only $K_S^0$ with \textit{FBDT\_Ks} larger than 0.74 are kept based on Figure \ref{fig:ks_fom}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6.5cm]{ks-p}
 	\caption{The distribution of $K_S^0$ momentum. Candidates smaller than 0.05GeV/c are rejected. (Both plots shares the same y-axis scale on the left side.)}
 	\label{fig:ks-p}
 \end{figure}
-Next, the vertex fit of $K_S^0$ is performed using \textit{TreeFit} package\cite{refId0}. Using fitted $K_S^0$ momentum and energy, fitted invariant mass is different from the one obtained directly using daughters' 4-vector. This quantity often receives impact of the measurement uncertainties. If we check out the distribution of fitted invariant mass based on daughters' SVD hits as section 3.1 discussed, \textit{SVD00} $K_S^0$ shows a large dispersion from the central region of the distribution of invariant mass after vertex fit, while \textit{SVD11} $K_S^0$ shows a small dispersion as shown in Figure \ref{fig:invm1}. Therefore, considering the $K_S^0$ candidates with different SVD hits, see Figure \ref{fig:ks-r-svdxx} and Table \ref{tab:svdxx}, reflecting the different tracking quality of daughter $\pi^{\pm}$, the different cut on invariant mass M$_{\pi^+\pi^-}$ after vertex fit is applied depending on the SVD hits number of pion tracks. As shown in Figure \ref{fig:invm}, the sideband regions where fake $K_S^0$ is much higher than true $K_S^0$ are excluded. The cut windows are listed in Table \ref{tab:ks_invm}. This improves the reconstruction purity.
+The vertex fit of $K_S^0$ is performed using \textit{TreeFit}. 
 
-\begin{figure}[htpb]
-\centering
-\includegraphics[width=0.7\linewidth]{m-before-fit}
-\includegraphics[width=0.7\linewidth]{m-after-fit}
-\caption{(Top two plots)The invariant mass from daughters' 4-vector, the left is $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} and the right is \textit{generic MC};
-(bottom two plots)The invariant mass after vertex fit, the left is $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} and the right is \textit{generic MC};
-In both cases, the red shows the clear dispersion on \textit{SVD00} type $K_S^0$.}
-\label{fig:invm1}
-\end{figure}
+\begin{comment}
+If we check out the distribution of fitted invariant mass based on SVD hits number associated with daughter tracks as section 3.1 discussed, \textit{SVD00} $K_S^0$ shows a large dispersion from the central region of the distribution of invariant mass after vertex fit, while \textit{SVD11} $K_S^0$ shows a small dispersion as shown in Figure \ref{fig:invm1}. Therefore, considering the $K_S^0$ candidates with different SVD hits, see Figure \ref{fig:ks-r-svdxx} and Table \ref{tab:svdxx}, reflecting the different tracking quality of daughter $\pi^{\pm}$, the different cut on invariant mass M$_{\pi^+\pi^-}$ after vertex fit is applied depending on the SVD hits number of pion tracks. As shown in Figure \ref{fig:invm}, the sideband regions where fake $K_S^0$ is much higher than true $K_S^0$ are excluded. The cut windows are listed in Table \ref{tab:ks_invm}. This improves the reconstruction purity.
+\end{comment}
  
-In summary, $K_S^0$ are first reconstructed using BASF2 standard library with all converged vertex fit candidates are kept using \textit{TreeFit}. Then we reject $K_S^0$ candidates with momentum smaller than 0.05 GeV/c. After this, tuned cuts on invariant mass after vertex fit for each $K_S^0$ based on their SVD hits of pions are applied according to Table \ref{tab:ks_invm}. 
-Eventually, only $K_S^0$ with \textit{FBDT\_Ks} larger than 0.74 are kept based on Figure \ref{fig:ks_fom}.
  
-\begin{table}[h]
-	\centering 
-	\begin{tabular}{|c|c|c|c|c|} 
-		\hline
-		$K_S^0$ type & SVD11 & SVD10 & SVD01  & SVD00  \\
-		\hline
-		M$_{\pi^+\pi^-}$ window (GeV) & (0.45,0.55) & (0.38,0.7)  & (0.38,0.7)  & (0.3,0.7) \\
-		\hline
-	\end{tabular}
-\caption{Invariant mass cut window after vertex fit for $K_S^0$ based on Figure \ref{fig:invm}.}
-\label{tab:ks_invm}
-\end{table}
+ 
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.7\linewidth]{invm1}
-	\includegraphics[width=0.7\linewidth]{invm2}
-	\caption{Invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
-	\label{fig:invm}
-\end{figure}
 
-\subsection{$B^0$  Reconstruction}
-
+\section{$B^0$  Reconstruction}
 By combining three $K_S^0$ particles from selected dataset, we can reconstruct $B^0$. The beam-constraint mass $M_{bc}$ and energy difference $\Delta E$ are used to extract signal, as defined in Equation \ref{eq:mbc} and \ref{eq:dE}, respectively. For $M_{bc}$, $s$ is defined as the invariant mass and $p^*_B$ is the reconstructed $B$ momentum, both in the center-of-mass frame of $e^+e^-$. For $\Delta E$, $E^*_B$ is the reconstructed energy in the center-of-mass frame of $e^+e^-$. These two variables are quite useful for discriminating signal and background events for hadronic $B$ decay with fully reconstructed final states.
- In Belle II, the $B^0$ candidates with $M_{bc} > 5.2$ GeV and $|\Delta{E}| < 0.2$ GeV are requested to be reconstructed. The $B^0$ vertex fit using \textit{TreeFit} is performed on each $B^0$ candidate and a quality index named \textit{chiProb} is calculated.  Only $B^0$ with converged vertex fit result is kept by a very loose cut of "$\text{chiProb} > 0.001$", which is essential to obtain the decay vertex positions of $B$ mesons for further $\it{CP}$ violation analysis. When multiple $B^0$ candidates are obtained in a single event, the best candidates selection (BCS) is performed by ranking their vertex fit quality. Since the BCS is based on the vertexing quality that might introduce bias in the vertex positions for $\it{CP}$ fit, we check the distribution of the vertex $\chi^2$, as shown in Figure \ref{fig:b0dist} top right where the data and \textit{generic MC} present a good consistence within $1\sigma$ on average. The distribution of candidates number per event without BCS is shown in top left of Figure \ref{fig:b0dist} as well, showing an agreement between data and \textit{generic MC} within 1$\sigma$. The distribution of candidates per event is also in an agreement with that from \textit{signal MC} (bottom left of Figure \ref{fig:b0dist}). The 2D distribution of $M_{bc}$ and $\Delta E$ from $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} is shown in Figure \ref{fig:b0dist}  bottom right, where the correlation factor is about 15\% between two observables. 
+ In Belle II, the $B^0$ candidates with $M_{bc} > 5.2$ GeV and $|\Delta{E}| < 0.2$ GeV are requested. The $B^0$ vertex fit using \textit{TreeFit} is performed on each $B^0$ candidate and the $\chi^2$ probability of the fit is calculated.  Only $B^0$ with converged vertex fit result is kept by a very loose cut of  $P(\chi^2)> 0.001$. When multiple $B^0$ candidates are obtained in a single event, the best candidates selection (BCS) is performed by ranking their $\chi^2$ of the vertex fit. Since the BCS is based on the $\chi^2$ that might introduce bias in the vertex positions for $\it{CP}$ fit, we check the distribution of the vertex $\chi^2$, as shown in Figure \ref{fig:b0dist} top right where the data and \textit{generic MC} present a good consistence within $1\sigma$ on average. The distribution of candidates number per event without BCS is shown in top left of Figure \ref{fig:b0dist} as well, showing an agreement between data and \textit{generic MC} within 1$\sigma$. The distribution of candidates per event is also in an agreement with that from \textit{signal MC} (bottom left of Figure \ref{fig:b0dist}). The 2D distribution of $M_{bc}$ and $\Delta E$ from $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} is shown in Figure \ref{fig:b0dist}  bottom right, where the correlation factor is about 15\% between two observables. 
  \begin{equation}\label{eq:mbc}
  M_{bc} = \sqrt{\frac{s}{4}-p^{*2}_B} 
  \end{equation}
  \begin{equation}\label{eq:dE}
  \Delta E = E^*_B - \frac{\sqrt{s}}{2}
  \end{equation}
- 
 \begin{figure}[H]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
@@ -116,18 +88,17 @@ By combining three $K_S^0$ particles from selected dataset, we can reconstruct $
 	\caption{Top left is the candidates per event in data and \textit{generic MC} before the BCS. Top Right is the $\chi^2$ for data and \textit{generic MC} before BCS. Bottom left is the number of candidates $B^0$ per event from\textit{signal MC}. Bottom right is the 2D $M_{bc}$ and $\Delta E$ distribution from \textit{signal MC}.}
 	\label{fig:b0dist}
 \end{figure}
-
 % move to after CS
-\subsection{Continuum Suppression}
-The production cross-section of $B\bar{B}$ from $\Upsilon{(4S)}$ receives a sizable contribution from other flavor of quarks other than b quark. This calls a demand to distinguish a specific $B\bar{B}$ decay events from combinatorial background from $e^+e^- \to q\bar{q}$, so called continuum suppression (CS). The rejection is essential because it's the dominated background.  In the case of $b \to s$ charmless decay like $B^0 \to K_S^0  K_S^0  K_S^0$, the number of continuum background can exceed the signals by a few orders of magnitudes without suppression. In a $B\bar{B}$ event, two mesons are produced almost at rest in the CMS frame since the resonance state $\Upsilon(4S)$ is  just slightly lighter than beam energy. As a result	, decay products are emitted more isotropically, compared to continuum background. The ARGUS and CLEO collaboration\cite{Bevan_2014} developed a set of variables to suppress the continuum, which has also been implemented into BASF2 framework. 
+\section{Continuum Suppression}
+The production cross-section of $B\bar{B}$ from $\Upsilon{(4S)}$ receives a sizable contribution from other flavor of quarks other than $b$ quark. This calls a demand to distinguish a specific $B\bar{B}$ decay events from combinatorial background from $e^+e^- \to q\bar{q}$, so called continuum suppression (CS). The rejection is essential because it's the dominated background in this analysis.  In the case of $b \to s$ charmless decay like $B^0 \to K_S^0  K_S^0  K_S^0$, the number of continuum background can exceed the signals by a few orders of magnitudes if no suppression applied. In a $B\bar{B}$ event, two mesons are produced almost at rest in the CMS frame since the resonance state $\Upsilon(4S)$ is  just slightly lighter than beam energy. As a result, decay products are emitted more isotropically compared to continuum background which are more jet-like events. The ARGUS and CLEO collaboration\cite{Bevan_2014} developed a set of variables to suppress the continuum background, which has also been implemented into BASF2 framework. 
 
-CLEO cones momentum can be presented as Equation \ref{eq:ln}, where $ p_i $ is momentum of i-th particle in Rest-Of-Event (ROE) particles in a event except for the ones used to reconstructed $\it{CP}$-side $B^0$, $\theta_i$ is angle against momentum thrust of reconstructed $\it{CP}$-side of \textit{B} meson.
+CLEO cones momentum can be presented as Equation \ref{eq:ln}, where $ p_i $ is momentum of i-th particle in Rest-Of-Event (ROE), where the articles used to reconstructed $\it{CP}$-side $B^0$ are excluded. The $\theta_i$ is angle against momentum thrust of reconstructed $\it{CP}$-side of \textit{B} meson.
 
 \begin{equation}\label{eq:ln}
 L_n = \sum_{i\in ROE}^{} p_i \times |cos\theta_i|
 \end{equation}
 
-Besides, the modified Super Fox-wolfram momentum named  KSFW momentum, are calculated in each event. The KSFW momentum are defined as shown in Equation \ref{eq:ksfw}. 
+The modified Super Fox-wolfram momentum named KSFW momentum are defined as shown in Equation \ref{eq:ksfw}. 
 \begin{equation}\label{eq:ksfw}
 KSFW = \sum_{l=0}^{4}( R_l^{so} + R_l^{oo}) + \gamma \sum_{n=1}^{N_t}|P(t)_n|
 \end{equation}
@@ -182,9 +153,9 @@ where \textit{P} is probability density function for signal and continuum, depen
 
   In order to maximize suppression power in this analysis, these variables (KSFW, CLEO cone momentum and angular distributions) are combined as an input for FastBDT classifier. The targeted variable is the continuum event truth. The MC samples using signal $B\bar{B}$ events from \textit{signal MC} and continuum events from \textit{generic MC} ($q\bar{q}$ components) are prepared in a ratio of their cross-section at $\Upsilon{(4S)}$ energy. The same events reconstruction procedures for $B^0$ is applied for both MC samples. Events passing the reconstruction for $B^0$ using $M_{bc}$ and $\Delta E$ are used for training the continuum suppression classifier. The fraction of signal and background is set to 1:1 during the training.  The output of continuum suppression classifier is renamed as \textit{FBDT\_CS}. Then we determine the cut value at 0.66 based on the maximum of \textit{FOM} curve, as shown in Figure \ref{fig:cs_fom}. The variables used in training are listed in Table \ref{tab:cs_abr} with their abbreviations and the rank of important variables is in Table \ref{tab:cs_imp}.
 
-The correlation between these training variables are shown in Figure \ref{fig:cs_cor}. The correlation among the variables are varied in signal and background. The ROC curve and the efficiency/purity with respect to the classifier output are shown in Figure \ref{fig:cs_roc}.
+The correlation between these training variables are shown in Figure \ref{fig:cs_cor} which are varied between signal and continuum background events. The ROC curve and the efficiency/purity with respect to the classifier output are shown in Figure \ref{fig:cs_roc}, yielding a close performance.
 \begin{table}[htpb]
-	\begin{minipage}[t]{0.4\linewidth}
+	\begin{minipage}[t]{0.5\linewidth}
 		\centering
 		\caption{Variables and the abbreviations for CS.}
 		\label{tab:cs_abr}
@@ -225,15 +196,14 @@ The correlation between these training variables are shown in Figure \ref{fig:cs
 			\hline
 		\end{tabular}
 	\end{minipage}
-	\begin{minipage}[t]{0.5\linewidth}
+	\begin{minipage}[t]{0.4\linewidth}
 		\centering 
 		\caption{The rank of important variables for CS. }
 		\label{tab:cs_imp}
 		\includegraphics[width=4cm]{cs-imp}
 	\end{minipage}
 \end{table}
-
-\begin{figure}[ht]
+\begin{figure}[htpb]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
 		\includegraphics[height=7cm]{figures/corr_cs_kine_sig}	
@@ -245,21 +215,22 @@ The correlation between these training variables are shown in Figure \ref{fig:cs
 	\caption{The correlation in variables for continuum suppression. The left is for signal and the right is for background.}
 	\label{fig:cs_cor}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[htpb]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5cm]{figures/ROC_CS}	
+		\includegraphics[height=6cm]{figures/ROC_CS}	
 	\end{minipage}
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5cm]{figures/eff_CS}	
+		\includegraphics[height=6cm]{figures/eff_CS}	
 	\end{minipage}
 \caption{The left is the ROC curve (blue for training and orange for testing)
 	and the right is the efficiency(blue) and purity(orange) regarding the classifier output \textit{FBDT\_CS}.}
 	\label{fig:cs_roc}
 \end{figure}
-Overtraining check is made by comparing the distribution of signal and background depending on the classifier output in both training and testing samples. The testing samples show about 1\% lower in each bin for both signal and background events, which is within the acceptable range.  
-\begin{figure}[H]
+
+The Overtraining check is made by comparing the distribution of signal and background depending on the classifier output in both training and testing samples. The testing samples show about 1\% lower in each bin for both signal and background events, which is within the acceptable range.  
+\begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{cs-overtrain}
 	\caption{Over-training check of continuum classifier, where a very small difference in training and testing (1\%) is shown.}
@@ -277,12 +248,12 @@ The summary of $B^0$ selections is listed in Table \ref{tab:b0select}, including
 	\centering 
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} 
 		\hline
-		$B^0$  & $M_{bc}$/GeV& $\Delta E$/GeV & \textit{chiProb} & \textit{Rank} & \textit{FBDT\_CS} & \textit{FBDT\_Ks}\\
+		$B^0$  & $M_{bc}$/GeV& $\Delta E$/GeV & $P(\chi^2)$ & \textit{Rank} & \textit{FBDT\_CS} & \textit{FBDT\_Ks}\\
 		\hline
 		Selection & $> 5.20$ \& $< 5.29$  &  $ |\Delta E|< 0.2$ & $> 0.001$  & $=1$ & $>0.66$ & $>0.74$\\
 		\hline
 	\end{tabular}
-	\caption{$B^0$ selection criteria, \textit{chiProb} is from $B^0$ vertex fit and \textit{Rank} is from best candidate selection.}
+	\caption{$B^0$ selection criteria, $P(\chi^2)$ is from $B^0$ vertex fit and \textit{Rank} is from best candidate selection. $FBDT\_Ks$ is requested by \textit{KsFinder}.}
 	\label{tab:b0select}
 \end{table}
 
@@ -307,7 +278,7 @@ Explicitly, the reconstruction performance of $B^0$ is summarized in Table \ref{
 
 
 % summary of $B^0$ stats goes here
-\subsection{Resonance Background}
+\section{Resonance Background}
 Besides the major contribution from continuum background, charmonium resonance that mediates through $b \to c$ transition brings odd $\textit{CP}$ eigenvalue in the final states as same as $B^0 \to K_S^0  K_S^0  K_S^0$. Monitoring their contribution is also important. Basically, one needs to check the resonance states formed by two $K_S^0$ with corresponding invariant mass. In $B^0 \to X(K_S^0 K_S^0) K_S^0$,  there are two types of resonant events that give out same final states, one is resonant signal and the other is resonant background. For $b \to s$ transitions as resonance signal because of the $\it{CP}$-even final states, \textit{X} could be $f_2(1270)$, $f_0(1500)$, $f_{2}^{'}(1525)$, $f_0(980)$, $f_0(1710)$ and $f_2(2010)$. For $b \to c$ transition as resonance background because of $\it{CP}$-odd final states, \textit{X} could be $D^0$, $J/\psi$, $\psi(2S)$,  $\chi_{c0}$, $\chi_{c1}$, and $\chi_{c2}$.
 
 The number of these background in signal reconstruction could be further reduced by implementing veto on invariant mass of 2$K_S^0$. However, such veto should be carefully validated with data. The distribution of invariant mass of \textit{X} should agree well in MC and data, which is hard to check in the low luminosity. The distribution of 2$K_S^0$ invariant mass in \textit{generic MC} and data are shown in the Appendix 
@@ -355,10 +326,10 @@ The number of these background in signal reconstruction could be further reduced
 
 
 % 2021.02.10 mid
-\subsection{$B\bar{B}$ background and self-cross feed}
+\section{$B\bar{B}$ background and self-cross feed}
 Another possible contribution of backgrounds are from $B\bar{B}$ events including the charged and the neutral particles. The estimated contributions of these types can be checked with charged $B\bar{B}$ samples and the mixed samples. For this channel, the number of the events is very limited. Self-cross feed backgrounds stands for the events from the signal-like events but the tag-side particle(s) is associated as a fake signal. The combined contributions from $B\bar{B}$ background and self-cross feed is about 3\% in the channel and therefore we don't perform special treatment on them.
 
-\subsection{Signal Extraction}
+\section{Signal Extraction}
 The event selections defined in Table \ref{tab:b0select} is applied to \textit{signal MC}, \textit{generic MC} and experiment data for signal extraction. The integral luminosity in \textit{generic MC} is 1 ab$^{-1}$ and experiment data used in this analysis is about 62.8 fb$^{-1}$ from the latest official processing. 
 
 The unbinned maximum likelihood fit using RooFit is performed to extract the signal. The 2D fit using both $M_{bc}$ and $\Delta{E}$ are done by taking the probability density function as shown in Equation \ref{eq:pmbcde}.
@@ -370,45 +341,42 @@ f_{sig}\times \mathcal{P}_{sig}^{M_{bc}}\times\mathcal{P}_{sig}^{\Delta{E}}
 \end{equation}
 where $\mathcal{P}_{sig}^{M_{bc}}$ and $\mathcal{P}_{sig}^{\Delta{E}}$ are the single Gaussian and triple Gaussian functions. The $f_{sig}$ is fraction of signal events based on $M_{bc}$ and $\Delta E$. The $\mathcal{P}_{bkg}^{M_{bc}}$ is  primarily continuum events, and presented as Argus distribution as Equation \ref{eq:Argus} shows, with a preset mass threshold at $c = 5.29$ GeV. 
 \begin{equation}\label{eq:Argus}
-f(x;\chi,c)=\frac{\chi^3}{\sqrt{2\pi}\Psi(\chi)}\cdot
+\mathcal{P}_{bkg}^{M_{bc}}(x;c,\chi)=\frac{\chi^3}{\sqrt{2\pi}\Psi(\chi)}\cdot
 \frac{x}{c^2}\sqrt{1-\frac{x^2}{c^2}}\cdot
 exp\begin{Bmatrix}
 -\frac{1}{2}\chi^2(1-\frac{x^2}{c^2})
 \end{Bmatrix}
 \end{equation}
- $x$ is defined in $0<x<c$. $\chi$ and $c$ are parameters of the distribution, $\Psi(\chi)=\Phi(\chi)-\chi\phi(\chi)-\frac{1}{2}$ where $\Phi(\chi)$ and $\phi(\chi)$  cumulative distribution and probability density functions of the standard normal distribution, respectively. 
- 
- The $\mathcal{P}_{bkg}^{\Delta{E}}$ is modeled by the first order Chebyshev polynomials. The shape parameters of signal events are determined by fitting to \textit{signal MC}, and  then fixed as constants in fitting of Equation \ref{eq:pmbcde} on $M_{bc}$ and $\Delta E$ for \textit{signal MC} and experiment data. Fitting results on \textit{signal MC} are shown in Figure \ref{fig:mbcde1D}. 
+ $x$ presenting $M_{bc}$ is defined in $0<x<c$. The $\chi$ and $c$ are parameters of the distribution, $\Psi(\chi)=\Phi(\chi)-\chi\phi(\chi)-\frac{1}{2}$ where $\Phi(\chi)$ and $\phi(\chi)$  cumulative distribution and probability density functions of the standard normal distribution, respectively. 
+ The $\mathcal{P}_{bkg}^{\Delta{E}}$ is modeled by the first order Chebyshev polynomials. The shape parameters of signal events are determined by fitting to \textit{signal MC}, and  then fixed as constants in fitting of Equation \ref{eq:pmbcde} on $M_{bc}$ and $\Delta E$ for \textit{signal MC} and experiment data. Fitting results on \textit{signal MC} are shown in Figure \ref{fig:mbcde1D}. The continuum background is fitted by using $q\bar{q}$ events from \textit{generic MC} to determine the shapes then fix them as constants for 2D fit as shown in Figure \ref{fig:bkgmbcde}.
  \begin{figure}[htbp]
  	\begin{minipage}[b]{0.5\linewidth}
  		\centering 
- 		\includegraphics[height=5cm]{mbc-hist}
+ 		\includegraphics[height=6cm]{mbc-hist}
  		%\label{fig:side:a}
  	\end{minipage}
  	\begin{minipage}[b]{0.5\linewidth}
  		\centering 
- 		\includegraphics[height=5.2cm]{dE-hist}
+ 		\includegraphics[height=6cm]{dE-hist}
  		%\label{fig:side:b}
  	\end{minipage}
  	\caption{The distribution of $M_{bc}$ and $\Delta E$ of \textit{signal MC} of $B^0 \to K_S^0  K_S^0  K_S^0$ fitted with single and triple Gaussian functions respectively.}
  	\label{fig:mbcde1D}
  \end{figure}
-The continuum background is fitted by using $q\bar{q}$ events from \textit{generic MC} to determine the shapes then fix them as constants for 2D fit as shown in Figure \ref{fig:bkgmbcde}.
 \begin{figure}[htbp]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5cm]{figures/mbc-cs-hist}
+		\includegraphics[height=6cm]{figures/mbc-cs-hist}
 		\label{}
 	\end{minipage}
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5.2cm]{figures/dE-cs-hist}
+		\includegraphics[height=6cm]{figures/dE-cs-hist}
 		\label{}
 	\end{minipage}
 	\caption{The distribution of $M_{bc}$ and $\Delta E$ of continuum events in \textit{signal MC} fitted with Argus and Chebyshev polynomial, respectively.}
 	\label{fig:bkgmbcde}
 \end{figure}
-
 Then we set the events number for signal and background as floating parameters and use Equation \ref{eq:pmbcde} as 2D fit model on 1 ab$^{-1}$ \textit{generic MC} and experiment data, which is also done by using unbinned maximum likelihood fit.
 For $B^0$ in \textit{generic MC}, the stacked histogram of each contribution and the 2D fit result projected on $M_{bc}$ and $\Delta E$ is shown in Figure \ref{fig:2Dgen}.
 \begin{figure}[H]
@@ -432,7 +400,7 @@ For $B^0$ in \textit{generic MC}, the stacked histogram of each contribution and
 		\includegraphics[height=5.2cm]{figures/dE-hist-2d}
 		\label{}
 	\end{minipage}
-	\caption{Top is the stacked plots for \textit{generic MC} of $M_{bc}$ and $\Delta E$, where each background components are stacked with signal. The bottom is the 2D fit on 1 ab$^{-1}$ \textit{generic MC} projected on $M_{bc}$ and $\Delta E$, the red is signal component from the fit result in both plots.}
+	\caption{Top is the stacked plots for \textit{generic MC} of $M_{bc}$ and $\Delta E$, where each background components are stacked with signal. The bottom is the 2D fit on 1 ab$^{-1}$ \textit{generic MC} projected on $M_{bc}$(GeV) and $\Delta E$(GeV), the red is signal component from the fit result in both plots.}
 	\label{fig:2Dgen}
 \end{figure}
 
@@ -455,15 +423,15 @@ The 2D fit of experiment data projected on $M_{bc}$ and $\Delta E$ is in Figure 
 \begin{figure}[htbp]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5cm]{figures/mbc_data_new}
+		\includegraphics[height=6cm]{figures/mbc_data_new}
 		\label{}
 	\end{minipage}
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5.2cm]{figures/dE_data_new}
+		\includegraphics[height=6cm]{figures/dE_data_new}
 		\label{}
 	\end{minipage}
-\caption{$M_{bc}$ and $\Delta E$ 2D fit on 62.8 fb$^{-1}$data, the red is the signal component.}
+\caption{$M_{bc}$(GeV) and $\Delta E$(GeV) 2D fit on 62.8 fb$^{-1}$data, the red is the signal component.}
 \label{fig:2Ddata}
 \end{figure}
 
@@ -474,7 +442,7 @@ The 2D fit of experiment data projected on $M_{bc}$ and $\Delta E$ is in Figure 
  \frac{N_{sig}}{\mathcal{B}(K_S^0\to \pi^+\pi^-)^3\times
  	\epsilon_{rec}\times N_{B\bar{B}}}
  \end{equation}
- In 1 ab$^{-1}$ \textit{generic MC}, the expected signal number is $7.7\times 10^8 \times 6\times 10^{-6} \times 21\% \times 35\% \simeq 339$. The 2D fit result from $M_{bc}$ and $\Delta E$ yields $341\pm 20$ events which agrees with expected number within $1\sigma$. The event number in sideband defined as $M_{bc}<5.26$ GeV in \textit{generic MC} is 507. Compared to Belle result with $772\times 10^6$ ($\sim$ 1 ab$^{-1}$) $B\overline{B}$ pairs used, signal from data yields $327\pm 19$. In 62.8 fb$^{-1}$ data fit in Belle II, we extract $N_{sig} = 17.4 \pm 4.2$ in signal region. The sideband region $M_{bc}<5.26$ GeV contains 60 events in data. The numbers are summarized in Table \ref{tab:recoB}. The scattered plots on $M_{bc}$ and $\Delta E$ is shown in Figure \ref{fig:2Dscatter}.
+ In 1 ab$^{-1}$ \textit{generic MC}, the expected signal number is $7.7\times 10^8 \times 6\times 10^{-6} \times 21\% \times 35\% \simeq 339$. The 2D fit result from $M_{bc}$ and $\Delta E$ yields $341\pm 20$ events which agrees with expected number within $1\sigma$. The event number in sideband defined as $M_{bc}<5.26$ GeV in \textit{generic MC} is 507. Compared to Belle result with $772\times 10^6$ $B\overline{B}$ pairs used, signal from data yields $327\pm 19$. In 62.8 fb$^{-1}$ data fit in Belle II, we extract $N_{sig} = 17.4 \pm 4.2$ in signal region. The sideband region $M_{bc}<5.26$ GeV contains 60 events in data. The numbers are summarized in Table \ref{tab:recoB}. The scattered plots on $M_{bc}$ and $\Delta E$ is shown in Figure \ref{fig:2Dscatter}.
  \begin{table}[htpb]
  	\centering 
  	\caption{Reconstructed signal and background events using $M_{bc}$ and $\Delta E$ 2D fit, compared with expected numbers from MC.}
@@ -502,35 +470,33 @@ The 2D fit of experiment data projected on $M_{bc}$ and $\Delta E$ is in Figure 
  \begin{figure}[htpb]
  \centering
  \includegraphics[width=0.7\linewidth]{scatter_2D}
- \caption{The 2D scattered plot of $M_{bc}$ and $\Delta E$ using data.}
+ \caption{The 2D scattered plot of $M_{bc}$(GeV) and $\Delta E$(GeV) of data.}
  \label{fig:2Dscatter}
  \end{figure}
 To check linearity of the event number fitted from the $M_{bc}$ and $\Delta E$ in this low statistics case, we extract the fraction of continuum backgrounds from \textit{generic MC} sample rescaled to the experimental data luminosity, which includes about 46 continuum events. Then the number of signal events from 5 to 30 with 5 events per step are injected into the continuum events, to perform the $M_{bc}$ and $\Delta E$ fit to check the output signal events number. The $M_{bc}$ and $\Delta E$ distributions and fit in each injection test are shown in Figure \ref{fig:2Dinject}. The fitted signal and background events depending on the injected numbers (linearity test ) are presented in Figure \ref{fig:2Dinjectline}, where the dependence on both signal and background events number are fitted with linear functions. The fit results show a good linearity on the input and output of signal numbers while the background numbers remain constant close to the input number.
-
 \begin{figure}[htpb]
-	
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_5/ds_gen_Mbc_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_5/ds_gen_Mbc_2D.pdf}
 		\caption{signal injected: 5}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_5/ds_gen_deltaE_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_5/ds_gen_deltaE_2D.pdf}
 		\caption{signal injected: 5}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_10/ds_gen_Mbc_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_10/ds_gen_Mbc_2D.pdf}
 		\caption{signal injected: 10}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_10/ds_gen_deltaE_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_10/ds_gen_deltaE_2D.pdf}
 		\caption{signal injected: 10}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_15/ds_gen_Mbc_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_15/ds_gen_Mbc_2D.pdf}
 		\caption{signal injected: 15}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_15/ds_gen_deltaE_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_15/ds_gen_deltaE_2D.pdf}
 		\caption{signal injected: 15}
 	\end{subfigure}
 \end{figure}
@@ -538,28 +504,28 @@ To check linearity of the event number fitted from the $M_{bc}$ and $\Delta E$ i
 \begin{figure}[htpb]
 	\ContinuedFloat
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_20/ds_gen_Mbc_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_20/ds_gen_Mbc_2D.pdf}
 		\caption{signal injected: 20}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_20/ds_gen_deltaE_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_20/ds_gen_deltaE_2D.pdf}
 		\caption{signal injected: 20}
 	\end{subfigure}
 	
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_25/ds_gen_Mbc_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_25/ds_gen_Mbc_2D.pdf}
 		\caption{signal injected: 25}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_25/ds_gen_deltaE_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_25/ds_gen_deltaE_2D.pdf}
 		\caption{signal injected: 25}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_30/ds_gen_Mbc_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_30/ds_gen_Mbc_2D.pdf}
 		\caption{signal injected: 30}
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[page=1,height=5cm]{figures/injection_sig_30/ds_gen_deltaE_2D.pdf}
+		\includegraphics[page=1,height=6cm]{figures/injection_sig_30/ds_gen_deltaE_2D.pdf}
 		\caption{signal injected: 30}
 	\end{subfigure}
 \caption{The fit results of $M_{bc}$ and $\Delta E$ in signal injection test, where signal events from 5 to 30 with 5 per step are injected with 46 continuum events.}
@@ -567,15 +533,15 @@ To check linearity of the event number fitted from the $M_{bc}$ and $\Delta E$ i
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5cm]{figures/inject_line_sig}
+		\includegraphics[height=6cm]{figures/inject_line_sig}
 		\label{}
 	\end{minipage}
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=5.2cm]{figures/inject_line_bkg}
+		\includegraphics[height=6cm]{figures/inject_line_bkg}
 		\label{}
 	\end{minipage}
 	\caption{Injection test for signal extraction. The linearity is clear between input and output signal events number.}
@@ -622,7 +588,7 @@ Compared with Belle experience, which similar analysis is done by using about 1$
 \end{comment}
 
 
-\subsection{Kinematics and Vertexing Dependence on \textit{KsFinder}} 
+\section{Kinematics and Vertexing Dependence on \textit{KsFinder}} 
 
 \textit{KsFinder} largely reduce the combinatorial background of $B^0$ by improving $K_S^0$ purity. The previous section shows a good reconstruction performance at low statistics in early phase 3 data. Without the power of rejection provided by $K_S^0$ finder, rediscovery of $B^0 \to K_S^0  K_S^0  K_S^0$ in early phase 3 of Belle II won't be feasible. 
 \begin{comment}
@@ -644,31 +610,31 @@ Compared with Belle experience, which similar analysis is done by using about 1$
  	\centering
  	\includegraphics[width=0.9\linewidth]{mbc_noKs}
  	\includegraphics[width=0.9\linewidth]{mbc_Ks}
- 	\caption{$M_{bc}$ distribution based on the number of CDC-only tracks in final states. Top: no \textit{KsFinder} used; Bottom: \textit{KsFinder} used.}
+ 	\caption{$M_{bc}$ distribution based on the number of CDC-only tracks in final states. Top: no \textit{KsFinder} used; Bottom: \textit{KsFinder} used. The $\mu$ and $\sigma$ are the mean and standard deviation of the Gaussian function.}
  	\label{fig:mbc_bias}
  \end{figure}
  \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{dE_noKs}
 	\includegraphics[width=0.9\linewidth]{dE_Ks}
-	\caption{$\Delta{E}$ distribution based on the number of CDC-only tracks in final states. Top: no \textit{KsFinder}; Bottom: \textit{KsFinder} used.}
+	\caption{$\Delta{E}$ distribution based on the number of CDC-only tracks in final states. Top: no \textit{KsFinder}; Bottom: \textit{KsFinder} used. The $\mu$ is the common mean for double Gaussian. The $\sigma_1$ and $\sigma_2$ are the standard deviations of the Gaussian function.}
 	\label{fig:de_bias}
 \end{figure}
 
-Similar to the comparison of $M_{bc}$ and $\Delta{E}$, the $z$ direction vertex position and the vertex position difference between $\it{CP}$ and tag sides are also checked, in which no clear bias are spotted either. The $z$ and $\Delta z$ are modeled using single Gaussian with the same mean but different standard deviation. The results are shown in Figure \ref{fig:bias-z} and \ref{fig:bias-zerr}. It is obvious that in Figure \ref{fig:bias-z}, the $\it{CP}$-side resolution of vertex on $z$-axis is wider when the final states of $B^0$ have more CDC-only tracks, especially when all the tracks only contains CDC hits (6 CDC-only tracks).  
+Similar to the comparison of $M_{bc}$ and $\Delta{E}$, the $z$ direction vertex position and the vertex position difference $\Delta z$ between $\it{CP}$ and tag sides are also checked, in which no clear bias are found either. The $z$ and $\Delta z$ are modeled using single Gaussian with the same mean but different standard deviation. The results are shown in Figure \ref{fig:bias-z} and \ref{fig:bias-zerr}. It is obvious that in Figure \ref{fig:bias-z}, the $\it{CP}$-side resolution of vertex on $z$-axis is wider when the final states of $B^0$ have more CDC-only tracks, especially when all the tracks only contains CDC hits (6 CDC-only tracks).
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{z_noKs}
 	\includegraphics[width=0.9\linewidth]{z_Ks}
-	\caption{$\Delta z$ distribution based on the number of CDC-only tracks in final states. Top: no \textit{KsFinder}; Bottom: \textit{KsFinder} used.}
+	\caption{$\Delta z$ distribution based on the number of CDC-only tracks in final states. Top: no \textit{KsFinder}; Bottom: \textit{KsFinder} used. The $\mu$ and $\sigma$ are the mean and standard deviation of the Gaussian function.}
 	\label{fig:bias-z}
 \end{figure}
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{dz_noKs}
 	\includegraphics[width=0.9\linewidth]{dz_Ks}
-	\caption{$\Delta z$ distribution based on th number of CDC-only tracks in final states. Top: no \textit{KsFinder}; Bottom: \textit{KsFinder} used.}
+	\caption{$\Delta z$ distribution based on th number of CDC-only tracks in final states. Top: no \textit{KsFinder}; Bottom: \textit{KsFinder} used. The $\mu$ and $\sigma$ are the mean and standard deviation of the Gaussian function.}
 	\label{fig:bias-zerr}
 \end{figure}
-Above all, no strong appearance of bias on $M_{bc}$ and vertex positions from using \textit{KsFinder} has been found, \textit{KsFinder} may implement a small shift on the vertex position which is negligible compared to the large statistical uncertainty due to the current low luminosity. Hence, there's no correction on these observables are applied in this analysis, which the systematic uncertainty from \textit{KsFinder} is evaluated.
+Above all, no clear appearance of bias on $M_{bc}$ and $\Delta E$ distributions, as well as vertex positions from using \textit{KsFinder} has been found, \textit{KsFinder} may implement a small shift on the vertex position which is negligible compared to the large statistical uncertainty due to the current low luminosity. Hence, there's no correction on these observables are applied in this analysis, and the systematic uncertainty from \textit{KsFinder} is evaluated by taking into account of $R_{B^0}$ in signal fraction calculation.

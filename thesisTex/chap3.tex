@@ -48,12 +48,33 @@ The $K_S^0$ candidates from ``stdKshort:merged" is the default way to obtain $K_
 however, the limitation of this cut-based $K_S^0$ reconstruction is the pollution from fake $K_S^0$. Using these $K_S^0$ candidates to reconstruct $B^0 \to K_S^0  K_S^0  K_S^0$, as long as one of three $K_S^0$ is fake, the reconstructed $B^0$ is fake, too. 
 \end{comment}
 
- The reconstruction quality of $K_S^0$ also depends on the flight distance. $K_S^0$ that decay in the inner region of VXD yields more hits on the SVD layers from its charged daughters, which is critical in performing a proper tracking. Belle II tracking efficiency gets poor due to higher beam background when performing track finding for tracks without inner detector hits such as SVD. For certain fraction of $K_S^0$ decaying outside of layer 5 of SVD, it's much likely that there is no SVD hits assigned to their daughters' tracks. This is due to the feature of SVD track finding, where a track candidate needs either at least 3 SVD hits to form a good SVD track, or 2 hits to form a hit double-lets to be used as a complete track. Single hit on layer 5 or layer 6 is filtered out to suppress the large fraction of beam background induced by random single hits. This effect is shown in Figure \ref{fig:ks-r-svdxx}. $K_S^0$ are categorized based on how many SVD hits their daughters have, in which \textit{SVD10} and \textit{SVD01} stands for $K_S^0$ that only $\pi^+$ and $\pi^-$ has non-zero SVD hits number, \textit{SVD11} and \textit{SVD00} stands for $K_S^0$ that both or neither charged pions have SVD hit non-zero SVD hits number. This is related to the track quality of $K_S^0$ where \textit{SVD11} $K_S^0$ has the best quality and \textit{SVD00} has the worst. Thus, the efficiency and purity of $K_S^0$ with long flight length is reduced. It's clear that \textit{SVD00} $K_S^0$ show up at about 11 cm where SVD layer 5 is placed. Most of \textit{SVD10}(\textit{SVD01}) $K_S^0$ start to show up at the similar range. The geometric structure of PXD and SVD is shown in Figure \ref{fig:svdgeo} and the fraction for each types of $K_S^0$ in $B^0 \to K_S^0  K_S^0  K_S^0$ is listed in Table \ref{tab:svdxx}.
+ The reconstruction quality of $K_S^0$ also depends on the flight distance. $K_S^0$ that decay in the inner region of VXD yields more hits on the SVD layers from its charged daughters, which is critical in performing a proper tracking. Belle II tracking efficiency gets poor due to higher beam background when performing track finding for tracks without inner detector hits. For certain fraction of $K_S^0$ decaying outside of layer 5 of SVD, it's much likely that there is no SVD hits associated to their daughters' tracks. This is due to the algorithm of SVD track finding, where a track candidate needs either at least three SVD hits to form a good SVD track, or two hits to form a hit double-lets to be used as a complete track. Any single hit on layer 5 or layer 6 is filtered out to suppress the large fraction of beam background and SVD hot strips. This effect is shown in Figure \ref{fig:ks-r-svdxx}. $K_S^0$ are categorized based on how many SVD hits their daughters have, in which \textit{SVD10} and \textit{SVD01} stands for $K_S^0$ that only $\pi^+$ and $\pi^-$ has non-zero SVD hits number, \textit{SVD11} and \textit{SVD00} stands for $K_S^0$ that both or neither charged pions have SVD hit non-zero SVD hits number. This is related to the track quality of $K_S^0$ where \textit{SVD11} $K_S^0$ has the best quality and \textit{SVD00} has the worst. Thus, the efficiency and purity of $K_S^0$ with long flight length is reduced. It's clear that \textit{SVD00} $K_S^0$ show up at about 10.5 cm where SVD layer 5 is placed. Most of \textit{SVD10}(\textit{SVD01}) $K_S^0$ start to show up at the similar range. The geometric structure of PXD and SVD is shown in Figure \ref{fig:svdgeo} and the fraction for each types of $K_S^0$ in $B^0 \to K_S^0  K_S^0  K_S^0$ is listed in Table \ref{tab:svdxx}.
+ If we check out the distribution of fitted invariant mass based on SVD hits number associated with daughter tracks, \textit{SVD00} $K_S^0$ shows a large dispersion from the central region of the distribution of invariant mass after vertex fit, while \textit{SVD11} $K_S^0$ shows a small dispersion as shown in Figure \ref{fig:invm1}. Therefore, considering the $K_S^0$ candidates with different SVD hits, see Figure \ref{fig:ks-r-svdxx} and Table \ref{tab:svdxx}, reflecting the different tracking quality of daughter $\pi^{\pm}$, the different cuts on invariant mass M$_{\pi^+\pi^-}$ are applied. As shown in Figure \ref{fig:invm}, the sideband regions where fake $K_S^0$ is much higher than true $K_S^0$ are excluded. The cut windows are listed in Table \ref{tab:ks_invm}. 
+ 
+ Fake $K_S^0$ candidates costs a large extra processing time and the number of combinatorial backgrounds in $B^0 \to K_S^0  K_S^0  K_S^0$ becomes high, which largely reduces the signal significance and introduce bias to the $\it{CP}$ parameters measurement. Thus, a multi-variate analysis (MVA) based $K_S^0$ classification package, \textit{KsFinder}, is developed to further reject the fake $K_S^0$ from cut-based selected candidates.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{ks-r-svdxx}
 	\caption{$K_S^0$ transverse flight length based on SVD hits of pions. \textit{SVD11}: both pions have SVD hits, \textit{SVD10}(\textit{SVD01}), positive(negative) pions have SVD hits, and \textit{SVD00}: no SVD hits from pions. The result is from \textit{signal MC} of $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\label{fig:ks-r-svdxx}
+\end{figure}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\linewidth]{m-before-fit}
+	\includegraphics[width=0.7\linewidth]{m-after-fit}
+	\caption{(Top two plots)The invariant mass from daughters' 4-vector, the left is $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} and the right is \textit{generic MC};
+		(bottom two plots)The invariant mass after vertex fit, the left is $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} and the right is \textit{generic MC};
+		In both cases, the red shows the clear dispersion on \textit{SVD00} type $K_S^0$.}
+	\label{fig:invm1}
+\end{figure}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\linewidth]{invm1}
+	\includegraphics[width=0.7\linewidth]{invm2}
+	\caption{Invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
+	\label{fig:invm}
 \end{figure}
 
 \begin{table}[H]
@@ -68,6 +89,28 @@ however, the limitation of this cut-based $K_S^0$ reconstruction is the pollutio
 	\caption{The fraction of each category of $K_S^0$ based on pions SVD hits in $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC}.}
 	\label{tab:svdxx}
 \end{table}
+
+\begin{table}[h]
+	\centering 
+	\begin{tabular}{|c|c|c|c|c|} 
+		\hline
+		$K_S^0$ type & SVD11 & SVD10 & SVD01  & SVD00  \\
+		\hline
+		M$_{\pi^+\pi^-}$ window (GeV) & (0.45,0.55) & (0.38,0.7)  & (0.38,0.7)  & (0.3,0.7) \\
+		\hline
+	\end{tabular}
+	\caption{Invariant mass cut window after vertex fit for $K_S^0$ based on Figure \ref{fig:invm}.}
+	\label{tab:ks_invm}
+\end{table}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\linewidth]{invm1}
+	\includegraphics[width=0.7\linewidth]{invm2}
+	\caption{Invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
+	\label{fig:invm}
+\end{figure}
+
 \begin{comment}
 \begin{figure}[htpb]
 \centering
@@ -78,7 +121,7 @@ however, the limitation of this cut-based $K_S^0$ reconstruction is the pollutio
 \end{comment}
 
 
-Fake $K_S^0$ candidates costs a large extra processing time and the number of combinatorial backgrounds in $B^0 \to K_S^0  K_S^0  K_S^0$ becomes high, which largely reduces the signal significance and introduce bias to the $\it{CP}$ parameters measurement. Thus, a multi-variate analysis (MVA) based $K_S^0$ classification package, \textit{KsFinder}, is developed to further reject the fake $K_S^0$ from cut-based selected candidates.
+
 
 
 % 2021.02.03 ends

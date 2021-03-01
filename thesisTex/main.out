@@ -32,35 +32,34 @@
 \BOOKMARK [2][-]{subsection.3.2.5}{The Performance and Over-fitting check}{section.3.2}% 32
 \BOOKMARK [2][-]{subsection.3.2.6}{Data Validation for KsFinder}{section.3.2}% 33
 \BOOKMARK [2][-]{subsection.3.2.7}{Data and MC correction by KsFinder}{section.3.2}% 34
-\BOOKMARK [0][-]{chapter.4}{Analysis strategies}{}% 35
-\BOOKMARK [1][-]{section.4.1}{Data Sample and Event Selection}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.1.1}{KS0 Selection}{section.4.1}% 37
-\BOOKMARK [2][-]{subsection.4.1.2}{B0 Reconstruction}{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.3}{Continuum Suppression}{section.4.1}% 39
-\BOOKMARK [2][-]{subsection.4.1.4}{Resonance Background}{section.4.1}% 40
-\BOOKMARK [2][-]{subsection.4.1.5}{B background and self-cross feed}{section.4.1}% 41
-\BOOKMARK [2][-]{subsection.4.1.6}{Signal Extraction}{section.4.1}% 42
-\BOOKMARK [2][-]{subsection.4.1.7}{Kinematics and Vertexing Dependence on KsFinder}{section.4.1}% 43
-\BOOKMARK [0][-]{chapter.5}{CP parameters measurement}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Vertex Resolution Model}{chapter.5}% 45
-\BOOKMARK [2][-]{subsection.5.1.1}{CP-side resolution function}{section.5.1}% 46
-\BOOKMARK [2][-]{subsection.5.1.2}{Tag-side resolution function}{section.5.1}% 47
-\BOOKMARK [2][-]{subsection.5.1.3}{Background events t distribution}{section.5.1}% 48
-\BOOKMARK [1][-]{section.5.2}{Flavor Tagging}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.3}{CP Fitter}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.4}{Blind analysis and fit}{chapter.5}% 51
-\BOOKMARK [2][-]{subsection.5.4.1}{CP fit on MC samples}{section.5.4}% 52
-\BOOKMARK [2][-]{subsection.5.4.2}{Linearity Test}{section.5.4}% 53
-\BOOKMARK [2][-]{subsection.5.4.3}{Toy MC Fit Pull}{section.5.4}% 54
-\BOOKMARK [2][-]{subsection.5.4.4}{Lifetime and md Fit}{section.5.4}% 55
-\BOOKMARK [1][-]{section.5.5}{CP fit on data}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.6}{Systematic Uncertainty}{chapter.5}% 57
-\BOOKMARK [0][-]{chapter.6}{Conclusion, discussion and prospect}{}% 58
-\BOOKMARK [1][-]{subsection.6.0.1}{Improvements on statistical uncertainty}{chapter.6}% 59
-\BOOKMARK [2][-]{subsection.6.0.2}{Improvements on systematic uncertainty}{subsection.6.0.1}% 60
-\BOOKMARK [2][-]{subsection.6.0.3}{Total uncertainty of S at 50 ab-1}{subsection.6.0.1}% 61
-\BOOKMARK [2][-]{subsection.6.0.4}{KsFinder importance}{subsection.6.0.1}% 62
-\BOOKMARK [2][-]{subsection.6.0.5}{Prospect}{subsection.6.0.1}% 63
-\BOOKMARK [0][-]{appendix.A}{Training Observables for KS0 Classifier}{}% 64
-\BOOKMARK [0][-]{appendix.B}{Data Validation Plots for KS0}{}% 65
-\BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution}{}% 66
+\BOOKMARK [0][-]{chapter.4}{B0 reconstruction study}{}% 35
+\BOOKMARK [1][-]{section.4.1}{KS0 Selection}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.2}{B0 Reconstruction}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.3}{Continuum Suppression}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.4}{Resonance Background}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.5}{B background and self-cross feed}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.6}{Signal Extraction}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.7}{Kinematics and Vertexing Dependence on KsFinder}{chapter.4}% 42
+\BOOKMARK [0][-]{chapter.5}{CP parameters measurement}{}% 43
+\BOOKMARK [1][-]{section.5.1}{Vertex Resolution Model}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.1.1}{CP-side resolution function}{section.5.1}% 45
+\BOOKMARK [2][-]{subsection.5.1.2}{Tag-side resolution function}{section.5.1}% 46
+\BOOKMARK [2][-]{subsection.5.1.3}{Background events t distribution}{section.5.1}% 47
+\BOOKMARK [1][-]{section.5.2}{Flavor Tagging}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.3}{CP Fitter}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.4}{Blind analysis and fit}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.4.1}{CP fit on MC samples}{section.5.4}% 51
+\BOOKMARK [2][-]{subsection.5.4.2}{Linearity Test}{section.5.4}% 52
+\BOOKMARK [2][-]{subsection.5.4.3}{Toy MC Fit Pull}{section.5.4}% 53
+\BOOKMARK [2][-]{subsection.5.4.4}{Lifetime and md Fit}{section.5.4}% 54
+\BOOKMARK [1][-]{section.5.5}{CP fit on data}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.6}{Systematic Uncertainty}{chapter.5}% 56
+\BOOKMARK [0][-]{chapter.6}{Conclusion, discussion and prospect}{}% 57
+\BOOKMARK [1][-]{subsection.6.0.1}{Improvements on statistical uncertainty}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.0.2}{Improvements on systematic uncertainty}{subsection.6.0.1}% 59
+\BOOKMARK [2][-]{subsection.6.0.3}{Total uncertainty of S at 50 ab-1}{subsection.6.0.1}% 60
+\BOOKMARK [2][-]{subsection.6.0.4}{KsFinder importance}{subsection.6.0.1}% 61
+\BOOKMARK [2][-]{subsection.6.0.5}{Prospect}{subsection.6.0.1}% 62
+\BOOKMARK [0][-]{appendix.A}{Training Observables for KS0 Classifier}{}% 63
+\BOOKMARK [0][-]{appendix.B}{Data Validation Plots for KS0}{}% 64
+\BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution where A,B and C are in the increasing order of momentum}{}% 65
