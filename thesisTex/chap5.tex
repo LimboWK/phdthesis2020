@@ -284,7 +284,7 @@ The background events $\Delta t$ shapes $\mathcal{P}_{bkg}\otimes R_{bkg}$ can b
  
 For each particle that has been used from above categories, PID and kinematics information are extracted and feed to the combiner as training variables, to obtained a classifier response corresponding to each category. Then for all responses from these categories, a total classifier is trained to present the likelihood of flavor $q$. This algorithm is called category-based method and used in this thesis. After the reconstruction on the \textit{CP}-side $B^0$ is done, the rest-of-events tracks used to form the particle lists are selected\ref{fig:flavortagger}. The FastBDT as the back-end algorithm is chosen for performing training on the classifier of flavor tagging. Targeted variable is true $q$ of tag-side neutral $B$ in MC. To minimize impact of the reconstruction performance on $\it{CP}$-side, MC sample of $B^0 \to \nu \nu$ is used as the training sample where the final state in $\it{CP}$-side are completely invisible. 
 
-Considering the limited power of flavor tagging accuracy, there is a certain fraction of events that are wrongly tagged, among all events that can be flavor tagged based on the final states. Thus, the flavor tagging efficiency $\epsilon$ and wrong tag fraction $w$ are defined, respectively. Taking into account of the performance of flavor tagging, the observed distribution of Equation \ref{eq:tdcpv_all} becomes Equation \ref{eq:tdcpv_all_ft}.
+Considering the limited power of flavor tagging accuracy, there is a certain fraction of events that are wrongly tagged among all that can be flavor tagged using the final state particles in the rest-of-event. Thus, the flavor tagging efficiency $\epsilon$ and wrong tag fraction $w$ are defined, respectively. Taking into account of the performance of flavor tagging, the observed distribution of Equation \ref{eq:tdcpv_all} becomes Equation \ref{eq:tdcpv_all_ft}.
 
 \begin{equation}\label{eq:tdcpv_all_ft}
 \small
@@ -299,7 +299,7 @@ Considering the limited power of flavor tagging accuracy, there is a certain fra
 \end{bmatrix}
 \end{Bmatrix}
 \end{equation} 
-Compared to the original, the term with $\mathcal{S}$ and $\mathcal{A}$ is scaled by factor $r\equiv |1-2w|$, defined as the dilution factor. The statistical uncertainty of $\mathcal{S}$ now becomes dependent to the tagging efficiency $\epsilon$ and wrong tag fraction $w$. The uncertainty of $w$ is much larger than $\epsilon$ which makes $w$ an important source of systematic uncertainty, too. The validation of flavor tagger using flavor specific decay modes in 2019 Belle II data is summarized here\cite{abudinen2020first}. The $w$ for each single event is defined as a probability which can be presented by the average wrong tag fraction in a binned region. The binned values of dilution factor $r$ is defined for the calculation of $w$ as $[0,0.1,0.25,0.5,0.625,0.75,0.875,1]$, also called as $r$-bin. For all events that have been successful tagged, they are projected into histogram of $r$-bin, and $w$ is calculated in each bin by the fraction of events with $q\cdot r$ opposite to its MC flavor. The distribution of $q\cdot r$ is shown in Figure \ref{fig:ft_qr} using \textit{signal MC} of $B^0 \to K_S^0  K_S^0  K_S^0$. 
+Compared to the original, the term with $\mathcal{S}$ and $\mathcal{A}$ is scaled by factor $r\equiv |1-2w|$, defined as the dilution factor. The statistical uncertainty of $\mathcal{S}$ now becomes dependent to the tagging efficiency $\epsilon$ and wrong tag fraction $w$. The uncertainty of $w$ is much larger than $\epsilon$ which makes $w$ an important source of systematic uncertainty, too. The validation of flavor tagger using flavor specific decay modes in 2019 Belle II data is summarized here\cite{abudinen2020first}. The $w$ for each single event is defined as a probability of being wrongly flavor tagged which can be presented by the average wrong tag fraction in a binned interval of the dilution factor. The binned values of dilution factor $r$ is defined for the calculation of $w$ as $[0.0, 0.1, 0.25, 0.5, 0.625, 0.75, 0.875, 1.0]$, also named as $r$-bin. For all events that have been successful tagged, they are projected into histogram of $r$-bin, and $w$ is calculated in each bin by the fraction of events with $q\cdot r$ opposite to its MC flavor. The distribution of $q\cdot r$ is shown in Figure \ref{fig:ft_qr} using \textit{signal MC} of $B^0 \to K_S^0  K_S^0  K_S^0$. 
 
 Besides, $w$ can be different between $B^0$ and $\overline{B^0}$, where
 $\bar{w} = (w_{B^0}+w_{\overline{B^0}})/2$ and $\Delta w = w_{B^0}-w_{\overline{B^0}}$. Due to the small value of $\Delta w$, the contribution from $\Delta w$ is treated as zero in Equation \ref{eq:tdcpv_all_ft} in this analysis. Similarly, for $\epsilon$, the values calculated based on each $r$-bin are summed and used in Equation \ref{eq:tdcpv_all_ft}, where the total efficiency is $(99.72\pm0.02)\%$, treated as 1 therefore. The difference $\mu = \epsilon_{B^0}-\epsilon_{\overline{B^0}} $ is about 1 \% to 2 \% in each $r$-bin, thus treated as zero. The distributions of $w$, $\Delta w$, $\epsilon$, and $\mu$ in each $r$-bin are shown in Figure \ref{fig:ft_wtag}.
@@ -522,7 +522,7 @@ sin(2\phi_1) & = 0.82 \pm 0.85(stat) \\
 
 \section{Systematic Uncertainty}
 The systematic uncertainty that affects the fit results may come from many aspects of the measurement setup. The contributions at the curent stage of Belle II are summarized as Table \ref{tab:sy_sub}.
-
+For the listed sources of systematic uncertainty, if the parameters are defined with MC study, we float the value by $\pm 2 \sigma$, and if the parameters are defined by data, we float the value by $\pm 1 \sigma$, where $\sigma$ is the uncertainty of the parameters. The impact of $\it{CP}$ parameters are separately estimated from each sources with positive and negative differentials. By adding in quadrature of each term, the sub-total contributions and the overall systematic uncertainty are obtained. 
 \begin{table}
 	\centering
 	\begin{tabular}{c|c|c} 
@@ -557,19 +557,16 @@ The systematic uncertainty that affects the fit results may come from many aspec
 \end{itemize}
 \end{comment}
 
-For the listed sources of systematic uncertainty, if the parameters are defined with MC study, we float the value by $\pm 2 \sigma$, and if the parameters are defined by data, we float the value by $\pm 1 \sigma$, where $\sigma$ is the uncertainty of the parameters. The impact of $\it{CP}$ parameters are separately estimated from each sources with positive and negative differentials. By adding in quadrature of each term, the overall systematic uncertainty is obtained. 
-
-
-
-The signal resolution functions' parameters are determined from MC study for signal component. The impact on fit results is summarized as follows Table \ref{tab:sy_res}.
+The signal resolution functions' parameters are determined from MC study for signal component. The impact on fit results is summarized as follows Table \ref{tab:sy_sigt}.
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{systematic uncertainty from signal $\Delta t$ shapes}
-		\label{tab:sy_res}
-		\begin{tabular}{c c c c c}
+		\label{tab:sy_sigt}
+		\begin{tabular}{c r r r r}
 			\hline
 			source & $+\delta \mathcal{S}$ & $+\delta \mathcal{A}$ & $-\delta \mathcal{S}$ &  $-\delta \mathcal{A}$\\
+			\hline
 			$f_{cp}^{tail}$ & -0.000096 & -0.000057
 			& 0.000014
 			& 0.000056
@@ -631,15 +628,20 @@ The signal resolution functions' parameters are determined from MC study for sig
 			& -0.002478
 			\\
 			\hline
+			Total &
+			\multicolumn{2}{c}{$\delta \mathcal{S}=0.033671$} &
+			\multicolumn{2}{c}{$\delta \mathcal{A}=0.009283$}\\
+			\hline
 		\end{tabular}
 	\end{minipage}
 \end{table}
-The background $\Delta t$ shapes' parameters are determined from data sideband $M_{bc}<5.26$ GeV. The impact on fit results is summarized as follows: 
+The background $\Delta t$ shapes' parameters are determined from data sideband $M_{bc}<5.26$ GeV. The impact on fit results is summarized in Table \ref{tab:sy_bkgt}.
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{systematic uncertainty from background $\Delta t$ shapes}
-		\begin{tabular}{c c c c c}
+		\label{tab:sy_bkgt}
+		\begin{tabular}{c r r r r}
 			\hline
 			source & $+\delta \mathcal{S}$ & $+\delta \mathcal{A}$ & $-\delta \mathcal{S}$ &  $-\delta \mathcal{A}$\\
 			$\mu^{bkg}_{\delta}$ & -0.014294
@@ -676,15 +678,20 @@ The background $\Delta t$ shapes' parameters are determined from data sideband $
 			& 0.000141
 			\\
 			\hline
+			Total &
+			\multicolumn{2}{c}{$\delta \mathcal{S}=0.039430$} &
+			\multicolumn{2}{c}{$\delta \mathcal{A}=0.037269$}\\
+			\hline
 		\end{tabular}
 	\end{minipage}
 \end{table}
-The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determined from \textit{signal MC}. The impact in each rbin on fit results is summarized as follows: 
+The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determined from control sample. The impact in each rbin on fit results is summarized in Table \ref{tab:sy_wtag}: 
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{systematic uncertainty from wrong tagging fraction}
-		\begin{tabular}{c c c c c}
+		\label{tab:sy_wtag}
+		\begin{tabular}{c r r r r}
 			\hline
 			source & $+\delta \mathcal{S}$ & $+\delta \mathcal{A}$ & $-\delta \mathcal{S}$ &  $-\delta \mathcal{A}$\\
 			$w_1$ & -0.001892
@@ -718,15 +725,20 @@ The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determ
 			& 0.000402
 			\\
 			\hline
+			Total &
+			\multicolumn{2}{c}{$\delta \mathcal{S}=0.003709$} &
+			\multicolumn{2}{c}{$\delta \mathcal{A}=0.003790$}\\
+			\hline
 		\end{tabular}
 	\end{minipage}
 \end{table}
-The physics parameters $\Delta m_d$ and $\tau_{B^0}$ uncertainties are included using the PDG average value. The impact on fit results is summarized as follows: 
+The physics parameters $\Delta m_d$ and $\tau_{B^0}$ uncertainties are included using the PDG average value. The impact on fit results is summarized in Table \ref{tab:sy_phys}.
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{systematic uncertainty from  physics parameters}
-		\begin{tabular}{c c c c c}
+		\label{tab:sy_phys}
+		\begin{tabular}{c r r r r}
 			\hline
 			source & $+\delta \mathcal{S}$ & $+\delta \mathcal{A}$ & $-\delta \mathcal{S}$ &  $-\delta \mathcal{A}$\\
 			$\Delta m_d$  & -0.001767
@@ -740,15 +752,20 @@ The physics parameters $\Delta m_d$ and $\tau_{B^0}$ uncertainties are included 
 			& 0.000555
 			\\
 			\hline
+			Total &
+			\multicolumn{2}{c}{$\delta \mathcal{S}=0.006923$} &
+			\multicolumn{2}{c}{$\delta \mathcal{A}=0.001250$}\\
+			\hline
 		\end{tabular}
 	\end{minipage}
 \end{table}
-The signal fraction is determined using 2D fit results of $M_{bc}$ and $\Delta E$ from data. The impact on fit results is summarized as follows: 
+The signal fraction is determined using 2D fit results of $M_{bc}$ and $\Delta E$ from data. The impact on fit results is summarized in Table \ref{tab:sy_fsig}.
 \begin{table}[H]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{systematic uncertainty from  signal fraction}
-		\begin{tabular}{c c c c c}
+		\label{tab:sy_fsig}
+		\begin{tabular}{c r r r r}
 			\hline
 			source & $+\delta \mathcal{S}$ & $+\delta \mathcal{A}$ & $-\delta \mathcal{S}$ &  $-\delta \mathcal{A}$\\
 			mu1\_mbc  & 0.000822 &	-0.003888&	-0.000797&	0.003849
@@ -778,6 +795,10 @@ The signal fraction is determined using 2D fit results of $M_{bc}$ and $\Delta E
 			N\_sig\_f & -0.004640&	0.003987&	0.004922&	-0.003504
 			\\
 			\hline
+			Total &
+			\multicolumn{2}{c}{$\delta \mathcal{S}=0.044387$} &
+			\multicolumn{2}{c}{$\delta \mathcal{A}=0.033932$}\\
+			\hline
 		\end{tabular}
 	\end{minipage}
 \end{table}
@@ -804,7 +825,7 @@ Applying KsFinder cut at 0.74 based on MC study may introduce small impact on da
 		\centering
 		\caption{systematic uncertainty from KsFinder.}
 		\label{tab:sy_ks}
-		\begin{tabular}{c c c}
+		\begin{tabular}{c r r}
 			\hline
 			source & $\delta \mathcal{S}$ & $\delta \mathcal{A}$ \\
 			$\mathcal{R}_{B^0}=1.06$ & 0.004826
@@ -812,6 +833,10 @@ Applying KsFinder cut at 0.74 based on MC study may introduce small impact on da
 			$\mathcal{R}_{B^0}=0.994$ & -0.000508
 & 0.000007
 \\
+			\hline
+			Total &
+			{$0.004852$} &
+			{$0.000606$}\\
 			\hline
 		\end{tabular}
 	\end{minipage}
@@ -824,7 +849,7 @@ For the contributions from vertex reconstruction, the impacts from the selection
 		\centering
 		\caption{systematic uncertainty from vertex reconstruction}
 		\label{tab:sy_vertex}
-		\begin{tabular}{c c c}
+		\begin{tabular}{c r r}
 			\hline
 			source & $\delta \mathcal{S}$ & $\delta \mathcal{A}$ \\
 			$\sigma_{z_{tag}}<0.05$ cm & 0.004369
@@ -844,6 +869,10 @@ For the contributions from vertex reconstruction, the impacts from the selection
 \\
 			$|\Delta t|<90 $ ps & 0.000000 & 0.000000\\
 			IP constraint & 0.000000& 0.000000\\
+						\hline
+							Total &
+						{$0.019007$} &
+						{$0.020563$}\\
 						\hline
 		\end{tabular}
 	\end{minipage}

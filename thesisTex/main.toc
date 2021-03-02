@@ -13,15 +13,15 @@
 \contentsline {section}{\numberline {2.3}Central drift chamber (CDC)}{31}{section.2.3}%
 \contentsline {section}{\numberline {2.4}TOP and ARICH detectors}{32}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Electromagnetic calorimeter (ECL)}{34}{section.2.5}%
-\contentsline {section}{\numberline {2.6}$K_L^0$ muon detector (KLM)}{36}{section.2.6}%
+\contentsline {section}{\numberline {2.6}$K_L^0$ muon detector (KLM)}{35}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Trigger and DAQ system}{36}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Analysis software framework}{40}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}BASF2 Core Structure}{40}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Event processing workflow}{41}{subsection.2.8.2}%
-\contentsline {subsection}{\numberline {2.8.3}mDST structure}{43}{subsection.2.8.3}%
-\contentsline {subsection}{\numberline {2.8.4}Conditional Database}{44}{subsection.2.8.4}%
-\contentsline {section}{\numberline {2.9}Belle II simulation}{44}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Belle II data taking}{47}{section.2.10}%
+\contentsline {section}{\numberline {2.8}Analysis software framework}{39}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}BASF2 Core Structure}{39}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Event processing workflow}{40}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}mDST structure}{42}{subsection.2.8.3}%
+\contentsline {subsection}{\numberline {2.8.4}Conditional Database}{43}{subsection.2.8.4}%
+\contentsline {section}{\numberline {2.9}Belle II simulation}{43}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Belle II data taking}{46}{section.2.10}%
 \contentsline {chapter}{\numberline {3}$K_S^0$ reconstruction study}{49}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{50}{section.3.1}%
 \contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ selection}{53}{section.3.2}%
@@ -54,12 +54,12 @@
 \contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{112}{subsection.5.4.4}%
 \contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{114}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Systematic Uncertainty}{114}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{119}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Improvements on statistical uncertainty}{120}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Improvements on systematic uncertainty}{121}{subsection.6.0.2}%
-\contentsline {subsection}{\numberline {6.0.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{126}{subsection.6.0.3}%
-\contentsline {subsection}{\numberline {6.0.4}\textit {KsFinder} importance}{127}{subsection.6.0.4}%
-\contentsline {subsection}{\numberline {6.0.5}Prospect}{128}{subsection.6.0.5}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{133}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{137}{appendix.B}%
-\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{141}{appendix.C}%
+\contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{121}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Improvements on statistical uncertainty}{122}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Improvements on systematic uncertainty}{123}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{128}{subsection.6.0.3}%
+\contentsline {subsection}{\numberline {6.0.4}\textit {KsFinder} importance}{129}{subsection.6.0.4}%
+\contentsline {subsection}{\numberline {6.0.5}Prospect}{130}{subsection.6.0.5}%
+\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{135}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{139}{appendix.B}%
+\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{143}{appendix.C}%
