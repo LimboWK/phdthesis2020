@@ -1,119 +1,27 @@
-\chapter{$K_S^0$ mass fit with varied cut value}
-\begin{figure}[H]
-	\caption{Double-gaussian shape and 1st-poly are used for fitting signal and background $K_S^0$ invariant mass under varies KsFinder cut values respectively. The data and MC are separately fitted to compared the yield in each cut, which defines the correction.}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.2}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.2.png}
-	\end{subfigure}
-\begin{subfigure}{0.5\linewidth}
-	\caption{MC, cut=0.2}
-	\includegraphics[width=0.85\linewidth]{ksMCmva0.2.png}
-\end{subfigure}
-\begin{subfigure}{0.5\linewidth}
-	\caption{Data, cut=0.4}
-	\includegraphics[width=0.85\linewidth]{ksDatamva0.4.png}
-\end{subfigure}
-\begin{subfigure}{0.5\linewidth}
-	\caption{MC, cut=0.4}
-	\includegraphics[width=0.85\linewidth]{ksMCmva0.4.png}
-\end{subfigure}
-\end{figure}
+\chapter{Control Samples}
+\begin{table}
+\caption{Hadronic control sample reconstruction criteria. The first column stands for the $B$ decay to neutral and charged $D$ or $D^*$. The second column stands for the $D$ decay as intermediate states of the $B$ decay, which includes $D^{*+}\to D^0 \pi^+$, $D^0\to K^-\pi^+,  K^-\pi^+\pi^0,  K^-\pi^+\pi^-\pi^+$ and $\rho^+\to \pi^+\pi^0$\cite{jpsiks_ichep}. }
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	$B$ decay    & $D$ decay   & $|M_{Kn\pi}-M_D|$    & $\Delta M_{D^*}$   & $R_2$ & $cos\theta_{th}$  \\
+	\hline
+	\multirow{3}*{$B^+\to\bar{D}^0\pi^+$}
+	& $D^0\to K^-\pi^+$ & $<4\sigma$ & - & - & -\\
+	&  $D^0\to K^-\pi^+\pi^0$ & $<3\sigma$ & - & $<0.45$ & -\\
+	& $D^0\to K^-\pi^+\pi^-\pi^+$ & $<2\sigma$ & - &  $<0.45$ &-\\
+	\hline
+	\multirow{3}*{$B^0\to D^{*-}\pi^+$} 
+	& $D^0\to K^-\pi^+$ &  $<10\sigma$ & $<5$ MeV/$c^2$ & - & -\\
+	& $D^0\to K^-\pi^+\pi^0$ & $<3.5\sigma$ & $<3$ MeV/$c^2$ & - & $<0.98$\\
+	&  $D^0\to K^-\pi^+\pi^-\pi^+$ &  $<4\sigma$ & $<4$ MeV/$c^2$ & $<0.6$ & -\\
+	\hline
+	\multirow{3}*{$B^0\to D^{*-}\rho^+$} 
+	& $D^0\to K^-\pi^+$ &  $<7\sigma$ & $<4$ MeV/$c^2$ & $<0.6$ & $<0.95$\\
+	& $D^0\to K^-\pi^+\pi^0$ & $<3.5\sigma$ & $<12$ MeV/$c^2$ & - & $<0.98$\\
+	&  $D^0\to K^-\pi^+\pi^-\pi^+$ &  $<3.5\sigma$ & $<3$ MeV/$c^2$ & - & $<0.92$\\
+	\hline
+	$B^0\to D^{-}\pi^+$ & $D^+\to K^-\pi^+\pi-$ & $<2\sigma$ & - & $<0.5$ & $<0.995$\\
+	\hline
+\end{tabular}
+\end{table}
 
-
-\begin{figure}[H]
-	\ContinuedFloat
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.5}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.5.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.5}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.5.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.55}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.55.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.55}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.55.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.6}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.6.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.6}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.6.png}
-	\end{subfigure}
-\end{figure}
-
-\begin{figure}[H]
-	\ContinuedFloat
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.65}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.65.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.65}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.65.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.7}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.7.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.7}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.7.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.75}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.75.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.75}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.75.png}
-	\end{subfigure}
-\end{figure}
-
-
-\begin{figure}[H]
-	\ContinuedFloat
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.8}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.8.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.8}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.8.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.85}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.85.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.85}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.85.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.9}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.9.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.9}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.9.png}
-	\end{subfigure}
-\end{figure}
-
-\begin{figure}[H]
-	\ContinuedFloat
-	\begin{subfigure}{0.5\linewidth}
-		\caption{Data, cut=0.95}
-		\includegraphics[width=0.85\linewidth]{ksDatamva0.95.png}
-	\end{subfigure}
-	\begin{subfigure}{0.5\linewidth}
-		\caption{MC, cut=0.95}
-		\includegraphics[width=0.85\linewidth]{ksMCmva0.95.png}
-	\end{subfigure}
-	
-\end{figure}

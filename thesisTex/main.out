@@ -55,11 +55,12 @@
 \BOOKMARK [1][-]{section.5.5}{CP fit on data}{chapter.5}% 55
 \BOOKMARK [1][-]{section.5.6}{Systematic Uncertainty}{chapter.5}% 56
 \BOOKMARK [0][-]{chapter.6}{Conclusion, discussion and prospect}{}% 57
-\BOOKMARK [1][-]{subsection.6.0.1}{Improvements on statistical uncertainty}{chapter.6}% 58
-\BOOKMARK [2][-]{subsection.6.0.2}{Improvements on systematic uncertainty}{subsection.6.0.1}% 59
-\BOOKMARK [2][-]{subsection.6.0.3}{Total uncertainty of S at 50 ab-1}{subsection.6.0.1}% 60
-\BOOKMARK [2][-]{subsection.6.0.4}{KsFinder importance}{subsection.6.0.1}% 61
-\BOOKMARK [2][-]{subsection.6.0.5}{Prospect}{subsection.6.0.1}% 62
+\BOOKMARK [1][-]{section.6.1}{Improvements on statistical uncertainty}{chapter.6}% 58
+\BOOKMARK [1][-]{section.6.2}{Improvements on systematic uncertainty}{chapter.6}% 59
+\BOOKMARK [1][-]{section.6.3}{Total uncertainty of S at 50 ab-1}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.4}{KsFinder importance}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.5}{Prospect}{chapter.6}% 62
 \BOOKMARK [0][-]{appendix.A}{Training Observables for KS0 Classifier}{}% 63
 \BOOKMARK [0][-]{appendix.B}{Data Validation Plots for KS0}{}% 64
-\BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution where A,B and C are in the increasing order of momentum}{}% 65
+\BOOKMARK [0][-]{appendix.C}{Control Samples}{}% 65
+\BOOKMARK [0][-]{appendix.D}{2KS0 invariant mass distribution where A,B and C are in the increasing order of momentum}{}% 66

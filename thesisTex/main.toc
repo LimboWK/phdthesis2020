@@ -24,10 +24,10 @@
 \contentsline {section}{\numberline {2.10}Belle II data taking}{46}{section.2.10}%
 \contentsline {chapter}{\numberline {3}$K_S^0$ reconstruction study}{49}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Cut-based $K_S^0$ Reconstruction}{50}{section.3.1}%
-\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ selection}{53}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Belle II $K_S^0$ classification}{53}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.2}MVA-based $K_S^0$ selection}{55}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Belle II $K_S^0$ classification}{55}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Decay Topology of $K_S^0 \to \pi ^+ \pi ^-$}{57}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Determination of training observables from $K_S^0$ decay }{59}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Determination of training observables from $K_S^0$ decay }{58}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Training, Applying and Testing of \textit {KsFinder}}{61}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}The Performance and Over-fitting check}{63}{subsection.3.2.5}%
 \contentsline {subsection}{\numberline {3.2.6}Data Validation for \textit {KsFinder}}{66}{subsection.3.2.6}%
@@ -48,18 +48,19 @@
 \contentsline {section}{\numberline {5.2}Flavor Tagging}{105}{section.5.2}%
 \contentsline {section}{\numberline {5.3}$\it {CP}$ Fitter}{107}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Blind analysis and fit}{108}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{108}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{110}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{111}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{112}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.1}$\it {CP}$ fit on MC samples}{109}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Linearity Test}{111}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Toy MC Fit Pull}{112}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Lifetime and $\Delta m_d$ Fit}{113}{subsection.5.4.4}%
 \contentsline {section}{\numberline {5.5}$\it {CP}$ fit on data}{114}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{114}{section.5.6}%
+\contentsline {section}{\numberline {5.6}Systematic Uncertainty}{115}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Conclusion, discussion and prospect}{121}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Improvements on statistical uncertainty}{122}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Improvements on systematic uncertainty}{123}{subsection.6.0.2}%
-\contentsline {subsection}{\numberline {6.0.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{128}{subsection.6.0.3}%
-\contentsline {subsection}{\numberline {6.0.4}\textit {KsFinder} importance}{129}{subsection.6.0.4}%
-\contentsline {subsection}{\numberline {6.0.5}Prospect}{130}{subsection.6.0.5}%
+\contentsline {section}{\numberline {6.1}Improvements on statistical uncertainty}{122}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Improvements on systematic uncertainty}{125}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{129}{section.6.3}%
+\contentsline {section}{\numberline {6.4}\textit {KsFinder} importance}{130}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Prospect}{132}{section.6.5}%
 \contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{135}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{139}{appendix.B}%
-\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{143}{appendix.C}%
+\contentsline {chapter}{\numberline {C}Control Samples}{143}{appendix.C}%
+\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{145}{appendix.D}%

@@ -48,32 +48,35 @@ The $K_S^0$ candidates from ``stdKshort:merged" is the default way to obtain $K_
 however, the limitation of this cut-based $K_S^0$ reconstruction is the pollution from fake $K_S^0$. Using these $K_S^0$ candidates to reconstruct $B^0 \to K_S^0  K_S^0  K_S^0$, as long as one of three $K_S^0$ is fake, the reconstructed $B^0$ is fake, too. 
 \end{comment}
 
- The reconstruction quality of $K_S^0$ also depends on the flight distance. $K_S^0$ that decay in the inner region of VXD yields more hits on the SVD layers from its charged daughters, which is critical in performing a proper tracking. Belle II tracking efficiency gets poor due to higher beam background when performing track finding for tracks without inner detector hits. For certain fraction of $K_S^0$ decaying outside of layer 5 of SVD, it's much likely that there is no SVD hits associated to their daughters' tracks. This is due to the algorithm of SVD track finding, where a track candidate needs either at least three SVD hits to form a good SVD track, or two hits to form a hit double-lets to be used as a complete track. Any single hit on layer 5 or layer 6 is filtered out to suppress the large fraction of beam background and SVD hot strips. This effect is shown in Figure \ref{fig:ks-r-svdxx}. $K_S^0$ are categorized based on how many SVD hits their daughters have, in which \textit{SVD10} and \textit{SVD01} stands for $K_S^0$ that only $\pi^+$ and $\pi^-$ has non-zero SVD hits number, \textit{SVD11} and \textit{SVD00} stands for $K_S^0$ that both or neither charged pions have SVD hit non-zero SVD hits number. This is related to the track quality of $K_S^0$ where \textit{SVD11} $K_S^0$ has the best quality and \textit{SVD00} has the worst. Thus, the efficiency and purity of $K_S^0$ with long flight length is reduced. It's clear that \textit{SVD00} $K_S^0$ show up at about 10.5 cm where SVD layer 5 is placed. Most of \textit{SVD10}(\textit{SVD01}) $K_S^0$ start to show up at the similar range. The geometric structure of PXD and SVD is shown in Figure \ref{fig:svdgeo} and the fraction for each types of $K_S^0$ in $B^0 \to K_S^0  K_S^0  K_S^0$ is listed in Table \ref{tab:svdxx}.
- If we check out the distribution of fitted invariant mass based on SVD hits number associated with daughter tracks, \textit{SVD00} $K_S^0$ shows a large dispersion from the central region of the distribution of invariant mass after vertex fit, while \textit{SVD11} $K_S^0$ shows a small dispersion as shown in Figure \ref{fig:invm1}. Therefore, considering the $K_S^0$ candidates with different SVD hits, see Figure \ref{fig:ks-r-svdxx} and Table \ref{tab:svdxx}, reflecting the different tracking quality of daughter $\pi^{\pm}$, the different cuts on invariant mass M$_{\pi^+\pi^-}$ are applied. As shown in Figure \ref{fig:invm}, the sideband regions where fake $K_S^0$ is much higher than true $K_S^0$ are excluded. The cut windows are listed in Table \ref{tab:ks_invm}. 
+The reconstruction quality of $K_S^0$ also depends on the flight distance. $K_S^0$ that decay in the inner region of VXD yields more hits on the SVD layers associated with the charged tracks of pions, which is critical for providing tracking information together with CDC hits. The Belle II track fitting quality becomes much worse for those without inner detector hits association, especially SVD hits information. To further study the reconstruction of $K_S^0$ based on their SVD hits, they are categorized by how many SVD hits their daughter tracks are associated with, in which \textit{SVD10} and \textit{SVD01} stands for $K_S^0$ that only $\pi^+$ and $\pi^-$ has non-zero SVD hits number, \textit{SVD11} and \textit{SVD00} stands for $K_S^0$ that both or neither charged pions have SVD hit non-zero SVD hits number. The $K_S^0$ fraction of each category are listed in Table \ref{tab:svdxx}. 
  
- Fake $K_S^0$ candidates costs a large extra processing time and the number of combinatorial backgrounds in $B^0 \to K_S^0  K_S^0  K_S^0$ becomes high, which largely reduces the signal significance and introduce bias to the $\it{CP}$ parameters measurement. Thus, a multi-variate analysis (MVA) based $K_S^0$ classification package, \textit{KsFinder}, is developed to further reject the fake $K_S^0$ from cut-based selected candidates.
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.7\linewidth]{ks-r-svdxx}
-	\caption{$K_S^0$ transverse flight length based on SVD hits of pions. \textit{SVD11}: both pions have SVD hits, \textit{SVD10}(\textit{SVD01}), positive(negative) pions have SVD hits, and \textit{SVD00}: no SVD hits from pions. The result is from \textit{signal MC} of $B^0 \to K_S^0  K_S^0  K_S^0$.}
-	\label{fig:ks-r-svdxx}
-\end{figure}
+If we check the distribution of fitted invariant mass in each category, \textit{SVD00} $K_S^0$ shows a large dispersion from the central region of the distribution of invariant mass after vertex fit, while \textit{SVD11} $K_S^0$ shows a small dispersion as shown in Figure \ref{fig:invm1}. This indicates that the absence of SVD information leads to the inaccurate $K_S^0$ reconstruction. Therefore, considering the $K_S^0$ candidates with different SVD hits, a series of different cuts on invariant mass M$_{\pi^+\pi^-}$ are applied to improve the purity for well-reconstructed $K_S^0$ candidates. As shown in Figure \ref{fig:invm}, the sideband regions where fake $K_S^0$ is much higher than true $K_S^0$ are excluded. The cut windows are listed in Table \ref{tab:ks_invm}. 
+ 
+Fake $K_S^0$ candidates costs a large extra processing time and the number of combinatorial backgrounds in $B^0 \to K_S^0  K_S^0  K_S^0$ becomes high, which largely reduces the signal significance and introduce bias to the $\it{CP}$ parameters measurement. Thus, a multi-variate analysis (MVA) based $K_S^0$ classification package, \textit{KsFinder}, is developed to further reject the fake $K_S^0$ from cut-based selected candidates.
+
 
 \begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.7\linewidth]{m-before-fit}
-	\includegraphics[width=0.7\linewidth]{m-after-fit}
-	\caption{(Top two plots)The invariant mass from daughters' 4-vector, the left is $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} and the right is \textit{generic MC};
-		(bottom two plots)The invariant mass after vertex fit, the left is $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC} and the right is \textit{generic MC};
-		In both cases, the red shows the clear dispersion on \textit{SVD00} type $K_S^0$.}
+	\begin{minipage}[b]{1\linewidth}
+		\centering 
+		\includegraphics[width=0.7\linewidth]{ksm_sig.png}
+		%\includegraphics[width=0.9\linewidth]{ksm_gen.png}
+		%\includegraphics[width=0.9\linewidth]{ksinvm_gen.png}
+		%\label{fig}
+	\end{minipage}
+	\begin{minipage}[b]{1\linewidth}
+		\centering 
+		\includegraphics[width=0.7\linewidth]{ksinvm_sig.png}
+		%\label{fig}
+	\end{minipage}
+	\caption{The invariant mass before (top) and after (bottom) vertex fit distribution based on SVD types, which shows a clear dispersion in $SVD00$ particularly, indicating the inaccurate reconstruction of $K_S^0$ masses without SVD information.}
 	\label{fig:invm1}
 \end{figure}
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.7\linewidth]{invm1}
-	\includegraphics[width=0.7\linewidth]{invm2}
-	\caption{Invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
+	\includegraphics[width=0.9\linewidth]{invm_sigbg}
+	%\includegraphics[width=0.7\linewidth]{invm2}
+	\caption{$K_S^0$ invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
 	\label{fig:invm}
 \end{figure}
 
@@ -83,7 +86,7 @@ however, the limitation of this cut-based $K_S^0$ reconstruction is the pollutio
 		\hline
 		$K_S^0$ type & \textit{SVD11} & \textit{SVD00} & \textit{SVD10} & \textit{SVD01}\\
 		\hline
-		\% in Belle II & 52\% & 39\% & 5\% & 5\%\\
+		\% in \textit{signal MC} & 52\% & 39\% & 5\% & 5\%\\
 		\hline
 	\end{tabular}
 	\caption{The fraction of each category of $K_S^0$ based on pions SVD hits in $B^0 \to K_S^0  K_S^0  K_S^0$ \textit{signal MC}.}
@@ -103,13 +106,7 @@ however, the limitation of this cut-based $K_S^0$ reconstruction is the pollutio
 	\label{tab:ks_invm}
 \end{table}
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.7\linewidth]{invm1}
-	\includegraphics[width=0.7\linewidth]{invm2}
-	\caption{Invariant mass after vertex fit of $K_S^0$, the sideband is excluded in each distribution to further reject fake $K_S^0$}
-	\label{fig:invm}
-\end{figure}
+
 
 \begin{comment}
 \begin{figure}[htpb]
@@ -128,9 +125,9 @@ however, the limitation of this cut-based $K_S^0$ reconstruction is the pollutio
 \section{MVA-based $K_S^0$ selection}
 
 \subsection{Belle II $K_S^0$ classification}
-As mentioned in the last section, in order to improve the reconstruction performance of $K_S^0$ from cut-based selection, a MVA-based package called \textit{KsFinder} has been developed. The reconstruction of $K_S^0$ can be treated as a typical classification problem. The input is a set of variables that describes the characteristics of $K_S^0 \to \pi^+ \pi^-$ decay. The training  target is the true or fake flag from the MC truth-matching variable called \textit{isSignal} where \textit{isSignal} = 1 (0) stands for being a true (fake) $K_S^0$. It aims to improve the limitations in the Belle $K_S^0$ MVA classification tool. 
+The reconstruction of $K_S^0$ can be treated as a typical classification problem. The input is a set of variables that describes the characteristics of $K_S^0 \to \pi^+ \pi^-$ decay. The training  target is the true or fake flag from the MC truth-matching variable called \textit{isSignal} where \textit{isSignal} = 1 (0) stands for being a true (fake) $K_S^0$. It aims to improve the limitations in the Belle $K_S^0$ MVA classification tool. 
  
- In Belle, the $K_S^0$ reconstruction was first done by using cut-based method to select primary candidates, then a MVA-based classifier was implemented by assigning two likelihood indicators to each $K_S^0$ candidates. The package used by Belle is called \textit{nisKsFinder}\cite{b2book} which outputs the two likelihood variables based on NeuroBayes algorithm\cite{feindt2006neurobayes}. The Belle tool defines the goodness of $K_S^0$, called \textit{nb\_nolam} and \textit{nb\_vlike}, respectively. As their names suggest, \textit{nb\_nolam} is the likelihood of not being a $\Lambda$ particle and \textit{nb\_vlike} is the likelihood of being a V0-like particle. A good $K_S^0$ candidate from \textit{nisKsFinder} is the one with a low likelihood of being $\Lambda$ particle and a high likelihood of being a V0-like particle, assuming the major backgrounds for $K_S^0$ is the mis-identified $\Lambda$ among V0-like particles. By putting cuts on these two variables, a purification of $K_S^0$ can be made, see Figure \ref{b1niskf}. It can effectively reduce fake $K_S^0$ from cut-based selected candidates, however, there are a few disadvantages about this method. First, NeuroBayes is a commercial product that was developed over 10 years ago. The official support and update is stopped nowadays, so it's not an ideal method for an experiment like Belle II that has a quite long prospective in operation. Second, the classification is based on a joint cut on two variables, which might make the cut values hard to choose, for example, two different cuts might have very close purity. Last but not least, the classification of $K_S^0$ is not the directly targeted output of the neuro-network. Instead, it classifies the V0-like particle and $\Lambda$. Besides, the computation speed of NeuroBayes is not optimized.
+ In Belle, the $K_S^0$ reconstruction was first done by using cut-based method to select primary candidates, then a MVA-based classifier was implemented by assigning two likelihood indicators to each $K_S^0$ candidates. The package used by Belle is called \textit{nisKsFinder}\cite{b2book} which outputs the two likelihood variables based on NeuroBayes algorithm\cite{feindt2006neurobayes}. The Belle tool defines the goodness of $K_S^0$, called \textit{nb\_nolam} and \textit{nb\_vlike}, respectively. As their names suggest, \textit{nb\_nolam} is the likelihood of not being a $\Lambda$ particle and \textit{nb\_vlike} is the likelihood of being a V0-like particle. A good $K_S^0$ candidate from \textit{nisKsFinder} is the one with a low likelihood of being $\Lambda$ particle and a high likelihood of being a V0-like particle, assuming the major backgrounds for $K_S^0$ is the mis-identified $\Lambda$ among V0-like particles. By putting cuts on these two variables, a purification of $K_S^0$ can be made, shown in Figure \ref{b1niskf}. It can effectively reduce fake $K_S^0$ from cut-based selected candidates, however, there are disadvantages about this method. First, NeuroBayes is a commercial product that was developed over 10 years ago. The official support and update is stopped nowadays, so it's not an ideal method for an experiment like the Belle II that has a quite long prospective in operation. Second, the classification is based on a joint cut on two variables, which might make the cut values hard to choose, for example, two different cuts might have very close purity. Besides, the computation speed of NeuroBayes algorithm is not optimized in training large data set.
 
 \begin{figure}[htpb]
 	\centering 
@@ -368,24 +365,24 @@ To evaluate the performance of\textit{KsFinder}on both signal and \textit{generi
 	\text{background rejection} = \frac{\text{Number of fake $K_S^0$ with FBDT\_Ks $<$ cut value}}{\text{Number of fake true $K_S^0$ }} \label{eq:ks_rej}
 \end{eqnarray}
 
-The ROC (receiver operating characteristics) curve is usually taken as an indicator of the performance where the curve shows the dependence of rejection power with respect to the signal purity. The larger area under a ROC curve means that the better performance is achieved since background rejection drops slower when increasing the cut. The ROC curves and efficiency/background rejections are shown in Figure \ref{fig:3Ks_performance} and \ref{fig:gen_performance}, where the former is for \textit{signal MC} and the latter is for \textit{generic MC}.
+The ROC (receiver operating characteristics) curve is usually taken as an indicator of the performance where the curve shows the dependence of rejection power with respect to the signal purity. The larger area under a ROC curve means that the better performance is achieved since background rejection drops slower when increasing the cut. The ROC curves as well as  the efficiency \& purity with respect to the \textit{KsFinder} cut are shown in Figure \ref{fig:3Ks_performance}  and Figure  \ref{fig:gen_performance}, where the former is for \textit{signal MC} and the latter is for \textit{generic MC}.
 
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=6cm]{ROC_3Ks}
+		\includegraphics[height=6cm]{ROC_sig}
 		\label{fig:ROC_3Ks}
 	\end{minipage}
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
-		\includegraphics[height=6cm]{eff_3Ks}
+		\includegraphics[height=6cm]{eff_sig}
 		\label{fig:eff_3Ks}
 	\end{minipage}
-\caption{The left is ROC curve(blue for training and orange for testing) and the right is efficiency and purity (blue for efficiency and orange for purity) depending on cut of\textit{KsFinder}output. Results are from \textit{signal MC} sample.}
+\caption{The left is ROC curve(blue for training and orange for testing) and the right is efficiency and purity (blue for efficiency and orange for purity) depending on cut of \textit{KsFinder} output. The results are from \textit{signal MC} sample.}
 \label{fig:3Ks_performance}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\begin{minipage}[b]{0.5\linewidth}
 		\centering 
 		\includegraphics[height=6cm]{ROC_gen}
@@ -396,30 +393,13 @@ The ROC (receiver operating characteristics) curve is usually taken as an indica
 		\includegraphics[height=6cm]{eff_gen}
 		%\label{fig:side:b}
 	\end{minipage}
-	\caption{The left is ROC curve (blue for training and orange for testing) and the right is efficiency and purity (blue for efficiency and orange for purity) depending on cut of\textit{KsFinder}output. Results are from \textit{generic MC} sample.}
+	\caption{The left is ROC curve (blue for training and orange for testing) and the right is efficiency and purity (blue for efficiency and orange for purity) depending on cut of \textit{KsFinder} output. The results are from \textit{generic MC} sample.}
 	\label{fig:gen_performance}
 \end{figure}
 
-\begin{comment}
-\begin{figure}[H]
-	\begin{minipage}[b]{0.5\linewidth}
-		\centering 
-		\includegraphics[height=4cm]{jpsi-jpsi}
-		\label{fig:side:a}
-	\end{minipage}
-	\begin{minipage}[b]{0.5\linewidth}
-		\centering 
-		\includegraphics[height=4cm]{jpsi-jpsi-pur}
-		\label{fig:side:b}
-	\end{minipage}
-	\caption{The left is ROC curve and the right is efficiency and purity depending on cut of classifier output. Results are from $B^0 \to J/\psi K_S^0$ generic decay sample.}
-\end{figure}
-\end{comment}
-
-% 2021.02.08 mid
 With increasing the efficiency, the cut on the output of\textit{KsFinder}is getting loose. The background rejection only starts to drop when the efficiency exceeds about 90\% in both training and testing sample. To be noted, the curves are consistent in training and testing samples. 
 While the ROC curve has shown the absence of noticeable over-fitting in classification, the detailed check can be made by comparing the distributions of classifier output on true and fake $K_S^0$ in training and testing samples. Therefore, the distribution of signal and background in training and testing sample with respect to the\textit{KsFinder}output is plotted, where a distinctive separation for both \textit{signal MC} and \textit{generic MC} is shown and no over-training is found, as shown in Figure \ref{fig:ks_overtraining}.
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\begin{subfigure}{1\linewidth}
 		\centering
 		\includegraphics[height=6cm]{over-3ks}
@@ -444,7 +424,7 @@ While the ROC curve has shown the absence of noticeable over-fitting in classifi
 %\caption{Over-fitting check for classifiers.}
 \end{figure}
 
-The cut value for \textit{FBDT\_Ks} is determined by maximizing the ``Figure of Merit" (FOM), as shown Equation \ref{eq:fom}, where S and B is the number of true and fake $K_S^0$ after the cut, respectively. The FOM distribution depending on the cut value of \textit{FBDT\_Ks} is shown in Figure \ref{fig:ks_fom}. The maximum FOM is achieved at \textit{FBDT\_Ks} $= 0.74$ in \textit{signal MC}, which is going to be used as the cut value to further reject fake $K_S^0$.
+The cut value for \textit{FBDT\_Ks} is determined by maximizing the ``Figure of Merit" (FOM), as shown Equation \ref{eq:fom}, where $S$ and $B$ is the number of true and fake $K_S^0$ after the cut, respectively. The FOM distribution depending on the cut value of \textit{FBDT\_Ks} is shown in Figure \ref{fig:ks_fom}. The maximum FOM is achieved at \textit{FBDT\_Ks} $= 0.74$ in \textit{signal MC}, which is going to be used as the cut value to further reject fake $K_S^0$.
 
 \begin{equation}\label{eq:fom}
 	\text{FOM} = \frac{S}{\sqrt{S+B}}
@@ -473,7 +453,7 @@ The results from MC studies show an excellent performance of \textit{KsFinder}. 
 In addtion, due to the fact that $K_S^0$ candidates are used for further reconstruction of $B^0$, the  mass and energy distributions may change after applying the cut, thus the validation that approves no clear bias on $B^0$'s variables that are used for signal extraction is also required. For comparison between MC and data, a small data sample from Belle II  experiment 7 and 8 is used. The integral luminosity at $\Upsilon(4S)$ resonance for this data sample is about 5.17 $\text{fb}^{-1}$. The MC sample is extracted from \textit{generic MC} with equivalent luminosity.
 
 
- The Figure \ref{fig:ksvalid_1} shows the invariant mass and momentum distributions from data and MC samples, where the data and \textit{generic MC} agree well. The uncertainties in data are calculated based on three times the Poisson standard deviation in each bin. The variable with the highest importance is the cosine angle between $K_S^0$ vertex and the direction of momentum, named as \textit{cosVertexMomentum}, of which distribution is shown in Figure \ref{fig:cosVex_dataMC}. In these comparison plots, the \textit{generic MC} is shown in blue solid lines with no\textit{KsFinder}cut used. Similarly, data without using cut of\textit{KsFinder}are shown in yellow dots, which are closely distributed as the \textit{generic MC}, indicating a good data MC consistency. Since the FastBDT algorithm relies on the probability density functions to seperate signal and backgrounds in each tree node, the similar distribution can lead to close classification power in data. The purple solid lines are presenting the true $K_S^0$ distribution in \textit{generic MC}, while the red dots are the $K_S^0$ in data after using the cut value at 0.74. The reduced fraction of $K_S^0$ in data  is close to the \textit{signal MC}. All distributions comparison between data and \textit{generic MC} by using\textit{KsFinder}cut are shown in Appendix B.
+ The Figure \ref{fig:ksvalid_1} shows the invariant mass and momentum distributions from data and MC samples, where the data and \textit{generic MC} agree well. The uncertainties in data are calculated based on three times the Poisson standard deviation in each bin. The variable with the highest importance is the cosine angle between $K_S^0$ vertex and the direction of momentum, named as \textit{cosVertexMomentum}, of which distribution is shown in Figure \ref{fig:cosVex_dataMC}. In these comparison plots, the \textit{generic MC} is shown in blue solid lines with no \textit{KsFinder} cut used. Similarly, data without using cut of\textit{KsFinder}are shown in yellow dots, which are closely distributed as the \textit{generic MC}, indicating a good data MC consistency. Since the FastBDT algorithm relies on the probability density functions to seperate signal and backgrounds in each tree node, the similar distribution can lead to close classification power in data. The purple solid lines are presenting the true $K_S^0$ distribution in \textit{generic MC}, while the red dots are the $K_S^0$ in data after using the cut value at 0.74. The reduced fraction of $K_S^0$ in data  is close to the \textit{signal MC}. All distributions comparison between data and \textit{generic MC} by using \textit{KsFinder}cut are shown in Appendix B.
 
 %\begin{comment}
 \begin{figure}[htpb]
@@ -490,7 +470,7 @@ In addtion, due to the fact that $K_S^0$ candidates are used for further reconst
 \begin{subfigure}{0.5\linewidth}
 \includegraphics[page=9,width=1.1\linewidth]{dataVarsPlot_Ks}
 \end{subfigure}
-\caption{The distribution of invariant mass from charged pions and the momentum of $K_S^0$ in $x,y,z$ directions. The blue line is from all \textit{generic MC} where the purple line is the true $K_S^0$ in it. The yellow dots are data with no\textit{KsFinder}cut applied and the solid red dots are data after applying\textit{KsFinder}cut at 0.74.}
+\caption{The distribution of invariant mass from charged pions and the momentum of $K_S^0$ in $x,y,z$ directions. The blue line is from all \textit{generic MC} where the purple line is the true $K_S^0$ in it. The yellow dots are data with no \textit{KsFinder}cut applied and the solid red dots are data after applying\textit{KsFinder}cut at 0.74.}
 \label{fig:ksvalid_1}
 \end{figure}
 %\end{comment}
@@ -503,7 +483,7 @@ In addtion, due to the fact that $K_S^0$ candidates are used for further reconst
 \end{figure}
 
 \subsection{Data and MC correction by \textit{KsFinder}}
-Implementing\textit{KsFinder}cut on data may induce bias on the event numbers for $K_S^0$ because the training set of\textit{KsFinder}is extracted from MC. To compensate such potential effect, a ratio as the data and MC correction is calculated based on the expected signal yield after using \textit{KsFinder}. A maximum likelihood fit on invariant mass $M_{\pi^+\pi^-}$ for $K_S^0$ after applying cut value at 0.74 of\textit{KsFinder}output is performed, where signal shape is modeled as a triple-Gaussian and background shape is modeled as a Chebyshev polynomial. The signal yield fraction is defined as Equation \ref{eq:S_ratio}.
+Implementing \textit{KsFinder}cut on data may induce bias on the event numbers for $K_S^0$ because the training set of \textit{KsFinder}is extracted from MC. To compensate such potential effect, a ratio as the data and MC correction is calculated based on the expected signal yield after using \textit{KsFinder}. A maximum likelihood fit on invariant mass $M_{\pi^+\pi^-}$ (after vertex fit) for $K_S^0$ with \textit{FBDT\_Ks} $>0.74$ is performed, where signal shape is modeled as a triple-Gaussian and background shape is modeled as a Chebyshev polynomial. The signal yield fraction is defined as Equation \ref{eq:S_ratio}.
 
 \begin{equation}\label{eq:S_ratio}
 	f_{K_S} = \frac{N_{sig}}{N_{tot}}
