@@ -353,19 +353,19 @@ As a FastBDT method relies on the distribution of variables to calculate signal 
 
  % 2021.02.05 mid
 \subsection{Training, Applying and Testing of \textit{KsFinder}}
-The variables are internally registered inside the\textit{KsFinder}so it can automatically retrieve their values from a mDST file in BASF2. The first step of using\textit{KsFinder}is to call \textit{KsFinderSampler} on a MC sample to generate training and testing data sample. To show the flexibility and stability of\textit{KsFinder}on different modes, \textit{KsFinderSampler} extracts MC data points from both \textit{signal MC} and \textit{generic MC} (see MC definition in section 2.9), respectively. \textit{KsFinder}configures that the depth of each DT is 3 and boosting steps is 200. In both MC samples, the ratio of true and fake $K_S^0$ is set to 1:1 and each component contains 200000 data points. The distribution of input variables in \textit{signal MC} is shown in Appendix A. 
+The variables are internally registered inside the\textit{KsFinder}so it can automatically retrieve their values from a mDST file in BASF2. The first step of using \textit{KsFinder} is to call \textit{KsFinderSampler} on a MC sample to generate training and testing data sample. To show the flexibility and stability of\textit{KsFinder}on different modes, \textit{KsFinderSampler} extracts MC data points from both \textit{signal MC} and \textit{generic MC} (see MC definition in section 2.9), respectively. \textit{KsFinder}configures that the depth of each DT is 3 and boosting steps is 200. In both MC samples, the ratio of true and fake $K_S^0$ is set to 1:1 and each component contains 200000 data points. The distribution of input variables in \textit{signal MC} is shown in Appendix A. 
 
-To train the \textit{KsFinder}, \textit{KsFinderTeacher} function is called for the training samples from MC and weight files are saved. To apply the classification of $K_S^0$, \textit{KsFinderApplier} reads in the testing samples from MC and calculate output using saved weight files, so that each $K_S^0$ candidate is assigned with a goodness index named \textit{FBDT\_Ks}. It ranges from 0 to 1 where 1 stands for the best goodness. After the applying of\textit{KsFinder}on the testing samples, \textit{KsFinderTest} is called to check the performance and over-training of\textit{KsFinder}on the testing samples, which will be discussed in the next section. 
+To train the \textit{KsFinder}, \textit{KsFinderTeacher} function is called for the training samples from MC and weight files are saved. To apply the classification of $K_S^0$, \textit{KsFinderApplier} reads in the testing samples from MC and calculate output using saved weight files, so that each $K_S^0$ candidate is assigned with a goodness index named \textit{FBDT\_Ks}. It ranges from 0 to 1 where 1 stands for the best goodness. After the applying of \textit{KsFinder} on the testing samples, \textit{KsFinderTest} is called to check the performance and over-training of \textit{KsFinder} on the testing samples, which will be discussed in the next section. 
 
 \subsection{The Performance and Over-fitting check}
-To evaluate the performance of\textit{KsFinder}on both signal and \textit{generic MC} samples, signal efficiency and background rejection are calculated by cutting on the different values on \textit{FBDT\_Ks}, as defined in Equation \ref{eq:ks_eff} and \ref{eq:ks_rej}.
+To evaluate the performance of \textit{KsFinder} on both signal and \textit{generic MC} samples, signal efficiency and background rejection are calculated by cutting on the different values on \textit{FBDT\_Ks}, as defined in Equation \ref{eq:ks_eff} and \ref{eq:ks_rej}.
 
 \begin{eqnarray}
 	\text{signal efficency} = \frac{\text{Number of true $K_S^0$ with FBDT\_Ks $>$ cut value}}{\text{Number of all true $K_S^0$ }} \label{eq:ks_eff}\\
 	\text{background rejection} = \frac{\text{Number of fake $K_S^0$ with FBDT\_Ks $<$ cut value}}{\text{Number of fake true $K_S^0$ }} \label{eq:ks_rej}
 \end{eqnarray}
 
-The ROC (receiver operating characteristics) curve is usually taken as an indicator of the performance where the curve shows the dependence of rejection power with respect to the signal purity. The larger area under a ROC curve means that the better performance is achieved since background rejection drops slower when increasing the cut. The ROC curves as well as  the efficiency \& purity with respect to the \textit{KsFinder} cut are shown in Figure \ref{fig:3Ks_performance}  and Figure  \ref{fig:gen_performance}, where the former is for \textit{signal MC} and the latter is for \textit{generic MC}.
+The ROC (receiver operating characteristics) curve is usually taken as an indicator of the performance where the curve shows the dependence of rejection power with respect to the signal purity. The larger area under a ROC curve means that the better performance is achieved since background rejection drops slower when increasing the cut. The ROC curves as well as  the efficiency \& purity with respect to the  \textit{KsFinder} cut are shown in Figure \ref{fig:3Ks_performance}  and Figure  \ref{fig:gen_performance}, where the former is for \textit{signal MC} and the latter is for \textit{generic MC}.
 
 \begin{figure}[htpb]
 	\begin{minipage}[b]{0.5\linewidth}
@@ -397,7 +397,7 @@ The ROC (receiver operating characteristics) curve is usually taken as an indica
 	\label{fig:gen_performance}
 \end{figure}
 
-With increasing the efficiency, the cut on the output of\textit{KsFinder}is getting loose. The background rejection only starts to drop when the efficiency exceeds about 90\% in both training and testing sample. To be noted, the curves are consistent in training and testing samples. 
+With increasing the efficiency, the cut on the output of \textit{KsFinder} is getting loose. The background rejection only starts to drop when the efficiency exceeds about 90\% in both training and testing sample. To be noted, the curves are consistent in training and testing samples. 
 While the ROC curve has shown the absence of noticeable over-fitting in classification, the detailed check can be made by comparing the distributions of classifier output on true and fake $K_S^0$ in training and testing samples. Therefore, the distribution of signal and background in training and testing sample with respect to the\textit{KsFinder}output is plotted, where a distinctive separation for both \textit{signal MC} and \textit{generic MC} is shown and no over-training is found, as shown in Figure \ref{fig:ks_overtraining}.
 \begin{figure}[htpb]
 	\begin{subfigure}{1\linewidth}
@@ -437,12 +437,12 @@ The cut value for \textit{FBDT\_Ks} is determined by maximizing the ``Figure of 
 	\label{fig:ks_fom}
 \end{figure}
 
-In the \textit{signal MC} sample, the true $K_S^0$ fraction before applying\textit{KsFinder}cut is 39\%, and 95\% of them are kept after the cut is applied. In the meantime, the fake $K_S^0$ fraction before applying the cut is 61\%, and 98\% of them are rejected after the cut is applied. The purity of the $K_S^0$ candidates is improved largely as shown in Figure \ref{fig:ks_cutused}.
+In the \textit{signal MC} sample, the true $K_S^0$ fraction before applying \textit{KsFinder} cut is 39\%, and 95\% of them are kept after the cut is applied. In the meantime, the fake $K_S^0$ fraction before applying the cut is 61\%, and 98\% of them are rejected after the cut is applied. The purity of the $K_S^0$ candidates is improved largely as shown in Figure \ref{fig:ks_cutused}.
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{kscutM}
-	\caption{$K_S^0$ purity improvement with cut value of \textit{FBDT\_Ks} at 0.74 applied. The blue solid line is true $K_S^0$ without\textit{KsFinder}and green dashed line is the true $K_S^0$ with the cut applied. The orange solid line is fake $K_S^0$ without the cut and the red dashed line is fake $K_S^0$ with the cut. About 95\% of true $K_S^0$ are kept while 98\% of the fake ones are rejected by applying the cut.}
+	\caption{$K_S^0$ purity improvement with cut value of \textit{FBDT\_Ks} at 0.74 applied. The blue solid line is true $K_S^0$ without \textit{KsFinder} and green dashed line is the true $K_S^0$ with the cut applied. The orange solid line is fake $K_S^0$ without the cut and the red dashed line is fake $K_S^0$ with the cut. About 95\% of true $K_S^0$ are kept while 98\% of the fake ones are rejected by applying the cut.}
 	\label{fig:ks_cutused}
 \end{figure}
 
@@ -453,7 +453,7 @@ The results from MC studies show an excellent performance of \textit{KsFinder}. 
 In addtion, due to the fact that $K_S^0$ candidates are used for further reconstruction of $B^0$, the  mass and energy distributions may change after applying the cut, thus the validation that approves no clear bias on $B^0$'s variables that are used for signal extraction is also required. For comparison between MC and data, a small data sample from Belle II  experiment 7 and 8 is used. The integral luminosity at $\Upsilon(4S)$ resonance for this data sample is about 5.17 $\text{fb}^{-1}$. The MC sample is extracted from \textit{generic MC} with equivalent luminosity.
 
 
- The Figure \ref{fig:ksvalid_1} shows the invariant mass and momentum distributions from data and MC samples, where the data and \textit{generic MC} agree well. The uncertainties in data are calculated based on three times the Poisson standard deviation in each bin. The variable with the highest importance is the cosine angle between $K_S^0$ vertex and the direction of momentum, named as \textit{cosVertexMomentum}, of which distribution is shown in Figure \ref{fig:cosVex_dataMC}. In these comparison plots, the \textit{generic MC} is shown in blue solid lines with no \textit{KsFinder} cut used. Similarly, data without using cut of\textit{KsFinder}are shown in yellow dots, which are closely distributed as the \textit{generic MC}, indicating a good data MC consistency. Since the FastBDT algorithm relies on the probability density functions to seperate signal and backgrounds in each tree node, the similar distribution can lead to close classification power in data. The purple solid lines are presenting the true $K_S^0$ distribution in \textit{generic MC}, while the red dots are the $K_S^0$ in data after using the cut value at 0.74. The reduced fraction of $K_S^0$ in data  is close to the \textit{signal MC}. All distributions comparison between data and \textit{generic MC} by using \textit{KsFinder}cut are shown in Appendix B.
+ The Figure \ref{fig:ksvalid_1} shows the invariant mass and momentum distributions from data and MC samples, where the data and \textit{generic MC} agree well. The uncertainties in data are calculated based on three times the Poisson standard deviation in each bin. The variable with the highest importance is the cosine angle between $K_S^0$ vertex and the direction of momentum, named as \textit{cosVertexMomentum}, of which distribution is shown in Figure \ref{fig:cosVex_dataMC}. In these comparison plots, the \textit{generic MC} is shown in blue solid lines with no \textit{KsFinder} cut used. Similarly, data without using cut of\textit{KsFinder}are shown in yellow dots, which are closely distributed as the \textit{generic MC}, indicating a good data MC consistency. Since the FastBDT algorithm relies on the probability density functions to seperate signal and backgrounds in each tree node, the similar distribution can lead to close classification power in data. The purple solid lines are presenting the true $K_S^0$ distribution in \textit{generic MC}, while the red dots are the $K_S^0$ in data after using the cut value at 0.74. The reduced fraction of $K_S^0$ in data  is close to the \textit{signal MC}. All distributions comparison between data and \textit{generic MC} by using  \textit{KsFinder} cut are shown in Appendix B.
 
 %\begin{comment}
 \begin{figure}[htpb]
@@ -470,7 +470,7 @@ In addtion, due to the fact that $K_S^0$ candidates are used for further reconst
 \begin{subfigure}{0.5\linewidth}
 \includegraphics[page=9,width=1.1\linewidth]{dataVarsPlot_Ks}
 \end{subfigure}
-\caption{The distribution of invariant mass from charged pions and the momentum of $K_S^0$ in $x,y,z$ directions. The blue line is from all \textit{generic MC} where the purple line is the true $K_S^0$ in it. The yellow dots are data with no \textit{KsFinder}cut applied and the solid red dots are data after applying\textit{KsFinder}cut at 0.74.}
+\caption{The distribution of invariant mass from charged pions and the momentum of $K_S^0$ in $x,y,z$ directions. The blue line is from all \textit{generic MC} where the purple line is the true $K_S^0$ in it. The yellow dots are data with no \textit{KsFinder} cut applied and the solid red dots are data after applying\textit{KsFinder}cut at 0.74.}
 \label{fig:ksvalid_1}
 \end{figure}
 %\end{comment}
@@ -483,7 +483,7 @@ In addtion, due to the fact that $K_S^0$ candidates are used for further reconst
 \end{figure}
 
 \subsection{Data and MC correction by \textit{KsFinder}}
-Implementing \textit{KsFinder}cut on data may induce bias on the event numbers for $K_S^0$ because the training set of \textit{KsFinder}is extracted from MC. To compensate such potential effect, a ratio as the data and MC correction is calculated based on the expected signal yield after using \textit{KsFinder}. A maximum likelihood fit on invariant mass $M_{\pi^+\pi^-}$ (after vertex fit) for $K_S^0$ with \textit{FBDT\_Ks} $>0.74$ is performed, where signal shape is modeled as a triple-Gaussian and background shape is modeled as a Chebyshev polynomial. The signal yield fraction is defined as Equation \ref{eq:S_ratio}.
+Implementing \textit{KsFinder} cut on data may induce bias on the event numbers for $K_S^0$ because the training set of \textit{KsFinder} is extracted from MC. To compensate such potential effect, a ratio as the data and MC correction is calculated based on the expected signal yield after using \textit{KsFinder}. A maximum likelihood fit on invariant mass $M_{\pi^+\pi^-}$ (after vertex fit) for $K_S^0$ with \textit{FBDT\_Ks} $>0.74$ is performed, where signal shape is modeled as a triple-Gaussian and background shape is modeled as a Chebyshev polynomial. The signal yield fraction is defined as Equation \ref{eq:S_ratio}.
 
 \begin{equation}\label{eq:S_ratio}
 	f_{K_S} = \frac{N_{sig}}{N_{tot}}

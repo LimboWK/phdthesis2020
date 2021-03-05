@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -130,11 +130,11 @@ KH~Kang, H~Park, T~Higuchi, K~Miyabayashi, K~Sumisawa, I~Adachi, JK~Ahn,
   k_s k_s k_s $ decays at belle.
 \newblock \emph{arXiv preprint arXiv:2011.00793}, 2020.
 
-\bibitem[Lees et~al.(2012)]{Lees:2011nf}
+\bibitem[Lees et~al.(2012{\natexlab{a}})]{Lees:2011nf}
 J.~P. Lees et~al.
 \newblock {Amplitude analysis and measurement of the time-dependent CP
   asymmetry of $B^0 \to K_S^0 K_S^0 K_S^0$ decays}.
-\newblock \emph{Phys. Rev. D}, 85:\penalty0 054023, 2012.
+\newblock \emph{Phys. Rev. D}, 85:\penalty0 054023, 2012{\natexlab{a}}.
 \newblock \doi{10.1103/PhysRevD.85.054023}.
 
 \bibitem[Abe et~al.(2010)]{Abe:2010gxa}
@@ -161,16 +161,6 @@ K~Inami, T~Mori, T~Matsumura, K~Kurimoto, S~Hasegawa, Y~Suzuki, T~Murase,
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
   Accelerators, Spectrometers, Detectors and Associated Equipment},
   592\penalty0 (3):\penalty0 247--253, 2008.
-
-\bibitem[Mitra et~al.(2016)Mitra, Khan, Marin, Cachemiche, David, Hachon,
-  Rethore, Kiss, Baron, Kluge, et~al.]{mitra2016gbt}
-Jubin Mitra, Shuaib~A Khan, Manoel~Barros Marin, Jean-Pierre Cachemiche, Erno
-  David, Fr{\'e}d{\'e}ric Hachon, Fr{\'e}d{\'e}ric Rethore, Tivadar Kiss,
-  Sophie Baron, Alex Kluge, et~al.
-\newblock Gbt link testing and performance measurement on pcie40 and amc40
-  custom design fpga boards.
-\newblock \emph{Journal of Instrumentation}, 11\penalty0 (03):\penalty0 C03039,
-  2016.
 
 \bibitem[dir()]{dirac}
 URL \url{https://dirac.readthedocs.io/en/latest/DeveloperGuide/Overview/}.
@@ -257,13 +247,6 @@ Tianqi Chen and Carlos Guestrin.
 \newblock In \emph{Proceedings of the 22nd acm sigkdd international conference
   on knowledge discovery and data mining}, pages 785--794, 2016.
 
-\bibitem[{Tenchini, Francesco} and {Krohn, Jo-Frederik}(2019)]{refId0}
-{Tenchini, Francesco} and {Krohn, Jo-Frederik}.
-\newblock Decay chain reconstruction at belle ii.
-\newblock \emph{EPJ Web Conf.}, 214:\penalty0 06023, 2019.
-\newblock \doi{10.1051/epjconf/201921406023}.
-\newblock URL \url{https://doi.org/10.1051/epjconf/201921406023}.
-
 \bibitem[Bevan et~al.(2014)Bevan, Golob, Mannel, Prell, Yabsley, Aihara,
   Anulli, Arnaud, Aushev, Beneke, and et~al.]{Bevan_2014}
 A.~J. Bevan, B.~Golob, Th. Mannel, S.~Prell, B.~D. Yabsley, H.~Aihara,
@@ -304,14 +287,20 @@ F~Abudin{\'e}n, I~Adachi, R~Adak, K~Adamczyk, P~Ahlburg, JK~Ahn, H~Aihara,
 \newblock First flavor tagging calibration using 2019 belle ii data.
 \newblock \emph{arXiv preprint arXiv:2008.02707}, 2020.
 
-\bibitem[Amhis et~al.(2017)Amhis, Banerjee, Ben-Haim, Bernlochner, Bozek,
-  Bozzi, Chrz{\k{a}}szcz, Dingfelder, Duell, Gersabeck,
-  et~al.]{amhis2017averages}
-Y~Amhis, Sw~Banerjee, E~Ben-Haim, F~Bernlochner, A~Bozek, C~Bozzi,
-  M~Chrzaszcz, J~Dingfelder, S~Duell, M~Gersabeck, et~al.
-\newblock Averages of b-hadron, c-hadron, and $\tau$-lepton properties as of
-  summer 2016.
-\newblock \emph{The European Physical Journal C}, 77\penalty0 (12):\penalty0
-  1--335, 2017.
+\bibitem[Yosuke and Miyabayashi(2011)]{yosuke2011measurement}
+Y~Yosuke and K~Miyabayashi.
+\newblock Measurement of time-dependent cp violation in b0→(cc) k 0 decays
+  with 772$\times$ 106bb.
+\newblock Technical report, Belle Note, 2011.
+
+\bibitem[Lees et~al.(2012{\natexlab{b}})Lees, Poireau, Tisserand, Tico,
+  Grauges, Martinelli, Milanes, Palano, Pappagallo, Eigen,
+  et~al.]{lees2012amplitude}
+JP~Lees, V~Poireau, V~Tisserand, J~Garra Tico, E~Grauges, M~Martinelli,
+  DA~Milanes, A~Palano, M~Pappagallo, G~Eigen, et~al.
+\newblock Amplitude analysis and measurement of the time-dependent c p
+  asymmetry of b 0→ k s 0 k s 0 k s 0 decays.
+\newblock \emph{Physical Review D}, 85\penalty0 (5):\penalty0 054023,
+  2012{\natexlab{b}}.
 
 \end{thebibliography}

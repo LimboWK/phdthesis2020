@@ -11,11 +11,12 @@ A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: chap7.aux
 A level-1 auxiliary file: appa.aux
 A level-1 auxiliary file: appb.aux
+A level-1 auxiliary file: appc.aux
 A level-1 auxiliary file: appd.aux
 A level-1 auxiliary file: biblio.aux
 The style file: unsrtnat.bst
 Database file #1: main.bib
-Repeated entry---line 262 of file main.bib
+Repeated entry---line 269 of file main.bib
  : @article{Wu_exp
  :                ,
 I'm skipping whatever remains of this entry
@@ -43,45 +44,45 @@ Warning--empty title in jpsiks_ichep
 Warning--empty year in jpsiks_ichep
 Warning--empty title in flavortagger
 Warning--empty year in flavortagger
-You've used 46 entries,
+You've used 45 entries,
             2481 wiz_defined-function locations,
-            826 strings with 13194 characters,
-and the built_in function-call counts, 18480 in all, are:
-= -- 1370
-> -- 1311
+            814 strings with 12817 characters,
+and the built_in function-call counts, 17777 in all, are:
+= -- 1325
+> -- 1242
 < -- 22
-+ -- 498
-- -- 406
-* -- 1612
-:= -- 3038
-add.period$ -- 140
-call.type$ -- 46
-change.case$ -- 82
-chr.to.int$ -- 46
-cite$ -- 79
-duplicate$ -- 857
-empty$ -- 1523
-format.name$ -- 459
-if$ -- 3786
-int.to.chr$ -- 1
-int.to.str$ -- 47
-missing$ -- 33
-newline$ -- 238
-num.names$ -- 111
-pop$ -- 408
++ -- 475
+- -- 384
+* -- 1538
+:= -- 2915
+add.period$ -- 135
+call.type$ -- 45
+change.case$ -- 81
+chr.to.int$ -- 44
+cite$ -- 78
+duplicate$ -- 833
+empty$ -- 1473
+format.name$ -- 436
+if$ -- 3646
+int.to.chr$ -- 2
+int.to.str$ -- 46
+missing$ -- 31
+newline$ -- 231
+num.names$ -- 108
+pop$ -- 402
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 45
 quote$ -- 0
-skip$ -- 522
+skip$ -- 507
 stack$ -- 0
-substring$ -- 629
-swap$ -- 127
+substring$ -- 593
+swap$ -- 126
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 322
+type$ -- 315
 warning$ -- 24
-while$ -- 116
+while$ -- 111
 width$ -- 0
-write$ -- 576
+write$ -- 559
 (There was 1 error message)

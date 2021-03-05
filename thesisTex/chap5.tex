@@ -518,7 +518,7 @@ sin(2\phi_1) & = 0.82 \pm 0.85(stat) \\
 \end{equation} 
 
 \section{Systematic Uncertainty}
-The systematic uncertainty that affects the fit results may come from many aspects of the measurement setup. Currently there is no estimation on systematic uncertainty from the tag-side interference in the Belle II, which is caused by the interference between CKM-favored or CKM-suppressed tree-level decays. The Belle results suggested the contribution is $\sim 0.001$ which is negligible at current systematic uncertainty. As shown in Table \ref{tab:sy_sigt} to \ref{tab:sy_fsig}, the total contribution from each source is calculated by adding-in-quadrature using each systematic uncertainty caused by the fit model parameters belonging to that category. To be specific, in each category if the parameters are defined with MC study, we float the value by $\pm 2 \sigma$, and if the parameters are defined by data, we float the value by $\pm 1 \sigma$, where $\sigma$ is the uncertainty of the parameters. The impact on the $\it{CP}$ fit results from every parameter in each category is therefore marked as $\pm \delta \mathcal{S}$ and $\pm \delta \mathcal{A}$, where the signs present the difference caused by positively or negatively floating values, respectively. On the other hand, from Table \ref{tab:fitbias} to \ref{tab:sy_vertex}, since the contributions are not directly from the parameters of the fit model, but events number in fit bias test, \textit{KsFinder} correction factor and vertex reconstruction, we modified their values and repeat the fit to obtain the systematic uncertainties. After obtaining the $\delta \mathcal{S}$ and $\delta \mathcal{A}$ from each category, the total systematic uncertainty is calculated by add-in-quadrature again from all the sources.
+The systematic uncertainty that affects the fit results may come from many aspects of the measurement setup. Currently there is no estimation on systematic uncertainty from the tag-side interference in the Belle II, which is caused by the interference between CKM-favored or CKM-suppressed tree-level decays. The Belle results suggested the contribution is $\sim 0.001$\cite{yosuke2011measurement} which is trivial at current systematic uncertainty. As shown in Table \ref{tab:sy_sigt} to \ref{tab:sy_fsig}, the total contribution from each source is calculated by adding-in-quadrature using each systematic uncertainty caused by the fit model parameters belonging to that category. To be specific, in each category if the parameters are defined with MC study, we float the value by $\pm 2 \sigma$, and if the parameters are defined by data, we float the value by $\pm 1 \sigma$, where $\sigma$ is the uncertainty of the parameters. The impact on the $\it{CP}$ fit results from every parameter in each category is therefore marked as $\pm \delta \mathcal{S}$ and $\pm \delta \mathcal{A}$, where the signs present the difference caused by positively or negatively floating values. On the other hand, from Table \ref{tab:fitbias} to \ref{tab:sy_vertex}, the contributions are not directly from the parameters of the fit model, but events number in fit bias test, \textit{KsFinder} correction factor and vertex reconstruction options, we modified their values and repeat the fit to obtain the systematic uncertainties. After obtaining the $\delta \mathcal{S}$ and $\delta \mathcal{A}$ from each category, the total systematic uncertainty is calculated by add-in-quadrature again from all the sources, as shown in Table \ref{tab:sy_sub}.
 
 \begin{comment}
 \begin{itemize}
@@ -534,7 +534,7 @@ The systematic uncertainty that affects the fit results may come from many aspec
 \end{comment}
 
 The signal resolution functions' parameters are determined from MC study for signal component. The impact on fit results is summarized as follows Table \ref{tab:sy_sigt}.
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from signal $\Delta t$ shapes}
@@ -547,41 +547,46 @@ The signal resolution functions' parameters are determined from MC study for sig
 			& 0.000014
 			& 0.000056
 			\\
-			$s_0^{main}$& 0.005443
+			$s_{0CP}^{main}$& 0.005443
 			& 0.001299
 			& -0.005675
 			& -0.001404
 			\\
-			$s_1^{main}$ & 0.019934
+			$s_{1CP}^{main}$ & 0.019934
 			& -0.000903
 			& -0.020204
 			& 0.000633
 			\\
-			$s_0^{tail}$ &  -0.003233
+			$s_{0CP}^{tail}$ &  -0.003233
 			& -0.001623
 			& 0.003270
 			& 0.001596
+			\\
+			$s_{1CP}^{tail}$ & -0.002044	
+			&-0.000063	
+			&0.002009	
+			&0.000048
 			\\
 			$f_{tag}^{tail}$ & 0.003140
 			& -0.001257
 			& -0.003117
 			& 0.001266
 			\\
-			$s_0^{main}$&  0.002011
+			$s_{0tag}^{main}$&  0.002011
 			& -0.001395
 			& -0.001956
 			& 0.001398
 			\\
-			$s_1^{main}$ & 0.005059
+			$s_{1tag}^{main}$ & 0.005059
 			& -0.000840
 			& -0.004969
 			& 0.000825
 			\\
-			$s_0^{tail}$ &  -0.000135
+			$s_{0tag}^{tail}$ &  -0.000135
 			& -0.000393
 			& 0.000101 & 0.000435
 			\\
-			$s_1^{tail}$  & 0.000101 & 0.000027 &  -0.000472
+			$s_{1tag}^{tail}$  & 0.000101 & 0.000027 &  -0.000472
 			& 0.000129
 			\\
 			$f_{\delta}$ & -0.007248
@@ -605,14 +610,14 @@ The signal resolution functions' parameters are determined from MC study for sig
 			\\
 			\hline
 			Total &
-			\multicolumn{2}{c}{$\delta \mathcal{S}=0.033671$} &
+			\multicolumn{2}{c}{$\delta \mathcal{S}=0.033793$} &
 			\multicolumn{2}{c}{$\delta \mathcal{A}=0.009283$}\\
 			\hline
 		\end{tabular}
 	\end{minipage}
 \end{table}
 The background $\Delta t$ shapes' parameters are determined from data sideband $M_{bc}<5.26$ GeV. The impact on fit results is summarized in Table \ref{tab:sy_bkgt}.
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from background $\Delta t$ shapes}
@@ -662,7 +667,7 @@ The background $\Delta t$ shapes' parameters are determined from data sideband $
 	\end{minipage}
 \end{table}
 The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determined by applying flavor tagging on control sample. The impact in each rbin on fit results is summarized in Table \ref{tab:sy_wtag}: 
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from wrong tagging fraction}
@@ -709,7 +714,7 @@ The flavor tagging parameters wrong tagging fraction $ w$ in each rbin is determ
 	\end{minipage}
 \end{table}
 The physics parameters $\Delta m_d$ and $\tau_{B^0}$ uncertainties are included using the PDG average value. The impact on fit results is summarized in Table \ref{tab:sy_phys}.
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from  physics parameters}
@@ -736,7 +741,7 @@ The physics parameters $\Delta m_d$ and $\tau_{B^0}$ uncertainties are included 
 	\end{minipage}
 \end{table}
 The signal fraction is determined using 2D fit results of $M_{bc}$ and $\Delta E$ from data. The impact on fit results is summarized in Table \ref{tab:sy_fsig}.
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from  signal fraction}
@@ -780,12 +785,12 @@ The signal fraction is determined using 2D fit results of $M_{bc}$ and $\Delta E
 \end{table}
 
 The fit bias uncertainties are determined by taking the larger ones among the fit error of 300000 \textit{signal MC}  events  with zero $\it{CP}$ violation and the difference between input and output of the center value. The fit result is $\mathcal{S} = 0.000127\pm0.009817$ and $\mathcal{A} = 0.000265\pm0.005702$. So the values of fit errors are used as listed in Table \ref{tab:fitbias}.
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from fit bias}
 		\label{tab:fitbias}
-		\begin{tabular}{c c c}
+		\begin{tabular}{c r r}
 			\hline
 			source & $\delta \mathcal{S}$ & $\delta \mathcal{A}$ \\
 			fit bias & 0.009817 & 0.005702\\
@@ -796,7 +801,7 @@ The fit bias uncertainties are determined by taking the larger ones among the fi
 
 Applying \textit{KsFinder} cut at 0.74 based on MC study may introduce small impact on data due to the different response on the classifier between data and MC. Therefore the contribution of systematic uncertainty from KsFinder is considered. At cut value  0.74, the $\mathcal{R_{B^0}}$ presenting MC and data signal yield ratio is $\mathcal{R}_{B^0} = 1.027 \pm 0.033$, where the upper and lower limit is 1.060 and 0.994, respectively. These two ratios are applied on the signal fraction obtained by data to repeat the fit, and the difference of fit results compared to the original values are used as systematic uncertainty, see Table \ref{tab:sy_ks}.
 
-\begin{table}[H]
+\begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
 		\caption{Systematic uncertainty from \textit{KsFinder}.}
@@ -823,7 +828,7 @@ For the contributions from vertex reconstruction, the impacts from the selection
 \begin{table}[htpb]
 	\begin{minipage}[b]{1.0\linewidth}
 		\centering
-		\caption{systematic uncertainty from vertex reconstruction}
+		\caption{Systematic uncertainty from vertex reconstruction}
 		\label{tab:sy_vertex}
 		\begin{tabular}{c r r}
 			\hline
@@ -854,26 +859,43 @@ For the contributions from vertex reconstruction, the impacts from the selection
 	\end{minipage}
 \end{table}
 
-The main contributions at the curent stage of Belle II are summarized based on the all the above sources, as shown Table \ref{tab:sy_sub}. 
+The detailed study of the tag-side interference is not available from the current Belle II thus the Belle result $\delta \mathcal{S}\sim 0.001$ and $\delta \mathcal{A}\sim 0.008$ are referenced\cite{yosuke2011measurement}, as shown in Table \ref{tab:sy_tagside}.
+\begin{table}
+	\centering
+	\caption{Systematic uncertainty of the tag-side interference .  }
+	\label{tab:sy_tagside}
+	\begin{tabular}{c|r|r} 
+		\hline
+		Sources &  $\delta \mathcal{S}$ & $\delta \mathcal{A}$\\
+		\hline
+		tag-side interference & 0.001000 & 0.008000\\
+		\hline
+	\end{tabular}
+	
+\end{table}
+
+The contributions at the curent stage of Belle II are summarized based on the all the above sources, as shown Table \ref{tab:sy_sub}. 
 
 \begin{table}
 	\centering
+		\caption{The contributions of each source and the total of systematic uncertainty.  }
+	\label{tab:sy_sub}
 	\begin{tabular}{c|c|c} 
 		\hline
 		Sources &  $\delta \mathcal{S}$ & $\delta \mathcal{A}$\\
 		\hline
 		signal fraction  & 0.044387 & 0.033932 \\
 		background $\Delta t$ shapes & 0.039430 & 0.037269\\
-		signal $\Delta t$ shapes & 0.033671 & 0.009283 \\
+		signal $\Delta t$ shapes & 0.033793 & 0.009283 \\
 		wrong tag fraction & 0.003709 & 0.003790\\
 		fit bias & 0.009817 & 0.005702 \\
 		physics parameters & 0.006923 & 0.001250\\ 
 		\textit{KsFinder} impact on data & 0.004852 & 0.000606\\
 		vertex reconstruction & 0.019007 & 0.020563\\
+		tag-side interference & 0.001000 & 0.008000\\
 		\hline
-		Total & 0.072121 & 0.055661\\
+		Total & 0.072186 & 0.056233\\
 		\hline
 	\end{tabular}
-	\caption{The contributions of each source of systematic uncertainty.  }
-	\label{tab:sy_sub}
+
 \end{table}
