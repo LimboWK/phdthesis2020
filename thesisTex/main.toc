@@ -60,7 +60,6 @@
 \contentsline {section}{\numberline {6.3}Total uncertainty of $\Delta S$ at 50 ab$^{-1}$}{129}{section.6.3}%
 \contentsline {section}{\numberline {6.4}\textit {KsFinder} importance}{131}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Prospect}{132}{section.6.5}%
-\contentsline {chapter}{\numberline {A}Training Observables for $K_S^0$ Classifier}{137}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data Validation Plots for $K_S^0$}{141}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Control Samples}{145}{appendix.C}%
-\contentsline {chapter}{\numberline {D}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{147}{appendix.D}%
+\contentsline {chapter}{\numberline {A}Data Validation Plots for $K_S^0$}{137}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Control Samples}{141}{appendix.B}%
+\contentsline {chapter}{\numberline {C}2$K_S^0$ invariant mass distribution where A,B and C are in the increasing order of momentum}{143}{appendix.C}%
