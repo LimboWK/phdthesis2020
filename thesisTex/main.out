@@ -27,19 +27,19 @@
 \BOOKMARK [1][-]{section.3.2}{MVA-based KS0 selection}{chapter.3}% 27
 \BOOKMARK [2][-]{subsection.3.2.1}{Belle II KS0 classification}{section.3.2}% 28
 \BOOKMARK [2][-]{subsection.3.2.2}{Decay Topology of KS0 + -}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.3}{Determination of training observables from KS0 decay }{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.3}{Determination of training variables from KS0 decay }{section.3.2}% 30
 \BOOKMARK [2][-]{subsection.3.2.4}{Training, Applying and Testing of KsFinder}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.5}{The Performance and Over-fitting check}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.5}{The Performance and Over-training check}{section.3.2}% 32
 \BOOKMARK [2][-]{subsection.3.2.6}{Data Validation for KsFinder}{section.3.2}% 33
 \BOOKMARK [2][-]{subsection.3.2.7}{Data and MC correction by KsFinder}{section.3.2}% 34
-\BOOKMARK [0][-]{chapter.4}{B0 reconstruction study}{}% 35
+\BOOKMARK [0][-]{chapter.4}{B0 reconstruction and event selection}{}% 35
 \BOOKMARK [1][-]{section.4.1}{KS0 Selection}{chapter.4}% 36
 \BOOKMARK [1][-]{section.4.2}{B0 Reconstruction}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.3}{Continuum Suppression}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.4}{Resonance Background}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.5}{B background and self-cross feed}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.6}{Signal Extraction}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.7}{Kinematics and Vertexing Dependence on KsFinder}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Event selection summary}{section.4.3}% 39
+\BOOKMARK [1][-]{section.4.4}{Resonance Background}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.5}{B background}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.6}{Signal Extraction}{chapter.4}% 42
 \BOOKMARK [0][-]{chapter.5}{CP parameters measurement}{}% 43
 \BOOKMARK [1][-]{section.5.1}{Vertex Resolution Model}{chapter.5}% 44
 \BOOKMARK [2][-]{subsection.5.1.1}{CP-side resolution function}{section.5.1}% 45
@@ -63,3 +63,5 @@
 \BOOKMARK [0][-]{appendix.A}{Data Validation Plots for KS0}{}% 63
 \BOOKMARK [0][-]{appendix.B}{Control Samples}{}% 64
 \BOOKMARK [0][-]{appendix.C}{2KS0 invariant mass distribution where A,B and C are in the increasing order of momentum}{}% 65
+\BOOKMARK [0][-]{appendix.D}{Injection test for B0 signal yield}{}% 66
+\BOOKMARK [0][-]{appendix.E}{The KsFinder impact on Mbc, E and vertex positions.}{}% 67

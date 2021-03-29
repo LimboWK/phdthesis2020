@@ -9,7 +9,6 @@ A level-1 auxiliary file: chap3.aux
 A level-1 auxiliary file: chap4.aux
 A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: chap7.aux
-A level-1 auxiliary file: appa.aux
 A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: appc.aux
 A level-1 auxiliary file: appd.aux
@@ -28,10 +27,10 @@ Warning--empty year in langestudy
 Warning--empty year in langestudy
 Warning--empty journal in ceccucci2008ckm
 Warning--empty journal in Abe:2010gxa
-Warning--empty title in dirac
-Warning--empty year in dirac
 Warning--empty title in ROOTcern
 Warning--empty year in ROOTcern
+Warning--empty title in dirac
+Warning--empty year in dirac
 Warning--empty title in evtgen
 Warning--empty year in evtgen
 Warning--empty title in pdg
@@ -44,45 +43,45 @@ Warning--empty title in jpsiks_ichep
 Warning--empty year in jpsiks_ichep
 Warning--empty title in flavortagger
 Warning--empty year in flavortagger
-You've used 45 entries,
+You've used 50 entries,
             2481 wiz_defined-function locations,
-            814 strings with 12817 characters,
-and the built_in function-call counts, 17777 in all, are:
-= -- 1325
-> -- 1242
+            853 strings with 15064 characters,
+and the built_in function-call counts, 21973 in all, are:
+= -- 1485
+> -- 1883
 < -- 22
-+ -- 475
-- -- 384
-* -- 1538
-:= -- 2915
-add.period$ -- 135
-call.type$ -- 45
-change.case$ -- 81
-chr.to.int$ -- 44
-cite$ -- 78
-duplicate$ -- 833
-empty$ -- 1473
-format.name$ -- 436
-if$ -- 3646
++ -- 693
+- -- 592
+* -- 2055
+:= -- 3760
+add.period$ -- 157
+call.type$ -- 50
+change.case$ -- 90
+chr.to.int$ -- 49
+cite$ -- 83
+duplicate$ -- 922
+empty$ -- 1638
+format.name$ -- 651
+if$ -- 4400
 int.to.chr$ -- 2
-int.to.str$ -- 46
-missing$ -- 31
-newline$ -- 231
-num.names$ -- 108
-pop$ -- 402
+int.to.str$ -- 51
+missing$ -- 36
+newline$ -- 263
+num.names$ -- 123
+pop$ -- 440
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 50
 quote$ -- 0
-skip$ -- 507
+skip$ -- 556
 stack$ -- 0
-substring$ -- 593
-swap$ -- 126
+substring$ -- 648
+swap$ -- 139
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 315
+type$ -- 347
 warning$ -- 24
-while$ -- 111
+while$ -- 123
 width$ -- 0
-write$ -- 559
+write$ -- 636
 (There was 1 error message)

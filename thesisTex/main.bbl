@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -115,12 +115,23 @@ Tim Gershon and Masashi Hazumi.
 \newblock \emph{Physics Letters B}, 596\penalty0 (3-4):\penalty0 163--172,
   2004.
 
-\bibitem[Beneke(2005)]{beneke2005corrections}
-Martin Beneke.
-\newblock Corrections to sin (2$\beta$) from cp asymmetries in b0→($\pi$0,
-  $\rho$0, $\eta$, $\eta^{'}$, $\omega$, $\phi$) ks decays.
-\newblock \emph{Physics Letters B}, 620\penalty0 (3-4):\penalty0 143--150,
-  2005.
+\bibitem[Beneke and Neubert(2003)]{Beneke_2003}
+Martin Beneke and Matthias Neubert.
+\newblock Qcd factorization for b→pp and b→pv decays.
+\newblock \emph{Nuclear Physics B}, 675\penalty0 (1-2):\penalty0 333–415, Dec
+  2003.
+\newblock ISSN 0550-3213.
+\newblock \doi{10.1016/j.nuclphysb.2003.09.026}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.nuclphysb.2003.09.026}.
+
+\bibitem[Cheng et~al.(2005)Cheng, Chua, and Soni]{PhysRevD.72.094003}
+Hai-Yang Cheng, Chun-Khiang Chua, and Amarjit Soni.
+\newblock $cp$-violating asymmetries in ${B}^{0}$ decays to
+  ${K}^{+}{K}^{\ensuremath{-}}{K}_{S(L)}^{0}$ and
+  ${K}_{S}^{0}{K}_{S}^{0}{K}_{S(L)}^{0}$.
+\newblock \emph{Phys. Rev. D}, 72:\penalty0 094003, Nov 2005.
+\newblock \doi{10.1103/PhysRevD.72.094003}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.72.094003}.
 
 \bibitem[Kang et~al.(2020)Kang, Park, Higuchi, Miyabayashi, Sumisawa, Adachi,
   Ahn, Aihara, Said, Asner, et~al.]{kang2020measurement}
@@ -143,6 +154,29 @@ T.~Abe et~al.
 \newblock 2010.
 \newblock arXiv:1011.0352.
 
+\bibitem[Aushev et~al.(2010)Aushev, Bartel, Bondar, Brodzicka, Browder, Chang,
+  Chao, Chen, Dalseno, Drutskoy, Enari, Gershon, Golob, Goto, Handa, Hara,
+  Hashimoto, Hayashii, Hazumi, Higuchi, Hisano, Hou, Iijima, Ikado, Inami,
+  Itoh, Itoh, Ishino, Katayama, Keum, Kinoshita, Kou, Križan, Krokovny,
+  Kurimoto, Kwon, Limosani, Matsumoto, Morozumi, Nakahama, Nakao, Nishida,
+  Ohshima, Okada, Okumura, Olsen, Onogi, Pakhlova, Palka, Pakhlov, Poluektov,
+  Recksiegel, Sagawa, Saigo, Sakai, Sanda, Schwanda, Schwartz, Senyo, Shimizu,
+  Shindou, Sinha, Starič, Sumisawa, Tanaka, Trabelsi, Urquijo, Ushiroda, Won,
+  Yamamoto, Yamauchi, Yoshikawa, and Zupan]{aushev2010physics}
+T.~Aushev, W.~Bartel, A.~Bondar, J.~Brodzicka, T.~E. Browder, P.~Chang,
+  Y.~Chao, K.~F. Chen, J.~Dalseno, A.~Drutskoy, Y.~Enari, T.~Gershon, B.~Golob,
+  T.~Goto, F.~Handa, K.~Hara, S.~Hashimoto, H.~Hayashii, M.~Hazumi, T.~Higuchi,
+  J.~Hisano, W.~S. Hou, T.~Iijima, K.~Ikado, K.~Inami, H.~Itoh, R.~Itoh,
+  H.~Ishino, N.~Katayama, Y.~Y. Keum, K.~Kinoshita, E.~Kou, P.~Križan,
+  P.~Krokovny, T.~Kurimoto, Y.~Kwon, A.~Limosani, T.~Matsumoto, T.~Morozumi,
+  Y.~Nakahama, M.~Nakao, S.~Nishida, T.~Ohshima, Y.~Okada, K.~Okumura, S.~L.
+  Olsen, T.~Onogi, G.~Pakhlova, H.~Palka, P.~Pakhlov, A.~Poluektov,
+  S.~Recksiegel, H.~Sagawa, M.~Saigo, Y.~Sakai, A.~I. Sanda, C.~Schwanda,
+  A.~Schwartz, K.~Senyo, Y.~Shimizu, T.~Shindou, R.~Sinha, M.~Starič,
+  K.~Sumisawa, M.~Tanaka, K.~Trabelsi, P.~Urquijo, Y.~Ushiroda, E.~Won,
+  H.~Yamamoto, M.~Yamauchi, T.~Yoshikawa, and J.~Zupan.
+\newblock Physics at super b factory, 2010.
+
 \bibitem[French et~al.(2001)French, Jones, Morrissey, Neviani, Turchetta,
   Fulcher, Hall, Noah, Raymond, Cervelli, et~al.]{french2001design}
 MJ~French, LL~Jones, Q~Morrissey, A~Neviani, R~Turchetta, J~Fulcher, G~Hall,
@@ -162,6 +196,9 @@ K~Inami, T~Mori, T~Matsumura, K~Kurimoto, S~Hasegawa, Y~Suzuki, T~Murase,
   Accelerators, Spectrometers, Detectors and Associated Equipment},
   592\penalty0 (3):\penalty0 247--253, 2008.
 
+\bibitem[ROO()]{ROOTcern}
+URL \url{https://root.cern/}.
+
 \bibitem[dir()]{dirac}
 URL \url{https://dirac.readthedocs.io/en/latest/DeveloperGuide/Overview/}.
 
@@ -171,9 +208,6 @@ Thomas Kuhr, C~Pulvermacher, M~Ritter, T~Hauth, and N~Braun.
 \newblock The belle ii core software.
 \newblock \emph{Computing and Software for Big Science}, 3\penalty0
   (1):\penalty0 1--12, 2019.
-
-\bibitem[ROO()]{ROOTcern}
-URL \url{https://root.cern/}.
 
 \bibitem[Kuhr et~al.(2018)Kuhr, Pulvermacher, Ritter, Hauth, and Braun]{BASF2}
 T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
@@ -247,6 +281,17 @@ Tianqi Chen and Carlos Guestrin.
 \newblock In \emph{Proceedings of the 22nd acm sigkdd international conference
   on knowledge discovery and data mining}, pages 785--794, 2016.
 
+\bibitem[Sumisawa et~al.(2005)Sumisawa, Ushiroda, Hazumi, Abe, Abe, Adachi,
+  Aihara, Asano, Aulchenko, Aushev, and et~al.]{Sumisawa_2005}
+K.~Sumisawa, Y.~Ushiroda, M.~Hazumi, K.~Abe, K.~Abe, I.~Adachi, H.~Aihara,
+  Y.~Asano, V.~Aulchenko, T.~Aushev, and et~al.
+\newblock Measurement of time-dependentcp-violating asymmetries
+  inb0→ks0ks0ks0decay.
+\newblock \emph{Physical Review Letters}, 95\penalty0 (6), Aug 2005.
+\newblock ISSN 1079-7114.
+\newblock \doi{10.1103/physrevlett.95.061801}.
+\newblock URL \url{http://dx.doi.org/10.1103/PhysRevLett.95.061801}.
+
 \bibitem[Bevan et~al.(2014)Bevan, Golob, Mannel, Prell, Yabsley, Aihara,
   Anulli, Arnaud, Aushev, Beneke, and et~al.]{Bevan_2014}
 A.~J. Bevan, B.~Golob, Th. Mannel, S.~Prell, B.~D. Yabsley, H.~Aihara,
@@ -256,6 +301,20 @@ A.~J. Bevan, B.~Golob, Th. Mannel, S.~Prell, B.~D. Yabsley, H.~Aihara,
 \newblock ISSN 1434-6052.
 \newblock \doi{10.1140/epjc/s10052-014-3026-9}.
 \newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-014-3026-9}.
+
+\bibitem[Bevan et~al.(2017)Bevan, Golob, Mannel, Prell, and
+  Yabsley]{bevan2017physics}
+Adrian Bevan, Bostjan Golob, Thomas Mannel, Soeren Prell, and Bruce Yabsley.
+\newblock \emph{The physics of the B factories}.
+\newblock Springer Nature, 2017.
+
+\bibitem[Albrecht et~al.(1990)Albrecht, Gl{\"a}ser, Harder, Kr{\"u}ger,
+  Nilsson, Nippe, Oest, Reidenbach, Sch{\"a}fer, Schmidt-Parzefall,
+  et~al.]{albrecht1990search}
+H~Albrecht, R~Gl{\"a}ser, G~Harder, A~Kr{\"u}ger, AW~Nilsson, A~Nippe, T~Oest,
+  M~Reidenbach, M~Sch{\"a}fer, W~Schmidt-Parzefall, et~al.
+\newblock Search for hadronic b→ u decays.
+\newblock \emph{Physics Letters B}, 241\penalty0 (2):\penalty0 278--282, 1990.
 
 \bibitem[Yus()]{Yusa-note}
 \emph{BELLE-II-NOTE-TE-2019-010 (2020)}.
