@@ -5,14 +5,14 @@ The goal of the Belle II experiment is to search for evidence of New Physics, an
 \begin{figure}
 	\centering 
 	\includegraphics[height=7cm]{SuperKEKB-BelleII.jpg}
-	\caption{The schematic view of SuperKEKB and Belle II detector \cite{Abe:2010gxa}.}
+	\caption{The schematic view of SuperKEKB and Belle II detector~\cite{Abe:2010gxa}.}
 	\label{fig:superkekb_belle2}
 \end{figure}
 
 \begin{table}[H]
 	\centering
 	\large
-	\caption{SuperKEKB parameters for low energy (LER) and high energy (HER) rings\cite{b2book}.}
+	\caption{SuperKEKB parameters for low energy (LER) and high energy (HER) rings~\cite{b2book}.}
 	\label{tab:superkekb_pars}
 	\begin{tabular}{c c c c}
 		\toprule
@@ -56,35 +56,35 @@ The Belle II detector has a close size as the Belle detector so that it is place
 \begin{figure}[htbp]
 	\centering 
 	\includegraphics[height=10cm]{Belle2TopView.png}
-	\caption{The Belle II detector top view \cite{b2book}.}
+	\caption{The Belle II detector top view~\cite{b2book}.}
 	\label{fig:belle2_view}
 \end{figure}
 
 The success of the Belle II detector depends on the complex of sub-detectors where each of them is design for specific purposes. The critical components and features are explained in the following sections. 
 
 \section{Vertex detector (VXD)}
-The vertex detector is composed of two detectors, the silicon based pixel detector (PXD) and silicon based vertex detector (SVD), where total 6 layers are placed in the inner-most region from interaction point (IP).  The geometry of VXD is shown in Figure \ref{fig:svdgeo}. The PXD is placed at a radii of $r=14$ mm and $r=22$ mm with DEPFET\cite{Abe:2010gxa} type pixel sensors, which is designed to provide two dimensional hit position information. The inner layer leaves a sufficient space for possible variations of the beampipe layout. The size of two layers are determined by the required acceptance angle, which is 17 degrees (forward) to 150 degrees (backward). The pixel sensor is a monolithic structure with current-digitizing electronics at the end of the senor which makes a very thin  layer at about 50 microns. The schematic view of sensors on PXD is shown in Figure \ref{fig:pxd}.
+The vertex detector is composed of two detectors, the silicon based pixel detector (PXD) and silicon based vertex detector (SVD), where total 6 layers are placed in the inner-most region from interaction point (IP).  The geometry of VXD is shown in Figure \ref{fig:svdgeo}. The PXD is placed at a radii of $r=14$ mm and $r=22$ mm with DEPFET~\cite{Abe:2010gxa} type pixel sensors, which is designed to provide two dimensional hit position information. The inner layer leaves a sufficient space for possible variations of the beampipe layout. The size of two layers are determined by the required acceptance angle, which is 17 degrees (forward) to 150 degrees (backward). The pixel sensor is a monolithic structure with current-digitizing electronics at the end of the senor which makes a very thin  layer at about 50 microns. The schematic view of sensors on PXD is shown in Figure \ref{fig:pxd}.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[height=5cm, width=1\linewidth]{VXDGEO.png}
-	\caption{A schematic view of of PXD and SVD. Two PXD layers are in grey, SVD layer 3 is in blue and layer 4, 5, 6 are in green\cite{Abe:2010gxa}.}
+	\caption{A schematic view of of PXD and SVD. Two PXD layers are in grey, SVD layer 3 is in blue and layer 4, 5, 6 are in green~\cite{Abe:2010gxa}.}
 	\label{fig:svdgeo}
 \end{figure}
 \begin{figure}[htpb]
 \centering
 \includegraphics[width=0.6\linewidth]{pxd}
-\caption{The geometry of sensors on PXD where the light grey surfaces are DEPFET sensors with a thinness of 50 microns. The full length including the out modules is 174 mm \cite{Abe:2010gxa}. }
+\caption{The geometry of sensors on PXD where the light grey surfaces are DEPFET sensors with a thinness of 50 microns. The full length including the out modules is 174 mm~\cite{Abe:2010gxa}. }
 \label{fig:pxd}
 \end{figure}
  As the very close range the PXD is, the sensors are exposed to a very high event rate and very high beam background environment. The large data flow from PXD without any data reduction scheme is problematic for data acquisition system. In order to reduce the data that is not interested by physics analysis such as beam backgrounds, a fast online tracking system is built up for searching a ``region of interest" (ROI) on the PXD sensors. To be specific, the data from PXD will be first readout to a system called ``ONSEN" which can store large size temporary data up to 5 seconds. In this timing window, a fast online tracking system will perform a track fitting using vertext detector and central drift chamber to extrapolate the fitted tracks backward to PXD plane so the ROI on the PXD sensors can be defined. The data from PXD outside of the ROI is not read out to external tapes where offline data is written. 
 
-SVD detector consists of 4 layers of detectors called  ``double-sided silicon strip detectors" (DSSDs) at 39 mm, 80 mm, 104 mm, and 135 mm away from IP, respectively. The two sides of the sensors are called $p$-side and $n$-side, where the former is for strips on $r-\phi$ direction (transverse direction) and the latter is for strips on the $z$ direction (beamline direction). To suppress the background hits, a readout chip with a fast shaping time of $\mathcal{O}$(50 ns) is indispensable. The APV25 chip \cite{french2001design} is chosen as the readout chip that was originally developed for CMS silicon tracker, with total 128 identical channels of low-noise preamplifiers followed by a 50 ns peaking time shaper stage. The polar angular acceptance ranges from 17 degrees to 150 degrees, which is asymmetric to account for the
+SVD detector consists of 4 layers of detectors called  ``double-sided silicon strip detectors" (DSSDs) at 39 mm, 80 mm, 104 mm, and 135 mm away from IP, respectively. The two sides of the sensors are called $p$-side and $n$-side, where the former is for strips on $r-\phi$ direction (transverse direction) and the latter is for strips on the $z$ direction (beamline direction). To suppress the background hits, a readout chip with a fast shaping time of $\mathcal{O}$(50 ns) is indispensable. The APV25 chip~\cite{french2001design} is chosen as the readout chip that was originally developed for CMS silicon tracker, with total 128 identical channels of low-noise preamplifiers followed by a 50 ns peaking time shaper stage. The polar angular acceptance ranges from 17 degrees to 150 degrees, which is asymmetric to account for the
 forward boost of the center-of-mass frame. The combination between sensors, electronics and the supporting structure uses so-called ``Origami" concept which stands for a chip-on-sensor design, as shown in Figure \ref{fig:origami}. In the Origami scheme, the readout chips APV25 are placed on a single flexible circuit mounted on the $n$-side of the sensors. The channels of $p$-side are attached by small flexible fan-outs wrapped around the edge of the sensors. All connections between flex pieces, sensor, and APV25 chips are made by wire bonds.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=1\linewidth]{ori1}
 	\includegraphics[width=1\linewidth]{ori2}
-	\caption{The top and side views of Origami chip-on-sensor design for DSSDs of SVD. Top: the APV25 chips in grep read out the same side sensors channel while chips in green read out the sensors on the opposite side using wrapped-around flex pieces. Bottom: side view of the Origami design shows the location of wrapped flex which connects the strips of the bottom sides which are placed at the left edge.\cite{Abe:2010gxa}}
+	\caption{The top and side views of Origami chip-on-sensor design for DSSDs of SVD. Top: the APV25 chips in grep read out the same side sensors channel while chips in green read out the sensors on the opposite side using wrapped-around flex pieces. Bottom: side view of the Origami design shows the location of wrapped flex which connects the strips of the bottom sides which are placed at the left edge~\cite{Abe:2010gxa}.}
 	\label{fig:origami}
 \end{figure}
 
@@ -94,10 +94,10 @@ forward boost of the center-of-mass frame. The combination between sensors, elec
 The central drift chamber (CDC) is the core component of spectrometer in the Belle II, which consists of a fairly big drift chamber made of many small drift cells filled with gas. The chamber
 gas is comprised of a He–C$_2$H$_6$ 50\%:50\% mixture with an average drift velocity of 3.3 cm $\mu$s$^{-1}$ and a
 maximum drift time of about 350 ns for a 17 mm cell size.
-The out radius of CDC has been extended to 1130 mm from 880 mm of Belle, owed to a new thinner particle identification detector which will be introduced in the next section. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction and the stereo direction\cite{b2book}\cite{Abe:2010gxa}. Such a design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which reflects helix tracks in CDC volume. Thus, CDC is one of the key components for measuring the helix parameters for tracking, providing precise information on the charged tracks momentum. Also, it provides particle identification information using measurements of energy loss within its gas volume. Low-momentum tracks, which do not reach the particle identification device, can be identified using the CDC alone. Finally, it provides efficient and reliable trigger signals for charged particles.
+The out radius of CDC has been extended to 1130 mm from 880 mm of Belle, owed to a new thinner particle identification detector which will be introduced in the next section. The whole CDC contains 14336 sense wires in 56 layers, placed in the axial direction and the stereo direction~\cite{b2book}\cite{Abe:2010gxa}. Such a design can utilize the information from axial and stereo wires to construct a full 3 dimensional hits which reflects helix tracks in CDC volume. Thus, CDC is one of the key components for measuring the helix parameters for tracking, providing precise information on the charged tracks momentum. Also, it provides particle identification information using measurements of energy loss within its gas volume. Low-momentum tracks, which do not reach the particle identification device, can be identified using the CDC alone. Finally, it provides efficient and reliable trigger signals for charged particles.
 
 The Belle II CDC is expected to handle higher trigger rates with less dead time. The front-end electronics are located near the backward end-plate and send digital signals to the
-electronics hut through optical fibers. Due to the higher radiation and higher beam background in the Belle II, also to create more space for SVD volume, the inner radius of CDC in Belle II is 160 mm. CDC can also create three dimensional trigger information from a dedicated trigger type called $z$ trigger\cite{Abe:2010gxa} based on the 3D tracking achieved by an FPGA using axial and stereo wires.
+electronics hut through optical fibers. Due to the higher radiation and higher beam background in the Belle II, also to create more space for SVD volume, the inner radius of CDC in Belle II is 160 mm. CDC can also create three dimensional trigger information from a dedicated trigger type called $z$ trigger~\cite{Abe:2010gxa} based on the 3D tracking achieved by an FPGA using axial and stereo wires.
 
 The structure of CDC consists of three main components which are a thin carbon-fiber reinforced
 plastic (CFRP) inner cylinder, two aluminum endplates, and a CFRP outer cylinder, as shown in Figure \ref{fig:cdc_full}. The outer cylinder is a thickness of 5 mm structure supporting most of the wire tension of 4 tonnes. The inner cylinder is as thin as 0.5 mm to minimize the material and support small cell chamber such as the layers in the inner most region. 
@@ -118,7 +118,7 @@ The particle identification (PID) system of the Belle II mainly consists of two 
 
 TOP is the specialized detector that can reconstruct Cherenkov radiation's time of arrival and generated position by a photon detector placed at the end of a 2.6 cm quartz bar. The TOP is placed at the barrel region of the spectrometer, as shown in Figure \ref{fig:belle2_view}. The conceptional view and the working principle of TOP counter are shown in Figure \ref{fig:top}. In this counter, the time of propagation of the Cherenkov photons that are internally
 reflected inside a quartz radiator is measured. The quartz radiator is composed of three components. The first is a long bar for radiating Cherenkov photons. The photons then propagate via total internal reflection towards the bar end, where the MCP-PMTs are mounted. The second is a spherical mirror installed on the forward end of the bar for focusing the photons. The third is a prism that attaches to the backward end of the bar which allows the Cherenkov ring image to expand before the photons are recorded by the PMTs. By this structure, a 3-dimentional information with $x-y$ position and a timing information are obtained by micro-channel plate (MCP) PMTs at the end surfaces of the quartz bar.
-The resolution of starting time is achieved about 50 ps \cite{Abe:2010gxa}. As the key component of the photon detector, the squared shape MCP PMTs, donated as SL-10 \cite{inami2008cross}, have been developed with a $4\times 4$ anode array, a multi-alkali photocathode,
+The resolution of starting time is achieved about 50 ps~\cite{Abe:2010gxa}. As the key component of the photon detector, the squared shape MCP PMTs, donated as SL-10~\cite{inami2008cross}, have been developed with a $4\times 4$ anode array, a multi-alkali photocathode,
 two MCP plates with 10 $\mu$m pore size, and an aluminum layer on the second MCP to protect
 against ion feedback. The image of a SL-10 MCP PMT and an anode schematic view are shown in Figure \ref{fig:mcppmt}. 
 
@@ -126,14 +126,14 @@ against ion feedback. The image of a SL-10 MCP PMT and an anode schematic view a
 	\centering
 	\includegraphics[width=0.7\linewidth]{top_mod}
 	\includegraphics[width=0.7\linewidth]{top_img}
-	\caption{Conceptional view of TOP counter (up) and its imaging process of $K^{\pm}$ and $\pi^{\pm}$ (down) \cite{Abe:2010gxa} for PID purpose.}
+	\caption{Conceptional view of TOP counter (up) and its imaging process of $K^{\pm}$ and $\pi^{\pm}$ (down)~\cite{Abe:2010gxa} for PID purpose.}
 	\label{fig:top}
 \end{figure}
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{mcppmt}
-	\caption{SL-10 MCP PMT (left) and the schematic view of $4\times 4$ anode (right) \cite{Abe:2010gxa}}
+	\caption{SL-10 MCP PMT (left) and the schematic view of $4\times 4$ anode (right)~\cite{Abe:2010gxa}}
 	\label{fig:mcppmt}
 \end{figure}
 
@@ -144,7 +144,7 @@ Hamamatsu company and the hardware experts from the Belle II collaboration have 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[height=5cm]{HAPD}
-	\caption{Photon-electrons acceleration (left) and pixelated APD (right) at the end \cite{Abe:2010gxa}.}
+	\caption{Photon-electrons acceleration (left) and pixelated APD (right) at the end~\cite{Abe:2010gxa}.}
 	\label{fig:arich_img}
 \end{figure}
 
@@ -159,7 +159,7 @@ Hamamatsu company and the hardware experts from the Belle II collaboration have 
 
 \section{Electromagnetic calorimeter (ECL)}
 The electromagnetic calorimeter (ECL) in the Belle II is mainly responsible for the detection of $\gamma$ radiation and electrons, providing energy deposition information for trigger, particle reconstruction and PID. ECL consists of three sections as shown in Figure \ref{fig:belle2_view}: a 3 m long barrel section with an inner radius 1.25 m, and two annular endcaps at $z = 1.96$ m (forward) and $z = -1.02$ m (backward) from the IP. The barrel section contains 6624 CsI(TI) crystals of 29 distinct shapes and each crystal is a pyramid shape with about $6\times 6$ in cross section and 30 cm in length. The endcaps section contains 2112 CsI crystals of 69 shapes and the total number of crystals is 8736, with a total
-mass of about 43 tons \cite{Abe:2010gxa}.
+mass of about 43 tons~\cite{Abe:2010gxa}.
 
 As the basic component of ECL, the  thallium doped caesium iodide CsI(TI) crystals are assembled tightly in end-caps and barrel sections. Compared to the previous ECL in Belle, the pre-amplifiers and the structures remain unchanged, while the readout  electronics have been upgraded. The estimated background level in Belle II ECL will cause the much longer decay time in the scintillation of CsI(TI). This will lead to the pile-up effect of readout noise. To compensate this effect, wave-form sampling electronics are embedded with the photon detectors (PMT).
  
@@ -172,12 +172,12 @@ Especially in the forward direction of the electron beamline, where the level of
 The $K_L^0$ and muon detector (KLM) system of the Belle II consists of a sandwich stacked iron plates at outside of the superconducting solenoid and it acts as a return york of the magnet. The iron plates serve as the interaction materials with $>$ 3.9 times the interacting length of material ($\sim 132.1$ g/cm$^{2}$) compared to the ECL, allowing $K_L^0$ particles to shower through. The octagonal barrel covers the polar angle range from 45 degrees to 125 degrees, while the endcaps extend
 this coverage from 20 degrees to 155 degrees. There are 15 detector layers and 14 iron plates in the barrel and
 14 detector layers and 14 iron plates in each endcap. The side view of KLM is shown in Figure \ref{fig:klm}.
-The Belle KLM material uses the glass-electrode resistivity plate chambers (RPC) which is not suitable for the Belle II due to high background level.  Neutrons dose is significantly larger due to the much more electromagnetic radiation reaction on detector materials. The long dead time of RPC under such dose rate will reduce the efficiency of KLM. To mitigate this problem, the RPCs are replaced by the layers of scintillator strips with wavelength-shifting ﬁbers, read out by silicon photomultipliers (called ``SiPMs", Geiger mode operated APDs) as light sensors, which is proven to be able to reliably operate by setting up the discrimination threshold \cite{b2book}.
+The Belle KLM material uses the glass-electrode resistivity plate chambers (RPC) which is not suitable for the Belle II due to high background level.  Neutrons dose is significantly larger due to the much more electromagnetic radiation reaction on detector materials. The long dead time of RPC under such dose rate will reduce the efficiency of KLM. To mitigate this problem, the RPCs are replaced by the layers of scintillator strips with wavelength-shifting ﬁbers, read out by silicon photomultipliers (called ``SiPMs", Geiger mode operated APDs) as light sensors, which is proven to be able to reliably operate by setting up the discrimination threshold~\cite{b2book}.
 
 \begin{figure}[htbp]
 	\centering
 \includegraphics[width=1\linewidth]{klm}
-\caption{The side view of KLM in between the ECL and the solenoid, which the grey lines presents the nominal acceptance angle of the Belle II \cite{Abe:2010gxa}. }
+\caption{The side view of KLM in between the ECL and the solenoid, which the grey lines presents the nominal acceptance angle of the Belle II~\cite{Abe:2010gxa}. }
 \label{fig:klm}
 \end{figure}
 
@@ -203,7 +203,7 @@ Since the primary goal of the Belle II is focusing on $B$ physics studies, it is
 \begin{table}[htbp]
 	\centering
 	\large
-	\caption{Simulated beam background rate \cite{b2book}}
+	\caption{Simulated beam background rate~\cite{b2book}}
 	\label{tab:BG}
 	\begin{tabular}{c c c}
 		\toprule
@@ -265,13 +265,13 @@ Python is also allowed when it shows clear advantages, such as steering the anal
  %The official BASF2 is developed in different release versions, light-versions and featured-versions. In this thesis, release-05-01-01 version is used. 
 
 \subsection{BASF2 Core Structure}
-The core structure of BASF2 contains three major parts: the analysis packages required by the needs of analyzing the Belle II data such as finding tracks and combining particles, the external libraries as the third-party software such as ROOT\cite{ROOTcern}, and the tools for configuring and installing BASF2 which are mostly Python and shell scripts. Data analysis is supported by providing
+The core structure of BASF2 contains three major parts: the analysis packages required by the needs of analyzing the Belle II data such as finding tracks and combining particles, the external libraries as the third-party software such as ROOT~\cite{ROOTcern}, and the tools for configuring and installing BASF2 which are mostly Python and shell scripts. Data analysis is supported by providing
 a series of modules belonged to BASF2 for appropriate reconstruction based on their specific
 needs. To realize this, a modular analysis workflow, where each module can handle the event
 data through an unified method such as ROOT I/O based object persistency, is desired. Other
 processes, such as data summary table (DST) processing, simulation of each sub-detectors, and data skimming, are done with the packages built for sub-detectors.
 
-The packages are categorized based on the different levels of Belle II detector components, like the packages of base-level system control called ``framework", the package that provides the simulation of each sub-detectors like ``svd",  the package for track reconstruction called ``tracking",  and the package for post-reconstruction data analysis called ``analysis", etc. Users can work either with compiled binary version of BASF2 installed centrally on working servers, or build from the source based on their own need. Furthermore, the distributed computing is also supported by the installations of BASF2 through the managment service provided by DIRAC system \cite{dirac}. The detail information about the core structure of BASF2 can be found in Ref.$\sim$\cite{kuhr2019belle}. 
+The packages are categorized based on the different levels of Belle II detector components, like the packages of base-level system control called ``framework", the package that provides the simulation of each sub-detectors like ``svd",  the package for track reconstruction called ``tracking",  and the package for post-reconstruction data analysis called ``analysis", etc. Users can work either with compiled binary version of BASF2 installed centrally on working servers, or build from the source based on their own need. Furthermore, the distributed computing is also supported by the installations of BASF2 through the managment service provided by DIRAC system~\cite{dirac}. The detail information about the core structure of BASF2 can be found in Ref~\cite{kuhr2019belle}. 
 
 
 
@@ -397,17 +397,17 @@ BASF2 has been developed for an emphasis on providing reliable and high quality 
 
 This section briefly describes simulation (MC) used in the studies presented in this thesis. As this analysis is based on neutral $B$ meson, which is from the $\Upsilon$(4S) events, the  simulation is based on the electron -positron collisions at center-of-mass (CMS) energy $\sqrt{s} = 10.58 $ GeV.
 
-In the previous section, it's shown that external packages and functionalities have been integrated with BASF2, including the core components of Belle II simulation in $B$ decay: \textit{evtgen} as event generator \cite{evtgen} and \textit{GEANT4} as the simulator of detectors \cite{agostinelli2003geant4}. For the simulation and the reconstruction used in this analysis, the latest release of BASF2 (release-05-01-01) was used. Based on the CDB management, BASF2 can utilize the same constants such as the magnetic field distribution for the consistence between simulation and reconstruction.
+In the previous section, it's shown that external packages and functionalities have been integrated with BASF2, including the core components of Belle II simulation in $B$ decay: \textit{evtgen} as event generator~\cite{evtgen} and \textit{GEANT4} as the simulator of detectors~\cite{agostinelli2003geant4}. For the simulation and the reconstruction used in this analysis, the latest release of BASF2 (release-05-01-01) was used. Based on the CDB management, BASF2 can utilize the same constants such as the magnetic field distribution for the consistence between simulation and reconstruction.
 
  All simulations start with at least one event generator that configures the physics processes. The \textit{evtgen} requires a decay file that describes the decay chain from a certain mother particle, branching fraction for all processes and decay-related information such as flavor mixing or $\it{CP}$ violation information. MC sample is centrally produced using Belle II grid computing service by DIRAC system and skimmed, of which the output is for physics analysis to create ROOT files. Each round of MC sample is packed and marked by their production index, such as \textit{MC13}, which is the latest MC sample with improvements in PID. In the following content of this thesis, all MC samples are produced in \textit{MC13} if not specifically stated. 
  
- For the analysis in this thesis, there are two MC samples included, where one is called \textit{signal MC} and the other is called \textit{generic MC}. \textit{Signal MC}, as its name suggests, is the MC sample that describes the whole decay chain of $B^0 \to K_S^0  K_S^0  K_S^0$. The mother particle of the decay chain is $\Upsilon$(4S), then it decays into a pair of $B^0-\bar{B}^0$ at branching fraction of 100\%, with the model \textit{EvtVSSMix}\cite{evtgen} describing the decay model. Then, one of the $B^0$ meson is set to decay into three $K_S^0$ based on phase-space model ($PHSP$) at 100\% branching fraction. The default configuration of evtgen can not handle multi-bodies charmless $B$ decay with TDCPV. A modified decay model profile is under-development and not fully validated yet. Thus, MC sample of $B^0 \to K_S^0  K_S^0  K_S^0$ yields zero $\it{CP}$ violation by default. As for the other $B$ meson, it decays into all possible final states that are described by the Belle II generic decay file. 
+ For the analysis in this thesis, there are two MC samples included, where one is called \textit{signal MC} and the other is called \textit{generic MC}. \textit{Signal MC}, as its name suggests, is the MC sample that describes the whole decay chain of $B^0 \to K_S^0  K_S^0  K_S^0$. The mother particle of the decay chain is $\Upsilon$(4S), then it decays into a pair of $B^0-\bar{B}^0$ at branching fraction of 100\%, with the model \textit{EvtVSSMix}~\cite{evtgen} describing the decay model. Then, one of the $B^0$ meson is set to decay into three $K_S^0$ based on phase-space model ($PHSP$) at 100\% branching fraction. The default configuration of evtgen can not handle multi-bodies charmless $B$ decay with TDCPV. A modified decay model profile is under-development and not fully validated yet. Thus, MC sample of $B^0 \to K_S^0  K_S^0  K_S^0$ yields zero $\it{CP}$ violation by default. As for the other $B$ meson, it decays into all possible final states that are described by the Belle II generic decay file. 
  
  As for \textit{generic MC}, all hadronic processes in a  $\sqrt{s} = 10.58 $ GeV collision are simulated. The total production cross section receives contributions from not only $\Upsilon$(4S) ($b$-flavor decay dominated), but also $u, d, s, c$. 
- Their relative branching fractions are taken from cross sections at  $\sqrt{s} = 10.58 $ GeV as shown in Table \ref{tab:generic_br}. \textit{Generic MC} sample contains 6 types of MC samples due to this production arrangement, where $\Upsilon$(4S) produces \textit{mixed} (neutral) and \textit{charged} $B$ meson pairs and the rest are other flavor mesons possibly with one extra photon emission named as $u\bar{u}(\gamma)$, $d\bar{d}(\gamma)$, $s\bar{s}(\gamma)$, and $c\bar{c}(\gamma)$, respectively. In this thesis, the latter 4 types of MC samples are combined and called $q\bar{q}$ for simplicity. In the mixed MC sample, the branching fraction of $B^0 \to K_S^0  K_S^0  K_S^0$ is set at $6 \times 10^{-6}$ and the branching fraction of $K_S^0 \to \pi^{+}\pi^{-}$ is set at 0.692. Both values are taken from Particle Data Group (PDG) \cite{pdg}. As the same as \textit{signal MC}, $\it{CP}$ violation is set to zero for signal events in \textit{generic MC} since they use the same model at generator level.
+ Their relative branching fractions are taken from cross sections at  $\sqrt{s} = 10.58 $ GeV as shown in Table \ref{tab:generic_br}. \textit{Generic MC} sample contains 6 types of MC samples due to this production arrangement, where $\Upsilon$(4S) produces \textit{mixed} (neutral) and \textit{charged} $B$ meson pairs and the rest are other flavor mesons possibly with one extra photon emission named as $u\bar{u}(\gamma)$, $d\bar{d}(\gamma)$, $s\bar{s}(\gamma)$, and $c\bar{c}(\gamma)$, respectively. In this thesis, the latter 4 types of MC samples are combined and called $q\bar{q}$ for simplicity. In the mixed MC sample, the branching fraction of $B^0 \to K_S^0  K_S^0  K_S^0$ is set at $6 \times 10^{-6}$ and the branching fraction of $K_S^0 \to \pi^{+}\pi^{-}$ is set at 0.692. Both values are taken from Particle Data Group (PDG)~\cite{pdg}. As the same as \textit{signal MC}, $\it{CP}$ violation is set to zero for signal events in \textit{generic MC} since they use the same model at generator level.
  
  \begin{table}
- 	\caption{Production cross section for different hadronic flavors from collision at  $\sqrt{s} = 10.58 $ GeV used in Belle II \textit{generic MC} \cite{b2book}.}
+ 	\caption{Production cross section for different hadronic flavors from collision at  $\sqrt{s} = 10.58 $ GeV used in Belle II \textit{generic MC}~\cite{b2book}.}
  	\label{tab:generic_br}
  	\centering
  	\begin{tabular}{c|c|c|c|c|c}
@@ -447,7 +447,7 @@ In total, there are 2 million events generated in \textit{signal MC}. Half of th
 
 
 \section{Belle II data taking}
-The Belle II beam test operation started in 2016 which was focused on the commissioning and test of the SuperKEKB accelerator. Later in 2018, the commissioning of the Belle II detector was accomplished, with partial installation of PXD and full installation of SVD. From 2019 April, the physics run operation has officially started. The rest of the PXD is scheduled to be installed in 2023. By the end of 2020, Belle II has been operating for 4 total run seasons. The integrated luminosity collected during this period of time is about 84.73 fb$^{-1}$, shown in Figure \ref{fig:b2lumi}. The indices of physics runs are labeled which are experiment 7,8,10 for 2019 data taking and experiment 12 and 14 for 2020 data taking, as shown in Figure \ref{fig:b2lumi}. The data processing is regularly performed along with the data taking. For the analysis reported in this thesis, the experimental data collection from experiment 7, 8, 10 and 12 is used. Correspondingly, the integrated luminosity for offline reconstruction used in this thesis is about 62.8 fb$^{-1}$\cite{b2onlinelumi}. The experiment 14 is not used due to the unfinished processing of the latest experiment data. 
+The Belle II beam test operation started in 2016 which was focused on the commissioning and test of the SuperKEKB accelerator. Later in 2018, the commissioning of the Belle II detector was accomplished, with partial installation of PXD and full installation of SVD. From 2019 April, the physics run operation has officially started. The rest of the PXD is scheduled to be installed in 2023. By the end of 2020, Belle II has been operating for 4 total run seasons. The integrated luminosity collected during this period of time is about 84.73 fb$^{-1}$, shown in Figure \ref{fig:b2lumi}. The indices of physics runs are labeled which are experiment 7,8,10 for 2019 data taking and experiment 12 and 14 for 2020 data taking, as shown in Figure \ref{fig:b2lumi}. The data processing is regularly performed along with the data taking. For the analysis reported in this thesis, the experimental data collection from experiment 7, 8, 10 and 12 is used. Correspondingly, the integrated luminosity for offline reconstruction used in this thesis is about 62.8 fb$^{-1}$~\cite{b2onlinelumi}. The experiment 14 is not used due to the unfinished processing of the latest experiment data. 
 
 \begin{figure}
 	\centering

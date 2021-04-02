@@ -1,44 +1,38 @@
-\chapter{\textit{CP} parameters measurement}
+\chapter{\textit{CP} parameter measurement}
 
-The measurement of $\it{CP}$ parameters $\mathcal{S}$ and $\mathcal{A}$ are perform by fitting  Equation \ref{eq:tdcpv_sig} to the distribution of events with respect to the decay time difference $\Delta t$ and flavor $q$, where $\Delta t = t_{CP}-t_{tag}$ and $q =  +1(-1)$ when the tag-side $B$ meson is $B^0$($\bar{B^0}$). 
-
+The measurement of $\it{CP}$ parameters $\mathcal{S}$ and $\mathcal{A}$ is perform by fitting  Equation \ref{eq:tdcpv_sig} to the distribution of the decay time difference $\Delta t$ of events with flavor $q$, where $\Delta t = t_{CP}-t_{tag}$ and $q =  +1~(-1)$ when the tag-side $B$ meson is $B^0$~($\bar{B^0}$). 
 \begin{equation}\label{eq:tdcpv_sig}
 \mathcal{P}_{sig}(\Delta t, q ) = 
 \frac{e^{-|\Delta t|/\tau_{B^0}}}{4\tau_{B^0}}
 \begin{Bmatrix}
 1 + q \cdot 
 \begin{bmatrix}
-\mathcal{S}sin(\Delta M_d \Delta t) + 
-\mathcal{A}cos(\Delta M_d \Delta t)
+\mathcal{S}\cdot\text{sin}(\Delta M_d \Delta t) + 
+\mathcal{A}\cdot\text{cos}(\Delta M_d \Delta t)
 \end{bmatrix}
 \end{Bmatrix}
 \end{equation}
 
-The Equation \ref{eq:tdcpv_sig} describes the physics distribution of signal events only. To perform the unbinned maximum likelihood fit on data, a complete model for \textit{i}-th event that includes the overlay of background components and outlier bands can be defined as Equation \ref{eq:tdcpv_all}.
-
+The Equation \ref{eq:tdcpv_sig} describes the distribution of signal events only with $\tau_{B^0}$ and $\Delta M_d$ as physics parameters. To perform the unbinned maximum likelihood fit on data, a complete model for \textit{i}-th event that takes into account background and outlier components is defined as Equation:
 \begin{equation}\label{eq:tdcpv_all}
 \begin{split}
 \mathcal{P}(\Delta t_i,q_i,f_i^{sig},\mathcal{S},\mathcal{A})
-&=(1-f_{ol})\begin{bmatrix}f_{sig}\mathcal{P}_{sig}(\Delta t_i,q_i,\mathcal{S},\mathcal{A})+(1-f_{sig}\mathcal{P}_{bkg}(\Delta t_i))
+&=(1-f_{ol})\begin{bmatrix}f_{sig}\mathcal{P}_{sig}(\Delta t_i,q_i,\mathcal{S},\mathcal{A})+(1-f_{sig})\mathcal{P}_{bkg}(\Delta t_i)
 \end{bmatrix}\\
-&+f_{ol}\mathcal{P}_{ol}(\Delta t_i)
+&+f_{ol}\mathcal{P}_{ol}(\Delta t_i)~,
 \end{split}
 \end{equation}
-
-where $f_{sig}$ and $f_{ol}$ are the fraction of signal and outlier components, respectively. The $\mathcal{P}_{bkg}$ and $\mathcal{P}_{ol}$ are defined by Equation \ref{eq:p_bkg} and \ref{eq:p_out}.
-
+where $f_{sig}$ and $f_{ol}$ are the fractions of signal and outlier components, respectively. The $\mathcal{P}_{bkg}$ and $\mathcal{P}_{ol}$ are defined as
 \begin{equation}\label{eq:p_bkg}
 \mathcal{P}_{bkg} (\Delta t_i)=
 f_{bkg}^{\delta}\delta(\Delta t_i-\mu_{bkg}^{\delta})+(1-f_{bkg}^{\delta})
-\frac{1}{2\tau_{bkg}}e^{-|\Delta t_i-\mu_{\tau}^{bkg}|/\tau_{bkg}}
+\frac{1}{2\tau_{bkg}}e^{-|\Delta t_i-\mu_{\tau}^{bkg}|/\tau_{bkg}}~,
 \end{equation}
-
 \begin{equation}\label{eq:p_out}
 \mathcal{P}_{ol} (\Delta t_i)=
-G(\Delta t_i, \sigma_{ol})
+G(\Delta t_i, \sigma_{ol})~,
 \end{equation}
-
-where $\delta(\Delta t_i-\mu_{bkg}^{\delta})$ is Dirac $\delta$ function and $G$ is single Gaussian. The outlier component is to improve the fit quality with large $\Delta t$ events.
+where $\delta(\Delta t_i-\mu_{bkg}^{\delta})$ is a Dirac $\delta$ function and $G$ is single Gaussian. The outlier component is to improve the fit quality with large $\Delta t$ events.
 
 \section{Vertex Resolution Model}
 
@@ -53,55 +47,54 @@ The Equation \ref{eq:tdcpv_all} presents an ideal distribution of $\Delta t_i$ f
 \end{split}
 \end{equation}
 
-The $R_{sig}$ stands for the resolution function for signal events, which receives smearing effect from \textit{CP} and tag side separately, namely $R_{cp}$ and  $R_{tag}$. The treatment of \textit{CP} side and tag side is different because of vertexing strategies. For \textit{CP} side, vertex of $B^0$ is reconstructed by fully fitting all the daughter particles. Instead, in tag side, there's no full reconstruction of $B^0$ so vertex fit is applied for the selected charged tracks in the rest-of-event. The background events have its own resolution model which is independent from  $\it{CP}$ violation parameters. The outlier is used to smooth fit for large $\Delta t$ events. In the low statistics case as the current luminosity is, the outlier is not included in the fit to have a more realistic model for data.
+The $R_{sig}$ stands for the resolution function for signal events, which receives smearing effect from \textit{CP}-side and tag-side separately, namely $R_{cp}$ and  $R_{tag}$. The treatment of \textit{CP}-side and tag-side is different because of the varied vertexing strategies. For \textit{CP} side, vertex of $B^0$ is reconstructed by fitting all the daughter particles using \textit{TreeFit}. Instead, in tag-side, there is no full reconstruction of $B^0$ so that a vertex fit is applied for the selected charged tracks in the Rest-Of-Event using \textit{KFit}. The background events have its own resolution model which is independent from  $\it{CP}$ violation parameters. The outlier is used to smooth fit for large $\Delta t$ events. In the low statistics case like the current luminosity, the outlier is excluded in the fit model of Equation \ref{eq:tdcpv_all_res}.
 
-For signal events, the resolution functions are studied for $\it{CP}$-side and tag-side based on each possible degradation such as detector resolutions, effect of tracks from non-primary $B$ vertex and so on. Such a method is used in Belle analysis and named as artificial model. Details are summarized in \cite{Yusa-note}. Considered the vertex position difference $\Delta z$ for signal events as shown in Equation \ref{eq:dz}. 
-
+For signal events, the resolution functions are studied for $\it{CP}$-side and tag-side based on each possible degradation such as detector resolutions, the effect of tracks from non-primary $B$ vertex and so on. Such approaches have been used in Belle analyses. Details are summarized in Ref~\cite{Yusa-note}. The vertex position difference $\Delta z$ for signal events can be broken down to 
 \begin{equation}\label{eq:dz}
 \Delta z 
-=\Delta z^{'} + (z_{cp}^{}- z_{cp}^{'}) - (z_{tag}^{}- z_{tag}^{'}) 
-\end{equation}where the primed ones stands for physics truth of the position and the non-primed is the measured value, the resolution function receives contribution from both $\it{CP}$ and tag-side effects. In the meantime, the resolution functions on both sides also depend on the applied constraint. Considering that the fine structure of IP profile is not yet fully understood and small discrepancies have been observed between data and simulation\cite{jpsiks_ichep}, there's no IP constraint applied for both sides in vertex fit, which avoids potential bias from  IP profile under this low statistical situation. The combined contributions can be presented as Equation \ref{eq:Rsig}.
-
+=\Delta z^{'} + (z_{cp}^{}- z_{cp}^{'}) - (z_{tag}^{}- z_{tag}^{'}) ~,
+\end{equation}
+where the primed ones stand for physics truth of the position and the non-primed one are the measured value. The resolution function receives contribution from both $\it{CP}$ and tag-side effects. Thus, the resolution functions on both sides depend on the applied IP constraints. Considering that the fine structure of IP profile is not yet fully understood and small discrepancies have been observed between data and simulation~\cite{jpsiks_ichep}, there is no IP constraint applied for both sides in vertex fit, which avoids potential bias from  IP profile under this low statistical situation. From the Equation \ref{eq:dz}, the total vertex resolution of signal events can be presented as the sum of the two random variables which stand for the resolution effects on the both side. Therefore, the vertex resolution function of signal events is defined as
 \begin{equation}\label{eq:Rsig}
 R_{sig}=R_{cp}\otimes R_{tag}
 \end{equation}
-
+where $R_{cp}$ and $R_{tag}$ are the vertex resolution functions for $\it{CP}$-side and tag-side, respectively. 
+The determination of these two components are described in the section 5.1.1 and 5.1.2.
 \subsection{$\it{CP}$-side resolution function}
+A $\it{CP}$-side vertex position is obtained by \textit{TreeFit} with all tracks from a reconstructed $B^0$, thus the resolution models only depend on the performance of the Belle II detectors, such as the vertexing and tracking accuracy affected by the detector hardware and software. Hence, the resolution effect for each event can be different based on event-by-event reconstruction quality, primarily presented by the reduced $\chi^2$ called $\chi^2/N$ from \textit{TreeFit}, which $N$ is the degree of freedom of the fit. The distribution of $\chi^2/N$ in data are shown in Figure \ref{fig:redchi2}. 
 
-$\it{CP}$-side vertex is fitted with all tracks from a reconstructed $B^0$, thus the resolution models only depend on detectors' effect. For each event, the resolution effect can be different based on event-by-event reconstruction quality, primarily presented by the reduced $\chi^2$ called $\chi^2/N$ from \textit{TreeFit}, which $N$ is the degree of freedom of the fit. The distribution of $\chi^2/N$ in data are shown in Figure \ref{fig:redchi2}. 
-
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\centering
 	\includegraphics[height=6cm]{redChi2.png}
 	\caption{$\chi^2/N$ of selected events from data.}
 	\label{fig:redchi2}
 \end{figure}
 
-Therefore, we model the resolution functions on $\it{CP}$-side by using a double Gaussian function, where the mean is fixed to zero and the standard deviation is scaled by $\chi^2/N$ and the error of reconstructed vertex $\sigma_{z_{cp}}$, as shown in Equation \ref{eq:Rcp}.
+Therefore, we model the resolution function $R_{cp}$ on $\it{CP}$-side by using a double Gaussian function, where the mean is fixed to zero and the standard deviation is the error of reconstructed vertex $\sigma_{z_{cp}}$ scaled by $\chi^2/N$:
 \begin{equation}\label{eq:Rcp}
 R_{cp}(\delta z_{cp}) = (1-f_{cp}^{tail})G(0,s_{cp}^{main})+
-f_{cp}^{tail}G(0,s_{cp}^{tail})
-\end{equation} where $s_{cp}^{main}$ and $s_{cp}^{tail}$ are defined in Equation \ref{eq:scp_mt}.
+f_{cp}^{tail}G(0,s_{cp}^{tail})~,
+\end{equation}
+where $s_{cp}^{main}$ and $s_{cp}^{tail}$ are
 \begin{eqnarray}\label{eq:scp_mt}
 \begin{split}
-s_{cp}^{main}&=(s_0^{main} + s_1^{main}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}\\
-s_{cp}^{tail}&=(s_0^{tail} + s_1^{tail}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}
+s_{cp}^{main}&=(s_0^{main} + s_1^{main}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}~,\\
+s_{cp}^{tail}&=(s_0^{tail} + s_1^{tail}\cdot \chi^2_{cp}/N )\cdot \sigma_{z_{cp}}~.
 \end{split}
 \end{eqnarray} 
-The dependence of resolution models on $\chi^2/N$ is shown in Figure \ref{fig:redchi2fit}. Restrictively speaking, the $\it{CP}$-side resolution for $B^0 \to K_S^0  K_S^0  K_S^0$ is slight different from $B^0\to J/\psi K_S^0$, due to the absence of the direct charged tracks from the $B^0$ vertex. The modification of the resolution function on $\it{CP}$-side will be further studied when more data becomes available in future. Given the current low statistics, the Equation \ref{eq:Rcp} works well as an approximation. By fitting the resolution function using \textit{signal MC} on $\it{CP}$-side, the parameters are fitted which are listed in Table \ref{tab:Rcp}.
+The Figure \ref{fig:redchi2fit} shows the distribution of the $z_{cp}-z_{cp}^{'}$ as the residual with the dependence of the $\chi^2/N$, where the first plot is for the range of  $0<\chi^2/N<10$, covering all of the selected events. The rest plots are the distributions in the sliced range of $\chi^2/N$, which show a slight increase of the deviation with respect to the increasing of $\chi^2/N$ range. This validates the necessity to include the $\chi^2/N$ as a conditional parameter in $R_{cp}$ so that for a poorly reconstructed $B^0$ the resolution functions should yield relatively larger deviation.
+
+Restrictively speaking, the $\it{CP}$-side resolution for $B^0 \to K_S^0  K_S^0  K_S^0$ is slight different from $B^0\to J/\psi K_S^0$ due to the absence of the direct tracks of the charged particles from the $B^0$ vertex. The modification of the resolution function on $\it{CP}$-side will be further studied when more data becomes available in future. Given the current low statistics, the Equation \ref{eq:Rcp} works well as an approximation. By fitting the resolution function using \textit{signal MC} on $\it{CP}$-side, the parameters are obtained and listed in Table \ref{tab:Rcp}.
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\linewidth}
 		\caption{$0<\chi^2/N<10$}
-		\includegraphics[height=5cm]{figures/residual0_10}
-		
+		\includegraphics[height=5cm]{figures/residual0_10}	
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
 		\caption{$0<\chi^2/N<0.4$}
 		\includegraphics[height=5cm]{figures/residual0_0.4}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
-	
-	
 	\begin{subfigure}{0.5\linewidth}
 		\caption{$0.4<\chi^2/N<0.8$}
 		\includegraphics[height=5cm]{figures/residual0.4_0.8}
@@ -123,7 +116,7 @@ The dependence of resolution models on $\chi^2/N$ is shown in Figure \ref{fig:re
 		\includegraphics[height=5cm]{figures/residual1.6_10}
 		%\caption{Tagging efficiency $\epsilon$ and $\mu$ in r-bins for $B^0 \to K_S^0  K_S^0  K_S^0$.}
 	\end{subfigure}
-	\caption{ The $z$ position of $B^0$ vertices on $\it{CP}$-side, which is dependent on the $\chi^2/N$. The first plot is the fit in the full range and the rest are the fit in each slices of $\chi^2/N$.}
+	\caption{ The $z$ position residual of $B^0$ vertices on $\it{CP}$-side, which is dependent on the $\chi^2/N$. The first plot is the fit in the full range and the rest of the plots are the fit in each sliced range of $\chi^2/N$. The events are the true candidates taken from the \textit{signal MC}.}
 	\label{fig:redchi2fit}
 \end{figure}
 
@@ -146,7 +139,15 @@ The dependence of resolution models on $\chi^2/N$ is shown in Figure \ref{fig:re
 
 \subsection{Tag-side resolution function}
 
-For the tag-side, the vertexing is done by using \textit{KFit} and no IP constraint used. Due to the charged tracks from non-primary $B$ vertex, the resolution functions on tag-side not only receives contribution from detectors' effect $R_{det}^{tag}$ but also the resolution degradation from secondary vertex, called $R_{np}^{tag}$. To the contrary, if all tracks that are used for tag-side vertexing are primary tracks, the resolution will only be affected by the detectors' effect. The vertex position difference is defined as Equation \ref{eq:ztag}. Therefore, the effects from both detectors and non-primary tracks contributes to the total resolution on tag-side as Equation \ref{eq:Rtag} shows.
+For the tag-side, the vertexing is done by using \textit{KFit} and no IP constraint used. Since the tag-side vertex reconstruction takes into account the tracks of the charged particles which may not be directly from the tag-side $B^0$ decay, the vertex position could be affected by both detector effects like the $\it{CP}$-side and the degradation of the secondary vertex. This effect is demonstrated in Figure \ref{fig:tagvet}. where the tag-side vertex fit will give a estimated positions around the range of orange meshed area while the actual position of the primary vertex should be in the area of the blue circle.
+
+\begin{figure}[htpb]
+\centering
+\includegraphics[width=0.9\linewidth]{tageffect}
+\caption{The illustration of the tag-side $B^0$ vertex resolution affected by the non-primary tracks from the secondary vertex. The red arrows present the charged particles used for the tag-side vertex reconstruction, where one is from primary vertex of $B^0$ and two are from the secondary vertex.}
+\label{fig:tagvet}
+\end{figure}
+To the contrary, if all tracks that are used for tag-side vertexing are primary tracks, the resolution will only be affected by the detector effects. The vertex position difference from the MC truth can be written as Equation \ref{eq:ztag}, where $\delta z_{tag}^{det}$ and $\delta z_{tag}^{np}$ are the position shifts caused by the detector effects and the vertex fit using non-primary tracks, respectively. Therefore, the effects from both detectors and non-primary tracks contributes to the total resolution on tag-side as shown in Equation \ref{eq:Rtag}.
 \begin{equation}\label{eq:ztag}
 \begin{split}
 z_{tag} - z_{tag}^{'} =& (z_{tag}^{'} + \delta z_{tag}^{det} + \delta z_{tag}^{np}) - z_{tag}^{'}\\
@@ -158,18 +159,18 @@ R_{tag}( z_{tag}- z_{tag}^{'}) = R_{det}^{tag}(\delta z_{tag}^{det}) \otimes
 R_{np}^{tag}( \delta z_{tag}^{np})
 \end{equation}
 
-Similarly to $\it{CP}$-side resolution function, detectors' effect is presented in Equation \ref{eq:Rtagdet}
+Similarly to the $\it{CP}$-side resolution function, detector effects are presented as
 \begin{equation}\label{eq:Rtagdet}
 R_{det}^{tag}(\delta z_{tag}^{det}) = (1-f_{tag}^{tail})G(0,s_{tag}^{main}\cdot\sigma_{z_{tag}})+
-f_{tag}^{tail}G(0,s_{tag}^{tail}\cdot\sigma_{z_{tag}})
-\end{equation} where main and tail Gaussian functions have the same central value at zero, but the standard deviation is scaled by $\chi^2_{tag}/N$ on the tag-side as shown in Equation \ref{eq:stag}.
-
+f_{tag}^{tail}G(0,s_{tag}^{tail}\cdot\sigma_{z_{tag}})~,
+\end{equation} where the main and tail Gaussian functions have the same central value at zero, but the standard deviation is scaled by $\chi^2_{tag}/N$ on the tag-side:
 \begin{equation}\label{eq:stag}
-s_{tag}^{main/tail} = s_0^{main/tail} + s_1^{main/tail}\cdot\chi^2_{tag}/N
+s_{tag}^{main/tail} = s_0^{main/tail} + s_1^{main/tail}\cdot\chi^2_{tag}/N~.
 \end{equation} 
-Technically $R^{tag}_{det}$ can be fitted with MC samples of which tag-side tracks are all from primary vertex. After obtaining the fitted parameters of $R^{tag}_{det}$ , $R^{tag}$ will only be dependent on $R^{tag}_{np}$. The fit model of $R_{np}^{tag}$ is shown in Equation \ref{eq:Rnp}. It consists of three functions, including one Dirac $\delta$ function and two single-side exponential functions $E_p$ and $E_n$. The $E_p(x,\tau_p)=(1/\tau_p)e^{-x/\tau_p} $ when $x > 0$ and the $E_n(x,\tau_n)=(1/\tau_n)e^{x/\tau_n} $ when $x < 0$.
-The exponential factors in both positive and negative components are scaled by the tag-side vertex uncertainty $\sigma_{z_{tag}}$. 
+$R^{tag}_{det}$ can be obtained with MC samples of which tag-side tracks are all from a primary vertex. 
 
+The fit model of $R_{np}^{tag}$ is shown in Equation \ref{eq:Rnp} which consists of three functions, including one Dirac $\delta$ function and two single-side exponential functions $E_p$ and $E_n$. The $E_p(x|y_p)=(1/y_p)e^{-x/y_p} $ when $x > 0$ and the $E_n(x|y_n)=(1/y_n)e^{x/y_n} $ when $x < 0$.
+The exponential factors in both positive and negative components are scaled by the tag-side vertex uncertainty $\sigma_{z_{tag}}$. 
 \begin{equation}\label{eq:Rnp}
 R_{np}^{tag}(\delta z_{tag}^{np})=f_{\delta}\delta(\delta z_{tag}^{np}) + 
 (1-f_{\delta})[f_p E_p(\delta z_{tag}^{np},\tau_p\cdot \sigma_{z_{tag}}) +
@@ -177,7 +178,7 @@ R_{np}^{tag}(\delta z_{tag}^{np})=f_{\delta}\delta(\delta z_{tag}^{np}) +
 \end{equation} 
 
 
-Also, since tag-side has no dependence on how $\it{CP}$-side is reconstructed, the resolution functions on tag-sdie are almost mode-independent. Thus these parameters are obtained by fitting to the control sample . The control sample consists of multiple exclusive $D^{(*)}$ hadronic decays, of which the details are summarized in Appendix B. The  The fit plots for tag-side resolution functions are shown in Figure \ref{fig:Rtagdet} and \ref{fig:Rtagnp}. The parameters obtained from the fit are listed in Table \ref{tab:Rtagdet} and Table \ref{tab:Rtagnp}.
+Since tag-side has no dependence on how $\it{CP}$-side is reconstructed, the resolution functions on tag-sdie are almost mode-independent. Thus these parameters are obtained by fitting to the control sample reconstructed from the MC. The control sample consists of multiple exclusive $D^{(*)}$ hadronic decays, of which the details are summarized in Appendix B.  The results are referenced from the $B^0\to J/\psi K^0_S$ study~\cite{jpsiks_ichep}. The fit plots for tag-side resolution functions are shown in Figure \ref{fig:Rtagdet} and \ref{fig:Rtagnp}. The parameters obtained from the fit are listed in Table \ref{tab:Rtagdet} and Table \ref{tab:Rtagnp}.
 
 
 \begin{figure}[H]
@@ -226,20 +227,20 @@ Also, since tag-side has no dependence on how $\it{CP}$-side is reconstructed, t
 \end{table}
 
 
- The boost direction of each event is not constant event-by-event, so the position of vertex may not be optimized by calculating $\Delta t_i = \Delta z / \beta\gamma c$. This effect can be reduced by replacing vertex position difference on z-axis with the relative distance along the boosting direction, or introducing another resolution function called $R_k$\cite{tajima2004proper}. The $R_k$ has not been implemented in Belle II resolution model. Therefore, $\Delta z$ projection on the boosted direction of each event is used for reducing this kinematics effect on resolution function.
+The boost direction is not exactly same in each event, while we use $\Delta t_i = \Delta z / \beta\gamma c$ as an universal relation to calculate the decay time difference for all the events, assuming the boosted direction of the CMS frame to the laboratory frame is always precisely along the $z$-direction for each event. It will cause a small additional contribution to the resolution of $\Delta t_i$. This effect could be reduced by two approaches. First, instead of using the vertex position difference along the $z$-axis, we use the the relative distance between two vertices along the boosting direction calculated for each event during the vertex reconstruction. The second approach is to still use vertex position difference along the $z$-axis but introduce another resolution function called $R_k$ into Equation \ref{eq:tdcpv_all_res} for the kinematic correction of both signal and background events~\cite{tajima2004proper}. 
+In the current stage of the Belle II, the dedicated study of $R_k$ is not ready because it requires a good understanding to the beam conditions and alignment in the event basis. Thus, the first approach is used in this thesis. 
 
 
 
 \subsection{Background events $\Delta t$ distribution}
-The $R_{bkg}$ is uncorrelated to vertex reconstruction method approximately. Because the background mainly comes from continuum events passing the selection, it's reasonable to model its resolution by a Gaussian-like function. A double-Gaussian with its standard deviation scaled by the measured uncertainties from both sides is used as Equation \ref{eq:Rbkg}. To be noted, unlike resolution functions on $\it{CP}$ or tag-side, the standard deviations of the double Gaussian are scaled by both the vertex position uncertainties $\sigma_{z_{cp}}$ and $\sigma_{z_{tag}}$. 
-
+The $R_{bkg}$ model is approximately uncorrelated to vertex reconstruction method. Because the background component mainly comes from continuum events passing the selection, it is reasonable to model the vertex resolution of the background events by a Gaussian-like function. In this case, a double-Gaussian functions with the standard deviations scaled by the measured uncertainties from both $\it{CP}$- and tag-sides is used as shown in Equation \ref{eq:Rbkg}. 
 \begin{equation}\label{eq:Rbkg}
 R_{bkg} = (1-f^{bkg}_{tail})G(\Delta t_i, \sigma^{bkg}_{main}\sqrt{\sigma^2_{z_{cp}}+\sigma^2_{z_{tag}}})
 + f^{bkg}_{tail}G(\Delta t_i, \sigma^{bkg}_{tail}\sqrt{\sigma^2_{z_{cp}}+\sigma^2_{z_{tag}}})
 \end{equation}
+where the $\sigma_{z_{cp}}$ and $\sigma_{z_{tag}}$ are the measured uncertainties of the vertex position in $\it{CP}$- and tag-sides. The $\sigma_{main}^{bkg}$ and $\sigma_{tail}^{bkg}$ are the non-unit scaling parameters which control the standard deviations of the main and tail Gaussian functions.
 
-The background events $\Delta t$ shapes $\mathcal{P}_{bkg}\otimes R_{bkg}$ can be determined by fitting to side-band data. There are totally seven floating parameters which are listed in Table  \ref{tab:Pbkg} with fitted values using 60 sideband events at $M_{bc} < 5.26$ GeV, shown in Figure \ref{fig:Pbkg}
-
+The shape of $\mathcal{P}_{bkg}\otimes R_{bkg}$ can be determined by fitting to the side-band data. The sideband region is defined as $M_{bc}<5.26$ GeV, according to section 4.6. The requirement of $\Delta E$ is not used in the current definition of the sideband in order to increase the number of events, which will be added in future when more data is collected. Figure \ref{fig:Pbkg} shows the fit result using 60 sideband data. There are totally seven floating parameters which are listed in Table \ref{tab:Pbkg}.
 \begin{figure}[htpb]
 	%	\begin{minipage}[b]{0.5\linewidth}
 	%		\centering
@@ -253,7 +254,7 @@ The background events $\Delta t$ shapes $\mathcal{P}_{bkg}\otimes R_{bkg}$ can b
 	\label{fig:Pbkg}
 	%	\end{minipage}
 \end{figure}
-\begin{table}[H]
+\begin{table}[htpb]
 	\centering
 	\begin{tabular}{|c|c|}
 		\hline
