@@ -1,0 +1,361 @@
+\begin{thebibliography}{49}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aad et~al.(2012)Aad, Abajyan, Abbott, Abdallah, Khalek, Abdelalim,
+  Aben, Abi, Abolins, AbouZeid, et~al.]{aad2012observation}
+Georges Aad, Tatevik Abajyan, B~Abbott, J~Abdallah, S~Abdel Khalek, Ahmed~Ali
+  Abdelalim, R~Aben, B~Abi, M~Abolins, OS~AbouZeid, et~al.
+\newblock Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC.
+\newblock \emph{Physics Letters B}, 716\penalty0 (1):\penalty0 1--29, 2012.
+
+\bibitem[wikipedia(2012)]{sm_particles}
+wikipedia.
+\newblock {Elementary particles in the Standard Model}.
+\newblock
+  \url{https://en.wikipedia.org/wiki/File:Standard_Model_of_Elementary_Particles_Anti.svg},
+  2012.
+
+\bibitem[Lee and Yang(1956)]{PhysRev.104.254}
+T.~D. Lee and C.~N. Yang.
+\newblock Question of parity conservation in weak interactions.
+\newblock \emph{Phys. Rev.}, 104:\penalty0 254--258, Oct 1956.
+\newblock \doi{10.1103/PhysRev.104.254}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.104.254}.
+
+\bibitem[Wu_()]{Wu_exp}
+URL
+  \url{https://commons.wikimedia.org/wiki/File:Parity_violation_principle_Wu_experiment_(English).jpg}.
+
+\bibitem[Christenson et~al.(1964)Christenson, Cronin, Fitch, and
+  Turlay]{christenson1964evidence}
+James~H Christenson, Jeremiah~W Cronin, Val~L Fitch, and Ren{\'e} Turlay.
+\newblock Evidence for the 2 $\pi$ decay of the k 2 0 meson.
+\newblock \emph{Physical Review Letters}, 13\penalty0 (4):\penalty0 138, 1964.
+
+\bibitem[Kobayashi and Maskawa(1973)]{CKM}
+Makoto Kobayashi and Toshihide Maskawa.
+\newblock {CP-Violation in the Renormalizable Theory of Weak Interaction}.
+\newblock \emph{Progress of Theoretical Physics}, 49\penalty0 (2):\penalty0
+  652--657, 02 1973.
+\newblock ISSN 0033-068X.
+\newblock \doi{10.1143/PTP.49.652}.
+\newblock URL \url{https://doi.org/10.1143/PTP.49.652}.
+
+\bibitem[Teramoto(2002)]{teramoto2002cp}
+Yoshiki Teramoto.
+\newblock Cp violation in b physics at belle.
+\newblock 2002.
+
+\bibitem[Lange()]{langestudy}
+David Lange.
+\newblock Study of cp violation at babar.
+
+\bibitem[Bigi et~al.(1989)Bigi, Khoze, Uraltsev, and Sanda]{bigi1989question}
+Ikaros~I Bigi, Valery~A Khoze, NG~Uraltsev, and AI~Sanda.
+\newblock The question of cp noninvariance—as seen through the eyes of
+  neutral beauty.
+\newblock In \emph{CP Violation}, pages 175--248. World Scientific, 1989.
+
+\bibitem[Sher(1989)]{sher1989electroweak}
+Marc Sher.
+\newblock Electroweak higgs potential and vacuum stability.
+\newblock \emph{Physics Reports}, 179\penalty0 (5-6):\penalty0 273--418, 1989.
+
+\bibitem[Ceccucci(2008)]{ceccucci2008ckm}
+Augusto Ceccucci.
+\newblock The ckm quark-mixing matrix.
+\newblock 2008.
+
+\bibitem[ckmfitter(2019)]{ckmfitter}
+ckmfitter.
+\newblock {Results of the global CKM fit in the large complex plane}.
+\newblock
+  \url{http://ckmfitter.in2p3.fr/www/results/plots_summer19/ckm_res_summer19.html},
+  2019.
+
+\bibitem[Dighe et~al.(2001)Dighe, Hurth, Kim, and Yoshikawa]{dighe2001width}
+Amol Dighe, Tobias Hurth, Choong~Sun Kim, and Tadashi Yoshikawa.
+\newblock The width difference of $b_d$ mesons, 2001.
+
+\bibitem[Wishahi(2014)]{wishahi2014measurement}
+Julian~Tarek Wishahi.
+\newblock \emph{Measurement of $ CP $ Violation in $B^0 \to J/\psi K_S^0$
+  Decays with the LHCb Experiment}.
+\newblock PhD thesis, Dortmund U., 2014.
+
+\bibitem[Kou et~al.(2019)Kou, Urquijo, Altmannshofer, Beaujean, Bell, Beneke,
+  Bigi, Bishara, Blanke, Bobeth, and et~al.]{b2book}
+E~Kou, P~Urquijo, W~Altmannshofer, F~Beaujean, G~Bell, M~Beneke, I~I Bigi,
+  F~Bishara, M~Blanke, C~Bobeth, and et~al.
+\newblock The belle ii physics book.
+\newblock \emph{Progress of Theoretical and Experimental Physics},
+  2019\penalty0 (12), Dec 2019.
+\newblock ISSN 2050-3911.
+\newblock \doi{10.1093/ptep/ptz106}.
+\newblock URL \url{http://dx.doi.org/10.1093/ptep/ptz106}.
+
+\bibitem[Chen et~al.(2007)Chen, Hara, Hazumi, Higuchi, Miyabayashi, Nakahama,
+  Sumisawa, Tajima, Ushiroda, Yusa, et~al.]{chen2007observation}
+K-F Chen, K~Hara, M~Hazumi, T~Higuchi, K~Miyabayashi, Y~Nakahama, K~Sumisawa,
+  O~Tajima, Y~Ushiroda, Y~Yusa, et~al.
+\newblock Observation of time-dependent c p violation in b0 $\to \eta^{'}$ k0
+  decays and improved measurements of c p asymmetries in b0 $\to \varphi$ k0,
+  ks ks ks and b0→ j/$\psi$ k0 decays.
+\newblock \emph{Physical review letters}, 98\penalty0 (3):\penalty0 031802,
+  2007.
+
+\bibitem[Gershon and Hazumi(2004)]{gershon2004time}
+Tim Gershon and Masashi Hazumi.
+\newblock Time-dependent cp violation in b0→ p0p0x0 decays.
+\newblock \emph{Physics Letters B}, 596\penalty0 (3-4):\penalty0 163--172,
+  2004.
+
+\bibitem[Beneke and Neubert(2003)]{Beneke_2003}
+Martin Beneke and Matthias Neubert.
+\newblock Qcd factorization for b→pp and b→pv decays.
+\newblock \emph{Nuclear Physics B}, 675\penalty0 (1-2):\penalty0 333–415, Dec
+  2003.
+\newblock ISSN 0550-3213.
+\newblock \doi{10.1016/j.nuclphysb.2003.09.026}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.nuclphysb.2003.09.026}.
+
+\bibitem[Cheng et~al.(2005)Cheng, Chua, and Soni]{PhysRevD.72.094003}
+Hai-Yang Cheng, Chun-Khiang Chua, and Amarjit Soni.
+\newblock $cp$-violating asymmetries in ${B}^{0}$ decays to
+  ${K}^{+}{K}^{\ensuremath{-}}{K}_{S(L)}^{0}$ and
+  ${K}_{S}^{0}{K}_{S}^{0}{K}_{S(L)}^{0}$.
+\newblock \emph{Phys. Rev. D}, 72:\penalty0 094003, Nov 2005.
+\newblock \doi{10.1103/PhysRevD.72.094003}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.72.094003}.
+
+\bibitem[Kang et~al.(2020)Kang, Park, Higuchi, Miyabayashi, Sumisawa, Adachi,
+  Ahn, Aihara, Said, Asner, et~al.]{kang2020measurement}
+KH~Kang, H~Park, T~Higuchi, K~Miyabayashi, K~Sumisawa, I~Adachi, JK~Ahn,
+  H~Aihara, S~Al Said, DM~Asner, et~al.
+\newblock Measurement of time-dependent cp violation parameters in $ b^{0} \to
+  k_s^0 k_s^0 k_s^0 $ decays at belle.
+\newblock \emph{arXiv preprint arXiv:2011.00793}, 2020.
+
+\bibitem[Lees et~al.(2012{\natexlab{a}})]{Lees:2011nf}
+J.~P. Lees et~al.
+\newblock {Amplitude analysis and measurement of the time-dependent CP
+  asymmetry of $B^0 \to K_S^0 K_S^0 K_S^0$ decays}.
+\newblock \emph{Phys. Rev. D}, 85:\penalty0 054023, 2012{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRevD.85.054023}.
+
+\bibitem[Abe et~al.(2010)]{Abe:2010gxa}
+T.~Abe et~al.
+\newblock {Belle II Technical Design Report}.
+\newblock 2010.
+\newblock arXiv:1011.0352.
+
+\bibitem[Aushev et~al.(2010)Aushev, Bartel, Bondar, Brodzicka, Browder, Chang,
+  Chao, Chen, Dalseno, Drutskoy, Enari, Gershon, Golob, Goto, Handa, Hara,
+  Hashimoto, Hayashii, Hazumi, Higuchi, Hisano, Hou, Iijima, Ikado, Inami,
+  Itoh, Itoh, Ishino, Katayama, Keum, Kinoshita, Kou, Križan, Krokovny,
+  Kurimoto, Kwon, Limosani, Matsumoto, Morozumi, Nakahama, Nakao, Nishida,
+  Ohshima, Okada, Okumura, Olsen, Onogi, Pakhlova, Palka, Pakhlov, Poluektov,
+  Recksiegel, Sagawa, Saigo, Sakai, Sanda, Schwanda, Schwartz, Senyo, Shimizu,
+  Shindou, Sinha, Starič, Sumisawa, Tanaka, Trabelsi, Urquijo, Ushiroda, Won,
+  Yamamoto, Yamauchi, Yoshikawa, and Zupan]{aushev2010physics}
+T.~Aushev, W.~Bartel, A.~Bondar, J.~Brodzicka, T.~E. Browder, P.~Chang,
+  Y.~Chao, K.~F. Chen, J.~Dalseno, A.~Drutskoy, Y.~Enari, T.~Gershon, B.~Golob,
+  T.~Goto, F.~Handa, K.~Hara, S.~Hashimoto, H.~Hayashii, M.~Hazumi, T.~Higuchi,
+  J.~Hisano, W.~S. Hou, T.~Iijima, K.~Ikado, K.~Inami, H.~Itoh, R.~Itoh,
+  H.~Ishino, N.~Katayama, Y.~Y. Keum, K.~Kinoshita, E.~Kou, P.~Križan,
+  P.~Krokovny, T.~Kurimoto, Y.~Kwon, A.~Limosani, T.~Matsumoto, T.~Morozumi,
+  Y.~Nakahama, M.~Nakao, S.~Nishida, T.~Ohshima, Y.~Okada, K.~Okumura, S.~L.
+  Olsen, T.~Onogi, G.~Pakhlova, H.~Palka, P.~Pakhlov, A.~Poluektov,
+  S.~Recksiegel, H.~Sagawa, M.~Saigo, Y.~Sakai, A.~I. Sanda, C.~Schwanda,
+  A.~Schwartz, K.~Senyo, Y.~Shimizu, T.~Shindou, R.~Sinha, M.~Starič,
+  K.~Sumisawa, M.~Tanaka, K.~Trabelsi, P.~Urquijo, Y.~Ushiroda, E.~Won,
+  H.~Yamamoto, M.~Yamauchi, T.~Yoshikawa, and J.~Zupan.
+\newblock Physics at super b factory, 2010.
+
+\bibitem[French et~al.(2001)French, Jones, Morrissey, Neviani, Turchetta,
+  Fulcher, Hall, Noah, Raymond, Cervelli, et~al.]{french2001design}
+MJ~French, LL~Jones, Q~Morrissey, A~Neviani, R~Turchetta, J~Fulcher, G~Hall,
+  E~Noah, M~Raymond, G~Cervelli, et~al.
+\newblock Design and results from the apv25, a deep sub-micron cmos front-end
+  chip for the cms tracker.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  466\penalty0 (2):\penalty0 359--365, 2001.
+
+\bibitem[Inami et~al.(2008)Inami, Mori, Matsumura, Kurimoto, Hasegawa, Suzuki,
+  Murase, Yurikusa, Akatsu, Enari, et~al.]{inami2008cross}
+K~Inami, T~Mori, T~Matsumura, K~Kurimoto, S~Hasegawa, Y~Suzuki, T~Murase,
+  Y~Yurikusa, M~Akatsu, Y~Enari, et~al.
+\newblock Cross-talk suppressed multi-anode mcp-pmt.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  592\penalty0 (3):\penalty0 247--253, 2008.
+
+\bibitem[ROO()]{ROOTcern}
+URL \url{https://root.cern/}.
+
+\bibitem[dir()]{dirac}
+URL \url{https://dirac.readthedocs.io/en/latest/DeveloperGuide/Overview/}.
+
+\bibitem[Kuhr et~al.(2019)Kuhr, Pulvermacher, Ritter, Hauth, and
+  Braun]{kuhr2019belle}
+Thomas Kuhr, C~Pulvermacher, M~Ritter, T~Hauth, and N~Braun.
+\newblock The belle ii core software.
+\newblock \emph{Computing and Software for Big Science}, 3\penalty0
+  (1):\penalty0 1--12, 2019.
+
+\bibitem[Kuhr et~al.(2018)Kuhr, Pulvermacher, Ritter, Hauth, and Braun]{BASF2}
+T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
+\newblock The belle ii core software.
+\newblock \emph{Computing and Software for Big Science}, 3\penalty0 (1), Nov
+  2018.
+\newblock ISSN 2510-2044.
+\newblock \doi{10.1007/s41781-018-0017-9}.
+\newblock URL \url{http://dx.doi.org/10.1007/s41781-018-0017-9}.
+
+\bibitem[evt()]{evtgen}
+URL \url{https://evtgen.hepforge.org/doc/models.html}.
+
+\bibitem[Agostinelli et~al.(2003)Agostinelli, Allison, Amako, Apostolakis,
+  Araujo, Arce, Asai, Axen, Banerjee, Barrand, et~al.]{agostinelli2003geant4}
+Sea Agostinelli, John Allison, K~al Amako, John Apostolakis, H~Araujo, P~Arce,
+  M~Asai, D~Axen, S~Banerjee, G~2 Barrand, et~al.
+\newblock Geant4—a simulation toolkit.
+\newblock \emph{Nuclear instruments and methods in physics research section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  506\penalty0 (3):\penalty0 250--303, 2003.
+
+\bibitem[pdg()]{pdg}
+URL
+  \url{https://pdglive.lbl.gov/Particle.action?init=0&node=S042&home=MXXX045}.
+
+\bibitem[b2o()]{b2onlinelumi}
+URL \url{https://confluence.desy.de/display/BI/Phase+3+luminosity+monitoring}.
+
+\bibitem[Krohn et~al.(2020)Krohn, Tenchini, Urquijo, Abudin{\'e}n, Cunliffe,
+  Ferber, Gelb, Gemmler, Goldenzweig, Keck, et~al.]{krohn2020global}
+J-F Krohn, F~Tenchini, P~Urquijo, F~Abudin{\'e}n, S~Cunliffe, T~Ferber, M~Gelb,
+  J~Gemmler, P~Goldenzweig, T~Keck, et~al.
+\newblock Global decay chain vertex fitting at belle ii.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  976:\penalty0 164269, 2020.
+
+\bibitem[Feindt and Kerzel(2006)]{feindt2006neurobayes}
+M~Feindt and U~Kerzel.
+\newblock The neurobayes neural network package.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  559\penalty0 (1):\penalty0 190--194, 2006.
+
+\bibitem[Keck(2016)]{keck2016fastbdt}
+Thomas Keck.
+\newblock Fastbdt: A speed-optimized and cache-friendly implementation of
+  stochastic gradient-boosted decision trees for multivariate classification.
+\newblock \emph{arXiv preprint arXiv:1609.06119}, 2016.
+\newblock URL \url{https://arxiv.org/pdf/1609.06119}.
+
+\bibitem[Therhaag and Team(2012)]{therhaag2012tmva}
+Jan Therhaag and TMVA Core~Developer Team.
+\newblock Tmva-toolkit for multivariate data analysis.
+\newblock In \emph{AIP Conference Proceedings}, volume 1504, pages 1013--1016.
+  American Institute of Physics, 2012.
+
+\bibitem[Pedregosa et~al.(2011)Pedregosa, Varoquaux, Gramfort, Michel, Thirion,
+  Grisel, Blondel, Prettenhofer, Weiss, Dubourg, et~al.]{pedregosa2011scikit}
+Fabian Pedregosa, Ga{\"e}l Varoquaux, Alexandre Gramfort, Vincent Michel,
+  Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron
+  Weiss, Vincent Dubourg, et~al.
+\newblock Scikit-learn: Machine learning in python.
+\newblock \emph{the Journal of machine Learning research}, 12:\penalty0
+  2825--2830, 2011.
+
+\bibitem[Chen and Guestrin(2016)]{chen2016xgboost}
+Tianqi Chen and Carlos Guestrin.
+\newblock Xgboost: A scalable tree boosting system.
+\newblock In \emph{Proceedings of the 22nd acm sigkdd international conference
+  on knowledge discovery and data mining}, pages 785--794, 2016.
+
+\bibitem[Sumisawa et~al.(2005)Sumisawa, Ushiroda, Hazumi, Abe, Abe, Adachi,
+  Aihara, Asano, Aulchenko, Aushev, and et~al.]{Sumisawa_2005}
+K.~Sumisawa, Y.~Ushiroda, M.~Hazumi, K.~Abe, K.~Abe, I.~Adachi, H.~Aihara,
+  Y.~Asano, V.~Aulchenko, T.~Aushev, and et~al.
+\newblock Measurement of time-dependentcp-violating asymmetries
+  inb0→ks0ks0ks0decay.
+\newblock \emph{Physical Review Letters}, 95\penalty0 (6), Aug 2005.
+\newblock ISSN 1079-7114.
+\newblock \doi{10.1103/physrevlett.95.061801}.
+\newblock URL \url{http://dx.doi.org/10.1103/PhysRevLett.95.061801}.
+
+\bibitem[Bevan et~al.(2014)Bevan, Golob, Mannel, Prell, Yabsley, Aihara,
+  Anulli, Arnaud, Aushev, Beneke, and et~al.]{Bevan_2014}
+A.~J. Bevan, B.~Golob, Th. Mannel, S.~Prell, B.~D. Yabsley, H.~Aihara,
+  F.~Anulli, N.~Arnaud, T.~Aushev, M.~Beneke, and et~al.
+\newblock The physics of the b factories.
+\newblock \emph{The European Physical Journal C}, 74\penalty0 (11), Nov 2014.
+\newblock ISSN 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-014-3026-9}.
+\newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-014-3026-9}.
+
+\bibitem[Bevan et~al.(2017)Bevan, Golob, Mannel, Prell, and
+  Yabsley]{bevan2017physics}
+Adrian Bevan, Bostjan Golob, Thomas Mannel, Soeren Prell, and Bruce Yabsley.
+\newblock \emph{The physics of the B factories}.
+\newblock Springer Nature, 2017.
+
+\bibitem[Albrecht et~al.(1990)Albrecht, Gl{\"a}ser, Harder, Kr{\"u}ger,
+  Nilsson, Nippe, Oest, Reidenbach, Sch{\"a}fer, Schmidt-Parzefall,
+  et~al.]{albrecht1990search}
+H~Albrecht, R~Gl{\"a}ser, G~Harder, A~Kr{\"u}ger, AW~Nilsson, A~Nippe, T~Oest,
+  M~Reidenbach, M~Sch{\"a}fer, W~Schmidt-Parzefall, et~al.
+\newblock Search for hadronic b→ u decays.
+\newblock \emph{Physics Letters B}, 241\penalty0 (2):\penalty0 278--282, 1990.
+
+\bibitem[Yus()]{Yusa-note}
+\emph{BELLE-II-NOTE-TE-2019-010 (2020)}.
+\newblock URL \url{https://docs.belle2.org/record/1384/files/belle2-
+  note-resol_belle.pdf}.
+
+\bibitem[jps()]{jpsiks_ichep}
+URL
+  \url{https://docs.belle2.org/record/1941/files/BELLE2-NOTE-PH-2020-027.pdf}.
+
+\bibitem[Tajima et~al.(2004)Tajima, Aihara, Higuchi, Kawai, Nakadaira, Tanaka,
+  Tomura, Yokoyama, Hazumi, Sakai, et~al.]{tajima2004proper}
+H~Tajima, H~Aihara, T~Higuchi, H~Kawai, T~Nakadaira, J~Tanaka, T~Tomura,
+  M~Yokoyama, M~Hazumi, Y~Sakai, et~al.
+\newblock Proper-time resolution function for measurement of time evolution of
+  b mesons at the kek b-factory.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  533\penalty0 (3):\penalty0 370--386, 2004.
+
+\bibitem[Abudin{\'e}n et~al.(2020)Abudin{\'e}n, Adachi, Adak, Adamczyk,
+  Ahlburg, Ahn, Aihara, Akopov, Aloisio, Ameli, et~al.]{abudinen2020first}
+F~Abudin{\'e}n, I~Adachi, R~Adak, K~Adamczyk, P~Ahlburg, JK~Ahn, H~Aihara,
+  N~Akopov, A~Aloisio, F~Ameli, et~al.
+\newblock First flavor tagging calibration using 2019 belle ii data.
+\newblock \emph{arXiv preprint arXiv:2008.02707}, 2020.
+
+\bibitem[Yosuke and Miyabayashi(2011)]{yosuke2011measurement}
+Y~Yosuke and K~Miyabayashi.
+\newblock Measurement of time-dependent cp violation in b0→(cc) k 0 decays
+  with 772$\times$ 106bb.
+\newblock Technical report, Belle Note, 2011.
+
+\bibitem[Lees et~al.(2012{\natexlab{b}})Lees, Poireau, Tisserand, Tico,
+  Grauges, Martinelli, Milanes, Palano, Pappagallo, Eigen,
+  et~al.]{lees2012amplitude}
+JP~Lees, V~Poireau, V~Tisserand, J~Garra Tico, E~Grauges, M~Martinelli,
+  DA~Milanes, A~Palano, M~Pappagallo, G~Eigen, et~al.
+\newblock Amplitude analysis and measurement of the time-dependent c p
+  asymmetry of b 0→ k s 0 k s 0 k s 0 decays.
+\newblock \emph{Physical Review D}, 85\penalty0 (5):\penalty0 054023,
+  2012{\natexlab{b}}.
+
+\end{thebibliography}

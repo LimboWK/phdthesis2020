@@ -12,19 +12,17 @@ A level-1 auxiliary file: chap7.aux
 A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: appc.aux
 A level-1 auxiliary file: appd.aux
+A level-1 auxiliary file: appe.aux
+A level-1 auxiliary file: appf.aux
 A level-1 auxiliary file: biblio.aux
 The style file: unsrtnat.bst
 Database file #1: main.bib
-Repeated entry---line 269 of file main.bib
- : @article{Wu_exp
- :                ,
-I'm skipping whatever remains of this entry
-Warning--empty title in Wu_exp
-Warning--empty year in Wu_exp
-Warning--empty journal in teramoto2002cp
-Warning--empty journal in langestudy
-Warning--empty year in langestudy
-Warning--empty year in langestudy
+Name 1 in "Aubert, Bernard, and others" has a comma at the end for entry aubert2007babar
+while executing---line 1233 of file unsrtnat.bst
+Name 1 in "Aubert, Bernard, and others" has a comma at the end for entry aubert2007babar
+while executing---line 1315 of file unsrtnat.bst
+Name 1 in "Aubert, Bernard, and others" has a comma at the end for entry aubert2007babar
+while executing---line 1315 of file unsrtnat.bst
 Warning--empty journal in ceccucci2008ckm
 Warning--empty journal in Abe:2010gxa
 Warning--empty title in ROOTcern
@@ -38,50 +36,49 @@ Warning--empty year in pdg
 Warning--empty title in b2onlinelumi
 Warning--empty year in b2onlinelumi
 Warning--can't use both volume and number fields in therhaag2012tmva
+Warning--empty title in Yusa-note
 Warning--empty year in Yusa-note
 Warning--empty title in jpsiks_ichep
 Warning--empty year in jpsiks_ichep
-Warning--empty title in flavortagger
-Warning--empty year in flavortagger
-You've used 50 entries,
+You've used 46 entries,
             2481 wiz_defined-function locations,
-            853 strings with 15064 characters,
-and the built_in function-call counts, 21973 in all, are:
-= -- 1485
-> -- 1883
-< -- 22
-+ -- 693
-- -- 592
-* -- 2055
-:= -- 3760
-add.period$ -- 157
-call.type$ -- 50
-change.case$ -- 90
-chr.to.int$ -- 49
-cite$ -- 83
-duplicate$ -- 922
-empty$ -- 1638
-format.name$ -- 651
-if$ -- 4400
-int.to.chr$ -- 2
-int.to.str$ -- 51
-missing$ -- 36
-newline$ -- 263
-num.names$ -- 123
-pop$ -- 440
+            855 strings with 15635 characters,
+and the built_in function-call counts, 21498 in all, are:
+= -- 1447
+> -- 1926
+< -- 27
++ -- 696
+- -- 604
+* -- 2008
+:= -- 3799
+add.period$ -- 160
+call.type$ -- 46
+change.case$ -- 85
+chr.to.int$ -- 46
+cite$ -- 63
+duplicate$ -- 854
+empty$ -- 1514
+format.name$ -- 669
+if$ -- 4261
+int.to.chr$ -- 1
+int.to.str$ -- 47
+missing$ -- 33
+newline$ -- 258
+num.names$ -- 138
+pop$ -- 375
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 46
 quote$ -- 0
-skip$ -- 556
+skip$ -- 514
 stack$ -- 0
-substring$ -- 648
-swap$ -- 139
+substring$ -- 649
+swap$ -- 131
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 347
-warning$ -- 24
-while$ -- 123
+type$ -- 322
+warning$ -- 17
+while$ -- 134
 width$ -- 0
-write$ -- 636
-(There was 1 error message)
+write$ -- 623
+(There were 3 error messages)
